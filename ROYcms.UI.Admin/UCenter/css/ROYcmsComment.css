@@ -1,0 +1,32 @@
+@charset "utf-8";
+/*ROYcms_Comment
+updatetime:2009.12.14
+editor:Jackying
+QQ: 270863798
+E-mail: admin@anan360.cn
+Website: http://www.roycms.cn    http://www.web1.net.cn	http://www.anan360.cn*/
+/*===========================版权所有==============================================*/
+@import url(Basic.css);/*初始化样式*/
+@import url(font.css);/*字体样式*/
+@import url(themes.css);/*主题样式*/
+#wrap{width:960px;margin:0 auto;overflow:hidden; height:100%;}
+#KJ_Comment{ margin-right:310px;}
+#KJ_CommentRight{width:300px; float:right;}
+
+.NewsTitle{/*新闻标题*/text-align:center; font-size:24px; line-height:40px; border-bottom:solid 1px #ccc;}
+/*评论发布页*/
+.CommentBox{ background-color:#FFFFEE; border:solid 1px #999; padding:3px;}
+.CommentDetail{padding:10px;}
+.CommentWho{ font-size:12px; font-weight:normal; margin-bottom:8px;color:#669;}
+.CommentTime{float:right; color:#999;}
+.CommentContent{ padding-bottom:10px;}
+.CommentHF{width:100%; text-align:right;font-size:12px; padding-bottom:10px; border-bottom:dotted 1px #ccc;}
+
+/*发表评论*/
+.Comments{font-size:12px;}
+.Comments h1{ padding-top:10px; margin-bottom:5px;}
+.CommentsLink{float:right; font-size:12px; font-weight:normal;}
+.CommentsLink a{ font-weight:bold;}
+.Comments form{ padding-left:15px;}
+.Comments form ul li{ padding-bottom:5px;}
+.CommentsBtn{ text-align:center;}

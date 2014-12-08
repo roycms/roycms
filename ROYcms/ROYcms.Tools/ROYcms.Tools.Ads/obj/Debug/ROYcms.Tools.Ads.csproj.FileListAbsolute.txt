@@ -1,0 +1,16 @@
+G:\ROYcms!NT V2.0\ROYcms.Tools\ROYcms.Tools.Ads\bin\ROYcms.Tools.Ads.dll
+G:\ROYcms!NT V2.0\ROYcms.Tools\ROYcms.Tools.Ads\bin\ROYcms.Tools.Ads.pdb
+G:\ROYcms!NT V2.0\ROYcms.Tools\ROYcms.Tools.Ads\bin\ROYcms.DB.dll
+G:\ROYcms!NT V2.0\ROYcms.Tools\ROYcms.Tools.Ads\bin\ROYcms.DB.pdb
+G:\ROYcms!NT V2.0\ROYcms.Tools\ROYcms.Tools.Ads\bin\ROYcms.DB.xml
+G:\ROYcms!NT V2.0\ROYcms.Tools\ROYcms.Tools.Ads\obj\Debug\ResolveAssemblyReference.cache
+G:\ROYcms!NT V2.0\ROYcms.Tools\ROYcms.Tools.Ads\obj\Debug\ROYcms.Tools.Ads.dll
+G:\ROYcms!NT V2.0\ROYcms.Tools\ROYcms.Tools.Ads\obj\Debug\ROYcms.Tools.Ads.pdb
+G:\ROYcms!NT\ROYcms.Tools\ROYcms.Tools.Ads\bin\ROYcms.Tools.Ads.dll
+G:\ROYcms!NT\ROYcms.Tools\ROYcms.Tools.Ads\bin\ROYcms.Tools.Ads.pdb
+G:\ROYcms!NT\ROYcms.Tools\ROYcms.Tools.Ads\bin\ROYcms.DB.dll
+G:\ROYcms!NT\ROYcms.Tools\ROYcms.Tools.Ads\bin\ROYcms.DB.pdb
+G:\ROYcms!NT\ROYcms.Tools\ROYcms.Tools.Ads\bin\ROYcms.DB.xml
+G:\ROYcms!NT\ROYcms.Tools\ROYcms.Tools.Ads\obj\Debug\ResolveAssemblyReference.cache
+G:\ROYcms!NT\ROYcms.Tools\ROYcms.Tools.Ads\obj\Debug\ROYcms.Tools.Ads.dll
+G:\ROYcms!NT\ROYcms.Tools\ROYcms.Tools.Ads\obj\Debug\ROYcms.Tools.Ads.pdb

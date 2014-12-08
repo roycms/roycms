@@ -1,0 +1,23 @@
+﻿@charset "utf-8";
+/*roycms_tools
+date:2010.01.28
+editor:jackying
+QQ: 270863798
+E-mail: admin@anan360.cn
+Website: http://www.anan360.cn    http://www.roycms.cn*/
+/*======================版权所有===============================*/
+
+@import url(Basic.css);/*初始化样式*/
+
+#tools_menu{position:relative; width:24px; height:24px; z-index:20; cursor:pointer;}
+	.tools_menu2{position:absolute; left:0px; top:0px; width:93px; height:auto; border:solid 1px #ccc; z-index:30; background-color:#fff; display:none;}
+	.tools_menu2 ul{ padding:5px;}
+	.tools_menu2 ul li{ font-size:12px; display:block; height:28px; line-height:28px; padding-left:28px; background-position:left center; background-repeat:no-repeat;}
+	.tools_menu2 ul li a{ text-decoration:none; color:#333;}
+	.tools_menu2 ul li a:hover{ text-decoration:underline; color:#06C;}
+	.tools_menu2 ul li.tools_1{background-image:url(../images/web_icon_028.png);}
+	.tools_menu2 ul li.tools_2{background-image:url(../images/web_icon_039.png);}
+	.tools_menu2 ul li.tools_3{background-image:url(../images/web_icon_050.png);}
+	.tools_menu2 ul li.tools_4{background-image:url(../images/web_icon_038.png);}
+	.tools_menu2 ul li.tools_5{background-image:url(../images/web_icon_044.png);}
+	#tools_menu:hover .tools_menu2{ display:block;}

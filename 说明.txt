@@ -1,0 +1,58 @@
+---------------------------------------
+  ROYcms!NT 介绍
+---------------------------------------
+
+  ROYcms!NT 是一套采用C#开发的，基于.net2.0及以上版本，可以运行于
+  Sqlserver、Access数据库之上的网站内容管理系统软件
+ （Content Manage System，简称CMS）。
+
+  
+    通过 ROYcms!NT，您可以轻松构建从简单企业到行业门户的站点，
+    系统开放开源，为专业网站建设人员或业余网站建设者提供一个开放的基础平台。
+   
+    ROYcms!NT 遵从 GENERAL PUBLIC LICENSE(GPLv2) 开源协议。
+
+    功能与特点
+
+    ROYcms!NT 自定义表单对象，根据业务逻辑自由的组织定义需要入库的字段和数据,可扩展性强，适应大部分业务需求。
+    ROYcms!NT 完美的利用了浏览器的XML解析技术，完全实现数据和界面的分离，通过gzip压缩进一步缩减服务器的网络带宽消耗，提高响应速度 。
+    支持和推荐 DIV+CSS布局，交互方式采用当前最流行的AJAX技术，所有操作一气呵成，带来前所未有的用户体验。
+    简洁开放的模版制作方式，设计制作的模板制作插件，模块化设计，大大减轻了后续开发的难度，使模板开发变得轻而易举。
+
+
+   管理界面兼容性
+   Mozilla Firefox v1.5.0.0 以上版本
+   Microsoft Internet Explorer v6.0 以上版本
+
+
+   安装调试
+
+   ROYcms!NT不支持使用虚拟目录
+
+   1.点击运行 发布.bat 批处理文件，自动在目录下生成文件夹 -  {/发布后上传文件/ROYcms!NT/} 
+   2.创建IIS站点，路径指向 {/发布后上传文件/ROYcms!NT/} 目录，并将ASP.NET版本设置为2.0。
+   3.进入站点属性设置，设置默认文档为index.aspx。
+   4.设置扩展名映射，通配映射到.NET2.0 。
+   5.为{/发布后上传文件/ROYcms!NT/} 目录设置IIS和ASP.NET用户的读写权限（默认添加user读写权限）。
+   6.推荐直接附加mdf数据库文件，数据库文件在站点的根目录。
+   7.打开站点根目录下的web.config文件，修改数据库连接字符串 <add name="ConnectionString" connectionString="连接数据库的字符串加密的" />
+     连接字符串的加密方法在 http://www.roycms.cn/ap_api/md5.aspx  进行加密处理完成后加加密串复制到web.config 的ConnectionString键值
+   8. 后台登陆地址 /administrator/index.aspx   用户名admin 密码 1
+   9.安装{模板制作插件/}目录下的Dreamweaver插件 ，打开Dreamweaver开始模版制作
+   10.模板标签教程在 http://www.roycms.cn/codex.html
+
+
+---------------------------------------
+  ROYcms!NT  更多设置帮助
+---------------------------------------
+
+  请在线访问 ROYcms!NT 官方帮助栏目，获得更多使用文档。
+  http://help.roycms.cn
+  http://doc.roycms.cn
+ 
+
+祝您使用愉快
+
+
+(C) ROYcms!NT 2010 北京郎子文化 Inc
+http://www.roycms.cn

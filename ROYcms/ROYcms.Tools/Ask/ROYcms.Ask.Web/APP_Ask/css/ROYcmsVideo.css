@@ -1,0 +1,23 @@
+@charset "utf-8";
+/*ROYcms_Video
+updatetime:2009.12.14
+editor:Jackying
+QQ: 270863798
+E-mail: admin@anan360.cn
+Website: http://www.roycms.cn    http://www.web1.net.cn	http://www.anan360.cn*/
+/*===========================版权所有==============================================*/
+
+/*全局样式*/
+@import url(Basic.css);/*初始化样式*/
+@import url(themes.css);/*主题样式*/
+body,td,th{font-family:Arial;font-size: 13px; line-height:20px;color:#000;}
+body{margin:0 5px; background-color:#fff; text-align:center;}
+#wrap{ width:960px; margin:0 auto; text-align:left;}
+#TJ_hot{ padding:0 10px; line-height:28px; background-color:#E5ECF9; margin-bottom:8px;}
+#TJ_hot a{ padding:0 5px;}
+ul.VideoList{ padding-left:20px;}
+ul.VideoList li{ display:block; float:left; width:107px; height:135px; margin-bottom:10px; margin-right:38px; font-size:12px; line-height:18px;}
+ul.VideoList li img{ width:107px; height:80px;}
+ul.VideoList li a{ text-decoration:none;}
+ul.VideoList li a:hover{ text-decoration:underline;}
+.VideoTime{ color:#666;}

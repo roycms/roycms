@@ -1,0 +1,15 @@
+D:\工作目录\ROYcms!NT - 2012\DNSABC\DNSABC.WebUI\obj\Debug\DNSABC.WebUI.csprojResolveAssemblyReference.cache
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\DNSABC\DNSABC.WebUI\obj\Debug\DNSABC.WebUI.csprojResolveAssemblyReference.cache
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\DNSABC\DNSABC.WebUI\bin\DNSABC.WebUI.dll
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\DNSABC\DNSABC.WebUI\bin\DNSABC.WebUI.pdb
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\DNSABC\DNSABC.WebUI\bin\DNSABC.SYSTEM.dll
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\DNSABC\DNSABC.WebUI\bin\ROYcms.Common.dll
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\DNSABC\DNSABC.WebUI\bin\ICSharpCode.SharpZipLib.dll
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\DNSABC\DNSABC.WebUI\bin\ROYcms.DB.dll
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\DNSABC\DNSABC.WebUI\bin\MySql.Data.dll
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\DNSABC\DNSABC.WebUI\bin\ROYcms.Common.pdb
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\DNSABC\DNSABC.WebUI\bin\DNSABC.SYSTEM.pdb
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\DNSABC\DNSABC.WebUI\bin\ROYcms.DB.pdb
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\DNSABC\DNSABC.WebUI\bin\ROYcms.DB.xml
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\DNSABC\DNSABC.WebUI\obj\Debug\DNSABC.WebUI.dll
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\DNSABC\DNSABC.WebUI\obj\Debug\DNSABC.WebUI.pdb

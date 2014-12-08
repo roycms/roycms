@@ -1,0 +1,32 @@
+@charset "utf-8";
+/*ROYcms_Message
+updatetime:2009.12.14
+editor:Jackying
+QQ: 270863798
+E-mail: admin@anan360.cn
+Website: http://www.roycms.cn    http://www.web1.net.cn	http://www.anan360.cn*/
+/*===========================版权所有==============================================*/
+
+/*全局样式*/
+@import url(Basic.css);/*初始化样式*/
+@import url(themes.css);/*主题样式*/
+body,td,th{font-family:Arial;font-size: 13px; line-height:20px;color:#000;}
+body{margin:0 5px; background-color:#fff;}
+
+#StatusBar{/*状态栏*/ padding:0 10px; margin-bottom:12px;background-color:#E5ECF9; float:none; clear:both;}
+#SearchXg{ padding-left:10px; width:106px; font-size:12px; margin-right:10px; float:left;}
+#MessageListContent{margin-right:252px; margin-left:130px; border-left:solid 1px #E5ECF9; padding-left:20px;}
+
+#SearchJJ{float:right; width:209px; padding-left:10px; border-left:solid 1px #E5ECF9;}
+#KJ_MessageList{ min-width:960px; margin-bottom:20px;}
+	.datetime{ color:#666;}
+
+
+/*留言板*/
+dl.MessageContent{ min-width:300px;}
+dl.MessageContent dd{ margin-bottom:15px; font-size:14px; line-height:24px; border-bottom:dashed 1px #ccc; padding-bottom:10px;}
+dl.MessageContent dd .datetime{ font-size:12px; color:#999; text-align:right;}
+	.Lou{ font-size:12px; color:#333; float:right;}
+	ul.MessageBD li{ margin-bottom:5px;}
+	.MessageBtn{ padding-left:40px;}
+

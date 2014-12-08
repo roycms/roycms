@@ -1,0 +1,15 @@
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_Url]') and OBJECTPROPERTY(id, 'IsUserTable') = 1) 
+DROP TABLE [ROYcms_Url]
+
+CREATE TABLE [ROYcms_Url] (
+[id] [int]  IDENTITY (1, 1)  NOT NULL,
+[bh] [int]  NULL,
+[Url] [nvarchar]  (200) NULL,
+[isurl] [int]  NULL,
+[Time] [datetime]  NULL DEFAULT (getdate()))
+
+ALTER TABLE [ROYcms_Url] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_Url] PRIMARY KEY  NONCLUSTERED ( [id] )
+SET IDENTITY_INSERT [ROYcms_Url] ON
+
+
+SET IDENTITY_INSERT [ROYcms_Url] OFF

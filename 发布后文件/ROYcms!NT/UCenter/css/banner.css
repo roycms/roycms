@@ -1,0 +1,58 @@
+@charset "utf-8";
+/*ROYcms_banner
+updatetime:2009.12.14
+editor:Jackying
+QQ: 270863798
+E-mail: admin@anan360.cn
+Website: http://www.roycms.cn    http://www.web1.net.cn		http://www.anan360.cn*/
+/*===========================版权所有==============================================*/
+
+.bg{ background-color:#F4BA9A;}
+
+/*google广告位*/
+.google_search{ float:left; width:475px;}
+.google_160x600{ width:160px; height:600px;margin:5px auto;}
+.google_120x600{ width:120px; height:600px;}
+
+.google_125x125{ width:125px; height:125px;}
+.google_180x150{ width:180px; height:150px;}
+.google_200x200{ width:200px; height:200px;}
+.google_250x250{ width:250px; height:250px;}
+.google_300x250{ width:300px; height:250px;}
+.google_336x280{ width:336px; height:280px;}
+
+.google_234x60{ width:234px; height:60px;}
+.google_468x15{ width:468px; height:15px;}
+.google_468x60{ width:468px; height:60px;}
+.google_728x90{ width:728px; height:90px;}
+
+/*baidu广告*/
+.baidu_960x75{width:960px;height:75px;float:none;clear:both;}
+.baidu_960x90{ width:960px; height:90px; float:none; clear:both;}
+.baidu_760x60{ width:760px; height:60px;}
+.baidu_180x150{ width:180px; height:150px;}
+.baidu_160x600{ width:160px; height:600px;margin:5px auto;}
+.baidu_200x200{ width:200px; height:200px;}
+.baidu_300x120{ width:300px; height:120px;}
+.baidu_search{ float:left; width:475px; margin-right:10px;}
+
+
+/*其他广告*/
+.banner_222x90{ width:222px; height:90px;}
+.banner_222x90 img{ width:222px; height:90px;}
+.banner_960{ width:960px; float:none; clear:both; margin-bottom:10px; height:auto!important; height:100%; overflow:hidden;}
+.banner_186x60{float:none; clear:both;}
+.banner_186x60 ul li{ width:197px; float:left; display:block; margin-bottom:8px;text-align:center;}
+.banner_186x60 img{ width:186px; height:60px;}
+
+.banner_380x53{ float:none; clear:both;}
+.banner_380x53 ul li{width:390px; float:left; display:block; margin-bottom:7px; text-align:center;}
+.banner_380x53 img{ width:380px; height:53px;}
+.banner_160 img{ width:160px;}
+
+.banner_230x60{ height:60px; margin-bottom:10px;}
+.banner_230x60 ul li{ display:block; float:left; width:240px; height:60px;}
+.banner_230x60 img{width:230px; height:60px;}
+.banner_238x60{ width:238px; height:60px;}
+.banner_238x60 img{width:238px; height:60px;}
+

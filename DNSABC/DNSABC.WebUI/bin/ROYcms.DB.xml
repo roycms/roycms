@@ -1,0 +1,801 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ROYcms.DB</name>
+    </assembly>
+    <members>
+        <member name="T:ROYcms.DB.EffentNextType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ROYcms.DB.EffentNextType.None">
+            <summary>
+            对其他语句无任何影响 
+            </summary>
+        </member>
+        <member name="F:ROYcms.DB.EffentNextType.WhenHaveContine">
+            <summary>
+            当前语句必须为"select count(1) from .."格式，如果存在则继续执行，不存在回滚事务
+            </summary>
+        </member>
+        <member name="F:ROYcms.DB.EffentNextType.WhenNoHaveContine">
+            <summary>
+            当前语句必须为"select count(1) from .."格式，如果不存在则继续执行，存在回滚事务
+            </summary>
+        </member>
+        <member name="F:ROYcms.DB.EffentNextType.ExcuteEffectRows">
+            <summary>
+            当前语句影响到的行数必须大于0，否则回滚事务
+            </summary>
+        </member>
+        <member name="F:ROYcms.DB.EffentNextType.SolicitationEvent">
+            <summary>
+            引发事件-当前语句必须为"select count(1) from .."格式，如果不存在则继续执行，存在回滚事务
+            </summary>
+        </member>
+        <member name="T:ROYcms.DB.CommandInfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ROYcms.DB.CommandInfo.ShareObject">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ROYcms.DB.CommandInfo.OriginalData">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ROYcms.DB.CommandInfo.OnSolicitationEvent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ROYcms.DB.CommandInfo.CommandText">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ROYcms.DB.CommandInfo.Parameters">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ROYcms.DB.CommandInfo.EffentNextType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ROYcms.DB.CommandInfo.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ROYcms.DB.CommandInfo.#ctor(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            
+            </summary>
+            <param name="sqlText"></param>
+            <param name="para"></param>
+        </member>
+        <member name="M:ROYcms.DB.CommandInfo.#ctor(System.String,System.Data.SqlClient.SqlParameter[],ROYcms.DB.EffentNextType)">
+            <summary>
+            
+            </summary>
+            <param name="sqlText"></param>
+            <param name="para"></param>
+            <param name="type"></param>
+        </member>
+        <member name="E:ROYcms.DB.CommandInfo._solicitationEvent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="E:ROYcms.DB.CommandInfo.SolicitationEvent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ROYcms.DB.DbHelperOleDb">
+            <summary>
+            数据访问基础类(基于OleDb)
+            可以用户可以修改满足自己项目的需要。
+            </summary>
+        </member>
+        <member name="F:ROYcms.DB.DbHelperOleDb.connectionString">
+            <summary>
+            数据库连接字符串(web.config来配置)，可以动态更改connectionString支持多数据库.	
+            </summary>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperOleDb.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperOleDb.ExecuteSql(System.String)">
+            <summary>
+            执行SQL语句，返回影响的记录数
+            </summary>
+            <param name="SQLString">SQL语句</param>
+            <returns>影响的记录数</returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperOleDb.ExecuteSqlTran(System.Collections.ArrayList)">
+            <summary>
+            执行多条SQL语句，实现数据库事务。
+            </summary>
+            <param name="SQLStringList">多条SQL语句</param>		
+        </member>
+        <member name="M:ROYcms.DB.DbHelperOleDb.ExecuteSql(System.String,System.String)">
+            <summary>
+            执行带一个存储过程参数的的SQL语句。
+            </summary>
+            <param name="SQLString">SQL语句</param>
+            <param name="content">参数内容,比如一个字段是格式复杂的文章，有特殊符号，可以通过这个方式添加</param>
+            <returns>影响的记录数</returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperOleDb.ExecuteSqlInsertImg(System.String,System.Byte[])">
+            <summary>
+            向数据库里插入图像格式的字段(和上面情况类似的另一种实例)
+            </summary>
+            <param name="strSQL">SQL语句</param>
+            <param name="fs">图像字节,数据库的字段类型为image的情况</param>
+            <returns>影响的记录数</returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperOleDb.GetSingle(System.String)">
+            <summary>
+            执行一条计算查询结果语句，返回查询结果（object）。
+            </summary>
+            <param name="SQLString">计算查询结果语句</param>
+            <returns>查询结果（object）</returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperOleDb.ExecuteReader(System.String)">
+            <summary>
+            执行查询语句，返回OleDbDataReader
+            </summary>
+            <param name="strSQL">查询语句</param>
+            <returns>OleDbDataReader</returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperOleDb.Query(System.String)">
+            <summary>
+            执行查询语句，返回DataSet
+            </summary>
+            <param name="SQLString">查询语句</param>
+            <returns>DataSet</returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperOleDb.ExecuteSql(System.String,System.Data.OleDb.OleDbParameter[])">
+            <summary>
+            执行SQL语句，返回影响的记录数
+            </summary>
+            <param name="SQLString">SQL语句</param>
+            <param name="cmdParms"></param>
+            <returns>影响的记录数</returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperOleDb.ExecuteSqlTran(System.Collections.Hashtable)">
+            <summary>
+            执行多条SQL语句，实现数据库事务。
+            </summary>
+            <param name="SQLStringList">SQL语句的哈希表（key为sql语句，value是该语句的OleDbParameter[]）</param>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperOleDb.GetSingle(System.String,System.Data.OleDb.OleDbParameter[])">
+            <summary>
+            执行一条计算查询结果语句，返回查询结果（object）。
+            </summary>
+            <param name="SQLString">计算查询结果语句</param>
+            <param name="cmdParms"></param>
+            <returns>查询结果（object）</returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperOleDb.ExecuteReader(System.String,System.Data.OleDb.OleDbParameter[])">
+            <summary>
+            执行查询语句，返回OleDbDataReader
+            </summary>
+            <param name="SQLString">查询语句</param>
+            <param name="cmdParms"></param>
+            <returns>OleDbDataReader</returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperOleDb.Query(System.String,System.Data.OleDb.OleDbParameter[])">
+            <summary>
+            执行查询语句，返回DataSet
+            </summary>
+            <param name="SQLString">查询语句</param>
+            <param name="cmdParms"></param>
+            <returns>DataSet</returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperOleDb.RunProcedure(System.String,System.Data.IDataParameter[])">
+            <summary>
+            执行存储过程
+            </summary>
+            <param name="storedProcName">存储过程名</param>
+            <param name="parameters">存储过程参数</param>
+            <returns>OleDbDataReader</returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperOleDb.RunProcedure(System.String,System.Data.IDataParameter[],System.String)">
+            <summary>
+            执行存储过程
+            </summary>
+            <param name="storedProcName">存储过程名</param>
+            <param name="parameters">存储过程参数</param>
+            <param name="tableName">DataSet结果中的表名</param>
+            <returns>DataSet</returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperOleDb.BuildQueryCommand(System.Data.OleDb.OleDbConnection,System.String,System.Data.IDataParameter[])">
+            <summary>
+            构建 OleDbCommand 对象(用来返回一个结果集，而不是一个整数值)
+            </summary>
+            <param name="connection">数据库连接</param>
+            <param name="storedProcName">存储过程名</param>
+            <param name="parameters">存储过程参数</param>
+            <returns>OleDbCommand</returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperOleDb.RunProcedure(System.String,System.Data.IDataParameter[],System.Int32@)">
+            <summary>
+            执行存储过程，返回影响的行数		
+            </summary>
+            <param name="storedProcName">存储过程名</param>
+            <param name="parameters">存储过程参数</param>
+            <param name="rowsAffected">影响的行数</param>
+            <returns></returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperOleDb.BuildIntCommand(System.Data.OleDb.OleDbConnection,System.String,System.Data.IDataParameter[])">
+            <summary>
+            创建 OleDbCommand 对象实例(用来返回一个整数值)	
+            </summary>
+            <param name="connection">connection</param>
+            <param name="storedProcName">存储过程名</param>
+            <param name="parameters">存储过程参数</param>
+            <returns>OleDbCommand 对象实例</returns>
+        </member>
+        <member name="T:ROYcms.DB.DbHelpers">
+            <summary>
+            在此层实现不同类型数据库访问
+            </summary>
+        </member>
+        <member name="M:ROYcms.DB.DbHelpers.GetDataSet(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            通用方法/SQL拼接 非存储过程
+            </summary>
+            <param name="sql"></param>
+            <param name="p"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelpers.GetDataSet(System.String)">
+            <summary>
+            SQL
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelpers.GetSingle(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelpers.GetSingle(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            
+            </summary>
+            <param name="sql"></param>
+            <param name="p"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelpers.NonQuery(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelpers.NonQuery(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            
+            </summary>
+            <param name="sql"></param>
+            <param name="p"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelpers.Exists(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelpers.Exists(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            
+            </summary>
+            <param name="sql"></param>
+            <param name="p"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ROYcms.DB.DbHelperSQL">
+            <summary>
+            数据访问抽象基础类
+            
+            </summary>
+        </member>
+        <member name="F:ROYcms.DB.DbHelperSQL.connectionString">
+            <summary>
+            数据库连接字符串(web.config来配置)，可以动态更改connectionString支持多数据库.	
+            </summary>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperSQL.#ctor">
+            <summary>
+            DbHelperSQL()
+            </summary>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperSQL.ColumnExists(System.String,System.String)">
+            <summary>
+            判断是否存在某表的某个字段
+            </summary>
+            <param name="tableName">表名称</param>
+            <param name="columnName">列名称</param>
+            <returns>是否存在</returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperSQL.GetMaxID(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="FieldName"></param>
+            <param name="TableName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperSQL.Exists(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="strSql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperSQL.TabExists(System.String)">
+            <summary>
+            表是否存在
+            </summary>
+            <param name="TableName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperSQL.Exists(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            
+            </summary>
+            <param name="strSql"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperSQL.ExecuteSql(System.String)">
+            <summary>
+            执行SQL语句，返回影响的记录数
+            </summary>
+            <param name="SQLString">SQL语句</param>
+            <returns>影响的记录数</returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperSQL.ExecuteSqlByTime(System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="SQLString"></param>
+            <param name="Times"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperSQL.ExecuteSqlTran(System.Collections.Generic.List{ROYcms.DB.CommandInfo},System.Collections.Generic.List{ROYcms.DB.CommandInfo})">
+            <summary>
+            执行Sql和Oracle滴混合事务
+            </summary>
+            <param name="list">SQL命令行列表</param>
+            <param name="oracleCmdSqlList">Oracle命令行列表</param>
+            <returns>执行结果 0-由于SQL造成事务失败 -1 由于Oracle造成事务失败 1-整体事务执行成功</returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperSQL.ExecuteSqlTran(System.Collections.Generic.List{System.String})">
+            <summary>
+            执行多条SQL语句，实现数据库事务。
+            </summary>
+            <param name="SQLStringList">多条SQL语句</param>		
+        </member>
+        <member name="M:ROYcms.DB.DbHelperSQL.ExecuteSql(System.String,System.String)">
+            <summary>
+            执行带一个存储过程参数的的SQL语句。
+            </summary>
+            <param name="SQLString">SQL语句</param>
+            <param name="content">参数内容,比如一个字段是格式复杂的文章，有特殊符号，可以通过这个方式添加</param>
+            <returns>影响的记录数</returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperSQL.ExecuteSqlGet(System.String,System.String)">
+            <summary>
+            执行带一个存储过程参数的的SQL语句。
+            </summary>
+            <param name="SQLString">SQL语句</param>
+            <param name="content">参数内容,比如一个字段是格式复杂的文章，有特殊符号，可以通过这个方式添加</param>
+            <returns>影响的记录数</returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperSQL.ExecuteSqlInsertImg(System.String,System.Byte[])">
+            <summary>
+            向数据库里插入图像格式的字段(和上面情况类似的另一种实例)
+            </summary>
+            <param name="strSQL">SQL语句</param>
+            <param name="fs">图像字节,数据库的字段类型为image的情况</param>
+            <returns>影响的记录数</returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperSQL.GetSingle(System.String)">
+            <summary>
+            执行一条计算查询结果语句，返回查询结果（object）。
+            </summary>
+            <param name="SQLString">计算查询结果语句</param>
+            <returns>查询结果（object）</returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperSQL.GetSingle(System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="SQLString"></param>
+            <param name="Times"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperSQL.ExecuteReader(System.String)">
+            <summary>
+            执行查询语句，返回SqlDataReader ( 注意：调用该方法后，一定要对SqlDataReader进行Close )
+            </summary>
+            <param name="strSQL">查询语句</param>
+            <returns>SqlDataReader</returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperSQL.Query(System.String)">
+            <summary>
+            执行查询语句，返回DataSet
+            </summary>
+            <param name="SQLString">查询语句</param>
+            <returns>DataSet</returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperSQL.Query(System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="SQLString"></param>
+            <param name="Times"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperSQL.ExecuteSql(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            执行SQL语句，返回影响的记录数
+            </summary>
+            <param name="SQLString">SQL语句</param>
+            <param name="cmdParms"></param>
+            <returns>影响的记录数</returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperSQL.ExecuteSqlTran(System.Collections.Hashtable)">
+            <summary>
+            执行多条SQL语句，实现数据库事务。
+            </summary>
+            <param name="SQLStringList">SQL语句的哈希表（key为sql语句，value是该语句的SqlParameter[]）</param>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperSQL.ExecuteSqlTran(System.Collections.Generic.List{ROYcms.DB.CommandInfo})">
+            <summary>
+            执行多条SQL语句，实现数据库事务。
+            </summary>
+            <param name="cmdList">SQL语句的哈希表（key为sql语句，value是该语句的SqlParameter[]）</param>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperSQL.ExecuteSqlTranWithIndentity(System.Collections.Generic.List{ROYcms.DB.CommandInfo})">
+            <summary>
+            执行多条SQL语句，实现数据库事务。
+            </summary>
+            <param name="SQLStringList">SQL语句的哈希表（key为sql语句，value是该语句的SqlParameter[]）</param>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperSQL.ExecuteSqlTranWithIndentity(System.Collections.Hashtable)">
+            <summary>
+            执行多条SQL语句，实现数据库事务。
+            </summary>
+            <param name="SQLStringList">SQL语句的哈希表（key为sql语句，value是该语句的SqlParameter[]）</param>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperSQL.GetSingle(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            执行一条计算查询结果语句，返回查询结果（object）。
+            </summary>
+            <param name="SQLString">计算查询结果语句</param>
+            <param name="cmdParms">cmdParms</param>
+            <returns>查询结果（object）</returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperSQL.ExecuteReader(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            执行查询语句，返回SqlDataReader ( 注意：调用该方法后，一定要对SqlDataReader进行Close )
+            </summary>
+            <param name="SQLString">查询语句</param>
+            <param name="cmdParms">cmdParms</param>
+            <returns>SqlDataReader</returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperSQL.Query(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            执行查询语句，返回DataSet
+            </summary>
+            <param name="SQLString">查询语句</param>
+            /// <param name="cmdParms"></param>
+            <returns>DataSet</returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperSQL.PrepareCommand(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection,System.Data.SqlClient.SqlTransaction,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+             PrepareCommand
+            </summary>
+            <param name="cmd"></param>
+            <param name="conn"></param>
+            <param name="trans"></param>
+            <param name="cmdText"></param>
+            <param name="cmdParms"></param>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperSQL.RunProcedure(System.String,System.Data.IDataParameter[])">
+            <summary>
+            执行存储过程，返回SqlDataReader ( 注意：调用该方法后，一定要对SqlDataReader进行Close )
+            </summary>
+            <param name="storedProcName">存储过程名</param>
+            <param name="parameters">存储过程参数</param>
+            <returns>SqlDataReader</returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperSQL.RunProcedure(System.String,System.Data.IDataParameter[],System.String)">
+            <summary>
+            执行存储过程
+            </summary>
+            <param name="storedProcName">存储过程名</param>
+            <param name="parameters">存储过程参数</param>
+            <param name="tableName">DataSet结果中的表名</param>
+            <returns>DataSet</returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperSQL.RunProcedure(System.String,System.Data.IDataParameter[],System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="storedProcName"></param>
+            <param name="parameters"></param>
+            <param name="tableName"></param>
+            <param name="Times"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperSQL.BuildQueryCommand(System.Data.SqlClient.SqlConnection,System.String,System.Data.IDataParameter[])">
+            <summary>
+            构建 SqlCommand 对象(用来返回一个结果集，而不是一个整数值)
+            </summary>
+            <param name="connection">数据库连接</param>
+            <param name="storedProcName">存储过程名</param>
+            <param name="parameters">存储过程参数</param>
+            <returns>SqlCommand</returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperSQL.RunProcedure(System.String,System.Data.IDataParameter[],System.Int32@)">
+            <summary>
+            执行存储过程，返回影响的行数		
+            </summary>
+            <param name="storedProcName">存储过程名</param>
+            <param name="parameters">存储过程参数</param>
+            <param name="rowsAffected">影响的行数</param>
+            <returns></returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperSQL.BuildIntCommand(System.Data.SqlClient.SqlConnection,System.String,System.Data.IDataParameter[])">
+            <summary>
+            创建 SqlCommand 对象实例(用来返回一个整数值)	
+            </summary>
+            <param name="connection"></param>
+            <param name="storedProcName">存储过程名</param>
+            <param name="parameters">存储过程参数</param>
+            <returns>SqlCommand 对象实例</returns>
+        </member>
+        <member name="T:ROYcms.DB.DESEncrypt">
+            <summary>
+            DES加密/解密类。
+            </summary>
+        </member>
+        <member name="M:ROYcms.DB.DESEncrypt.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ROYcms.DB.DESEncrypt.Encrypt(System.String)">
+            <summary>
+            加密
+            </summary>
+            <param name="Text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ROYcms.DB.DESEncrypt.Encrypt(System.String,System.String)">
+            <summary> 
+            加密数据 
+            </summary> 
+            <param name="Text"></param> 
+            <param name="sKey"></param> 
+            <returns></returns> 
+        </member>
+        <member name="M:ROYcms.DB.DESEncrypt.Decrypt(System.String)">
+            <summary>
+            解密
+            </summary>
+            <param name="Text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ROYcms.DB.DESEncrypt.Decrypt(System.String,System.String)">
+            <summary> 
+            解密数据 
+            </summary> 
+            <param name="Text"></param> 
+            <param name="sKey"></param> 
+            <returns></returns> 
+        </member>
+        <member name="T:ROYcms.DB.PubConstant">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ROYcms.DB.PubConstant.GetConnectionString(System.String)">
+            <summary>
+            得到web.config里配置项的数据库连接字符串。
+            </summary>
+            <param name="configName"></param>
+            <returns></returns>
+        </member>
+        <member name="P:ROYcms.DB.PubConstant.ConnectionString">
+            <summary>
+            获取连接字符串
+            </summary>
+        </member>
+        <member name="T:ROYcms.DB.SqlHelper">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ROYcms.DB.SqlHelper.Conn">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ROYcms.DB.SqlHelper.parmCache">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ROYcms.DB.SqlHelper.ExecuteNonQuery(System.String,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            
+            </summary>
+            <param name="connectionString"></param>
+            <param name="cmdType"></param>
+            <param name="cmdText"></param>
+            <param name="commandParameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ROYcms.DB.SqlHelper.ExecuteNonQuery(System.Data.SqlClient.SqlConnection,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            
+            </summary>
+            <param name="connection"></param>
+            <param name="cmdType"></param>
+            <param name="cmdText"></param>
+            <param name="commandParameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ROYcms.DB.SqlHelper.ExecuteNonQuery(System.Data.SqlClient.SqlTransaction,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            
+            </summary>
+            <param name="trans"></param>
+            <param name="cmdType"></param>
+            <param name="cmdText"></param>
+            <param name="commandParameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ROYcms.DB.SqlHelper.ExecuteReader(System.String,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            
+            </summary>
+            <param name="connectionString"></param>
+            <param name="cmdType"></param>
+            <param name="cmdText"></param>
+            <param name="commandParameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ROYcms.DB.SqlHelper.ExecutePagedDataSource(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="connectionString"></param>
+            <param name="cmdText"></param>
+            <param name="pagesize"></param>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ROYcms.DB.SqlHelper.ExecuteDataSet(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="connectionString"></param>
+            <param name="cmdText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ROYcms.DB.SqlHelper.ExecuteDataSet(System.String,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            
+            </summary>
+            <param name="connectionString"></param>
+            <param name="cmdText"></param>
+            <param name="commandParameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ROYcms.DB.SqlHelper.ExecuteScalar(System.String,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            
+            </summary>
+            <param name="connectionString"></param>
+            <param name="cmdType"></param>
+            <param name="cmdText"></param>
+            <param name="commandParameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ROYcms.DB.SqlHelper.ExecuteScalar(System.Data.SqlClient.SqlConnection,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            
+            </summary>
+            <param name="connection"></param>
+            <param name="cmdType"></param>
+            <param name="cmdText"></param>
+            <param name="commandParameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ROYcms.DB.SqlHelper.CacheParameters(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            
+            </summary>
+            <param name="cacheKey"></param>
+            <param name="commandParameters"></param>
+        </member>
+        <member name="M:ROYcms.DB.SqlHelper.GetCachedParameters(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="cacheKey"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ROYcms.DB.SqlHelper.PrepareCommand(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection,System.Data.SqlClient.SqlTransaction,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            
+            </summary>
+            <param name="cmd"></param>
+            <param name="conn"></param>
+            <param name="trans"></param>
+            <param name="cmdType"></param>
+            <param name="cmdText"></param>
+            <param name="cmdParms"></param>
+        </member>
+        <member name="T:ROYcms.DB.DbHelperMYSQL">
+            <summary>
+            数据访问抽象基础类
+            
+            </summary>
+        </member>
+        <member name="F:ROYcms.DB.DbHelperMYSQL.connectionString">
+            <summary>
+            数据库连接字符串(web.config来配置)，可以动态更改connectionString支持多数据库.	
+            </summary>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperMYSQL.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperMYSQL.ExecuteSql(System.String)">
+            <summary>
+            执行SQL语句，返回影响的记录数
+            </summary>
+            <param name="SQLString">SQL语句</param>
+            <returns>影响的记录数</returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperMYSQL.GetSingle(System.String)">
+            <summary>
+            执行一条计算查询结果语句，返回查询结果（object）。
+            </summary>
+            <param name="SQLString">计算查询结果语句</param>
+            <returns>查询结果（object）</returns>
+        </member>
+        <member name="M:ROYcms.DB.DbHelperMYSQL.Query(System.String)">
+            <summary>
+            执行查询语句，返回DataSet
+            </summary>
+            <param name="SQLString">查询语句</param>
+            <returns>DataSet</returns>
+        </member>
+    </members>
+</doc>

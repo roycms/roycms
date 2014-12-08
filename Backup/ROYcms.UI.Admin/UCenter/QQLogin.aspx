@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="QQLogin.aspx.cs" Inherits="ROYcms.UI.Admin.UCenter.QQLogin" %>

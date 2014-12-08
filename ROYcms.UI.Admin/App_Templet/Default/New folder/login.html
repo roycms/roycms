@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>会员登录</title>
+<CMS:Include ID="Include1" Path="/App_Templet/Default/Resources.html" runat=server />
+</head>
+<body>
+<!--Header-->
+<CMS:Include ID="Include2" Path="/App_Templet/Default/Header.html" runat=server />
+<!--/Header-->
+<div class="boxwrap">
+  <div class="main_box">
+    <h1 class="main_tit">
+      会员登录<strong>Login</strong>
+    </h1>
+
+    <div class="login-box">
+    <div class="left-box">
+      <form id="loginform" name="loginform" url="/tools/submit_ajax.ashx?action=user_login">
+      <dl>
+        <dt>用户名：</dt>
+        <dd><input id="txtUserName" name="txtUserName" class="input txt" type="text" maxlength="50" /></dd>
+      </dl>
+      <dl>
+        <dt>密　码：</dt>
+        <dd><input id="txtPassword" name="txtPassword" class="input txt required" type="password" maxlength="100" /></dd>
+      </dl>
+      <dl>
+        <dt></dt>
+        <dd>
+          <input id="chkRemember" name="chkRemember" class="checkbox" type="checkbox" style="vertical-align:middle">
+          <label class="red" for="chkRemember">一周内自动登录</label>
+        </dd>
+      </dl>
+      <dl>
+        <dt></dt>
+        <dd>
+          <input id="btnSubmit" name="btnSubmit" type="submit" class="btn_login" value="登 录" />
+          <a href="repassword/confirm.aspx">忘记密码？</a>
+        </dd>
+      </dl>
+      <dl id="msgtips">
+        <dt></dt>
+        <dd></dd>
+      </dl>
+      </form>
+      <!--第三方登录-->
+      <div class="oauth_inner">
+        <label>其它登录方式</label>
+        <div class="oauth_list">
+           <!--取得一个DataTable-->
+          
+          <a title="用QQ帐号登录" href="api/oauth/qq/index.aspx"><img src="upload/201212/25/201212251637325405.png" /></a>
+          
+          <a title="用新浪微博登录" href="api/oauth/sina/index.aspx"><img src="upload/201212/25/201212251639517061.png" /></a>
+          
+          <a title="用淘宝账号登录" href="api/oauth/taobao/index.aspx"><img src="upload/201212/27/201212271445528358.png" /></a>
+          
+          <a title="用开心网帐号登录" href="api/oauth/kaixin/index.aspx"><img src="upload/201212/25/201212251638571617.png" /></a>
+          
+          <a title="用人人网帐号登录" href="api/oauth/renren/index.aspx"><img src="upload/201212/25/201212251627428346.png" /></a>
+          
+        </div>
+      </div>
+      <!--/第三方登录-->
+    </div>
+    <div class="center-box"></div>
+    <div class="right-box">
+      <p class="note">我们诚挚地邀请您加入<br />DTcms—100%开源、永久免费</p>
+      <p>如果您还没有会员账户</p>
+      <p class="button">
+        <a href="register.aspx">立即注册</a>
+      </p>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+    <div class="clear"></div>
+  </div>
+</div>
+
+<div class="clear"></div>
+
+<!--Footer-->
+<CMS:Include ID="Include3" Path="/App_Templet/Default/Footer.html" runat=server />
+<!--/Footer-->
+</body>
+</html>

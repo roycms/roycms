@@ -1,0 +1,86 @@
+G:\ROYcms!NT V2.0\ROYcms.Controls\bin\ROYcms.Controls.dll
+G:\ROYcms!NT V2.0\ROYcms.Controls\bin\ROYcms.Controls.pdb
+G:\ROYcms!NT V2.0\ROYcms.Controls\bin\ROYcms.Common.dll
+G:\ROYcms!NT V2.0\ROYcms.Controls\bin\ROYcms.Sys.Bll.dll
+G:\ROYcms!NT V2.0\ROYcms.Controls\bin\ROYcms.DB.dll
+G:\ROYcms!NT V2.0\ROYcms.Controls\bin\ROYcms.Config.dll
+G:\ROYcms!NT V2.0\ROYcms.Controls\bin\ROYcms.Sys.Dal.dll
+G:\ROYcms!NT V2.0\ROYcms.Controls\bin\ICSharpCode.SharpZipLib.dll
+G:\ROYcms!NT V2.0\ROYcms.Controls\bin\ROYcms.Sys.Model.dll
+G:\ROYcms!NT V2.0\ROYcms.Controls\bin\ROYcms.DB.pdb
+G:\ROYcms!NT V2.0\ROYcms.Controls\bin\ROYcms.DB.xml
+G:\ROYcms!NT V2.0\ROYcms.Controls\bin\ROYcms.Config.pdb
+G:\ROYcms!NT V2.0\ROYcms.Controls\bin\ROYcms.Sys.Dal.pdb
+G:\ROYcms!NT V2.0\ROYcms.Controls\bin\ROYcms.Common.pdb
+G:\ROYcms!NT V2.0\ROYcms.Controls\bin\ROYcms.Sys.Bll.pdb
+G:\ROYcms!NT V2.0\ROYcms.Controls\bin\ROYcms.Sys.Model.pdb
+G:\ROYcms!NT V2.0\ROYcms.Controls\obj\Debug\ResolveAssemblyReference.cache
+G:\ROYcms!NT V2.0\ROYcms.Controls\obj\Debug\ROYcms.Controls.csproj.GenerateResource.Cache
+G:\ROYcms!NT V2.0\ROYcms.Controls\obj\Debug\ROYcms.Controls.dll
+G:\ROYcms!NT V2.0\ROYcms.Controls\obj\Debug\ROYcms.Controls.pdb
+G:\ROYcms!NT V2.0\ROYcms.Controls\obj\Debug\ROYcms.Controls.CMS.Controls.Resource.resources
+G:\ROYcms!NT\Net.svn\ROYcms!NT\trunk\ROYcms.Controls\bin\ROYcms.Controls.dll
+G:\ROYcms!NT\Net.svn\ROYcms!NT\trunk\ROYcms.Controls\bin\ROYcms.Controls.pdb
+G:\ROYcms!NT\Net.svn\ROYcms!NT\trunk\ROYcms.Controls\bin\ROYcms.Common.dll
+G:\ROYcms!NT\Net.svn\ROYcms!NT\trunk\ROYcms.Controls\bin\ROYcms.Sys.Bll.dll
+G:\ROYcms!NT\Net.svn\ROYcms!NT\trunk\ROYcms.Controls\bin\ROYcms.Sys.Dal.dll
+G:\ROYcms!NT\Net.svn\ROYcms!NT\trunk\ROYcms.Controls\bin\ROYcms.Sys.Model.dll
+G:\ROYcms!NT\Net.svn\ROYcms!NT\trunk\ROYcms.Controls\bin\ROYcms.DB.dll
+G:\ROYcms!NT\Net.svn\ROYcms!NT\trunk\ROYcms.Controls\bin\ROYcms.Config.dll
+G:\ROYcms!NT\Net.svn\ROYcms!NT\trunk\ROYcms.Controls\bin\ICSharpCode.SharpZipLib.dll
+G:\ROYcms!NT\Net.svn\ROYcms!NT\trunk\ROYcms.Controls\bin\MySql.Data.dll
+G:\ROYcms!NT\Net.svn\ROYcms!NT\trunk\ROYcms.Controls\bin\ROYcms.DB.pdb
+G:\ROYcms!NT\Net.svn\ROYcms!NT\trunk\ROYcms.Controls\bin\ROYcms.DB.xml
+G:\ROYcms!NT\Net.svn\ROYcms!NT\trunk\ROYcms.Controls\bin\ROYcms.Config.pdb
+G:\ROYcms!NT\Net.svn\ROYcms!NT\trunk\ROYcms.Controls\bin\ROYcms.Common.pdb
+G:\ROYcms!NT\Net.svn\ROYcms!NT\trunk\ROYcms.Controls\bin\ROYcms.Sys.Bll.pdb
+G:\ROYcms!NT\Net.svn\ROYcms!NT\trunk\ROYcms.Controls\bin\ROYcms.Sys.Dal.pdb
+G:\ROYcms!NT\Net.svn\ROYcms!NT\trunk\ROYcms.Controls\bin\ROYcms.Sys.Model.pdb
+G:\ROYcms!NT\Net.svn\ROYcms!NT\trunk\ROYcms.Controls\obj\Debug\ResolveAssemblyReference.cache
+G:\ROYcms!NT\Net.svn\ROYcms!NT\trunk\ROYcms.Controls\obj\Debug\ROYcms.Controls.CMS.Controls.Resource.resources
+G:\ROYcms!NT\Net.svn\ROYcms!NT\trunk\ROYcms.Controls\obj\Debug\ROYcms.Controls.csproj.GenerateResource.Cache
+G:\ROYcms!NT\Net.svn\ROYcms!NT\trunk\ROYcms.Controls\obj\Debug\ROYcms.Controls.dll
+G:\ROYcms!NT\Net.svn\ROYcms!NT\trunk\ROYcms.Controls\obj\Debug\ROYcms.Controls.pdb
+G:\ROYcms!NT\trunk\ROYcms.Controls\bin\ROYcms.Controls.dll
+G:\ROYcms!NT\trunk\ROYcms.Controls\bin\ROYcms.Controls.pdb
+G:\ROYcms!NT\trunk\ROYcms.Controls\bin\ROYcms.Common.dll
+G:\ROYcms!NT\trunk\ROYcms.Controls\bin\ROYcms.Sys.Bll.dll
+G:\ROYcms!NT\trunk\ROYcms.Controls\bin\ROYcms.Sys.Dal.dll
+G:\ROYcms!NT\trunk\ROYcms.Controls\bin\ROYcms.Sys.Model.dll
+G:\ROYcms!NT\trunk\ROYcms.Controls\bin\ROYcms.DB.dll
+G:\ROYcms!NT\trunk\ROYcms.Controls\bin\ROYcms.Config.dll
+G:\ROYcms!NT\trunk\ROYcms.Controls\bin\ICSharpCode.SharpZipLib.dll
+G:\ROYcms!NT\trunk\ROYcms.Controls\bin\MySql.Data.dll
+G:\ROYcms!NT\trunk\ROYcms.Controls\bin\ROYcms.DB.pdb
+G:\ROYcms!NT\trunk\ROYcms.Controls\bin\ROYcms.DB.xml
+G:\ROYcms!NT\trunk\ROYcms.Controls\bin\ROYcms.Config.pdb
+G:\ROYcms!NT\trunk\ROYcms.Controls\bin\ROYcms.Common.pdb
+G:\ROYcms!NT\trunk\ROYcms.Controls\bin\ROYcms.Sys.Bll.pdb
+G:\ROYcms!NT\trunk\ROYcms.Controls\bin\ROYcms.Sys.Dal.pdb
+G:\ROYcms!NT\trunk\ROYcms.Controls\bin\ROYcms.Sys.Model.pdb
+G:\ROYcms!NT\trunk\ROYcms.Controls\obj\Debug\ResolveAssemblyReference.cache
+G:\ROYcms!NT\trunk\ROYcms.Controls\obj\Debug\ROYcms.Controls.CMS.Controls.Resource.resources
+G:\ROYcms!NT\trunk\ROYcms.Controls\obj\Debug\ROYcms.Controls.csproj.GenerateResource.Cache
+G:\ROYcms!NT\trunk\ROYcms.Controls\obj\Debug\ROYcms.Controls.dll
+G:\ROYcms!NT\trunk\ROYcms.Controls\obj\Debug\ROYcms.Controls.pdb
+G:\ROYcms!NT\ROYcms.Controls\bin\ROYcms.Controls.dll
+G:\ROYcms!NT\ROYcms.Controls\bin\ROYcms.Controls.pdb
+G:\ROYcms!NT\ROYcms.Controls\bin\ROYcms.Common.dll
+G:\ROYcms!NT\ROYcms.Controls\bin\ROYcms.Config.dll
+G:\ROYcms!NT\ROYcms.Controls\bin\ROYcms.Sys.dll
+G:\ROYcms!NT\ROYcms.Controls\bin\ROYcms.Templet.dll
+G:\ROYcms!NT\ROYcms.Controls\bin\ICSharpCode.SharpZipLib.dll
+G:\ROYcms!NT\ROYcms.Controls\bin\ROYcms.DB.dll
+G:\ROYcms!NT\ROYcms.Controls\bin\MySql.Data.dll
+G:\ROYcms!NT\ROYcms.Controls\bin\ROYcms.Common.pdb
+G:\ROYcms!NT\ROYcms.Controls\bin\ROYcms.Config.pdb
+G:\ROYcms!NT\ROYcms.Controls\bin\ROYcms.Sys.pdb
+G:\ROYcms!NT\ROYcms.Controls\bin\ROYcms.Templet.pdb
+G:\ROYcms!NT\ROYcms.Controls\bin\ROYcms.DB.pdb
+G:\ROYcms!NT\ROYcms.Controls\bin\ROYcms.DB.xml
+G:\ROYcms!NT\ROYcms.Controls\obj\Debug\ResolveAssemblyReference.cache
+G:\ROYcms!NT\ROYcms.Controls\obj\Debug\ROYcms.Controls.CMS.Controls.Resource.resources
+G:\ROYcms!NT\ROYcms.Controls\obj\Debug\GenerateResource-ResGen.read.1.tlog
+G:\ROYcms!NT\ROYcms.Controls\obj\Debug\GenerateResource-ResGen.write.1.tlog
+G:\ROYcms!NT\ROYcms.Controls\obj\Debug\ROYcms.Controls.dll
+G:\ROYcms!NT\ROYcms.Controls\obj\Debug\ROYcms.Controls.pdb

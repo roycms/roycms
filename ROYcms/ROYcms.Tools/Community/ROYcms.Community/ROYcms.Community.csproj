@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{496E45A9-9CA8-43BD-9E37-0E217D7582E0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ROYcms.Community</RootNamespace>
+    <AssemblyName>ROYcms.Community</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\ROYcms_Community.cs" />
+    <Compile Include="BLL\ROYcms_Community_result.cs" />
+    <Compile Include="DAL\ROYcms_Community.cs" />
+    <Compile Include="DAL\ROYcms_Community_result.cs" />
+    <Compile Include="Model\ROYcms_Community.cs" />
+    <Compile Include="Model\ROYcms_Community_result.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ROYcms\ROYcms.Common\ROYcms.Common.csproj">
+      <Project>{810E13CD-EF35-4A2F-A5BD-8604D27588B1}</Project>
+      <Name>ROYcms.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ROYcms\ROYcms.Config\ROYcms.Config.csproj">
+      <Project>{1BAB7B65-FFC7-492A-934B-2DDDF7951643}</Project>
+      <Name>ROYcms.Config</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ROYcms\ROYcms.DB\ROYcms.DB.csproj">
+      <Project>{C7F4084E-D834-43E4-AF78-15B7C76D1DD8}</Project>
+      <Name>ROYcms.DB</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

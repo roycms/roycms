@@ -1,0 +1,20 @@
+E:\ROYcms V2.0\ROYcms\FCKeditor.Net_2.6.3\bin\Debug\2.0\FredCK.FCKeditorV2.dll
+E:\ROYcms V2.0\ROYcms\FCKeditor.Net_2.6.3\bin\Debug\2.0\FredCK.FCKeditorV2.pdb
+E:\ROYcms V2.0\ROYcms\FCKeditor.Net_2.6.3\obj\Debug\ResolveAssemblyReference.cache
+E:\ROYcms V2.0\ROYcms\FCKeditor.Net_2.6.3\obj\Debug\FredCK.FCKeditorV2.dll
+E:\ROYcms V2.0\ROYcms\FCKeditor.Net_2.6.3\obj\Debug\FredCK.FCKeditorV2.pdb
+G:\ROYcms!NT V2.0\ROYcms\FCKeditor.Net_2.6.3\bin\Debug\2.0\FredCK.FCKeditorV2.dll
+G:\ROYcms!NT V2.0\ROYcms\FCKeditor.Net_2.6.3\bin\Debug\2.0\FredCK.FCKeditorV2.pdb
+G:\ROYcms!NT V2.0\ROYcms\FCKeditor.Net_2.6.3\obj\Debug\ResolveAssemblyReference.cache
+G:\ROYcms!NT V2.0\ROYcms\FCKeditor.Net_2.6.3\obj\Debug\FredCK.FCKeditorV2.dll
+G:\ROYcms!NT V2.0\ROYcms\FCKeditor.Net_2.6.3\obj\Debug\FredCK.FCKeditorV2.pdb
+C:\Documents and Settings\Administrator\桌面\roycms\ROYcms\FCKeditor.Net_2.6.3\bin\Debug\2.0\FredCK.FCKeditorV2.dll
+C:\Documents and Settings\Administrator\桌面\roycms\ROYcms\FCKeditor.Net_2.6.3\bin\Debug\2.0\FredCK.FCKeditorV2.pdb
+C:\Documents and Settings\Administrator\桌面\roycms\ROYcms\FCKeditor.Net_2.6.3\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\roycms\ROYcms\FCKeditor.Net_2.6.3\obj\Debug\FredCK.FCKeditorV2.dll
+C:\Documents and Settings\Administrator\桌面\roycms\ROYcms\FCKeditor.Net_2.6.3\obj\Debug\FredCK.FCKeditorV2.pdb
+G:\ROYcms!NT\ROYcms\FCKeditor.Net_2.6.3\bin\Debug\2.0\FredCK.FCKeditorV2.dll
+G:\ROYcms!NT\ROYcms\FCKeditor.Net_2.6.3\bin\Debug\2.0\FredCK.FCKeditorV2.pdb
+G:\ROYcms!NT\ROYcms\FCKeditor.Net_2.6.3\obj\Debug\ResolveAssemblyReference.cache
+G:\ROYcms!NT\ROYcms\FCKeditor.Net_2.6.3\obj\Debug\FredCK.FCKeditorV2.dll
+G:\ROYcms!NT\ROYcms\FCKeditor.Net_2.6.3\obj\Debug\FredCK.FCKeditorV2.pdb

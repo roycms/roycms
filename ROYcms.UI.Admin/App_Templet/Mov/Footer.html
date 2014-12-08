@@ -1,0 +1,26 @@
+﻿<!-- footer --> 
+<div class="footer">
+  <div class="layout"> <a href="#" target="_blank">关于第一学区</a>| <a href="#" target="_blank">服务声明</a>| <a href="#" target="_blank">加入合作</a>| <a href="#" target="_blank">联系我们</a>| <a href="#" target="_blank">文章投稿</a>| <a href="#" target="_blank">网站地图</a><br>
+    Copyright &copy; 2005-2013 北京中科朗杰信息技术有限公司 版权所有 侵权必究
+<br>
+    京ICP备10006505号，京公网安备110102004966-2
+  </div>
+</div>
+<script type="text/javascript">
+(function() {
+    var $TopTxt = "返回顶部", $backToTopEle = $('<div class="backToTop"></div>').appendTo($("body"))
+        .text($TopTxt).attr("title", $TopTxt).click(function() {
+            $("html, body").animate({ scrollTop: 0 }, 120);
+    }), $backToTopFun = function() {
+        var st = $(document).scrollTop(), winh = $(window).height();
+        (st > 0)? $backToTopEle.show(): $backToTopEle.hide();
+        //IE6下的定位
+        if (!window.XMLHttpRequest) {
+            $backToTopEle.css("top", st + winh - 166);
+        }
+    };
+    $(window).bind("scroll", $backToTopFun);
+    $(function() { $backToTopFun(); });
+})();
+</script> 
+<!-- footer End -->

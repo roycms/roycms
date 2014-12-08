@@ -1,0 +1,26 @@
+G:\ROYcms!NT V2.0\ROYcms.Ask\bin\Debug\ROYcms.Ask.dll
+G:\ROYcms!NT V2.0\ROYcms.Ask\bin\Debug\ROYcms.Ask.pdb
+G:\ROYcms!NT V2.0\ROYcms.Ask\bin\Debug\ROYcms.Common.dll
+G:\ROYcms!NT V2.0\ROYcms.Ask\bin\Debug\ROYcms.Config.dll
+G:\ROYcms!NT V2.0\ROYcms.Ask\bin\Debug\ROYcms.DB.dll
+G:\ROYcms!NT V2.0\ROYcms.Ask\bin\Debug\ICSharpCode.SharpZipLib.dll
+G:\ROYcms!NT V2.0\ROYcms.Ask\bin\Debug\ROYcms.Common.pdb
+G:\ROYcms!NT V2.0\ROYcms.Ask\bin\Debug\ROYcms.DB.pdb
+G:\ROYcms!NT V2.0\ROYcms.Ask\bin\Debug\ROYcms.DB.xml
+G:\ROYcms!NT V2.0\ROYcms.Ask\bin\Debug\ROYcms.Config.pdb
+G:\ROYcms!NT V2.0\ROYcms.Ask\obj\Debug\ResolveAssemblyReference.cache
+G:\ROYcms!NT V2.0\ROYcms.Ask\obj\Debug\ROYcms.Ask.dll
+G:\ROYcms!NT V2.0\ROYcms.Ask\obj\Debug\ROYcms.Ask.pdb
+G:\ROYcms!NT\ROYcms.Ask\bin\Debug\ROYcms.Ask.dll
+G:\ROYcms!NT\ROYcms.Ask\bin\Debug\ROYcms.Ask.pdb
+G:\ROYcms!NT\ROYcms.Ask\bin\Debug\ROYcms.Common.dll
+G:\ROYcms!NT\ROYcms.Ask\bin\Debug\ROYcms.Config.dll
+G:\ROYcms!NT\ROYcms.Ask\bin\Debug\ROYcms.DB.dll
+G:\ROYcms!NT\ROYcms.Ask\bin\Debug\ICSharpCode.SharpZipLib.dll
+G:\ROYcms!NT\ROYcms.Ask\bin\Debug\ROYcms.Common.pdb
+G:\ROYcms!NT\ROYcms.Ask\bin\Debug\ROYcms.DB.pdb
+G:\ROYcms!NT\ROYcms.Ask\bin\Debug\ROYcms.DB.xml
+G:\ROYcms!NT\ROYcms.Ask\bin\Debug\ROYcms.Config.pdb
+G:\ROYcms!NT\ROYcms.Ask\obj\Debug\ResolveAssemblyReference.cache
+G:\ROYcms!NT\ROYcms.Ask\obj\Debug\ROYcms.Ask.dll
+G:\ROYcms!NT\ROYcms.Ask\obj\Debug\ROYcms.Ask.pdb

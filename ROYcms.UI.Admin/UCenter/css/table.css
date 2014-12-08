@@ -1,0 +1,19 @@
+@charset "utf-8";
+/*ROYcms_table
+updatetime:2009.12.14
+editor:Jackying
+QQ: 270863798
+E-mail: admin@anan360.cn
+Website: http://www.roycms.cn    http://www.web1.net.cn	http://www.anan360.cn*/
+/*===========================版权所有==============================================*/
+table td,table th{ font-size:12px;}
+/*表格单像素边框样式*/
+table.border_ccc{border-collapse:collapse;}
+table.border_ccc td{border:#ccc solid 1px;}
+
+/*带背景的表格*/
+table.bg_1{border-collapse:collapse;}
+table.bg_1 td{border:#fff solid 2px;padding:1px 5px;}
+table.bg_1 th{background-color:#E2EAF8; border:#fff solid 2px; height:24px; line-height:24px; padding:0 5px;}
+table.bg_1 tr{background-color: #EEFAFF;}
+table.bg_1 tr:hover{ background-color:#E8F5FE;}

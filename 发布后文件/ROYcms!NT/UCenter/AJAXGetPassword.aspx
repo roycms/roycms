@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true"  EnableViewStateMac="false" CodeBehind="AJAXGetPassword.aspx.cs" Inherits="ROYcms.UI.Admin.UCenter.AJAXGetPassword" %>

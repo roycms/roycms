@@ -1,0 +1,16 @@
+@charset "utf-8";
+/*ROYcms_Basic
+updatetime:2009.12.14
+editor:Jackying
+QQ: 270863798
+E-mail: admin@anan360.cn
+Website: http://www.roycms.cn    http://www.web1.net.cn		http://www.anan360.cn*/
+/*===========================版权所有==============================================*/
+/*全局样式*/
+*{margin:0; padding:0;}
+body,td,th{font-family: 'Microsoft Yahei', Tahoma, 'Segoe UI', Arial, Simsun, sans-serif;font-size: 14px; line-height:24px; margin:0 5px; color:#333;}
+h1,h2,h3,h4,h5,h6{font-size:14px; line-height:24px; margin:0; padding:0;}
+ul{list-style-type: none;}
+img{ border-width:0;}
+select,input{vertical-align:middle;}
+textarea{vertical-align:top;}

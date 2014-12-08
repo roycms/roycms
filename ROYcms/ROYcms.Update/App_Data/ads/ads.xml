@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+  <Ad>
+    <ImageUrl>Images/Mini_Breakfast_004.png</ImageUrl>
+    <NavigateUrl>http://www.roycms.cn</NavigateUrl>
+    <AlternateText>最佳ASP.NET开源CMS</AlternateText>
+    <Keyword>最佳ASP.NET开源CMS</Keyword>
+    <Impressions>1</Impressions>
+  </Ad>
+  <Ad>
+    <ImageUrl>Images/shoppingbags_001.png</ImageUrl>
+    <NavigateUrl>http://www.anan360.cn</NavigateUrl>
+    <AlternateText>anan360</AlternateText>
+    <Keyword>anan360</Keyword>
+    <Impressions>1</Impressions>
+  </Ad>
+  <Ad>
+    <ImageUrl>Images/shoppingbags_002.png</ImageUrl>
+    <NavigateUrl>http://www.roycms.cn</NavigateUrl>
+    <AlternateText>最佳ASP.NET开源CMS</AlternateText>
+    <Keyword>最佳ASP.NET开源CMS</Keyword>
+    <Impressions>1</Impressions>
+  </Ad>
+  <Ad>
+    <ImageUrl>Images/shoppingbags_003.png</ImageUrl>
+    <NavigateUrl>http://www.roycms.cn</NavigateUrl>
+    <AlternateText>最佳ASP.NET开源CMS</AlternateText>
+    <Keyword>最佳ASP.NET开源CMS</Keyword>
+    <Impressions>1</Impressions>
+  </Ad>
+  <Ad>
+    <ImageUrl>Images/Sleek_XP_055.png</ImageUrl>
+    <NavigateUrl>http://www.roycms.cn</NavigateUrl>
+    <AlternateText>最佳ASP.NET开源CMS</AlternateText>
+    <Keyword>最佳ASP.NET开源CMS</Keyword>
+    <Impressions>1</Impressions>
+  </Ad>
+</Advertisements>

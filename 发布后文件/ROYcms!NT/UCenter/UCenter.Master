@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="UCenter.master.cs" Inherits="ROYcms.UI.Admin.UCenter.UCenter" %>
+<%@ Register src="UCfooter.ascx" tagname="UCfooter" tagprefix="uc1" %>
+<%@ Register src="UCHeader.ascx" tagname="UCHeader" tagprefix="uc2" %>
+<%@ Register src="UCLeft.ascx" tagname="UCLeft" tagprefix="uc3" %>
+<%@ Register src="UCRight.ascx" tagname="UCRight" tagprefix="uc4" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title></title>
+    <link href="/administrator/css/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link href="/administrator/css/common.css" rel="stylesheet" type="text/css" />
+    <link href="/administrator/css/boxy.css" rel="stylesheet" type="text/css" />
+    <link href="/administrator/css/tabs.css" rel="stylesheet" type="text/css">
+    <link href="css/ROYcmsUcenter.css" rel="stylesheet" type="text/css" />
+    <script language="JavaScript" type="text/JavaScript" src="/administrator/js/common.js"></script>
+    <script language="JavaScript" type="text/JavaScript" src="/administrator/js/jquery-1.6.4.min.js"></script>
+    <script language="JavaScript" type="text/JavaScript" src="/administrator/js/jquery-ui.js"></script>
+    <script language="JavaScript" type="text/JavaScript" src="/administrator/js/formValidatorRegex.js"></script>
+    <script language="JavaScript"  type="text/javascript" src="/administrator/js/jquery.boxy.js"></script> 
+    <script language="JavaScript" type="text/JavaScript" src="/administrator/js/tabs.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("a[rel=facebox]").boxy();
+        });
+        function PopoMain() { }; // 杜耀辉 2012/11/19
+    </script>
+</head>
+<body>
+<form id="MainFrom" runat="server" >
+<div id="wrap">  
+<uc2:UCHeader ID="UCHeader1" runat="server" />
+<div class="box">
+<uc4:UCRight ID="UCRight1" runat="server" />
+<uc3:UCLeft ID="UCLeft1" runat="server" />
+  <div id="UCmain">
+	<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+	</asp:ContentPlaceHolder>
+  </div>
+</div>
+<uc1:UCfooter ID="UCfooter1" runat="server" />
+</div>  
+</form>
+</body>
+</html>

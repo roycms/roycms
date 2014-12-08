@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link href="/Administrator/Bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="/Administrator/Bootstrap/css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+<script src="/Administrator/Bootstrap/jquery.min.js" ></script>
+<script src="/Administrator/Bootstrap/bootstrap.js"></script>
+<script src="/Administrator/js/formValidatorRegex.js"></script>
+<script src="/Administrator/js/Login.js"></script>
+<title></title>
+</head>
+<body>
+<form id="apnetFrom" runat="server" class="form-horizontal">
+  <div class="container" style="margin-top:10px;">
+  <fieldset>
+   <legend><a href="/">首页</a> &gt;登录<a href="/ucenter/reg.html"> 没有账户注册?</a></legend>
+    <div class="alert  alert-error" style="display:none"> 
+      <!-- <a href="#" data-dismiss="alert" class="close">×</a>-->
+      <p> 账户登录错误了！你可选择注册时的用户名和邮箱进行登录” </p>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="inputEmail">Email/用户名</label>
+      <div class="controls">
+        <input type="hidden" id="k" name="k" value="nonull">
+        <input type="text" id="username" name="username" placeholder="Email/用户">
+        <a href="getpassword.aspx"> 忘记密码?</a> </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="inputPassword">密码</label>
+      <div class="controls">
+        <input type="password" id="password" name="password" placeholder="密码">
+      </div>
+    </div>
+    <div class="control-group">
+      <div class="controls">
+        <button type="button" class="btn" id="login_bt">登入</button>
+      </div>
+    </div>
+  </fieldset>
+  </div>
+</form>
+</body>
+</html>

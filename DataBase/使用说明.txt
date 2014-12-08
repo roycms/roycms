@@ -1,0 +1,12 @@
+ezdml_setup.exe 是表结构设计器(EZDML) V1.93 
+
+这是ROYcms团队一直用的一个数据库建表的小软件，可快速的进行数据库表结构设计，建立数据模型。
+类似大家常用的数据库建模工具如PowerDesigner、ERWIN、ER-Studio和Rational-Rose等的超级精简版。
+
+ROYcms V2.8.dmx 是用表结构设计器(EZDML)才能打开的数据结构文件包含了ROYcms的详细数据结构以及描述。
+你可以用表结构设计器(EZDML)打开 ROYcms V2.8.dmx 然后连接远程或者本地的SQLserver去生成数据库。
+
+然后修改webconfig内的数据库连接字符串，获得加密串地址 http://www.roycms.cn/app_api/md5.aspx
+
+
+

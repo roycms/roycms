@@ -1,0 +1,864 @@
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_Ad_Msg]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_Ad_Msg]
+
+CREATE TABLE [ROYcms_Ad_Msg] (
+[id] [int]  IDENTITY (1, 1)  NOT NULL,
+[sid] [int]  NULL,
+[adname] [varchar]  (50) NULL,
+[adpic] [varchar]  (300) NULL,
+[adurl] [varchar]  (300) NULL,
+[adtype] [int]  NULL DEFAULT (0),
+[adstop] [int]  NULL DEFAULT (0),
+[adwidth] [int]  NULL,
+[adheight] [int]  NULL,
+[adcreattime] [datetime]  NULL DEFAULT (getdate()),
+[adendtime] [datetime]  NULL,
+[adcount] [int]  NULL DEFAULT (1),
+[adjs] [varchar]  (200) NULL)
+
+ALTER TABLE [ROYcms_Ad_Msg] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_Ad_Msg] PRIMARY KEY  NONCLUSTERED ( [id] )
+SET IDENTITY_INSERT [ROYcms_Ad_Msg] ON
+
+
+SET IDENTITY_INSERT [ROYcms_Ad_Msg] OFF
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_Ad_Sort]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_Ad_Sort]
+
+CREATE TABLE [ROYcms_Ad_Sort] (
+[id] [int]  IDENTITY (1, 1)  NOT NULL,
+[sortname] [varchar]  (50) NULL)
+
+ALTER TABLE [ROYcms_Ad_Sort] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_Ad_Sort] PRIMARY KEY  NONCLUSTERED ( [id] )
+SET IDENTITY_INSERT [ROYcms_Ad_Sort] ON
+
+
+SET IDENTITY_INSERT [ROYcms_Ad_Sort] OFF
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_ads]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_ads]
+
+CREATE TABLE [ROYcms_ads] (
+[id] [int]  IDENTITY (1, 1)  NOT NULL,
+[ads_class] [nchar]  (10) NULL,
+[ads_name] [nchar]  (30) NULL,
+[ads_url] [nchar]  (30) NULL,
+[ads_with] [int]  NULL,
+[ads_height] [int]  NULL,
+[ads_goto_url] [nchar]  (30) NULL,
+[time_s_e] [nchar]  (50) NULL,
+[k] [int]  NULL)
+
+ALTER TABLE [ROYcms_ads] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_ads] PRIMARY KEY  NONCLUSTERED ( [id] )
+SET IDENTITY_INSERT [ROYcms_ads] ON
+
+
+SET IDENTITY_INSERT [ROYcms_ads] OFF
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_Appendix]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_Appendix]
+
+CREATE TABLE [ROYcms_Appendix] (
+[id] [int]  NOT NULL)
+
+ALTER TABLE [ROYcms_Appendix] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_Appendix] PRIMARY KEY  NONCLUSTERED ( [id] )
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_blog]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_blog]
+
+CREATE TABLE [ROYcms_blog] (
+[id] [int]  IDENTITY (1, 1)  NOT NULL,
+[user_id] [int]  NULL,
+[tag] [nvarchar]  (50) NULL,
+[Title] [nvarchar]  (100) NULL,
+[content] [text]  NULL,
+[Time] [datetime]  NULL DEFAULT (getdate()))
+
+ALTER TABLE [ROYcms_blog] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_blog] PRIMARY KEY  NONCLUSTERED ( [id] )
+SET IDENTITY_INSERT [ROYcms_blog] ON
+
+
+SET IDENTITY_INSERT [ROYcms_blog] OFF
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_class]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_class]
+
+CREATE TABLE [ROYcms_class] (
+[Id] [int]  IDENTITY (1, 1)  NOT NULL,
+[ClassId] [nvarchar]  (30) NULL,
+[ClassName] [nvarchar]  (50) NULL,
+[ClassList] [nvarchar]  (300) NULL,
+[ClassPre] [nvarchar]  (50) NULL,
+[ClassTj] [int]  NULL,
+[ClassOrder] [int]  NULL DEFAULT (0),
+[ClassKind] [int]  NULL DEFAULT (0),
+[ContentType] [int]  NULL,
+[FilePath] [nvarchar]  (200) NULL,
+[ListType] [int]  NULL,
+[GoType] [int]  NULL,
+[DefaultFile] [nvarchar]  (50) NULL,
+[ColumnsType] [nvarchar]  (50) NULL,
+[WebsiteUrl] [nvarchar]  (50) NULL,
+[TemplateIndex] [nvarchar]  (50) NULL,
+[TemplateList] [nvarchar]  (50) NULL,
+[TemplateShow] [nvarchar]  (50) NULL,
+[ListeRules] [nvarchar]  (50) NULL,
+[ShowRules] [nvarchar]  (50) NULL,
+[keyword] [nvarchar]  (100) NULL,
+[Description] [nvarchar]  (100) NULL,
+[contents] [nvarchar]  (3000) NULL)
+
+ALTER TABLE [ROYcms_class] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_class] PRIMARY KEY  NONCLUSTERED ( [Id] )
+SET IDENTITY_INSERT [ROYcms_class] ON
+
+
+SET IDENTITY_INSERT [ROYcms_class] OFF
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_Class_News]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_Class_News]
+
+CREATE TABLE [ROYcms_Class_News] (
+[id] [int]  IDENTITY (1, 1)  NOT NULL,
+[news_id] [int]  NULL,
+[Class] [int]  NULL,
+[class_id] [nvarchar]  (50) NULL,
+[class_list] [nvarchar]  (300) NULL,
+[Time] [datetime]  NULL DEFAULT (getdate()),
+[GUID] [varchar]  (50) NULL)
+
+ALTER TABLE [ROYcms_Class_News] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_Class_News] PRIMARY KEY  NONCLUSTERED ( [id] )
+SET IDENTITY_INSERT [ROYcms_Class_News] ON
+
+
+SET IDENTITY_INSERT [ROYcms_Class_News] OFF
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_Class_UGroup]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_Class_UGroup]
+
+CREATE TABLE [ROYcms_Class_UGroup] (
+[id] [int]  IDENTITY (1, 1)  NOT NULL,
+[Class_id] [int]  NULL,
+[UGroup_id] [int]  NULL,
+[User_id] [int]  NULL,
+[Time] [datetime]  NULL DEFAULT (getdate()))
+
+ALTER TABLE [ROYcms_Class_UGroup] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_Class_UGroup] PRIMARY KEY  NONCLUSTERED ( [id] )
+SET IDENTITY_INSERT [ROYcms_Class_UGroup] ON
+
+
+SET IDENTITY_INSERT [ROYcms_Class_UGroup] OFF
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_Community]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_Community]
+
+CREATE TABLE [ROYcms_Community] (
+[bh] [int]  IDENTITY (1, 1)  NOT NULL,
+[title] [varchar]  (100) NULL,
+[content] [text]  NULL,
+[tag] [varchar]  (100) NULL,
+[user_id] [varchar]  (50) NULL,
+[type_id] [varchar]  (50) NULL,
+[hits] [int]  NULL,
+[star_time] [datetime]  NULL,
+[end_time] [datetime]  NULL,
+[ip] [varchar]  (100) NULL,
+[switchs] [int]  NULL)
+
+ALTER TABLE [ROYcms_Community] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_Community] PRIMARY KEY  NONCLUSTERED ( [bh] )
+SET IDENTITY_INSERT [ROYcms_Community] ON
+
+
+SET IDENTITY_INSERT [ROYcms_Community] OFF
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_Community_result]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_Community_result]
+
+CREATE TABLE [ROYcms_Community_result] (
+[bh] [int]  IDENTITY (1, 1)  NOT NULL,
+[Community_id] [int]  NULL,
+[title] [nvarchar]  (50) NULL,
+[content] [text]  NULL,
+[user_id] [nvarchar]  (50) NULL,
+[ip] [nvarchar]  (50) NULL,
+[Time] [datetime]  NULL)
+
+ALTER TABLE [ROYcms_Community_result] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_Community_result] PRIMARY KEY  NONCLUSTERED ( [bh] )
+SET IDENTITY_INSERT [ROYcms_Community_result] ON
+
+
+SET IDENTITY_INSERT [ROYcms_Community_result] OFF
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_CustomTag]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_CustomTag]
+
+CREATE TABLE [ROYcms_CustomTag] (
+[id] [int]  IDENTITY (1, 1)  NOT NULL,
+[TAG] [nchar]  (50) NULL,
+[TAG_name] [nchar]  (50) NULL,
+[TAG_content] [nchar]  (500) NULL,
+[time] [datetime]  NULL DEFAULT (getdate()))
+
+ALTER TABLE [ROYcms_CustomTag] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_CustomTag] PRIMARY KEY  NONCLUSTERED ( [id] )
+SET IDENTITY_INSERT [ROYcms_CustomTag] ON
+
+
+SET IDENTITY_INSERT [ROYcms_CustomTag] OFF
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_Dissertation]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_Dissertation]
+
+CREATE TABLE [ROYcms_Dissertation] (
+[id] [int]  IDENTITY (1, 1)  NOT NULL,
+[dissertation_name] [nchar]  (10) NULL,
+[dissertation_content] [char]  (5000) NULL,
+[templet_url] [nchar]  (100) NULL,
+[time] [datetime]  NULL DEFAULT (getdate()))
+
+ALTER TABLE [ROYcms_Dissertation] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_Dissertation] PRIMARY KEY  NONCLUSTERED ( [id] )
+SET IDENTITY_INSERT [ROYcms_Dissertation] ON
+
+
+SET IDENTITY_INSERT [ROYcms_Dissertation] OFF
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_Enterprise]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_Enterprise]
+
+CREATE TABLE [ROYcms_Enterprise] (
+[bh] [int]  IDENTITY (1, 1)  NOT NULL,
+[user_id] [int]  NULL,
+[keyword] [nvarchar]  (100) NULL,
+[description] [nvarchar]  (800) NULL,
+[gs_name] [nvarchar]  (50) NULL,
+[gs_tel] [nvarchar]  (50) NULL,
+[gs_address] [nvarchar]  (50) NULL,
+[gs_web] [nvarchar]  (50) NULL,
+[gs_email] [nvarchar]  (50) NULL,
+[classname] [int]  NULL,
+[huangye_classname] [int]  NULL,
+[introduces] [text]  NULL,
+[business_scope] [text]  NULL,
+[intelligence_honor] [text]  NULL,
+[contacts_us] [text]  NULL,
+[enterprise_culture] [text]  NULL,
+[marketing_network] [text]  NULL,
+[other_1] [text]  NULL,
+[other_2] [text]  NULL,
+[other_3] [text]  NULL,
+[other_4] [text]  NULL,
+[time] [datetime]  NULL DEFAULT (getdate()),
+[switchs] [int]  NULL DEFAULT (0),
+[template_id] [int]  NULL)
+
+ALTER TABLE [ROYcms_Enterprise] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_Enterprise] PRIMARY KEY  NONCLUSTERED ( [bh] )
+SET IDENTITY_INSERT [ROYcms_Enterprise] ON
+
+
+SET IDENTITY_INSERT [ROYcms_Enterprise] OFF
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_Flash]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_Flash]
+
+CREATE TABLE [ROYcms_Flash] (
+[id] [int]  IDENTITY (1, 1)  NOT NULL,
+[User_Id] [int]  NULL,
+[title] [nchar]  (500) NULL,
+[Time] [datetime]  NULL DEFAULT (getdate()))
+
+ALTER TABLE [ROYcms_Flash] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_Flash] PRIMARY KEY  NONCLUSTERED ( [id] )
+SET IDENTITY_INSERT [ROYcms_Flash] ON
+
+
+SET IDENTITY_INSERT [ROYcms_Flash] OFF
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_Form]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_Form]
+
+CREATE TABLE [ROYcms_Form] (
+[id] [int]  IDENTITY (1, 1)  NOT NULL,
+[title] [nvarchar]  (100) NULL,
+[zhaiyao] [nvarchar]  (200) NULL,
+[classname] [int]  NULL,
+[ClassKind_id] [int]  NULL,
+[Class_id] [int]  NULL,
+[SetFrom] [nvarchar]  (200) NULL,
+[Path] [nvarchar]  (100) NULL,
+[Contents] [text]  NULL,
+[Time] [datetime]  NULL DEFAULT (getdate()),
+[GUID] [nvarchar]  (100) NULL)
+
+ALTER TABLE [ROYcms_Form] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_Form] PRIMARY KEY  NONCLUSTERED ( [id] )
+SET IDENTITY_INSERT [ROYcms_Form] ON
+
+
+
+SET IDENTITY_INSERT [ROYcms_Form] OFF
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_Form_class_classkind]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_Form_class_classkind]
+
+CREATE TABLE [ROYcms_Form_class_classkind] (
+[id] [int]  IDENTITY (1, 1)  NOT NULL,
+[From_id] [int]  NULL,
+[From_GUID] [nvarchar]  (50) NULL,
+[class_id] [int]  NULL,
+[classkind_id] [int]  NULL,
+[Time] [datetime]  NULL DEFAULT (getdate()))
+
+ALTER TABLE [ROYcms_Form_class_classkind] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_Form_class_classkind] PRIMARY KEY  NONCLUSTERED ( [id] )
+SET IDENTITY_INSERT [ROYcms_Form_class_classkind] ON
+
+
+SET IDENTITY_INSERT [ROYcms_Form_class_classkind] OFF
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_Log]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_Log]
+
+CREATE TABLE [ROYcms_Log] (
+[id] [nchar]  (10) NULL)
+
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_Message]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_Message]
+
+CREATE TABLE [ROYcms_Message] (
+[id] [int]  IDENTITY (1, 1)  NOT NULL,
+[title] [nchar]  (100) NULL,
+[contents] [nchar]  (800) NULL,
+[Time] [datetime]  NULL DEFAULT (getdate()))
+
+ALTER TABLE [ROYcms_Message] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_Message] PRIMARY KEY  NONCLUSTERED ( [id] )
+SET IDENTITY_INSERT [ROYcms_Message] ON
+
+
+SET IDENTITY_INSERT [ROYcms_Message] OFF
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_New_Ratings]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_New_Ratings]
+
+CREATE TABLE [ROYcms_New_Ratings] (
+[id] [int]  IDENTITY (1, 1)  NOT NULL,
+[new_id] [int]  NULL,
+[star1] [int]  NULL,
+[star2] [int]  NULL,
+[star3] [int]  NULL,
+[star4] [int]  NULL,
+[star5] [int]  NULL)
+
+ALTER TABLE [ROYcms_New_Ratings] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_New_Ratings] PRIMARY KEY  NONCLUSTERED ( [id] )
+SET IDENTITY_INSERT [ROYcms_New_Ratings] ON
+
+
+SET IDENTITY_INSERT [ROYcms_New_Ratings] OFF
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_New_User]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_New_User]
+
+CREATE TABLE [ROYcms_New_User] (
+[id] [int]  IDENTITY (1, 1)  NOT NULL,
+[New_id] [int]  NULL,
+[User_id] [int]  NULL,
+[Time] [datetime]  NULL DEFAULT (getdate()))
+
+ALTER TABLE [ROYcms_New_User] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_New_User] PRIMARY KEY  NONCLUSTERED ( [id] )
+SET IDENTITY_INSERT [ROYcms_New_User] ON
+
+
+SET IDENTITY_INSERT [ROYcms_New_User] OFF
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_news]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_news]
+
+CREATE TABLE [ROYcms_news] (
+[bh] [int]  IDENTITY (1, 1)  NOT NULL,
+[pic] [varchar]  (500) NULL,
+[title] [varchar]  (100) NULL,
+[keyword] [varchar]  (100) NULL,
+[zhaiyao] [varchar]  (1000) NULL,
+[classname] [int]  NULL,
+[contents] [text]  NULL,
+[jumpurl] [varchar]  (100) NULL,
+[infor] [varchar]  (50) NULL,
+[author] [varchar]  (50) NULL,
+[url] [varchar]  (100) NULL,
+[ding] [int]  NULL DEFAULT (0),
+[dig] [int]  NULL DEFAULT (0),
+[tag] [varchar]  (100) NULL,
+[hits] [int]  NULL DEFAULT (0),
+[time] [datetime]  NULL DEFAULT (getdate()),
+[orders] [int]  NULL,
+[tuijian] [int]  NULL,
+[switchs] [int]  NULL,
+[link] [varchar]  (500) NULL,
+[type] [varchar]  (50) NULL DEFAULT ('news'),
+[GUID] [varchar]  (50) NULL)
+
+ALTER TABLE [ROYcms_news] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_news] PRIMARY KEY  NONCLUSTERED ( [bh] )
+SET IDENTITY_INSERT [ROYcms_news] ON
+
+
+SET IDENTITY_INSERT [ROYcms_news] OFF
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_News_Group]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_News_Group]
+
+CREATE TABLE [ROYcms_News_Group] (
+[id] [int]  IDENTITY (1, 1)  NOT NULL,
+[index_news_id] [int]  NULL,
+[news_id] [int]  NULL,
+[Time] [datetime]  NULL DEFAULT (getdate()))
+
+ALTER TABLE [ROYcms_News_Group] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_News_Group] PRIMARY KEY  NONCLUSTERED ( [id] )
+SET IDENTITY_INSERT [ROYcms_News_Group] ON
+
+SET IDENTITY_INSERT [ROYcms_News_Group] OFF
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_Objet]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_Objet]
+
+CREATE TABLE [ROYcms_Objet] (
+[id] [int]  IDENTITY (1, 1)  NOT NULL,
+[ClassKind] [int]  NULL,
+[Title] [varchar]  (50) NULL,
+[zhaiyao] [varchar]  (50) NULL,
+[logo] [varchar]  (50) NULL,
+[AppendixConfig] [varchar]  (50) NULL,
+[AppendixPath] [varchar]  (50) NULL,
+[Visible] [int]  NULL,
+[Role] [varchar]  (50) NULL,
+[Time] [datetime]  NULL DEFAULT (getdate()))
+
+ALTER TABLE [ROYcms_Objet] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_Objet] PRIMARY KEY  NONCLUSTERED ( [id] )
+SET IDENTITY_INSERT [ROYcms_Objet] ON
+
+
+SET IDENTITY_INSERT [ROYcms_Objet] OFF
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_Organization]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_Organization]
+
+CREATE TABLE [ROYcms_Organization] (
+[id] [int]  IDENTITY (1, 1)  NOT NULL,
+[userID] [int]  NULL,
+[name] [varchar]  (50) NULL,
+[classname] [int]  NULL,
+[keyword] [varchar]  (100) NULL,
+[zhaiyao] [varchar]  (1000) NULL,
+[contents] [text]  NULL,
+[tag] [varchar]  (100) NULL,
+[hits] [int]  NULL DEFAULT (0),
+[orders] [int]  NULL,
+[tuijian] [int]  NULL,
+[switchs] [int]  NULL,
+[type] [varchar]  (50) NULL DEFAULT ('news'),
+[Time] [nchar]  (10) NULL,
+[GUID] [varchar]  (50) NULL)
+
+ALTER TABLE [ROYcms_Organization] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_Organization] PRIMARY KEY  NONCLUSTERED ( [id] )
+SET IDENTITY_INSERT [ROYcms_Organization] ON
+
+
+SET IDENTITY_INSERT [ROYcms_Organization] OFF
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_question]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_question]
+
+CREATE TABLE [ROYcms_question] (
+[bh] [int]  IDENTITY (1, 1)  NOT NULL,
+[title] [varchar]  (100) NULL,
+[content] [text]  NULL,
+[tag] [varchar]  (100) NULL,
+[status] [int]  NULL,
+[reward] [int]  NULL,
+[user_id] [varchar]  (50) NULL,
+[type_id] [varchar]  (50) NULL,
+[hits] [int]  NULL,
+[star_time] [datetime]  NULL,
+[end_time] [datetime]  NULL,
+[ip] [varchar]  (100) NULL,
+[switchs] [int]  NULL)
+
+ALTER TABLE [ROYcms_question] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_question] PRIMARY KEY  NONCLUSTERED ( [bh] )
+SET IDENTITY_INSERT [ROYcms_question] ON
+
+
+SET IDENTITY_INSERT [ROYcms_question] OFF
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_question_result]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_question_result]
+
+CREATE TABLE [ROYcms_question_result] (
+[id] [int]  IDENTITY (1, 1)  NOT NULL,
+[question_id] [int]  NULL,
+[result_id] [int]  NULL,
+[Time] [datetime]  NULL)
+
+ALTER TABLE [ROYcms_question_result] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_question_result] PRIMARY KEY  NONCLUSTERED ( [id] )
+SET IDENTITY_INSERT [ROYcms_question_result] ON
+
+
+SET IDENTITY_INSERT [ROYcms_question_result] OFF
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_remark]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_remark]
+
+CREATE TABLE [ROYcms_remark] (
+[bh] [int]  IDENTITY (1, 1)  NOT NULL,
+[NewID] [int]  NULL,
+[userID] [int]  NOT NULL,
+[userName] [nchar]  (10) NULL,
+[contents] [nchar]  (1000) NULL,
+[Ip] [nchar]  (50) NULL,
+[Time] [datetime]  NULL)
+
+ALTER TABLE [ROYcms_remark] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_remark] PRIMARY KEY  NONCLUSTERED ( [bh] )
+SET IDENTITY_INSERT [ROYcms_remark] ON
+
+
+SET IDENTITY_INSERT [ROYcms_remark] OFF
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_result]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_result]
+
+CREATE TABLE [ROYcms_result] (
+[bh] [int]  IDENTITY (1, 1)  NOT NULL,
+[question_id] [int]  NULL,
+[content] [text]  NULL,
+[user_id] [varchar]  (50) NULL,
+[star_time] [datetime]  NULL,
+[ip] [varchar]  (100) NULL)
+
+ALTER TABLE [ROYcms_result] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_result] PRIMARY KEY  NONCLUSTERED ( [bh] )
+SET IDENTITY_INSERT [ROYcms_result] ON
+
+
+SET IDENTITY_INSERT [ROYcms_result] OFF
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_Role]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_Role]
+
+CREATE TABLE [ROYcms_Role] (
+[id] [int]  IDENTITY (1, 1)  NOT NULL,
+[name] [varchar]  (50) NULL,
+[zhaiyao] [varchar]  (100) NULL,
+[Time] [datetime]  NULL DEFAULT (getdate()),
+[GUID] [varchar]  (50) NULL)
+
+ALTER TABLE [ROYcms_Role] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_Role] PRIMARY KEY  NONCLUSTERED ( [id] )
+SET IDENTITY_INSERT [ROYcms_Role] ON
+
+
+SET IDENTITY_INSERT [ROYcms_Role] OFF
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_RolePath]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_RolePath]
+
+CREATE TABLE [ROYcms_RolePath] (
+[id] [int]  IDENTITY (1, 1)  NOT NULL,
+[RoleID] [int]  NULL,
+[path] [varchar]  (100) NULL)
+
+ALTER TABLE [ROYcms_RolePath] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_RolePath] PRIMARY KEY  NONCLUSTERED ( [id] )
+SET IDENTITY_INSERT [ROYcms_RolePath] ON
+
+
+SET IDENTITY_INSERT [ROYcms_RolePath] OFF
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_Rss]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_Rss]
+
+CREATE TABLE [ROYcms_Rss] (
+[id] [int]  IDENTITY (1, 1)  NOT NULL,
+[User_id] [int]  NULL,
+[name] [nchar]  (100) NULL,
+[zhaiyao] [nchar]  (500) NULL,
+[Encode] [nchar]  (10) NULL,
+[Url] [nchar]  (100) NULL,
+[Time] [datetime]  NULL DEFAULT (getdate()))
+
+ALTER TABLE [ROYcms_Rss] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_Rss] PRIMARY KEY  NONCLUSTERED ( [id] )
+SET IDENTITY_INSERT [ROYcms_Rss] ON
+
+
+SET IDENTITY_INSERT [ROYcms_Rss] OFF
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_Shares_News]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_Shares_News]
+
+CREATE TABLE [ROYcms_Shares_News] (
+[id] [int]  IDENTITY (1, 1)  NOT NULL,
+[news_id] [int]  NULL,
+[typename] [nvarchar]  (50) NULL,
+[Time] [datetime]  NULL DEFAULT (getdate()))
+
+ALTER TABLE [ROYcms_Shares_News] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_Shares_News] PRIMARY KEY  NONCLUSTERED ( [id] )
+SET IDENTITY_INSERT [ROYcms_Shares_News] ON
+
+
+SET IDENTITY_INSERT [ROYcms_Shares_News] OFF
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_Tag]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_Tag]
+
+CREATE TABLE [ROYcms_Tag] (
+[id] [int]  IDENTITY (1, 1)  NOT NULL,
+[Tag] [nvarchar]  (100) NULL,
+[Time] [datetime]  NULL DEFAULT (getdate()),
+[type] [nvarchar]  (50) NULL)
+
+ALTER TABLE [ROYcms_Tag] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_Tag] PRIMARY KEY  NONCLUSTERED ( [id] )
+SET IDENTITY_INSERT [ROYcms_Tag] ON
+
+
+SET IDENTITY_INSERT [ROYcms_Tag] OFF
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_template]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_template]
+
+CREATE TABLE [ROYcms_template] (
+[bh] [int]  IDENTITY (1, 1)  NOT NULL,
+[z_id] [int]  NULL,
+[name] [nvarchar]  (50) NULL,
+[tag] [nvarchar]  (500) NULL,
+[htmlcontent] [text]  NULL,
+[htmltimes] [datetime]  NULL DEFAULT (getdate()),
+[class_name] [char]  (20) NULL,
+[y] [int]  NULL)
+
+ALTER TABLE [ROYcms_template] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_template] PRIMARY KEY  NONCLUSTERED ( [bh] )
+SET IDENTITY_INSERT [ROYcms_template] ON
+
+
+
+SET IDENTITY_INSERT [ROYcms_template] OFF
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_TemplateGroup]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_TemplateGroup]
+
+CREATE TABLE [ROYcms_TemplateGroup] (
+[bh] [int]  IDENTITY (1, 1)  NOT NULL,
+[z_name] [nvarchar]  (100) NULL,
+[z_path] [nvarchar]  (100) NULL,
+[z_url] [nvarchar]  (100) NULL,
+[z_content] [nvarchar]  (500) NULL,
+[z_time] [datetime]  NULL DEFAULT (getdate()))
+
+ALTER TABLE [ROYcms_TemplateGroup] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_TemplateGroup] PRIMARY KEY  NONCLUSTERED ( [bh] )
+SET IDENTITY_INSERT [ROYcms_TemplateGroup] ON
+
+
+SET IDENTITY_INSERT [ROYcms_TemplateGroup] OFF
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_TP_date]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_TP_date]
+
+CREATE TABLE [ROYcms_TP_date] (
+[id] [int]  IDENTITY (1, 1)  NOT NULL,
+[img_path] [nchar]  (50) NULL,
+[names] [nchar]  (50) NULL,
+[characterization] [nchar]  (500) NULL,
+[link_url] [nchar]  (50) NULL,
+[ballot] [int]  NULL DEFAULT (0),
+[datetime] [datetime]  NULL DEFAULT (getdate()),
+[user_id] [int]  NULL,
+[pl_id] [int]  NULL,
+[z_id] [int]  NULL DEFAULT (0),
+[y] [int]  NULL DEFAULT (0))
+
+ALTER TABLE [ROYcms_TP_date] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_TP_date] PRIMARY KEY  NONCLUSTERED ( [id] )
+SET IDENTITY_INSERT [ROYcms_TP_date] ON
+
+
+
+SET IDENTITY_INSERT [ROYcms_TP_date] OFF
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_TP_group]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_TP_group]
+
+CREATE TABLE [ROYcms_TP_group] (
+[id] [int]  IDENTITY (1, 1)  NOT NULL,
+[group_name] [nchar]  (50) NULL,
+[group_content] [nchar]  (100) NULL,
+[group_type] [int]  NULL,
+[group_x] [int]  NULL,
+[date_time] [datetime]  NULL DEFAULT (getdate()))
+
+ALTER TABLE [ROYcms_TP_group] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_TP_group] PRIMARY KEY  NONCLUSTERED ( [id] )
+SET IDENTITY_INSERT [ROYcms_TP_group] ON
+
+
+SET IDENTITY_INSERT [ROYcms_TP_group] OFF
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_TP_ip]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_TP_ip]
+
+CREATE TABLE [ROYcms_TP_ip] (
+[id] [int]  IDENTITY (1, 1)  NOT NULL,
+[ip] [nchar]  (20) NULL,
+[datetime] [datetime]  NULL DEFAULT (getdate()),
+[tp_id] [int]  NULL,
+[computer_name] [nchar]  (10) NULL)
+
+ALTER TABLE [ROYcms_TP_ip] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_TP_ip] PRIMARY KEY  NONCLUSTERED ( [id] )
+SET IDENTITY_INSERT [ROYcms_TP_ip] ON
+
+
+SET IDENTITY_INSERT [ROYcms_TP_ip] OFF
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_TP_remark]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_TP_remark]
+
+CREATE TABLE [ROYcms_TP_remark] (
+[id] [int]  IDENTITY (1, 1)  NOT NULL,
+[pl_title] [nchar]  (30) NULL,
+[pl_content] [nchar]  (500) NULL,
+[user_id] [int]  NULL DEFAULT (0),
+[date_id] [int]  NULL DEFAULT (0),
+[z_id] [int]  NULL,
+[date_time] [datetime]  NULL DEFAULT (getdate()))
+
+ALTER TABLE [ROYcms_TP_remark] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_TP_remark] PRIMARY KEY  NONCLUSTERED ( [id] )
+SET IDENTITY_INSERT [ROYcms_TP_remark] ON
+
+SET IDENTITY_INSERT [ROYcms_TP_remark] OFF
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_UGroup]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_UGroup]
+
+CREATE TABLE [ROYcms_UGroup] (
+[id] [int]  IDENTITY (1, 1)  NOT NULL,
+[name] [varchar]  (50) NULL,
+[zhaiyao] [varchar]  (100) NULL,
+[RoleID] [varchar]  (50) NULL,
+[Time] [datetime]  NULL DEFAULT (getdate()))
+
+ALTER TABLE [ROYcms_UGroup] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_UGroup] PRIMARY KEY  NONCLUSTERED ( [id] )
+SET IDENTITY_INSERT [ROYcms_UGroup] ON
+
+INSERT [ROYcms_UGroup] ([id],[name],[zhaiyao],[RoleID],[Time]) VALUES ( 3,'科技组','234','0','2010-1-22 17:02:24')
+
+SET IDENTITY_INSERT [ROYcms_UGroup] OFF
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_UGroup_Workflow]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_UGroup_Workflow]
+
+CREATE TABLE [ROYcms_UGroup_Workflow] (
+[id] [int]  IDENTITY (1, 1)  NOT NULL,
+[UGroup_id] [int]  NULL,
+[Workflow_id] [int]  NULL,
+[Time] [datetime]  NULL DEFAULT (getdate()))
+
+ALTER TABLE [ROYcms_UGroup_Workflow] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_UGroup_Workflow] PRIMARY KEY  NONCLUSTERED ( [id] )
+SET IDENTITY_INSERT [ROYcms_UGroup_Workflow] ON
+
+INSERT [ROYcms_UGroup_Workflow] ([id],[UGroup_id],[Workflow_id],[Time]) VALUES ( 11,3,7,'2010-2-3 19:36:56')
+INSERT [ROYcms_UGroup_Workflow] ([id],[UGroup_id],[Workflow_id],[Time]) VALUES ( 12,3,8,'2010-2-3 19:44:08')
+
+SET IDENTITY_INSERT [ROYcms_UGroup_Workflow] OFF
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_UrlRewriter]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_UrlRewriter]
+
+CREATE TABLE [ROYcms_UrlRewriter] (
+[id] [int]  IDENTITY (1, 1)  NOT NULL,
+[old_url] [nvarchar]  (50) NULL,
+[new_url] [nvarchar]  (50) NULL)
+
+ALTER TABLE [ROYcms_UrlRewriter] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_UrlRewriter] PRIMARY KEY  NONCLUSTERED ( [id] )
+SET IDENTITY_INSERT [ROYcms_UrlRewriter] ON
+
+
+SET IDENTITY_INSERT [ROYcms_UrlRewriter] OFF
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_user]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_user]
+
+CREATE TABLE [ROYcms_user] (
+[bh] [int]  IDENTITY (1, 1)  NOT NULL,
+[RoleID] [varchar]  (50) NULL,
+[UgroupID] [varchar]  (50) NULL,
+[name] [varchar]  (50) NULL,
+[password] [varchar]  (50) NULL,
+[money] [int]  NULL,
+[qq] [varchar]  (50) NULL,
+[email] [varchar]  (50) NULL,
+[age] [int]  NULL,
+[login_time] [datetime]  NULL DEFAULT (getdate()),
+[sex] [varchar]  (10) NULL,
+[pic] [varchar]  (100) NULL,
+[quanxian] [varchar]  (50) NULL,
+[username] [varchar]  (50) NULL,
+[GUID] [varchar]  (50) NULL)
+
+ALTER TABLE [ROYcms_user] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_user] PRIMARY KEY  NONCLUSTERED ( [bh] )
+SET IDENTITY_INSERT [ROYcms_user] ON
+
+SET IDENTITY_INSERT [ROYcms_user] OFF
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_user_defined]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_user_defined]
+
+CREATE TABLE [ROYcms_user_defined] (
+[id] [int]  IDENTITY (1, 1)  NOT NULL,
+[user_id] [int]  NULL,
+[title] [nvarchar]  (50) NULL,
+[XmlPath] [nvarchar]  (50) NULL,
+[key_id] [nvarchar]  (50) NULL,
+[FieldGroup] [nvarchar]  (200) NULL,
+[Time] [datetime]  NULL DEFAULT (getdate()))
+
+ALTER TABLE [ROYcms_user_defined] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_user_defined] PRIMARY KEY  NONCLUSTERED ( [id] )
+SET IDENTITY_INSERT [ROYcms_user_defined] ON
+
+
+SET IDENTITY_INSERT [ROYcms_user_defined] OFF
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_WebGroupNews]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_WebGroupNews]
+
+CREATE TABLE [ROYcms_WebGroupNews] (
+[bh] [int]  IDENTITY (1, 1)  NOT NULL,
+[pic] [varchar]  (500) NULL,
+[title] [varchar]  (100) NULL,
+[keyword] [varchar]  (100) NULL,
+[zhaiyao] [varchar]  (1000) NULL,
+[classname] [int]  NULL,
+[contents] [text]  NULL,
+[jumpurl] [varchar]  (100) NULL,
+[infor] [varchar]  (50) NULL,
+[author] [varchar]  (50) NULL,
+[url] [varchar]  (100) NULL,
+[ding] [int]  NULL DEFAULT (0),
+[dig] [int]  NULL DEFAULT (0),
+[tag] [varchar]  (100) NULL,
+[hits] [int]  NULL DEFAULT (0),
+[time] [datetime]  NULL DEFAULT (getdate()),
+[orders] [int]  NULL,
+[tuijian] [int]  NULL,
+[switchs] [int]  NULL,
+[link] [varchar]  (500) NULL,
+[type] [varchar]  (50) NULL DEFAULT ('news'),
+[GUID] [varchar]  (50) NULL)
+
+ALTER TABLE [ROYcms_WebGroupNews] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_WebGroupNews] PRIMARY KEY  NONCLUSTERED ( [bh] )
+SET IDENTITY_INSERT [ROYcms_WebGroupNews] ON
+
+
+SET IDENTITY_INSERT [ROYcms_WebGroupNews] OFF
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_WebGroupSubGroup]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_WebGroupSubGroup]
+
+CREATE TABLE [ROYcms_WebGroupSubGroup] (
+[id] [int]  IDENTITY (1, 1)  NOT NULL,
+[name] [nvarchar]  (50) NULL,
+[Domain] [nvarchar]  (50) NULL,
+[KeyString] [nvarchar]  (50) NULL,
+[GUID] [nvarchar]  (50) NULL,
+[State] [int]  NULL,
+[Time] [datetime]  NULL DEFAULT (getdate()))
+
+ALTER TABLE [ROYcms_WebGroupSubGroup] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_WebGroupSubGroup] PRIMARY KEY  NONCLUSTERED ( [id] )
+SET IDENTITY_INSERT [ROYcms_WebGroupSubGroup] ON
+
+
+SET IDENTITY_INSERT [ROYcms_WebGroupSubGroup] OFF
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_Workflow]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_Workflow]
+
+CREATE TABLE [ROYcms_Workflow] (
+[id] [int]  IDENTITY (1, 1)  NOT NULL,
+[keyId] [int]  NULL,
+[name] [nchar]  (30) NULL,
+[zhaiyao] [nchar]  (80) NULL,
+[Time] [datetime]  NULL DEFAULT (getdate()))
+
+ALTER TABLE [ROYcms_Workflow] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_Workflow] PRIMARY KEY  NONCLUSTERED ( [id] )
+SET IDENTITY_INSERT [ROYcms_Workflow] ON
+
+
+SET IDENTITY_INSERT [ROYcms_Workflow] OFF
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_XML]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_XML]
+
+CREATE TABLE [ROYcms_XML] (
+[id] [int]  IDENTITY (1, 1)  NOT NULL,
+[GUID] [nvarchar]  (50) NULL,
+[Contents] [text]  NULL,
+[Time] [datetime]  NULL DEFAULT (getdate()))
+
+ALTER TABLE [ROYcms_XML] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_XML] PRIMARY KEY  NONCLUSTERED ( [id] )
+SET IDENTITY_INSERT [ROYcms_XML] ON
+
+SET IDENTITY_INSERT [ROYcms_XML] OFF
+
+if exists (select * from sysobjects where id = OBJECT_ID('[ROYcms_Admin]') and OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE [ROYcms_Admin]
+
+CREATE TABLE [ROYcms_Admin] (
+[id] [int]  IDENTITY (1, 1)  NOT NULL,
+[name] [nvarchar]  (50) NULL,
+[password] [nvarchar]  (50) NULL,
+[classkind] [nvarchar]  (500) NULL,
+[Rol] [int]  NULL)
+
+ALTER TABLE [ROYcms_Admin] WITH NOCHECK ADD  CONSTRAINT [PK_ROYcms_Admin] PRIMARY KEY  NONCLUSTERED ( [id] )
+SET IDENTITY_INSERT [ROYcms_Admin] ON
+
+INSERT [ROYcms_Admin] ([id],[name],[password],[Rol]) VALUES ( 1,'admin','~!@#$%',0)
+
+SET IDENTITY_INSERT [ROYcms_Admin] OFF

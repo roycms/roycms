@@ -1,0 +1,8 @@
+﻿.tagMenu {height:28px; line-height:28px;  position:relative; border-bottom:1px solid #999}
+.tagMenu h2 {font-size:12px; padding-left:10px;}
+.tagMenu ul {position:absolute; left:15px; bottom:-1px; height:26px;}
+ul.menu li {float:left; margin-bottom:1px; line-height:16px; height:14px; margin:5px 0 0 -1px;  text-align:center; padding:0 12px; cursor:pointer}
+ul.menu li.current {border:1px solid #999;border-width: 4px 1px medium; border-bottom:none; background:#fff; height:22px; line-height:26px; margin:0}
+
+ul.menu1 li {font-size:13px;float:left; margin-bottom:1px; line-height:22px; height:14px; margin:2px 0 0 -1px;  text-align:center; padding:0 15px; cursor:pointer}
+ul.menu1 li.current {border:1px solid #999;border-width: 4px 1px medium; border-bottom:none; background:#fff; height:22px; line-height:25px; margin:0}

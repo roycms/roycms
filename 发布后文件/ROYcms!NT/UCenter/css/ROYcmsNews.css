@@ -1,0 +1,42 @@
+﻿@charset "utf-8";
+/*ROYcms_News
+updatetime:2009.12.14
+editor:Jackying
+QQ: 270863798
+E-mail: admin@anan360.cn
+Website: http://www.roycms.cn    http://www.web1.net.cn	http://www.anan360.cn*/
+/*===========================版权所有==============================================*/
+@import url(Basic.css);/*初始化样式*/
+@import url(font.css);/*字体样式*/
+@import url(themes.css);/*主题样式*/
+#wrap{width:960px;margin:0 auto;overflow:hidden; height:100%;}
+#KJ_NewsList{margin-right:310px;}
+#KJ_NewsRight{ width:300px; float:right;}
+#KJ_NewsDetail{margin-right:310px;}
+
+/*评论*/
+.CommentTop{/*热点评论*/ padding:5px; font-size:12px;}
+.CommentTop dt{ border-bottom:dashed 1px #ccc; padding:0 5px;}
+.CommentTop dd{ margin-bottom:5px;padding:0 5px;}
+
+/*新闻详细内容*/
+.NewsDetail{/*新闻详细页*/padding:0 10px; margin-bottom:10px;}
+.NewsTitle{/*新闻标题*/text-align:center; font-size:24px; line-height:40px; border-bottom:solid 1px #ccc;}
+.NewsCopyright{/*新闻出处，版权信息*/font-size:12px; font-weight:normal; text-align:center;}
+.NewsTags{/*新闻标签*/font-size:12px;text-align:center;}
+.NewsContent{/*新闻内容*/ padding-top:15px;height:auto!important;height:100%;overflow:hidden;float:none;clear:both;font-size:14px; line-height:24px;  border-bottom:dotted 1px #ccc;}
+.NewsContent p{/*中文内容两端对齐*/text-align:justify;text-justify:inter-ideograph;text-indent:29px; margin-bottom:8px;}
+.NewsEditor{ /*新闻作者*/ text-align:right; font-size:12px;}
+
+/*发表评论*/
+.Comments{font-size:12px;}
+.Comments h1{ padding-top:10px; margin-bottom:5px;}
+.CommentsLink{float:right; font-size:12px; font-weight:normal;}
+.CommentsLink a{ font-weight:bold;}
+.Comments form{ padding-left:15px;}
+.Comments form ul li{ padding-bottom:5px;}
+.CommentsBtn{ text-align:center;}
+
+
+
+

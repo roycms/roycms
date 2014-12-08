@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='Navigation.xsl'?>
+<Root>
+  <type ID="system" path="" logo="/administrator/images/nv9.png" name="系统模块/Objet" description="系统模块" Visible="true">
+    <title url="/administrator/go/admin_objet.aspx" description="站点模块管理配置" Visible="true">站点模块管理配置</title>
+  </type>
+  <type ID="system" path="" logo="/administrator/images/nv9.png" name="系统配置/System" description="系统配置" Visible="true">
+    <title url="/administrator/config/cms_config.aspx " description="站点综合设置" Visible="true">站点综合设置</title>
+    <title url="/administrator/_center.aspx " description="站点状态总览" Visible="true">站点状态总览</title>
+    <title url="/administrator/log/index.aspx " description="系统综合日志" Visible="true">系统综合日志</title>
+    <title url="/Administrator/config/AdminPassword.aspx" description="系统管理员账户" Visible="true">系统管理员账户管理</title>
+  
+   </type>
+  <type ID="system" path="" logo="/administrator/images/nv12.png" name="静态生成" description="静态生成" Visible="true">
+    <title url="/administrator/NewHtml/index.aspx" description="静态生成HTML" Visible="true">静态生成HTML</title>
+    <title url="/administrator/CMSHelp/AdminSynonyms.aspx" description="敏感词，特殊词替换" Visible="true">敏感词，特殊词替换</title>
+    
+  </type>
+    <type ID="system" path="" logo="/administrator/images/nv12.png" name="数据模型" description="数据模型" Visible="true">
+      <title url="/administrator/model/adminmodel.aspx" description="数据模型管理" Visible="true">数据模型管理</title>
+  </type>
+  <type ID="file" path="" logo="/administrator/images/nv7.png" name="文件管理/File" description="文件管理" Visible="true">
+    <title url="/administrator/FileManager/Default.aspx " description="全站文件管理" Visible="true">全站文件管理</title>
+    <title url="/administrator/FileManager/Default.aspx " description="模板文件管理" Visible="true">模板文件管理</title>
+  </type>
+  <type ID="file" path="" logo="/administrator/images/nv6.png" name="数据库工具/Date" description="数据库工具" Visible="true">
+    <title url="/administrator/SqlManagement/Login.aspx " description="数据库登录" Visible="true">数据库登录</title>
+    <title url="/administrator/SqlManagement/DbBackup.aspx " description="数据库备份/还原" Visible="true">数据库备份/还原</title>
+
+  </type>
+  
+</Root>

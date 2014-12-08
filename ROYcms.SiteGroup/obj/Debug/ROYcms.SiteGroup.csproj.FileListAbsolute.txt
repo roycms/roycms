@@ -1,0 +1,18 @@
+G:\ROYcms!NT\ROYcms.SiteGroup\bin\ROYcms.SiteGroup.dll
+G:\ROYcms!NT\ROYcms.SiteGroup\bin\ROYcms.SiteGroup.pdb
+G:\ROYcms!NT\ROYcms.SiteGroup\obj\Debug\ResolveAssemblyReference.cache
+G:\ROYcms!NT\ROYcms.SiteGroup\obj\Debug\ROYcms.SiteGroup.dll
+G:\ROYcms!NT\ROYcms.SiteGroup\obj\Debug\ROYcms.SiteGroup.pdb
+D:\工作目录\ROYcms!NT\ROYcms.SiteGroup\bin\ROYcms.SiteGroup.dll
+D:\工作目录\ROYcms!NT\ROYcms.SiteGroup\bin\ROYcms.SiteGroup.pdb
+D:\工作目录\ROYcms!NT\ROYcms.SiteGroup\obj\Debug\ResolveAssemblyReference.cache
+D:\工作目录\ROYcms!NT\ROYcms.SiteGroup\obj\Debug\ROYcms.SiteGroup.dll
+D:\工作目录\ROYcms!NT\ROYcms.SiteGroup\obj\Debug\ROYcms.SiteGroup.pdb
+D:\工作目录\ROYcms!NT - 2012\ROYcms.SiteGroup\bin\ROYcms.SiteGroup.dll
+D:\工作目录\ROYcms!NT - 2012\ROYcms.SiteGroup\bin\ROYcms.SiteGroup.pdb
+D:\工作目录\ROYcms!NT - 2012\ROYcms.SiteGroup\obj\Debug\ROYcms.SiteGroup.dll
+D:\工作目录\ROYcms!NT - 2012\ROYcms.SiteGroup\obj\Debug\ROYcms.SiteGroup.pdb
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\ROYcms.SiteGroup\bin\ROYcms.SiteGroup.dll
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\ROYcms.SiteGroup\bin\ROYcms.SiteGroup.pdb
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\ROYcms.SiteGroup\obj\Debug\ROYcms.SiteGroup.dll
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\ROYcms.SiteGroup\obj\Debug\ROYcms.SiteGroup.pdb

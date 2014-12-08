@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AJAXIP.aspx.cs" Inherits="ROYcms.UI.Admin.App_Api.IP" %>

@@ -1,0 +1,77 @@
+@charset "utf-8";
+/*ROYcms_themes
+updatetime:2009.12.14
+editor:Jackying
+QQ: 270863798
+E-mail: admin@anan360.cn
+Website: http://www.roycms.cn    http://www.web1.net.cn		http://www.anan360.cn*/
+/*===========================版权所有==============================================*/
+
+.box{height:auto!important;height:100%;overflow:hidden;}
+.marginright10{ margin-right:10px;}
+.marginbottom10{ margin-bottom:10px;}
+.more{ float:right; font-size:12px; color:#666; font-weight:normal;}
+.more a{text-decoration:none;}
+.more a:hover{ text-decoration:underline;}
+.time{ float:right; color:#666;}
+.clean{ float:none; clear:both;}
+ul.list_1 li{overflow:hidden;text-overflow:ellipsis;white-space: nowrap;}
+.bgE5ECF9{background-color:#E5ECF9;}
+
+#SearchKuang{ margin-left:220px; font-size:14px; height:28px; line-height:28px;}
+#SearchKuang a{ margin:0 3px;}
+	.SearchBDtext{/*搜索文本框*/ font-size:14px; line-height:20px; height:20px; width:330px;}
+	.SearchBDBtn{/*搜索按钮*/ height:25px; padding-top:2px;}
+
+#Header{ height:65px;float:none; clear:both;}
+#headtop{ font-size:12px; height:24px; border-bottom: solid 1px #ccc; margin-bottom:8px;}
+#logo{float:left; width:220px; height:60px;}
+#banner{ float:left; width:740px; height:60px;}
+/*导航条样式*/
+#mainnav{ height:31px; line-height:31px; font-size:14px; color:#FFF; margin-bottom:8px; background-color:#09C;padding-left:10px;}
+#mainnav a{padding:0 5px;color:#FFF; text-decoration:none;}
+#mainnav a:hover{ text-decoration:underline;}
+
+/*页脚样式*/
+#footer,#copyright{text-align:center;line-height:28px;color:#333; font-size:12px;}
+#footer{border-bottom:solid 1px #ccc;}
+#copyright{margin-bottom:10px;}
+
+/*翻页样式*/
+.page{text-align:right; font-size:13px; color:#888; margin-bottom:10px; padding-right:10px;}
+.page a{background-color:#FFF; border:solid 1px #DBDBDB; color:#0066CC;text-decoration: none;line-height:18px;text-indent:0; padding:2px 4px 0px 4px; text-decoration:none;}
+.page a:hover{color:#fff; background-color:#0066CC;border:solid 1px #0066CC;}
+.page .click{color:#333;font-weight:700; background-color:#fff; border:solid 1px #DBDBDB;padding:2px 4px 0px 4px;}
+.page .click2{color:#CCC;background-color:#fff; border:solid 1px #DBDBDB;padding:2px 4px 0px 4px;}
+.page a.nextpage{font-weight:700;}
+
+.page2{ font-size:14px; margin-bottom:15px;}
+.page2 a{ margin:0 2px;}
+.page2 a.nextpage{ font-size:16px;}
+
+/*边框样式*/
+.biankuangccc{ border:solid 1px #ccc;}
+.biankuang95B7DE{border:solid 1px #95B7DE;}
+.biankuangEAF0F6{border:solid 1px #EAF0F6;}
+
+/*标题样式*/
+.title1{ font-size:14px; padding:0 10px; height:30px; line-height:30px; background-color:#E5ECF9;border-bottom:solid 2px #95B7DE;border-top:solid 1px #fff; padding-left:solid 1px #fff;}
+.title2{font-size:14px;background-color:#E5ECF9;height:26px; line-height:26px;padding:0 10px;}
+.title_3{font-size:14px;background-color:#e5f3fe;height:26px; line-height:26px;padding:0 10px; color:#000; border-top:solid 1px #88abcb;}
+
+/*新闻列表样式*/
+ul.NewsList{padding:0px 10px; margin:0px;}
+ul.NewsList li a{ text-decoration:none;}
+ul.NewsList li a:hover{ text-decoration:underline;}
+ul.NewsList .line{ border-bottom:dashed 1px #ccc;margin-bottom:8px; padding-bottom:8px;}
+
+.NewsList_2{padding:0px 2px;margin:0px;}
+.NewsList_2 li{ height:26px; line-height:26px; font-size:12px; border-bottom:solid 1px #E8EEF7; padding:0 10px;}
+.NewsList_2 li a{text-decoration:underline;}
+.NewsList_2 li:hover,.NewsList_2 li.iehover{ background-color:#F2F3F4;}
+
+/*左侧导航菜单*/
+ul.LeftMenu{ padding-bottom:5px;}
+ul.LeftMenu li{ display:block; line-height:24px; padding:0 2px; font-size:12px;}
+ul.LeftMenu li a{ display:block; height:24px;padding-left:20px; border-bottom:dotted 1px #ccc; text-decoration:none; color:#333;}
+ul.LeftMenu li a:hover{ border-bottom:solid 1px #0CF; background-color:#f8f8f8; font-size:13px; color:#930}

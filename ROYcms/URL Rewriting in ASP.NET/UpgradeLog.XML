@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="URLRewritingCode">
+</Property><Property Name="解决方案文件" Value="G:\ROYcms!NT\ROYcms\URL Rewriting in ASP.NET\URLRewritingCode.sln">
+</Property><Property Name="用户选项文件" Value="G:\ROYcms!NT\ROYcms\URL Rewriting in ASP.NET\URLRewritingCode.suo">
+</Property><Property Name="Date" Value="2012年12月29日">
+</Property><Property Name="Time" Value="14:20">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="URLRewritingCode.sln" Description="文件已成功备份为 G:\ROYcms!NT\ROYcms\URL Rewriting in ASP.NET\Backup\URLRewritingCode.sln">
+</Event><Event ErrorLevel="0" Project="" Source="URLRewritingCode.suo" Description="文件已成功备份为 G:\ROYcms!NT\ROYcms\URL Rewriting in ASP.NET\Backup\URLRewritingCode.suo">
+</Event><Event ErrorLevel="0" Project="URLRewriter" Source="URLRewriter\URLRewriter.csproj" Description="项目文件已成功备份为 G:\ROYcms!NT\ROYcms\URL Rewriting in ASP.NET\Backup\URLRewriter\URLRewriter.csproj">
+</Event><Event ErrorLevel="0" Project="URLRewriter" Source="URLRewriter\URLRewriter.csproj.user" Description="项目用户文件成功备份为 G:\ROYcms!NT\ROYcms\URL Rewriting in ASP.NET\Backup\URLRewriter\URLRewriter.csproj.user">
+</Event><Event ErrorLevel="0" Project="URLRewriter" Source="URLRewriter\AssemblyInfo.cs" Description="文件已成功备份为 G:\ROYcms!NT\ROYcms\URL Rewriting in ASP.NET\Backup\URLRewriter\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="URLRewriter" Source="URLRewriter\BaseModuleRewriter.cs" Description="文件已成功备份为 G:\ROYcms!NT\ROYcms\URL Rewriting in ASP.NET\Backup\URLRewriter\BaseModuleRewriter.cs">
+</Event><Event ErrorLevel="0" Project="URLRewriter" Source="URLRewriter\Config\RewriterConfigSerializerSectionHandler.cs" Description="文件已成功备份为 G:\ROYcms!NT\ROYcms\URL Rewriting in ASP.NET\Backup\URLRewriter\Config\RewriterConfigSerializerSectionHandler.cs">
+</Event><Event ErrorLevel="0" Project="URLRewriter" Source="URLRewriter\Config\RewriterConfiguration.cs" Description="文件已成功备份为 G:\ROYcms!NT\ROYcms\URL Rewriting in ASP.NET\Backup\URLRewriter\Config\RewriterConfiguration.cs">
+</Event><Event ErrorLevel="0" Project="URLRewriter" Source="URLRewriter\Config\RewriterRule.cs" Description="文件已成功备份为 G:\ROYcms!NT\ROYcms\URL Rewriting in ASP.NET\Backup\URLRewriter\Config\RewriterRule.cs">
+</Event><Event ErrorLevel="0" Project="URLRewriter" Source="URLRewriter\Config\RewriterRuleCollection.cs" Description="文件已成功备份为 G:\ROYcms!NT\ROYcms\URL Rewriting in ASP.NET\Backup\URLRewriter\Config\RewriterRuleCollection.cs">
+</Event><Event ErrorLevel="0" Project="URLRewriter" Source="URLRewriter\ModuleRewriter.cs" Description="文件已成功备份为 G:\ROYcms!NT\ROYcms\URL Rewriting in ASP.NET\Backup\URLRewriter\ModuleRewriter.cs">
+</Event><Event ErrorLevel="0" Project="URLRewriter" Source="URLRewriter\RewriterFactoryHandler.cs" Description="文件已成功备份为 G:\ROYcms!NT\ROYcms\URL Rewriting in ASP.NET\Backup\URLRewriter\RewriterFactoryHandler.cs">
+</Event><Event ErrorLevel="0" Project="URLRewriter" Source="URLRewriter\RewriterUtils.cs" Description="文件已成功备份为 G:\ROYcms!NT\ROYcms\URL Rewriting in ASP.NET\Backup\URLRewriter\RewriterUtils.cs">
+</Event><Event ErrorLevel="0" Project="URLRewriter" Source="URLRewriter\URLRewriter.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="URLRewriter" Source="URLRewriter\URLRewriter.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ActionlessForm" Source="ActionlessForm\ActionlessForm.csproj" Description="项目文件已成功备份为 G:\ROYcms!NT\ROYcms\URL Rewriting in ASP.NET\Backup\ActionlessForm\ActionlessForm.csproj">
+</Event><Event ErrorLevel="0" Project="ActionlessForm" Source="ActionlessForm\ActionlessForm.csproj.user" Description="项目用户文件成功备份为 G:\ROYcms!NT\ROYcms\URL Rewriting in ASP.NET\Backup\ActionlessForm\ActionlessForm.csproj.user">
+</Event><Event ErrorLevel="0" Project="ActionlessForm" Source="ActionlessForm\ActionlessForm.cs" Description="文件已成功备份为 G:\ROYcms!NT\ROYcms\URL Rewriting in ASP.NET\Backup\ActionlessForm\ActionlessForm.cs">
+</Event><Event ErrorLevel="0" Project="ActionlessForm" Source="ActionlessForm\AssemblyInfo.cs" Description="文件已成功备份为 G:\ROYcms!NT\ROYcms\URL Rewriting in ASP.NET\Backup\ActionlessForm\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="ActionlessForm" Source="ActionlessForm\ActionlessForm.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="ActionlessForm" Source="ActionlessForm\ActionlessForm.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="URLRewritingCode.sln" Description="成功转换解决方案">
+</Event><Event ErrorLevel="3" Project="" Source="URLRewritingCode.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="URLRewriter" Source="URLRewriter\URLRewriter.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="ActionlessForm" Source="ActionlessForm\ActionlessForm.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event></UpgradeLog>

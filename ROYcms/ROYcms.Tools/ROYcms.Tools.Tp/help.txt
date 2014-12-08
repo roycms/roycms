@@ -1,0 +1,96 @@
+﻿仿校内投票应用的ASP.NET通用投票系统
+
+截图和帮助 help.ROYcms.cn
+
+
+一、适用范围及功能
+（1）、适用于企事业单位、管理部门等在确定了某个候选的新闻、事件、活动、图片、徽标、歌曲等候选项目后，由本单位职工或其他任何人通过网络进行投票，选出其中几项的投票活评选活动。
+（2）、投票可以要求用实名，亦可用昵称、网名，依评选活动规则定。
+（3）、投票结束后，可以统计以下数据：
+<1>、被投选项目的得票排名；
+<2>、投票者投中票数排名；
+<3>、依评选活动规则可对前几名进行奖励；
+<4>、按注册者年龄段，分析统计参加投票人数；
+<5>、如果是单位组织的活动，设定了下级单位名称后，可按下级单位统计各个下级单位参加投票人数。（可依此设组织奖）
+二、管理员、网站服务器环境要求：
+（1）、本程序为全动态设计，管理员只要有基本的电脑和网络常识就可以使用。
+（2）、本程序在WindowsXP、Windows2003 IIS6.0 环境中编写；采用ASP.net2.0+sql构建；
+（3）、要求网站服务器提供ASP.net2.0 IIS6.0 环境，并具有文件写入的权限。
+三、安装说明：
+（1）、本程序直接单独配置站点运行。
+（2）、整合到现有的站点内，要求现有站点具有运行ASP.NET2.0 的环境，把web.config文件拷贝到根目录，直接运行相应文件即可，如果现有站点已经存在web.config文件可以将相应的配置节信息添加到现有的配置文件里面。
+
+
+四、web.config 配置文件说明：
+<?xml version="1.0"?>
+<configuration>
+<appSettings>
+<!-- 投票间隔时间 秒为单位 -->
+<add key="TP_time" value="1800" />
+<!-- 是否限制同一IP重复投票 -->
+<add key="TP_IP_Y" value="true" />
+<!-- 管理投票登陆密码 -->
+<add key="TP_password" value="roycms" />
+<!-- 参与投票的项目图片存放路径 -->
+<add key="TP_upfile" value="~/UP_Files/TP/" />
+<!-- 参与投票的项目图片宽和高 -->
+<add key="TP_upfile_w_h" value="180,180" />
+<!-- 版权 -->
+<add key="copyright" value="?版权所有 2009-2020年 ROYcms通用投票系统 版本V 1.0 http://www.roycms.cn" />
+</appSettings>
+<connectionStrings>
+<add name="ConnectionString" connectionString="Data Source=.\SQLEXPRESS;User ID=sa;Password=sa;Initial Catalog=ballot;Pooling=true" />
+</connectionStrings>
+<system.web>
+<compilation debug="true" /> 
+<globalization requestEncoding="gb2312" responseEncoding="utf-8" fileEncoding="utf-8" />
+</system.web>
+</configuration>
+
+五、API功能扩展：
+Default.aspx页面为简单投票展示页面。
+
+ROYcms_TP.aspx 页面集成了投票管理和相关的API。
+
+功能扩展说明
+
+投一票 向ROYcms_TP.aspx页面通过GET或者POST发送参数tp_id 表示某一项ID
+
+批量投票 向ROYcms_TP.aspx页面通过GET或者POST发送参数组tp_id[] 表示某一项ID组合（通常是采用复选框）例子：
+
+              <form id="form1" action="ROYcms_TP.aspx" method="post/get">
+
+                  <input name="tp_id[]" type="checkbox" value='<%#Eval("id") %>' />
+
+                  <input name="tp_id[]" type="checkbox" value='<%#Eval("id") %>' />
+
+                 <input name="tp_id[]" type="checkbox" value='<%#Eval("id") %>' />
+
+              </form>
+
+
+添加评论 向ROYcms_TP.aspx页面通过GET或者POST发送参数remark_title和remark_content分别表示评论的标题和内容 
+1.可选参数z_id投票组的ID 表示针对某一项投票组进行评论 
+2.可选参数remark_date_id 投票组中的某一项的ID 表示针对某一个投票选项进行评论 
+
+查看投票结果 向ROYcms_TP.aspx页面通过GET或者POST发送参数group 表示某一分组的ID
+
+ 
+
+注意：
+
+管理 请向ROYcms_TP.aspx 页面GET或者POST参数administrator才可现实登录窗口 例ROYcms_TP.aspx
+
+登陆密码是 roycms 不支持回车登录
+
+查看截图
+
+
+源码下载及讨论地址：http://www.51aspx.com/CV/ROYcmsPoll
+
+
+技术支持：website:www.ROYcms.cn
+help.ROYcms.cn
+mail:roy_web1@hotmail.com
+QQ: 343910317
+MSN: roy@5visp.com

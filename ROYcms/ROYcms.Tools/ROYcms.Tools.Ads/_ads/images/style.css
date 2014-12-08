@@ -1,0 +1,172 @@
+﻿body {
+	font-family: Arial;
+	font-size: 12px;
+	background-color: #F4FBFF;
+	margin:0px;
+	color: #003F7B;
+	overflow-x:hidden;
+	
+	scrollbar-face-color: #E6F2FD;
+	scrollbar-highlight-color: #ffffff;
+	scrollbar-shadow-color: #D6E4EF; 
+	scrollbar-3dlight-color: #F1F9FF; 
+	scrollbar-arrow-color: #006699; 
+	scrollbar-track-color: #F1F9FF; 
+	scrollbar-darkshadow-color: #F1F9FF;
+}
+
+td {
+	font-family: Arial;
+	font-size: 12px;
+}
+
+th {
+	font-family: Arial;
+	font-size: 12px;
+}
+p{
+	margin:0px;
+	padding:0px;
+}
+/*内容输入框*/
+.input {
+	font-size: 12px;
+	font-family: "Arial";
+	color: #004282;
+/*	width:100%;*/
+	line-height:15px;
+	height:23px;
+	padding:2px;
+	background-color: #ffffff;
+	border: 1px solid #075198;
+}
+/*input {
+	font-size: 12px;
+	font-family: "Arial";
+	color: #004282;
+
+	line-height:15px;
+	height:23px;
+	padding:2px;
+	background-color: #ffffff;
+	border: 1px solid #075198;
+}*/
+/*登录框*/
+.input2 {
+	background-image: url(in3.gif);
+	border: none;
+	line-height: 17px;
+	height: 19px;
+	width: 100%;
+	color: #003F7B;
+	font-family: "verdana";
+	font-size: 11px;
+}
+.bt {
+	background-color: #FFFFFF;
+	color: #075198;
+	font-family: "verdana";
+	font-size: 12px;
+	border:1px solid #4D85BA;
+	cursor:pointer;
+	height:21px;
+	line-height:19px;
+	background-image: url(bt_bg.gif);
+	background-repeat: repeat-x;
+	background-position: top;
+	font-weight:bold;
+}
+
+.select {
+	font-size: 12px;
+	font-family: "verdana";
+	color: #003567;
+	background-color: #ffffff;
+	width:100%;
+	margin:1px;
+	line-height:25px;
+}
+
+a:link {
+	color: #003F7B;
+	text-decoration: none;
+}
+a:visited {
+	color: #003F7B;
+	text-decoration: none;
+}
+a:hover {
+	color: #FF4800;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+.enfont{
+	font-size:10px;
+	font-family: "verdana";
+	font-weight: bold;
+}
+.enfont2 {
+	font-family: "verdana";
+	font-size: 11px;
+}
+	/**/
+td.content {
+	line-height: 20px;
+	WORD-WRAP: break-word;
+	word-break:break-all;
+	text-align:justify;
+}
+td.content a:link{
+	line-height: 20px;
+}
+td.content a:hover{
+	line-height: 20px;
+}
+td.content a:visited{
+	line-height: 20px;
+}
+
+.foot {
+	background-image: url(admin-foot.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+.top {
+	background-image: url(admin-top.gif);
+	background-repeat: repeat-x;
+	background-position: top;
+}
+.foot2 {
+	background-image: url(admin-left2.gif);
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+.line {
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #CFDEED;
+}
+.case{
+	line-height:120%;
+	background-color: #FDFEFF;
+	padding:5px;
+	border: 1px groove #E3E3E3;
+}
+form{margin:0px;
+padding:0px;}
+#lin_ {
+	border: 1px solid #FFE6CE;
+}
+.label {
+	border: 1px solid #DDE9FF;
+	background-color: #F7FAFF;
+}
+
+#add_table ._help {
+	font-size: 12px;
+	color: #BEBEBE;
+}
+.drw_list {
+	width: 50px;
+}

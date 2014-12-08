@@ -1,0 +1,194 @@
+<!-- Dreamweaver Templates -->
+<tagspec tag_name="dwtemplatepassthrough" start_string="@@@(" end_string=")@@@" detect_in_attribute="true" icon="TemplateExpr.gif" icon_width="18" icon_height="18"></tagspec>
+<tagspec tag_name="dwtemplate" start_string="@@(" end_string=")@@" detect_in_attribute="true" icon="TemplateExpr.gif" icon_width="18" icon_height="18"></tagspec>
+
+<!-- ASP -->
+<tagspec tag_name="asp" start_string="<%" end_string="%>" detect_in_attribute="true" icon="ASP.gif" icon_width="17" icon_height="15"></tagspec>
+<tagspec tag_name="MM_CMD" tag_type="empty" render_contents="false" content_model="marker_model" icon="ASP.gif" icon_width="17" icon_height="15"></tagspec>
+<tagspec tag_name="MM_CMDRECSET" tag_type="empty" render_contents="false" content_model="marker_model" icon="ASP.gif" icon_width="17" icon_height="15"></tagspec>
+<tagspec tag_name="MM_RECORDSET" tag_type="nonempty" render_contents="false" content_model="marker_model" icon="ASP.gif" icon_width="17" icon_height="15"></tagspec>
+<tagspec tag_name="MM_ASPSCRIPT" tag_type="empty" render_contents="false" content_model="marker_model" icon="ASP.gif" icon_width="17" icon_height="15"></tagspec>
+<tagspec tag_name="MM_VARIABLES" tag_type="nonempty" render_contents="false" content_model="marker_model" icon="ASP.gif" icon_width="17" icon_height="15"></tagspec>
+
+<!-- ASP.NET -->
+<tagspec tag_name="MM:DATASET" tag_type="nonempty" end_tag="xml" render_contents="false" content_model="marker_model" icon="ASPNet.gif" icon_width="17" icon_height="15" is_visual="false"></tagspec>
+<tagspec tag_name="MM:INSERT" tag_type="nonempty" end_tag="xml" render_contents="false" content_model="marker_model" icon="ASPNet.gif" icon_width="17" icon_height="15" is_visual="false"></tagspec>
+<tagspec tag_name="MM:UPDATE" tag_type="nonempty" end_tag="xml" render_contents="false" content_model="marker_model" icon="ASPNet.gif" icon_width="17" icon_height="15" is_visual="false"></tagspec>
+<tagspec tag_name="MM:DELETE" tag_type="nonempty" end_tag="xml" render_contents="false" content_model="marker_model" icon="ASPNet.gif" icon_width="17" icon_height="15" is_visual="false"></tagspec>
+<tagspec tag_name="MM:PAGEBIND" tag_type="nonempty" end_tag="xml" render_contents="false" content_model="marker_model" icon="ASPNet.gif" icon_width="17" icon_height="15" is_visual="false"></tagspec>
+<tagspec tag_name="MM:IF" tag_type="nonempty" end_tag="xml" render_contents="true" content_model="marker_model" icon="ASPNet.gif" icon_width="17" icon_height="15" is_visual="false"></tagspec>
+<tagspec tag_name="ASP:REPEATER" tag_type="nonempty" end_tag="xml" render_contents="true" content_model="marker_model" icon="ASPNet.gif" icon_width="17" icon_height="15" is_visual="false"></tagspec>
+<tagspec tag_name="MM_ASPNETSYNTAXERROR" tag_type="empty" end_tag="xml" render_contents="true" content_model="marker_model" icon="ASPNetTags/MMSyntaxError.gif" icon_width="17" icon_height="15" is_visual="true"></tagspec>
+<tagspec tag_name="MM_ASPNETUNKNOWNTAG" tag_type="empty" end_tag="xml" render_contents="true" content_model="marker_model" icon="ASPNet.gif" icon_width="17" icon_height="15" is_visual="true"></tagspec>
+<tagspec tag_name="ASP:PANEL" tag_type="nonempty" end_tag="xml" render_contents="true" content_model="marker_model" icon="ASPNet.gif" icon_width="17" icon_height="15" is_visual="true" equivalent_tag="DIV"></tagspec>
+
+<!-- JSP -->
+<tagspec tag_name="jsp" start_string="<%" end_string="%>" detect_in_attribute="true" icon="JSP.gif" icon_width="17" icon_height="15" server_model="JSP"></tagspec>
+<tagspec tag_name="jsp:getProperty" tag_type="empty" end_tag="xml" render_contents="false" content_model="marker_model" icon="JSP.gif" icon_width="17" icon_height="15" detect_in_attribute="true"></tagspec>
+<tagspec tag_name="jrun:sql" tag_type="nonempty" end_tag="xml" render_contents="false" content_model="script_model" icon="JSP.gif" icon_width="17" icon_height="15"></tagspec>
+<tagspec tag_name="jrun:param" tag_type="empty" end_tag="xml" render_contents="false" content_model="script_model" icon="JSP.gif" icon_width="17" icon_height="15"></tagspec>
+<tagspec tag_name="MM_RESULTSET" tag_type="nonempty" render_contents="false" content_model="marker_model" icon="JSP.gif" icon_width="17" icon_height="15"></tagspec>
+<tagspec tag_name="MM_PREPARED" tag_type="nonempty" render_contents="false" content_model="marker_model" icon="JSP.gif" icon_width="17" icon_height="15"></tagspec>
+<tagspec tag_name="MM_CALL" tag_type="empty" render_contents="false" content_model="marker_model" icon="JSP.gif" icon_width="17" icon_height="15"></tagspec>
+<tagspec tag_name="MM_CALLRESSET" tag_type="empty" render_contents="false" content_model="marker_model" icon="JSP.gif" icon_width="17" icon_height="15"></tagspec>
+<tagspec tag_name="MM_JSPSCRIPT" tag_type="empty" render_contents="false" content_model="marker_model" icon="JSP.gif" icon_width="17" icon_height="15"></tagspec>
+<tagspec tag_name="INCLUDEIF" tag_type="nonempty" render_contents="true" content_model="marker_model" parse_attributes="false" detect_in_attribute="true"></tagspec>
+
+<!-- PHP -->
+<tagspec tag_name="php" start_string="<?" end_string="?>" detect_in_attribute="true" icon="PHP.gif" icon_width="17" icon_height="15"></tagspec>
+
+<!-- ColdFusion -->
+<tagspec tag_name="CFABORT"			tag_type="empty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFAPPLICATION"	tag_type="empty"	render_contents="false"		content_model="marker_model"		icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFAPPLET"		tag_type="empty"	render_contents="false"		content_model="marker_model"		icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true"></tagspec>
+<tagspec tag_name="CFASSOCIATE"			tag_type="empty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFAUTHENTICATE"			tag_type="empty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFBREAK"			tag_type="empty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFCACHE"			tag_type="empty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFCASE"			tag_type="nonempty" render_contents="true"		content_model="marker_model" is_visual="false"></tagspec>
+<tagspec tag_name="CFCATCH"			tag_type="nonempty"	render_contents="true"		content_model="marker_model"		icon="ColdFusion.gif" icon_width="16" icon_height="16" parse_attributes="true" detect_in_attribute="true"></tagspec>
+<tagspec tag_name="CFCHART"			tag_type="nonempty" render_contents="false"		content_model="marker_model"		icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true"></tagspec>
+<tagspec tag_name="CFCHARTDATA"		tag_type="empty"	render_contents="false"		content_model="marker_model"		icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFCHARTSERIES"	tag_type="empty"	render_contents="false"		content_model="marker_model"		icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFCOL"			tag_type="empty"	render_contents="false"		content_model="marker_model"		icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFCOLLECTION"			tag_type="empty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFCONTENT"		tag_type="empty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFCOOKIE"		tag_type="empty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFDEFAULTCASE"			tag_type="nonempty" render_contents="true"		content_model="marker_model" is_visual="false"></tagspec>
+<tagspec tag_name="CFDIRECTORY"		tag_type="empty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFDUMP"			tag_type="empty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true"></tagspec>
+<tagspec tag_name="CFELSE"			tag_type="empty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" parse_attributes="false" detect_in_attribute="true"></tagspec>
+<tagspec tag_name="CFELSEIF"		tag_type="empty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" parse_attributes="false" detect_in_attribute="true"></tagspec>
+<tagspec tag_name="CFERROR"			tag_type="empty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFEXECUTE"			tag_type="nonempty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFEXIT"			tag_type="empty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFFILE"			tag_type="empty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFFLUSH"			tag_type="empty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFFTP"			tag_type="empty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFFORM"			tag_type="nonempty" render_contents="true"		content_model="marker_model" detect_in_attribute="true" equivalent_tag="FORM"></tagspec>
+<tagspec tag_name="CFGRAPH"			tag_type="nonempty" render_contents="false"		content_model="marker_model"		icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true"></tagspec>
+<tagspec tag_name="CFGRID"			tag_type="nonempty" render_contents="false"		content_model="marker_model"		icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true"></tagspec>
+<tagspec tag_name="CFGRIDCOLUMN"	tag_type="empty"	render_contents="false"		content_model="marker_model"		icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFGRIDROW"		tag_type="empty"	render_contents="false"		content_model="marker_model"		icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFHEADER"		tag_type="empty"	render_contents="false"		content_model="marker_model"		icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFHTMLHEAD"		tag_type="empty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFHTTP"			tag_type="nonempty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFHTTPPARAM"		tag_type="empty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFIF"			tag_type="nonempty" render_contents="true"		content_model="marker_model" parse_attributes="false" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFIMPERSONATE"			tag_type="nonempty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFINCLUDE"		tag_type="empty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFINDEX"			tag_type="empty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFINPUT"			tag_type="empty"	render_contents="false"		content_model="marker_model"		icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" equivalent_tag="INPUT"></tagspec>
+<tagspec tag_name="CFINSERT"		tag_type="empty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFLDAP"			tag_type="empty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFLOCATION"		tag_type="empty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFLOCK"			tag_type="nonempty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFLOG"			tag_type="empty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true"></tagspec>
+<tagspec tag_name="CFLOGIN"	tag_type="nonempty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" parse_attributes="true" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFLOOP"			tag_type="nonempty" render_contents="true"		content_model="marker_model"    detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFMAIL"			tag_type="nonempty" render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" parse_attributes="true" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFMAILPARAM"		tag_type="empty" 	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" parse_attributes="true" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFMODULE"		tag_type="empty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFOBJECT"		tag_type="empty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFOUTPUT"		tag_type="nonempty" render_contents="true"		content_model="marker_model" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFPARAM"			tag_type="empty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFPOP"			tag_type="empty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFPROCESSINGDIRECTIVE"			tag_type="empty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" parse_attributes="true" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFPROCPARAM"			tag_type="empty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" parse_attributes="true" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFQUERY"			tag_type="nonempty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFREGISTRY"			tag_type="empty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFREPORT"		tag_type="nonempty" render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true"></tagspec>
+<tagspec tag_name="CFROW"			tag_type="nonempty"	render_contents="false"		content_model="marker_model"		icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFSAVECONTENT"	tag_type="nonempty"	render_contents="false"		content_model="script_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" parse_attributes="true" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFSCHEDULE"		tag_type="empty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" parse_attributes="true" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFSCRIPT"		tag_type="nonempty" render_contents="false"		content_model="script_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" parse_attributes="false" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFSEARCH"		tag_type="empty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFSELECT"		tag_type="nonempty" render_contents="false"		content_model="marker_model"		icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" equivalent_tag="SELECT"></tagspec>
+<tagspec tag_name="CFSERVLET"			tag_type="nonempty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFSET"			tag_type="empty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" parse_attributes="false" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFSETTING"		tag_type="empty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16"  detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFSILENT"			tag_type="nonempty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" parse_attributes="false" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFSLIDER"		tag_type="empty"	render_contents="false"		content_model="marker_model"		icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true"></tagspec>
+<tagspec tag_name="CFSTOREDPROC"			tag_type="nonempty"	render_contents="false"		content_model="marker_model"		icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFSWITCH"			tag_type="nonempty" render_contents="true"		content_model="marker_model" detect_in_attribute="true"></tagspec>
+<tagspec tag_name="CFTABLE"			tag_type="nonempty" render_contents="false"		content_model="marker_model"		icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true"></tagspec>
+<tagspec tag_name="CFTEXTINPUT"		tag_type="empty"	render_contents="false"		content_model="marker_model"		icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" equivalent_tag="INPUT"></tagspec>
+<tagspec tag_name="CFTHROW"		tag_type="empty"	render_contents="false"		content_model="marker_model"		icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true"></tagspec>
+<tagspec tag_name="CFTRACE"		tag_type="empty"	end_tag="sometimes"	render_contents="false"		content_model="marker_model"		icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true"></tagspec>
+<tagspec tag_name="CFTRANSACTION"	tag_type="nonempty" render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFTREE"			tag_type="nonempty" render_contents="false"		content_model="marker_model"		icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true"></tagspec>
+<tagspec tag_name="CFTREEITEM"		tag_type="empty"	render_contents="false"		content_model="marker_model"		icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFTRY"			tag_type="nonempty"	render_contents="true"		content_model="marker_model"		icon="ColdFusion.gif" icon_width="16" icon_height="16" parse_attributes="false" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFUPDATE"		tag_type="empty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFXML"		tag_type="empty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" is_visual="false"></tagspec>
+<tagspec tag_name="CFWDDX"			tag_type="empty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" detect_in_attribute="true" is_visual="false"></tagspec>
+
+<!-- CFC -->
+<tagspec tag_name="CFARGUMENT"		tag_type="empty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" parse_attributes="true" detect_in_attribute="false" is_visual="false"></tagspec>
+<tagspec tag_name="CFCOMPONENT"		tag_type="nonempty"	render_contents="true"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" parse_attributes="true" detect_in_attribute="false" is_visual="false"></tagspec>
+<tagspec tag_name="CFFUNCTION"		tag_type="nonempty"	render_contents="true"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" parse_attributes="true" detect_in_attribute="false" is_visual="false"></tagspec>
+<tagspec tag_name="CFINVOKE"		tag_type="nonempty"	end_tag="sometimes"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" parse_attributes="true" detect_in_attribute="false" is_visual="false"></tagspec>
+<tagspec tag_name="CFINVOKEARGUMENT"		tag_type="empty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" parse_attributes="true" detect_in_attribute="false" is_visual="false"></tagspec>
+<tagspec tag_name="CFPROPERTY"		tag_type="empty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" parse_attributes="true" detect_in_attribute="false" is_visual="false"></tagspec>
+<tagspec tag_name="CFRETURN"		tag_type="empty"	render_contents="false"		content_model="marker_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" parse_attributes="false" detect_in_attribute="false" is_visual="false"></tagspec>
+
+<!-- For these VTML tags, we need to tell our parser not to parse the attributes -->
+<tagspec tag_name="WIZIF"			tag_type="nonempty" render_contents="true"		content_model="marker_model" parse_attributes="false"></tagspec>
+<tagspec tag_name="WIZELSEIF"		tag_type="empty"	render_contents="false"		content_model="script_model"	icon="ColdFusion.gif" icon_width="16" icon_height="16" parse_attributes="false" detect_in_attribute="false"></tagspec>
+
+<!-- Internal Use -->
+<tagspec tag_name="MM:INVISIBLE"	tag_type="nonempty"	render_contents="false"		content_model="marker_model"		icon="none.gif" icon_width="0" icon_height="0"	detect_in_attribute="true"></tagspec>
+
+<!-- ROYcms Use -->
+<tagspec tag_name="stlvalue" start_string="{Stl." end_string="}" detect_in_attribute="true" icon="ROYcmsTags/stl.value.gif" icon_width="83" icon_height="25"></tagspec>
+<tagspec tag_name="stlcontent" start_string="{Content." end_string="}" detect_in_attribute="true" icon="ROYcmsTags/stl.content.gif" icon_width="83" icon_height="25"></tagspec>
+<tagspec tag_name="stlchannel" start_string="{Channel." end_string="}" detect_in_attribute="true" icon="ROYcmsTags/stl.channel.gif" icon_width="83" icon_height="25"></tagspec>
+<tagspec tag_name="stlsqlcontent" start_string="{Sql." end_string="}" detect_in_attribute="true" icon="ROYcmsTags/stl.sqlContent.gif" icon_width="103" icon_height="25"></tagspec>
+
+<tagspec tag_name="CMS:a" tag_type="nonempty" render_contents="true" content_model="marker_model"></tagspec>
+<tagspec tag_name="CMS:action" tag_type="nonempty" render_contents="true" content_model="marker_model"></tagspec>
+<tagspec tag_name="CMS:analysis" tag_type="nonempty" render_contents="false" content_model="marker_model" icon="ROYcmsTags/stl.analysis.gif" icon_width="83" icon_height="25"></tagspec>
+<tagspec tag_name="CMS:channel" tag_type="nonempty" render_contents="false" content_model="marker_model" icon="ROYcmsTags/stl.channel.gif" icon_width="83" icon_height="25"></tagspec>
+<tagspec tag_name="CMS:channels" tag_type="nonempty" render_contents="false" content_model="marker_model" icon="ROYcmsTags/stl.channels.gif" icon_width="83" icon_height="25"></tagspec>
+<tagspec tag_name="CMS:comment" tag_type="nonempty" render_contents="false" content_model="marker_model" icon="ROYcmsTags/stl.comment.gif" icon_width="83" icon_height="25"></tagspec>
+<tagspec tag_name="CMS:commentInput" tag_type="nonempty" render_contents="false" content_model="marker_model" icon="ROYcmsTags/stl.commentInput.gif" icon_width="103" icon_height="25"></tagspec>
+<tagspec tag_name="CMS:comments" tag_type="nonempty" render_contents="false" content_model="marker_model" icon="ROYcmsTags/stl.comments.gif" icon_width="83" icon_height="25"></tagspec>
+<tagspec tag_name="CMS:content" tag_type="nonempty" render_contents="false" content_model="marker_model" icon="ROYcmsTags/stl.content.gif" icon_width="83" icon_height="25"></tagspec>
+<tagspec tag_name="CMS:contents" tag_type="nonempty" render_contents="false" content_model="marker_model" icon="ROYcmsTags/stl.contents.gif" icon_width="83" icon_height="25"></tagspec>
+<tagspec tag_name="CMS:file" tag_type="nonempty" render_contents="false" content_model="marker_model" icon="ROYcmsTags/stl.file.gif" icon_width="83" icon_height="25"></tagspec>
+<tagspec tag_name="CMS:flash" tag_type="nonempty" render_contents="false" content_model="marker_model" icon="ROYcmsTags/stl.flash.gif" icon_width="83" icon_height="25"></tagspec>
+<tagspec tag_name="CMS:focusViewer" tag_type="nonempty" render_contents="false" content_model="marker_model" icon="ROYcmsTags/stl.focusViewer.gif" icon_width="103" icon_height="25"></tagspec>
+<tagspec tag_name="CMS:if" tag_type="nonempty" render_contents="false" content_model="marker_model" icon="ROYcmsTags/stl.if.gif" icon_width="83" icon_height="25"></tagspec>
+<tagspec tag_name="CMS:image" tag_type="nonempty" render_contents="false" content_model="marker_model" icon="ROYcmsTags/stl.image.gif" icon_width="83" icon_height="25"></tagspec>
+<tagspec tag_name="CMS:include" tag_type="nonempty" render_contents="false" content_model="marker_model" icon="ROYcmsTags/stl.include.gif" icon_width="83" icon_height="25"></tagspec>
+<tagspec tag_name="CMS:input" tag_type="nonempty" render_contents="false" content_model="marker_model" icon="ROYcmsTags/stl.input.gif" icon_width="103" icon_height="25"></tagspec>
+<tagspec tag_name="CMS:inputContent" tag_type="nonempty" render_contents="false" content_model="marker_model" icon="ROYcmsTags/stl.inputContent.gif" icon_width="83" icon_height="25"></tagspec>
+<tagspec tag_name="CMS:inputContents" tag_type="nonempty" render_contents="false" content_model="marker_model" icon="ROYcmsTags/stl.inputContents.gif" icon_width="103" icon_height="25"></tagspec>
+<tagspec tag_name="CMS:location" tag_type="nonempty" render_contents="false" content_model="marker_model" icon="ROYcmsTags/stl.location.gif" icon_width="83" icon_height="25"></tagspec>
+<tagspec tag_name="CMS:login" tag_type="nonempty" render_contents="false" content_model="marker_model" icon="ROYcmsTags/stl.login.gif" icon_width="83" icon_height="25"></tagspec>
+<tagspec tag_name="CMS:menu" tag_type="nonempty" render_contents="false" content_model="marker_model" icon="ROYcmsTags/stl.menu.gif" icon_width="83" icon_height="25"></tagspec>
+<tagspec tag_name="CMS:navigation" tag_type="nonempty" render_contents="false" content_model="marker_model" icon="ROYcmsTags/stl.navigation.gif" icon_width="83" icon_height="25"></tagspec>
+<tagspec tag_name="CMS:pageChannels" tag_type="nonempty" render_contents="false" content_model="marker_model" icon="ROYcmsTags/stl.pageChannels.gif" icon_width="103" icon_height="25"></tagspec>
+<tagspec tag_name="CMS:pageContents" tag_type="nonempty" render_contents="false" content_model="marker_model" icon="ROYcmsTags/stl.pageContents.gif" icon_width="103" icon_height="25"></tagspec>
+<tagspec tag_name="CMS:pageSqlContents" tag_type="nonempty" render_contents="false" content_model="marker_model" icon="ROYcmsTags/stl.pageSqlContents.gif" icon_width="123" icon_height="25"></tagspec>
+<tagspec tag_name="CMS:pageItems" tag_type="nonempty" render_contents="true" content_model="marker_model"></tagspec>
+<tagspec tag_name="CMS:pageItem" tag_type="nonempty" render_contents="false" content_model="marker_model" icon="ROYcmsTags/stl.pageItem.gif" icon_width="83" icon_height="25"></tagspec>
+<tagspec tag_name="CMS:player" tag_type="nonempty" render_contents="false" content_model="marker_model" icon="ROYcmsTags/stl.player.gif" icon_width="103" icon_height="25"></tagspec>
+<tagspec tag_name="CMS:printer" tag_type="nonempty" render_contents="false" content_model="marker_model" icon="ROYcmsTags/stl.printer.gif" icon_width="83" icon_height="25"></tagspec>
+<tagspec tag_name="CMS:searchInput" tag_type="nonempty" render_contents="false" content_model="marker_model" icon="ROYcmsTags/stl.searchInput.gif" icon_width="103" icon_height="25"></tagspec>
+<tagspec tag_name="CMS:searchOutput" tag_type="nonempty" render_contents="false" content_model="marker_model" icon="ROYcmsTags/stl.searchOutput.gif" icon_width="103" icon_height="25"></tagspec>
+<tagspec tag_name="CMS:select" tag_type="nonempty" render_contents="false" content_model="marker_model" icon="ROYcmsTags/stl.select.gif" icon_width="83" icon_height="25"></tagspec>
+<tagspec tag_name="CMS:site" tag_type="nonempty" render_contents="true" content_model="marker_model"></tagspec>
+<tagspec tag_name="CMS:sites" tag_type="nonempty" render_contents="false" content_model="marker_model" icon="ROYcmsTags/stl.sites.gif" icon_width="83" icon_height="25"></tagspec>
+<tagspec tag_name="CMS:sqlContent" tag_type="nonempty" render_contents="false" content_model="marker_model" icon="ROYcmsTags/stl.sqlContent.gif" icon_width="103" icon_height="25"></tagspec>
+<tagspec tag_name="CMS:sqlContents" tag_type="nonempty" render_contents="false" content_model="marker_model" icon="ROYcmsTags/stl.sqlContents.gif" icon_width="103" icon_height="25"></tagspec>
+<tagspec tag_name="CMS:tabs" tag_type="nonempty" render_contents="false" content_model="marker_model" icon="ROYcmsTags/stl.tabs.gif" icon_width="83" icon_height="25"></tagspec>
+<tagspec tag_name="CMS:trigger" tag_type="nonempty" render_contents="false" content_model="marker_model" icon="ROYcmsTags/stl.trigger.gif" icon_width="83" icon_height="25"></tagspec>
+<tagspec tag_name="CMS:value" tag_type="nonempty" render_contents="false" content_model="marker_model" icon="ROYcmsTags/stl.value.gif" icon_width="83" icon_height="25"></tagspec>
+<tagspec tag_name="CMS:visible" tag_type="nonempty" render_contents="false" content_model="marker_model" icon="ROYcmsTags/stl.visible.gif" icon_width="103" icon_height="25"></tagspec>
+<tagspec tag_name="CMS:vote" tag_type="nonempty" render_contents="false" content_model="marker_model" icon="ROYcmsTags/stl.vote.gif" icon_width="83" icon_height="25"></tagspec>
+<tagspec tag_name="CMS:zoom" tag_type="nonempty" render_contents="false" content_model="marker_model" icon="ROYcmsTags/stl.zoom.gif" icon_width="83" icon_height="25"></tagspec>
+
+<tagspec tag_name="CMS_ClassField" start_string="<CMS:ClassField" end_string="/>" detect_in_attribute="true" icon="ROYcms.png/CMS.channel.gif" icon_width="83" icon_height="25" tag_type="empty"></tagspec>
+<tagspec tag_name="CMS_WebField" start_string="<CMS:WebField" end_string="/>" detect_in_attribute="true" icon="ROYcms.png/CMS.sqlContent.gif" icon_width="103" icon_height="25"></tagspec>
+<tagspec tag_name="CMS_WebConfigField" start_string="<CMS:WebConfigField" end_string="/>" detect_in_attribute="true" icon="ROYcms.png/CMSl.config.gif" icon_width="103" icon_height="25"></tagspec>

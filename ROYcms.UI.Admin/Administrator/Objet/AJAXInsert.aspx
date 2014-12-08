@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true"  ValidateRequest="false" EnableViewStateMac="false" CodeBehind="AJAXInsert.aspx.cs" Inherits="ROYcms.UI.Admin.Administrator.Objet.AJAXInsert" %>

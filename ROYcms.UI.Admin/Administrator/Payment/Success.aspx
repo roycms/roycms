@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="True" CodeBehind="Success.aspx.cs" Inherits="ROYcms.UI.Admin.Success" %>

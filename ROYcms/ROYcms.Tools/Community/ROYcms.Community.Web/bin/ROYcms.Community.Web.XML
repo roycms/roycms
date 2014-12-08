@@ -1,0 +1,206 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ROYcms.Community.Web</name>
+    </assembly>
+    <members>
+        <member name="F:ROYcms.Community.Web.App_Community.Right.Repeater_list">
+            <summary>
+            Repeater_list 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:ROYcms.Community.Web.App_Community.CommMsgs.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:ROYcms.Community.Web.App_Community.CommMsgs.Top1">
+            <summary>
+            Top1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:ROYcms.Community.Web.App_Community.CommMsgs.Right1">
+            <summary>
+            Right1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:ROYcms.Community.Web.App_Community.CommMsgs.title">
+            <summary>
+            title 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:ROYcms.Community.Web.App_Community.CommMsgs.user_name">
+            <summary>
+            user_name 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:ROYcms.Community.Web.App_Community.CommMsgs.Time">
+            <summary>
+            Time 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:ROYcms.Community.Web.App_Community.CommMsgs.content">
+            <summary>
+            content 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:ROYcms.Community.Web.App_Community.CommMsgs.ip">
+            <summary>
+            ip 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:ROYcms.Community.Web.App_Community.CommMsgs.Repeater_list_">
+            <summary>
+            Repeater_list_ 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:ROYcms.Community.Web.App_Community.CommMsgs.Repeater_list">
+            <summary>
+            Repeater_list 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:ROYcms.Community.Web.App_Community.CommMsgs.Footer1">
+            <summary>
+            Footer1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:ROYcms.Community.Web.App_Community.Admin.Administrator.Head1">
+            <summary>
+            Head1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:ROYcms.Community.Web.App_Community.Admin.Administrator.ConfigForm">
+            <summary>
+            ConfigForm 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:ROYcms.Community.Web.App_Community.Admin.Administrator.Top1">
+            <summary>
+            Top1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:ROYcms.Community.Web.App_Community.Admin.Administrator.SAVE">
+            <summary>
+            SAVE 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:ROYcms.Community.Web.App_Community.Admin.Administrator.Footer1">
+            <summary>
+            Footer1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:ROYcms.Community.Web.App_Community.index.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:ROYcms.Community.Web.App_Community.index.Top1">
+            <summary>
+            Top1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:ROYcms.Community.Web.App_Community.index.Right1">
+            <summary>
+            Right1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:ROYcms.Community.Web.App_Community.index.Repeater_list">
+            <summary>
+            Repeater_list 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:ROYcms.Community.Web.App_Community.index.Footer1">
+            <summary>
+            Footer1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0B5DAC36-5ECF-4B66-9E03-A222E6A5A706}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ROYcms.Sys</RootNamespace>
+    <AssemblyName>ROYcms.Sys</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\ROYcms_Admin.cs" />
+    <Compile Include="BLL\ROYcms_AdminMap.cs" />
+    <Compile Include="BLL\ROYcms_AdminUrlMap.cs" />
+    <Compile Include="BLL\ROYcms_Admin_Map.cs" />
+    <Compile Include="BLL\ROYcms_Appendix.cs" />
+    <Compile Include="BLL\ROYcms_ASK.cs" />
+    <Compile Include="BLL\ROYcms_ASKResult.cs" />
+    <Compile Include="BLL\ROYcms_Authority.cs" />
+    <Compile Include="BLL\ROYcms_CaiRss.cs" />
+    <Compile Include="BLL\ROYcms_class.cs" />
+    <Compile Include="BLL\ROYcms_Class_Model.cs" />
+    <Compile Include="BLL\ROYcms_Class_News.cs" />
+    <Compile Include="BLL\ROYcms_Class_UGroup.cs" />
+    <Compile Include="BLL\ROYcms_Custom.cs" />
+    <Compile Include="BLL\ROYcms_CustomTag.cs" />
+    <Compile Include="BLL\ROYcms_Dissertation.cs" />
+    <Compile Include="BLL\ROYcms_Enterprise.cs" />
+    <Compile Include="BLL\ROYcms_Field.cs" />
+    <Compile Include="BLL\ROYcms_Flash.cs" />
+    <Compile Include="BLL\ROYcms_Form.cs" />
+    <Compile Include="BLL\ROYcms_Form_class_classkind.cs" />
+    <Compile Include="BLL\ROYcms_Gallery.cs" />
+    <Compile Include="BLL\ROYcms_Goods.cs" />
+    <Compile Include="BLL\ROYcms_Goods_Brand.cs" />
+    <Compile Include="BLL\ROYcms_Goods_Order.cs" />
+    <Compile Include="BLL\ROYcms_Goods_Order_Detail.cs" />
+    <Compile Include="BLL\ROYcms_Invoice.cs" />
+    <Compile Include="BLL\ROYcms_Jurisdiction.cs" />
+    <Compile Include="BLL\ROYcms_Log.cs" />
+    <Compile Include="BLL\ROYcms_Message.cs" />
+    <Compile Include="BLL\ROYcms_Messages.cs" />
+    <Compile Include="BLL\ROYcms_Model.cs" />
+    <Compile Include="BLL\ROYcms_news.cs" />
+    <Compile Include="BLL\ROYcms_News_Group.cs" />
+    <Compile Include="BLL\ROYcms_New_User.cs" />
+    <Compile Include="BLL\ROYcms_Objet.cs" />
+    <Compile Include="BLL\ROYcms_Order.cs" />
+    <Compile Include="BLL\ROYcms_Organization.cs" />
+    <Compile Include="BLL\ROYcms_Payment.cs" />
+    <Compile Include="BLL\ROYcms_product.cs" />
+    <Compile Include="BLL\ROYcms_product_order.cs" />
+    <Compile Include="BLL\ROYcms_remark.cs" />
+    <Compile Include="BLL\ROYcms_Role.cs" />
+    <Compile Include="BLL\ROYcms_RolePath.cs" />
+    <Compile Include="BLL\ROYcms_Rss.cs" />
+    <Compile Include="BLL\ROYcms_Shares_News.cs" />
+    <Compile Include="BLL\ROYcms_Synonyms.cs" />
+    <Compile Include="BLL\ROYcms_Tag.cs" />
+    <Compile Include="BLL\ROYcms_template.cs" />
+    <Compile Include="BLL\ROYcms_TemplateGroup.cs" />
+    <Compile Include="BLL\ROYcms_Transaction.cs" />
+    <Compile Include="BLL\ROYcms_UGroup.cs" />
+    <Compile Include="BLL\ROYcms_UGroup_Workflow.cs" />
+    <Compile Include="BLL\ROYcms_Url.cs" />
+    <Compile Include="BLL\ROYcms_UrlRewriter.cs" />
+    <Compile Include="BLL\ROYcms_user.cs" />
+    <Compile Include="BLL\ROYcms_UserInfo.cs" />
+    <Compile Include="BLL\ROYcms_user_defined.cs" />
+    <Compile Include="BLL\ROYcms_WebGroupNews.cs" />
+    <Compile Include="BLL\ROYcms_WebGroupSubGroup.cs" />
+    <Compile Include="BLL\ROYcms_Workflow.cs" />
+    <Compile Include="BLL\ROYcms_XML.cs" />
+    <Compile Include="BLL\CMS.cs" />
+    <Compile Include="Dal\PubConstant.cs" />
+    <Compile Include="Dal\ROYcms_Admin.cs" />
+    <Compile Include="Dal\ROYcms_AdminMap.cs" />
+    <Compile Include="Dal\ROYcms_AdminUrlMap.cs" />
+    <Compile Include="Dal\ROYcms_Admin_Map.cs" />
+    <Compile Include="Dal\ROYcms_Appendix.cs" />
+    <Compile Include="Dal\ROYcms_ASK.cs" />
+    <Compile Include="Dal\ROYcms_ASKResult.cs" />
+    <Compile Include="Dal\ROYcms_Authority.cs" />
+    <Compile Include="Dal\ROYcms_CaiRss.cs" />
+    <Compile Include="Dal\ROYcms_class.cs" />
+    <Compile Include="Dal\ROYcms_Class_Model.cs" />
+    <Compile Include="Dal\ROYcms_Class_News.cs" />
+    <Compile Include="Dal\ROYcms_Class_UGroup.cs" />
+    <Compile Include="Dal\ROYcms_CustomTag.cs" />
+    <Compile Include="Dal\ROYcms_Dissertation.cs" />
+    <Compile Include="Dal\ROYcms_Enterprise.cs" />
+    <Compile Include="Dal\ROYcms_Field.cs" />
+    <Compile Include="Dal\ROYcms_Flash.cs" />
+    <Compile Include="Dal\ROYcms_Form.cs" />
+    <Compile Include="Dal\ROYcms_Form_class_classkind.cs" />
+    <Compile Include="Dal\ROYcms_Gallery.cs" />
+    <Compile Include="Dal\ROYcms_Goods.cs" />
+    <Compile Include="Dal\ROYcms_Goods_Brand.cs" />
+    <Compile Include="Dal\ROYcms_Goods_Order.cs" />
+    <Compile Include="Dal\ROYcms_Goods_Order_Detail.cs" />
+    <Compile Include="Dal\ROYcms_Invoice.cs" />
+    <Compile Include="Dal\ROYcms_Jurisdiction.cs" />
+    <Compile Include="Dal\ROYcms_Log.cs" />
+    <Compile Include="Dal\ROYcms_Message.cs" />
+    <Compile Include="Dal\ROYcms_Messages.cs" />
+    <Compile Include="Dal\ROYcms_Model.cs" />
+    <Compile Include="Dal\ROYcms_news.cs" />
+    <Compile Include="Dal\ROYcms_News_Group.cs" />
+    <Compile Include="Dal\ROYcms_New_User.cs" />
+    <Compile Include="Dal\ROYcms_Objet.cs" />
+    <Compile Include="Dal\ROYcms_Order.cs" />
+    <Compile Include="Dal\ROYcms_Organization.cs" />
+    <Compile Include="Dal\ROYcms_Payment.cs" />
+    <Compile Include="Dal\ROYcms_product.cs" />
+    <Compile Include="Dal\ROYcms_product_order.cs" />
+    <Compile Include="Dal\ROYcms_remark.cs" />
+    <Compile Include="Dal\ROYcms_Role.cs" />
+    <Compile Include="Dal\ROYcms_RolePath.cs" />
+    <Compile Include="Dal\ROYcms_Rss.cs" />
+    <Compile Include="Dal\ROYcms_Shares_News.cs" />
+    <Compile Include="Dal\ROYcms_Synonyms.cs" />
+    <Compile Include="Dal\ROYcms_Tag.cs" />
+    <Compile Include="Dal\ROYcms_template.cs" />
+    <Compile Include="Dal\ROYcms_TemplateGroup.cs" />
+    <Compile Include="Dal\ROYcms_Transaction.cs" />
+    <Compile Include="Dal\ROYcms_UGroup.cs" />
+    <Compile Include="Dal\ROYcms_UGroup_Workflow.cs" />
+    <Compile Include="Dal\ROYcms_Url.cs" />
+    <Compile Include="Dal\ROYcms_UrlRewriter.cs" />
+    <Compile Include="Dal\ROYcms_user.cs" />
+    <Compile Include="Dal\ROYcms_UserInfo.cs" />
+    <Compile Include="Dal\ROYcms_user_defined.cs" />
+    <Compile Include="Dal\ROYcms_WebGroupNews.cs" />
+    <Compile Include="Dal\ROYcms_WebGroupSubGroup.cs" />
+    <Compile Include="Dal\ROYcms_Workflow.cs" />
+    <Compile Include="Dal\ROYcms_XML.cs" />
+    <Compile Include="Dal\ROYcms_Custom.cs" />
+    <Compile Include="Dal\CMS.cs" />
+    <Compile Include="Model\FileSystemItem.cs" />
+    <Compile Include="Model\ROYcmsConfig.cs" />
+    <Compile Include="Model\ROYcms_Admin.cs" />
+    <Compile Include="Model\ROYcms_AdminMap.cs" />
+    <Compile Include="Model\ROYcms_AdminUrlMap.cs" />
+    <Compile Include="Model\ROYcms_Admin_Map.cs" />
+    <Compile Include="Model\ROYcms_Appendix.cs" />
+    <Compile Include="Model\ROYcms_ASK.cs" />
+    <Compile Include="Model\ROYcms_ASKResult.cs" />
+    <Compile Include="Model\ROYcms_Authority.cs" />
+    <Compile Include="Model\ROYcms_CaiRss.cs" />
+    <Compile Include="Model\ROYcms_class.cs" />
+    <Compile Include="Model\ROYcms_Class_Model.cs" />
+    <Compile Include="Model\ROYcms_Class_News.cs" />
+    <Compile Include="Model\ROYcms_Class_UGroup.cs" />
+    <Compile Include="Model\ROYcms_Custom.cs" />
+    <Compile Include="Model\ROYcms_CustomTag.cs" />
+    <Compile Include="Model\ROYcms_Dissertation.cs" />
+    <Compile Include="Model\ROYcms_Enterprise.cs" />
+    <Compile Include="Model\ROYcms_Field.cs" />
+    <Compile Include="Model\ROYcms_Flash.cs" />
+    <Compile Include="Model\ROYcms_Form.cs" />
+    <Compile Include="Model\ROYcms_Form_class_classkind.cs" />
+    <Compile Include="Model\ROYcms_Gallery.cs" />
+    <Compile Include="Model\ROYcms_Goods.cs" />
+    <Compile Include="Model\ROYcms_Goods_Brand.cs" />
+    <Compile Include="Model\ROYcms_Goods_Order.cs" />
+    <Compile Include="Model\ROYcms_Goods_Order_Detail.cs" />
+    <Compile Include="Model\ROYcms_Invoice.cs" />
+    <Compile Include="Model\ROYcms_Jurisdiction.cs" />
+    <Compile Include="Model\ROYcms_Log.cs" />
+    <Compile Include="Model\ROYcms_Message.cs" />
+    <Compile Include="Model\ROYcms_Messages.cs" />
+    <Compile Include="Model\ROYcms_Model.cs" />
+    <Compile Include="Model\ROYcms_news.cs" />
+    <Compile Include="Model\ROYcms_News_Group.cs" />
+    <Compile Include="Model\ROYcms_New_User.cs" />
+    <Compile Include="Model\ROYcms_Objet.cs" />
+    <Compile Include="Model\ROYcms_Order.cs" />
+    <Compile Include="Model\ROYcms_Organization.cs" />
+    <Compile Include="Model\ROYcms_Payment.cs" />
+    <Compile Include="Model\ROYcms_Product.cs" />
+    <Compile Include="Model\ROYcms_product_order.cs" />
+    <Compile Include="Model\ROYcms_remark.cs" />
+    <Compile Include="Model\ROYcms_Role.cs" />
+    <Compile Include="Model\ROYcms_RolePath.cs" />
+    <Compile Include="Model\ROYcms_Rss.cs" />
+    <Compile Include="Model\ROYcms_Shares_News.cs" />
+    <Compile Include="Model\ROYcms_Synonyms.cs" />
+    <Compile Include="Model\ROYcms_Tag.cs" />
+    <Compile Include="Model\ROYcms_template.cs" />
+    <Compile Include="Model\ROYcms_TemplateGroup.cs" />
+    <Compile Include="Model\ROYcms_Transaction.cs" />
+    <Compile Include="Model\ROYcms_UGroup.cs" />
+    <Compile Include="Model\ROYcms_UGroup_Workflow.cs" />
+    <Compile Include="Model\ROYcms_Url.cs" />
+    <Compile Include="Model\ROYcms_UrlRewriter.cs" />
+    <Compile Include="Model\ROYcms_user.cs" />
+    <Compile Include="Model\ROYcms_UserInfo.cs" />
+    <Compile Include="Model\ROYcms_user_defined.cs" />
+    <Compile Include="Model\ROYcms_WebGroupNews.cs" />
+    <Compile Include="Model\ROYcms_WebGroupSubGroup.cs" />
+    <Compile Include="Model\ROYcms_Workflow.cs" />
+    <Compile Include="Model\ROYcms_XML.cs" />
+    <Compile Include="Model\UserLogin.cs" />
+    <Compile Include="Model\ROYcms_UserGrade.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ROYcms.Common\ROYcms.Common.csproj">
+      <Project>{810E13CD-EF35-4A2F-A5BD-8604D27588B1}</Project>
+      <Name>ROYcms.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ROYcms.Config\ROYcms.Config.csproj">
+      <Project>{1BAB7B65-FFC7-492A-934B-2DDDF7951643}</Project>
+      <Name>ROYcms.Config</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ROYcms.DB\ROYcms.DB.csproj">
+      <Project>{C7F4084E-D834-43E4-AF78-15B7C76D1DD8}</Project>
+      <Name>ROYcms.DB</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

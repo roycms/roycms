@@ -1,0 +1,258 @@
+﻿BODY {
+	BACKGROUND: url(small/fe.gif) #000
+}
+BODY A {
+	COLOR: #3399cc; FONT-SIZE: 12px; TEXT-DECORATION: underline
+}
+BODY A:link {
+	COLOR: #3399cc; FONT-SIZE: 12px; TEXT-DECORATION: underline
+}
+BODY A:visited {
+	COLOR: #3399cc; FONT-SIZE: 12px; TEXT-DECORATION: underline
+}
+BODY A:hover {
+	BACKGROUND: #eee; COLOR: #666; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+#main {
+	BACKGROUND: url(small/f4.gif) repeat-y center top; MARGIN-LEFT: -2px
+}
+#header {
+	BACKGROUND: url(small/09.gif) no-repeat center top; HEIGHT: 243px
+}
+#header DIV.lc {
+	
+}
+#header DIV.rc {
+	
+}
+#header DIV.tit {
+	LINE-HEIGHT: 26px; FONT-FAMILY: 黑体; FONT-SIZE: 24px; TOP: 89px; LEFT: 100px
+}
+#header DIV.tit A.titlink {
+	COLOR: #08547c; FONT-SIZE: 24px; TEXT-DECORATION: none
+}
+#header DIV.tit A.titlink:visited {
+	COLOR: #08547c; FONT-SIZE: 24px; TEXT-DECORATION: none
+}
+#header DIV.desc {
+	COLOR: #fff; FONT-SIZE: 13px; TOP: 140px; LEFT: 120px
+}
+#tabline {
+	BACKGROUND-COLOR: #bbbbbb; DISPLAY: none
+}
+#tab {
+	TOP: 219px; LEFT: 60px
+}
+#tab A.on {
+	LINE-HEIGHT: 20px; MARGIN-TOP: 2px; COLOR: #08547c; FONT-SIZE: 12px
+}
+#tab A.on:link {
+	LINE-HEIGHT: 20px; MARGIN-TOP: 2px; COLOR: #08547c; FONT-SIZE: 12px
+}
+#tab A.on:visited {
+	LINE-HEIGHT: 20px; MARGIN-TOP: 2px; COLOR: #08547c; FONT-SIZE: 12px
+}
+#tab SPAN {
+	DISPLAY: none; COLOR: #fff; FONT-SIZE: 18px
+}
+#tab A:link {
+	COLOR: #fff; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+#tab A:visited {
+	COLOR: #fff; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+#tab A:hover {
+	COLOR: #08547c; FONT-SIZE: 12px; FONT-WEIGHT: bold; TEXT-DECORATION: underline
+}
+#tab2 {
+	BACKGROUND: url(small/f4.gif) repeat-y center 50%
+}
+#tab2 SPAN {
+	COLOR: #de4263; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+#tab2 A {
+	FONT-SIZE: 12px
+}
+#tab2 A:link {
+	COLOR: #666
+}
+#tab2 A:visited {
+	COLOR: #666
+}
+.stage {
+	TEXT-ALIGN: center; BACKGROUND: url(small/c09.gif) no-repeat center bottom
+}
+.stagepad {
+	MARGIN: 0px auto; WIDTH: 890px
+}
+#layout {
+	MARGIN: 0px auto 48px; WIDTH: 920px
+}
+#layout TD.c2t1 {
+	
+}
+#layout TD.c3t1 {
+	
+}
+#layout TD.c3t3 {
+	
+}
+#layout TD.c2t1 {
+	PADDING-LEFT: 15px
+}
+#layout TD.c2t2 {
+	WIDTH: 5px !important
+}
+#layout TD.c2t3 {
+	
+}
+#comm_info {
+	TEXT-ALIGN: left; FONT-FAMILY: Arial; COLOR: #333333
+}
+#comm_info DIV.line {
+	LINE-HEIGHT: 8px; MARGIN-TOP: 5px; BORDER-TOP: #a6a6a6 1px dashed
+}
+#comm_info A {
+	COLOR: #08547c
+}
+#page {
+	TEXT-ALIGN: center; FONT-FAMILY: Arial; HEIGHT: 30px; FONT-SIZE: 14px
+}
+#page SPAN {
+	PADDING-BOTTOM: 3px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; COLOR: #333333; FONT-SIZE: 14px; FONT-WEIGHT: bold; PADDING-TOP: 3px
+}
+#page A.pc {
+	COLOR: #08547c; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+#page A.pc:visited {
+	COLOR: #08547c
+}
+#page A.pi {
+	PADDING-BOTTOM: 3px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; COLOR: #08547c; FONT-SIZE: 14px; PADDING-TOP: 3px
+}
+#page A.pi:visited {
+	COLOR: #08547c
+}
+.mod {
+	MARGIN-BOTTOM: 10px
+}
+.modhandle {
+	CURSOR: move
+}
+.modth {
+	BORDER-BOTTOM: #9ec7df 1px solid; BORDER-LEFT: #9ec7df 1px solid; BACKGROUND: #d3e7f5; HEIGHT: 24px; BORDER-TOP: #9ec7df 1px solid; BORDER-RIGHT: #9ec7df 1px solid
+}
+.modhead {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; PADDING-TOP: 4px
+}
+.modopt {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 4px; PADDING-TOP: 4px
+}
+.modtit {
+	COLOR: #08547c; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+A.modtit {
+	COLOR: #08547c
+}
+A.modtit:visited {
+	COLOR: #08547c
+}
+.modtitlink {
+	COLOR: #08547c; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+A.modtitlink {
+	COLOR: #08547c; TEXT-DECORATION: none
+}
+A.modtitlink:visited {
+	COLOR: #08547c; TEXT-DECORATION: none
+}
+A.modtitlink:hover {
+	COLOR: #08547c; TEXT-DECORATION: underline
+}
+.modact {
+	COLOR: #08547c; FONT-SIZE: 12px
+}
+A.modact:link {
+	COLOR: #08547c
+}
+A.modact:visited {
+	COLOR: #08547c
+}
+.modbox {
+	PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; PADDING-TOP: 10px
+}
+.modtl {
+	
+}
+.modtc {
+	
+}
+.modtr {
+	
+}
+.modbl {
+	
+}
+.modbc {
+	
+}
+.modbr {
+	
+}
+.modlabel {
+	COLOR: #000; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+#m_blog DIV.tit {
+	COLOR: #de4263; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+#m_blog DIV.tit A {
+	COLOR: #08547c; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+#m_blog DIV.tit A:visited {
+	COLOR: #08547c
+}
+#m_blog DIV.date {
+	MARGIN: 5px 0px 8px; COLOR: #666666
+}
+#m_blog * {
+	LINE-HEIGHT: 20px !important
+}
+#m_blog DIV.cnt {
+	LINE-HEIGHT: 20px; COLOR: #5f5f5f; FONT-SIZE: 12px
+}
+#m_blog DIV.cnt DIV {
+	FONT-SIZE: 12px
+}
+#m_blog DIV.more {
+	MARGIN: 14px 0px 16px
+}
+#m_blog DIV.more A {
+	COLOR: #08547c; FONT-SIZE: 14px
+}
+#m_blog DIV.more A:visited {
+	COLOR: #08547c
+}
+#m_blog DIV.opt {
+	PADDING-LEFT: 15px; BACKGROUND: no-repeat left center; HEIGHT: 12px; COLOR: #666666; FONT-SIZE: 12px
+}
+#m_blog DIV.opt A {
+	COLOR: #08547c; FONT-SIZE: 12px
+}
+#m_blog DIV.opt A:visited {
+	COLOR: #08547c
+}
+#m_blog DIV.line {
+	LINE-HEIGHT: 10px; MARGIN-TOP: 10px; BORDER-TOP: #edece9 1px solid
+}
+#m_blog DIV.none {
+	PADDING-BOTTOM: 100px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #333333; FONT-SIZE: 14px; PADDING-TOP: 100px
+}
+#preview_friend {
+	COLOR: #3399cc !important
+}
+#preview_blog {
+	COLOR: #3399cc !important
+}
+.f14 A {
+	COLOR: #3399cc !important; TEXT-DECORATION: none
+}

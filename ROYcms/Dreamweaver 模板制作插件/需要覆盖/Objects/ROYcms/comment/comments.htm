@@ -1,0 +1,41 @@
+<!DOCTYPE HTML SYSTEM "-//Macromedia//DWExtension layout-engine 5.0//dialog">
+<!-- MENU-LOCATION=NONE -->
+<html>
+<head>
+<title>评论列表</title>
+<script language="javascript" src="../../../Shared/Common/Scripts/dwscripts.js"></script>
+<script language="javascript" src="../../../Shared/Common/Scripts/ListControlClass.js"></script>
+<SCRIPT SRC="comments.js"></SCRIPT>
+<link href="../../../fields.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="initializeUI()">
+<form name="theForm">
+  <table border="0" cellspacing="4" width="380">
+	<tr> 
+      <td width="84" height="25" align="right" nowrap>显示评论条数：</td>
+      <td width="280"><input name="Top" type="text" id="Top" style="width:35px" value="10"></td>
+    </tr>
+	<tr>
+	  <td height="25" align="right" nowrap>检索条件NewId：</td>
+	  <td><label>
+	    <input name="NewId" type="text" id="NewId">
+      可用 URL参数 {NewId}</label></td>
+    </tr>
+	<tr>
+	  <td height="25" align="right" nowrap>排序：</td>
+	  <td><input name="Order" type="text" id="Order" value="bh desc "></td>
+    </tr>
+	<tr>
+	  <td height="25" align="right" nowrap>&nbsp;</td>
+	  <td><table width="50%" border="0" align="right" cellpadding="5" cellspacing="0">
+	    <tr>
+	      <td width="4%" nowrap><img src="http://update.roycms.cn/_App_Dreamweaver/mes.png" width="16" height="16" alt="消息" longdesc="http://www.roycms.cn"></td>
+	      <td width="96%" nowrap><a href="http://www.roycms.cn">ROYcms!NT 官方滚动消息</a></td>
+	      </tr>
+      </table></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>

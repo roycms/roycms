@@ -1,0 +1,16 @@
+G:\ROYcms!NT V2.0\ROYcms.Tools\ROYcms.Tools.Tp\bin\ROYcms.Tools.Tp.dll
+G:\ROYcms!NT V2.0\ROYcms.Tools\ROYcms.Tools.Tp\bin\ROYcms.Tools.Tp.pdb
+G:\ROYcms!NT V2.0\ROYcms.Tools\ROYcms.Tools.Tp\bin\ROYcms.Common.dll
+G:\ROYcms!NT V2.0\ROYcms.Tools\ROYcms.Tools.Tp\bin\ROYcms.DB.dll
+G:\ROYcms!NT V2.0\ROYcms.Tools\ROYcms.Tools.Tp\bin\ICSharpCode.SharpZipLib.dll
+G:\ROYcms!NT V2.0\ROYcms.Tools\ROYcms.Tools.Tp\bin\ROYcms.Common.pdb
+G:\ROYcms!NT V2.0\ROYcms.Tools\ROYcms.Tools.Tp\bin\ROYcms.DB.pdb
+G:\ROYcms!NT V2.0\ROYcms.Tools\ROYcms.Tools.Tp\bin\ROYcms.DB.xml
+G:\ROYcms!NT V2.0\ROYcms.Tools\ROYcms.Tools.Tp\obj\Debug\ResolveAssemblyReference.cache
+G:\ROYcms!NT V2.0\ROYcms.Tools\ROYcms.Tools.Tp\obj\Debug\ROYcms.Tools.Tp.dll
+G:\ROYcms!NT V2.0\ROYcms.Tools\ROYcms.Tools.Tp\obj\Debug\ROYcms.Tools.Tp.pdb
+G:\ROYcms!NT\ROYcms.Tools\ROYcms.Tools.Tp\bin\ROYcms.Tools.Tp.dll
+G:\ROYcms!NT\ROYcms.Tools\ROYcms.Tools.Tp\bin\ROYcms.Tools.Tp.pdb
+G:\ROYcms!NT\ROYcms.Tools\ROYcms.Tools.Tp\obj\Debug\ResolveAssemblyReference.cache
+G:\ROYcms!NT\ROYcms.Tools\ROYcms.Tools.Tp\obj\Debug\ROYcms.Tools.Tp.dll
+G:\ROYcms!NT\ROYcms.Tools\ROYcms.Tools.Tp\obj\Debug\ROYcms.Tools.Tp.pdb

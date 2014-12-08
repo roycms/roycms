@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='Navigation.xsl'?>
+<Root>
+
+  <type ID="system" path="" logo="/administrator/images/nv10.png" name="财务相关/Shop" description="财务相关/Shop" Visible="true">
+    <title url="/administrator/Payment/AdminInvoice.aspx" description="发票管理" Visible="true">发票管理</title>
+    <title url="/administrator/Payment/AdminOrder.aspx" description="订单管理" Visible="true">订单管理</title>
+    <title url="/administrator/Payment/AdminPayment.aspx" description="在线支付记录表" Visible="true">在线支付记录表</title>
+
+  </type>
+  <type ID="system" path="" logo="/administrator/images/nv10.png" name="购物模块/Shop" description="购物模块/Shop" Visible="true">
+    <title url="/administrator/Myshop/AdminGoods.aspx?ClassKind=888888888" description="商品管理" Visible="true">商品管理</title>
+    <title url=" /administrator/class/index.aspx?Classkind=888888888" description="商品分类" Visible="true">商品分类</title>
+  </type>
+  <type ID="system" path="" logo="/administrator/images/nv10.png" name="视频点播/Mov" description="视频点播/Mov" Visible="true">
+    <title url="/administrator/Mov/AdminMov.aspx?ClassKind=999999999" description="视频管理" Visible="true">视频管理</title>
+    <title url=" /administrator/class/index.aspx?Classkind=999999999" description="视频分类" Visible="true">视频分类</title>
+  </type>
+  <type ID="system" path="" logo="/administrator/images/nv10.png" name="Rss源采集/Faucet" description="Rss源采集插件" Visible="true">
+    <title url="/administrator/Collect/index.aspx " description="插件管理配置" Visible="true">Rss源采集插件</title>
+   
+  </type>
+  <type ID="system" path="" logo="/administrator/images/nv10.png" name="投票插件/Faucet" description="投票插件" Visible="true">
+    <title url="/administrator/config/faucet.aspx " description="插件管理配置" Visible="true">插件管理配置</title>
+    <title url="/administrator/config/Caching.aspx " description="插件卸载/更新" Visible="true">插件卸载/更新</title>
+  </type>
+  <type ID="system" path="" logo="/administrator/images/nv10.png" name="博客插件/Faucet" description="博客插件" Visible="true">
+    <title url="/administrator/config/faucet.aspx " description="插件管理配置" Visible="true">插件管理配置</title>
+    <title url="/administrator/config/Caching.aspx " description="插件卸载/更新" Visible="true">插件卸载/更新</title>
+  </type>
+  <type ID="system" path="" logo="/administrator/images/nv10.png" name="简单社区插件/Faucet" description="简单社区插件" Visible="true">
+    <title url="/administrator/config/faucet.aspx " description="插件管理配置" Visible="true">插件管理配置</title>
+    <title url="/administrator/config/Caching.aspx " description="插件卸载/更新" Visible="true">插件卸载/更新</title>
+  </type>
+  <type ID="system" path="" logo="/administrator/images/nv10.png" name="问答系统插件/Faucet" description="问答系统插件" Visible="true">
+    <title url="/administrator/config/faucet.aspx " description="插件管理配置" Visible="true">插件管理配置</title>
+    <title url="/administrator/config/Caching.aspx " description="插件卸载/更新" Visible="true">插件卸载/更新</title>
+  </type>
+  
+
+</Root>

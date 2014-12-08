@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{42CEE40E-275C-41D9-B9B9-A98A1C536607}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ROYcms.Ivony</RootNamespace>
+    <AssemblyName>ROYcms.Ivony</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ivony.Core\Data\IPagingData.cs" />
+    <Compile Include="Ivony.Core\Data\PagingExtension.cs" />
+    <Compile Include="Ivony.Core\Fluent\ConvertExtensions.cs" />
+    <Compile Include="Ivony.Core\Fluent\DisposableHelper.cs" />
+    <Compile Include="Ivony.Core\Fluent\EnumerableExtension.cs" />
+    <Compile Include="Ivony.Core\Fluent\StringExtensions.cs" />
+    <Compile Include="Ivony.Html.Parser\ContentModels\HtmlAttributeSetting.cs" />
+    <Compile Include="Ivony.Html.Parser\ContentModels\HtmlBeginTag.cs" />
+    <Compile Include="Ivony.Html.Parser\ContentModels\HtmlCommentContent.cs" />
+    <Compile Include="Ivony.Html.Parser\ContentModels\HtmlContentFragment.cs" />
+    <Compile Include="Ivony.Html.Parser\ContentModels\HtmlDoctypeDeclaration.cs" />
+    <Compile Include="Ivony.Html.Parser\ContentModels\HtmlEndTag.cs" />
+    <Compile Include="Ivony.Html.Parser\ContentModels\HtmlSpecialTag.cs" />
+    <Compile Include="Ivony.Html.Parser\ContentModels\HtmlTextContent.cs" />
+    <Compile Include="Ivony.Html.Parser\DomAttribute.cs" />
+    <Compile Include="Ivony.Html.Parser\DomComment.cs" />
+    <Compile Include="Ivony.Html.Parser\DomDocument.cs" />
+    <Compile Include="Ivony.Html.Parser\DomDocumentType.cs" />
+    <Compile Include="Ivony.Html.Parser\DomElement.cs" />
+    <Compile Include="Ivony.Html.Parser\DomFragment.cs" />
+    <Compile Include="Ivony.Html.Parser\DomFragmentManager.cs" />
+    <Compile Include="Ivony.Html.Parser\DomModifier.cs" />
+    <Compile Include="Ivony.Html.Parser\DomNode.cs" />
+    <Compile Include="Ivony.Html.Parser\DomNodeCollection.cs" />
+    <Compile Include="Ivony.Html.Parser\DomObject.cs" />
+    <Compile Include="Ivony.Html.Parser\DomProvider.cs" />
+    <Compile Include="Ivony.Html.Parser\DomSpecial.cs" />
+    <Compile Include="Ivony.Html.Parser\DomTextNode.cs" />
+    <Compile Include="Ivony.Html.Parser\HtmlParserBase.cs" />
+    <Compile Include="Ivony.Html.Parser\IDomContainer.cs" />
+    <Compile Include="Ivony.Html.Parser\IHtmlReader.cs" />
+    <Compile Include="Ivony.Html.Parser\JumonyLegacyParser.cs" />
+    <Compile Include="Ivony.Html.Parser\JumonyParser.cs" />
+    <Compile Include="Ivony.Html.Parser\JumonyReader.cs" />
+    <Compile Include="Ivony.Html.Parser\Regulars.cs" />
+    <Compile Include="Ivony.Html\EnumerableWrapper.cs" />
+    <Compile Include="Ivony.Html\Extensions\AttributeExtensions.cs" />
+    <Compile Include="Ivony.Html\Extensions\ContentExtensions.cs" />
+    <Compile Include="Ivony.Html\Extensions\DocumentExtensions.cs" />
+    <Compile Include="Ivony.Html\Extensions\DomExtensions.cs" />
+    <Compile Include="Ivony.Html\Extensions\DomModifierExtensions.cs" />
+    <Compile Include="Ivony.Html\Extensions\ExpandedDomExtensions.cs" />
+    <Compile Include="Ivony.Html\Extensions\ExpandedNavigateExtensions.cs" />
+    <Compile Include="Ivony.Html\Extensions\LocationExtensions.cs" />
+    <Compile Include="Ivony.Html\Extensions\NavigateExtensions.cs" />
+    <Compile Include="Ivony.Html\Extensions\ParserExtension.cs" />
+    <Compile Include="Ivony.Html\Html5DraftSpecification.cs" />
+    <Compile Include="Ivony.Html\HtmlDocumentWrapper.cs" />
+    <Compile Include="Ivony.Html\HtmlDomDependency.cs" />
+    <Compile Include="Ivony.Html\HtmlElementAdapter.cs" />
+    <Compile Include="Ivony.Html\HtmlElementWrapper.cs" />
+    <Compile Include="Ivony.Html\HtmlEncoding.cs" />
+    <Compile Include="Ivony.Html\HtmlList.cs" />
+    <Compile Include="Ivony.Html\HtmlNodeWrapper.cs" />
+    <Compile Include="Ivony.Html\HtmlRange.cs" />
+    <Compile Include="Ivony.Html\HtmlSpecification.cs" />
+    <Compile Include="Ivony.Html\HtmlSpecificationBase.cs" />
+    <Compile Include="Ivony.Html\IHtmlAdapter.cs" />
+    <Compile Include="Ivony.Html\IHtmlAttribute.cs" />
+    <Compile Include="Ivony.Html\IHtmlCollection.cs" />
+    <Compile Include="Ivony.Html\IHtmlComment.cs" />
+    <Compile Include="Ivony.Html\IHtmlContainer.cs" />
+    <Compile Include="Ivony.Html\IHtmlDocument.cs" />
+    <Compile Include="Ivony.Html\IHtmlDomModifier.cs" />
+    <Compile Include="Ivony.Html\IHtmlDomObject.cs" />
+    <Compile Include="Ivony.Html\IHtmlDomProvider.cs" />
+    <Compile Include="Ivony.Html\IHtmlElement.cs" />
+    <Compile Include="Ivony.Html\IHtmlFragment.cs" />
+    <Compile Include="Ivony.Html\IHtmlFragmentManager.cs" />
+    <Compile Include="Ivony.Html\IHtmlNode.cs" />
+    <Compile Include="Ivony.Html\IHtmlParser.cs" />
+    <Compile Include="Ivony.Html\IHtmlRenderable.cs" />
+    <Compile Include="Ivony.Html\IHtmlSpecial.cs" />
+    <Compile Include="Ivony.Html\IHtmlTextNode.cs" />
+    <Compile Include="Ivony.Html\Indexing\ElementClassIndex.cs" />
+    <Compile Include="Ivony.Html\Indexing\ElementIdentityIndex.cs" />
+    <Compile Include="Ivony.Html\Indexing\ElementIndex.cs" />
+    <Compile Include="Ivony.Html\Indexing\ElementNameIndex.cs" />
+    <Compile Include="Ivony.Html\Indexing\IndexManager.cs" />
+    <Compile Include="Ivony.Html\Regulars.cs" />
+    <Compile Include="Ivony.Html\Selectors\CssAttributeSelector.cs" />
+    <Compile Include="Ivony.Html\Selectors\CssCacheableSelector.cs" />
+    <Compile Include="Ivony.Html\Selectors\CssCascadingSelector.cs" />
+    <Compile Include="Ivony.Html\Selectors\CssElementSelector.cs" />
+    <Compile Include="Ivony.Html\Selectors\CssMultipleSelector.cs" />
+    <Compile Include="Ivony.Html\Selectors\CssPseudoClassSelectors.cs" />
+    <Compile Include="Ivony.Html\Selectors\CssSelector.cs" />
+    <Compile Include="Ivony.Html\Selectors\ICssPseudoClassProvider.cs" />
+    <Compile Include="Ivony.Html\Selectors\ICssPseudoClassSelector.cs" />
+    <Compile Include="Ivony.Html\Selectors\ICssSelector.cs" />
+    <Compile Include="Ivony.Html\Selectors\TraceEnumerable.cs" />
+    <Compile Include="Ivony.Html\Styles\CssStyle.cs" />
+    <Compile Include="Ivony.Html\SynchronizedList.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

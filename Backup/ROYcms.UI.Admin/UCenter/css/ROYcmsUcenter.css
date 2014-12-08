@@ -1,0 +1,222 @@
+﻿@charset "utf-8";
+/*ROYcms_UCenter
+updatetime:2009.12.14
+editor:Jackying
+QQ: 270863798
+E-mail: admin@anan360.cn
+Website: http://www.roycms.cn    http://www.web1.net.cn		http://www.anan360.cn*/
+/*===========================版权所有==============================================*/
+@import url(Basic.css);/*初始化样式*/
+@import url(font.css);/*字体样式*/
+@import url(themes.css);/*主题样式*/
+@import url(banner.css);/*广告样式*/
+#wrap{width:980px;margin:0 auto;overflow:hidden; height:100%; font-size:12px;}
+
+#UCmainNav{ height:35px; line-height:35px; background-color:#2c6ed5; color:#fff; padding:0 10px;}
+#UCmainNav #nav{font-size:14px; font-weight:700;}
+#UCmainNav a{ color:#fff; text-decoration:none;}
+#UCmainNav a:hover{color:#fff;} 
+#UCmainNav #nav a{padding:0 15px; display:block; float:left;}
+#UCmainNav #nav a:hover{ text-decoration:none; background-color:#6D93E1;}
+#UCLoginBar{ float:right; text-align:left; font-size:12px;}
+#UCLoginBar a{ padding:0 5px;}
+#UCLoginBar a:hover{ text-decoration:underline;}
+
+#UCHeader{ height:64px; padding-top:4px; border-left:#b1cfde 1px solid; border-right:#b1cfde 1px solid;}
+.UCHeaderbottom_1{border-right:#b1cfde 1px solid; font-size:0px;border-left:#b1cfde 2px solid; line-height:0px; height:1px;}
+.UCHeaderbottom_2{border-right:#b1cfde 1px solid;font-size:0px; margin:0 1px;border-left:#b1cfde 2px solid; line-height:0px; height:1px;}
+.UCHeaderbottom_3{ font-size:0px; margin:0 2px; line-height:0; border-bottom:#b1cfde 1px solid; height:0px; margin-bottom:20px;}
+	#UClogo{ height:60px; width:210px; float:left;}
+	#UClogo img{ margin-top:4px;}
+	#UCbanner{ float:left; width:510px; height:60px;}
+	#UChotNews{ float:right; text-align:left; width:230px;}
+	
+#left_sidebar{ width:140px; float:left; border-top:#d6d9de 1px solid;;}
+#left_sidebar ul li 
+{
+    border:#fff 1px solid;
+                      border-bottom:#d6d9de 1px solid;
+                      display:block; height:32px; 
+                      position:relative;
+                      }
+#left_sidebar ul li.hover{ background-color:#e7eaf1;}
+#left_sidebar ul li a{ display:block; height:32px; font-size:14px; line-height:33px; text-decoration:none; padding-left:27px;}
+#left_sidebar ul li a:hover{ background-color:#eceef4;}
+	#current{ background:url(../images/ico_feed.gif) no-repeat 5px center;}
+	#ing{ background:url(../images/ico_ing.gif) no-repeat 5px center;}
+	#blog{ background:url(../images/ico_blog.gif) no-repeat 5px center;}
+	#group{ background:url(../images/ico_group.gif) no-repeat 5px center;}
+	#news{ background:url(../images/ico_news.gif) no-repeat 5px center;}
+	#question{ background:url(../images/ico_question.gif) no-repeat 5px center;}
+	#bookmark{ background:url(../images/ico_bookmark.gif) no-repeat 5px center;}
+	#job{ background:url(../images/ico_job.gif) no-repeat 5px center;}
+
+#left_sidebar ul li em a{z-index:2; position:absolute; font-size:12px;width:24px; padding:0px; color:gray; font-style:normal; background:none; margin-left:105px;}
+#left_sidebar ul li em a:hover{background:none; text-decoration:underline;}
+
+#right_sidebar{ float:right; width:220px;}
+.right_content_wrapper{ background-color:#efeeff; padding-left:15px; margin-bottom:15px; padding-top:10px; padding-bottom:10px;height:auto!important;height:100%;overflow:hidden;}
+#SearchBar .text{WIDTH: 105px;HEIGHT: 21px; background-color:#FFF;border:solid 1px #90B9D2;DISPLAY: block; float:left; line-height:21px; margin:0px; padding:3px 3px;}
+#SearchBar .btn_blue{DISPLAY: block; font-weight:bold; font-size:14px; color:#fff; float:left; background:url(../images/btn_blue.gif) no-repeat left center; width:54px; text-align:center; margin-left:6px; border:none; text-decoration:none; padding:0px; cursor:pointer; height:27px;}
+
+#UCmain{ margin-left:150px; margin-right:230px;}
+	#Topnav_tags{ height:28px;border-bottom:solid 1px #92AFEC; margin-bottom:10px;}
+	#Topnav_tags ul{ padding-left:15px;}
+	#Topnav_tags ul li{ float:left; background-color:#6D93E1; color:#fff; display:inline-block; padding:0 10px; margin:0 1px; font-size:14px; height:28px; line-height:28px; border:solid 1px #92AFEC; border-bottom:none; margin-bottom:-1px;}
+	#Topnav_tags ul li a{ color:#FFF; text-decoration:none;}
+	#Topnav_tags ul li a:hover{color:#FFF;text-decoration:none;}
+	#Topnav_tags ul li.hover{ background-color:#FFF; color:#6D93E1;}
+	#Topnav_tags ul li.hover a{color:#6D93E1;text-decoration:none;}
+	#Topnav_tags ul li.hover a:hover{color:#6D93E1;text-decoration:none;}
+	#feed_second_nav{ padding-left:30px;height:20px;}
+	#feed_second_nav ul li{display:inline-block; float:left;padding:0 15px; border-left:dotted 1px #ccc; height:20px; line-height:20px;}
+	#feed_second_nav ul li a{ color:#666; text-decoration:none;}
+	#feed_second_nav ul li a:hover{ color:#FF8300; text-decoration:underline;}
+	
+	dl.feed_block{height:auto!important;height:100%;overflow:hidden;}
+	.feed_block dt{ color:#000; line-height:25px;padding-left:25px; height:25px;}
+	.feed_block dt.current{ background:url(../images/ico_feed.gif) no-repeat left center;}
+	.feed_block dt.ing{ background:url(../images/ico_ing.gif) no-repeat left center;}
+	.feed_block dt.blog{ background:url(../images/ico_blog.gif) no-repeat left center;}
+	.feed_block dt.group{ background:url(../images/ico_group.gif) no-repeat left center;}
+	.feed_block dt.news{ background:url(../images/ico_news.gif) no-repeat left center;}
+	.feed_block dt.question{ background:url(../images/ico_question.gif) no-repeat left center;}
+	.feed_block dt.bookmark{ background:url(../images/ico_bookmark.gif) no-repeat left center;}
+	.feed_block dt.job{ background:url(../images/ico_job.gif) no-repeat left center;}
+	.feed_block dt a.graylink{ color:#808080;background-color:#e3e3e3;}
+	.feed_block dt a.graylink:hover{ color:#FFF; background-color:#2C6ED5;}
+	.feed_block dt a.huiying{ color:#666;}
+	.feed_block dt a.huiying:hover{ color:#FF8300;}
+	.feed_block dd{ border-bottom:dotted 1px #ccc; margin-bottom:5px; line-height:20px; padding-bottom:8px; background:url(../images/quote-start.gif) no-repeat 0px 2px; padding-left:20px; margin-left:25px;}
+	.feed_block dd.huifu{ background:url(../images/quote.gif) no-repeat 0px 4px;}
+/*页脚样式*/
+#UCfooter{text-align:center;line-height:28px;color:#333; font-size:12px; margin-top:20px;}
+
+/*表单文本框样式*/
+.input_css {
+	border: 1px solid #CCC;
+	background-color: #FAFAFA;
+	height: 23px;
+}
+#NewAdminList{
+	color:#CCC;
+	font-size:12px;
+	margin:10px 10px 10px 30px;
+	}
+#NewAdminList li a{
+	font-size:13px;
+	padding:3px;
+}
+#NewAdminList .edit,edit a{ color:#C33; font-size:12px; float:right; }
+#NewAdminList .del,del a{ color:#C33; font-size:12px; float:right; }
+ #NewAdminList .see,see a{ color:#C33; font-size:12px; float:right; }
+ 
+ .txtInput {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #D7D7D7;
+    font-family: 'Microsoft Yahei', Tahoma, 'Segoe UI', Arial, Simsun, sans-serif;
+    font-size: 12px;
+    height: 22px;
+    line-height: 22px;
+    margin-right: 5px;
+    padding: 0 3px;
+    vertical-align: middle;
+}
+.txtInput2 {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #D7D7D7;
+    font-family: 'Microsoft Yahei', Tahoma, 'Segoe UI', Arial, Simsun, sans-serif;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 3px;
+    vertical-align: middle;
+}
+.btnSearch {
+    background: url(../../administrator/images/btn_bg.gif) repeat-x scroll 0 0 transparent;
+    border: 1px solid #D7D7D7;
+    color: #707070;
+    cursor: pointer;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    padding: 0 8px;
+    vertical-align: middle;
+}
+.btnSubmit {
+    background: url(../../administrator/images/btn_bg.gif) repeat-x scroll 0 -44px transparent;
+    border: 1px solid #AED0EA;
+    color: #3D80B3;
+    cursor: pointer;
+    font-weight: bold;
+    height: 28px;
+    line-height: 28px;
+    overflow: hidden;
+    padding: 0 10px;
+    vertical-align: middle;
+}
+textarea {
+    border: 1px solid #D2D2D2;
+    color: #000000;
+    font-family: 'Microsoft Yahei', Tahoma, 'Segoe UI', Arial, Simsun, sans-serif;
+    font-size: 12px;
+    padding: 3px;
+    vertical-align: middle;
+}
+.select 
+{
+    font-family: 'Microsoft Yahei', Tahoma, 'Segoe UI', Arial, Simsun, sans-serif;
+    background: none repeat scroll 0 0 #ffffff;
+    border: 1px solid #E1E1E1;
+    color: #7A7A7A;
+    height: 22px;
+    line-height: 22px;
+    vertical-align: middle;
+}
+
+/*命令行按钮样式开始*/
+
+.Check td {
+	BACKGROUND-COLOR: #92C9D9; 
+}
+.CheckOut {
+	BACKGROUND-COLOR: #f4fbff; 
+}
+.Tb{
+	font-size:12px;
+	font-family: 'Microsoft Yahei', Tahoma, 'Segoe UI', Arial, Simsun, sans-serif;
+	margin-top:2px;
+	color:#003f7b;
+	background:#CCC;
+	}
+.Tb tr{ background:#f4fbff;}	
+.tiao_con a{ height:16px; line-height:16px; font-size:14px;}
+.tiao_con img{ margin-right:4px; }
+.tiao_top{ height:32px; 
+           background:url(../../administrator/images/tiao_a.jpg) repeat-x; 
+           font-size:12px; 
+           border-left:0px solid #2566a3; 
+           border-right:0px solid #2566a3; 
+           border-top:0px; 
+           border-bottom:0px; 
+           color:#FFF; }
+#tiao_center{ background:url(../../administrator/images/tiao_b.jpg) repeat-x; 
+              font-size:12px; 
+              color:#FFF;
+               font-size:12px;
+                border-bottom:none;
+                 color:#003f7b;
+                  height:26px; }
+.tiao_con { margin-left:4px;}
+.tiao_con a{
+	text-decoration:none;
+	color:#FFF;
+	margin-right:10px;
+} 
+.tiao_top a:link{ color:#FFF;}
+.tiao_top a:visited{color:#FFF;}
+.tiao_top a:hover{ color:#F00;}
+.tiao_cona{ padding-right:12px;font-size:12px;  }
+.tiao_cona a{ color:#FFF;  font-size:12px; }
+.tiao_cona span{  margin-right:10px;  padding-right:4px; }
+#tiao_center #topchkAll{  padding:0px;}
+#tiao_center td{ padding-left:5px; padding-top:0px; padding-bottom:0px; padding-right:0px; margin:0px; }

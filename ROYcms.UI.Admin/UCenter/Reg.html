@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link href="/Administrator/Bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="/Administrator/Bootstrap/css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+<script src="/Administrator/Bootstrap/jquery.min.js" ></script>
+<script src="/Administrator/Bootstrap/bootstrap.js"></script>
+<script src="/Administrator/js/formValidatorRegex.js"></script>
+<script src="/Administrator/js/Login.js"></script>
+<title></title>
+</head>
+<body>
+<form id="apnetFrom" runat="server" class="form-horizontal">
+  <div class="container" style="margin-top:10px;">
+    <div class="container-fluid">
+      <fieldset>
+       <legend><a href="/">首页</a> &gt;注册 <a href="/ucenter/login.html"> 已经有账户登录?</a></legend>
+        <div class="alert  alert-error" style="display:none"> 
+          <!--    <a href="#" data-dismiss="alert" class="close">×</a>-->
+          <p> 账户注册失败了！您的用户名和邮箱被占用了！” </p>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="inputEmail">用户名</label>
+          <div class="controls">
+            <input type="text" id="name" name="name" placeholder="用户名">
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="inputEmail">Email</label>
+          <div class="controls">
+            <input type="text" id="email" name="email" placeholder="Email">
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="inputPassword">密码</label>
+          <div class="controls">
+            <input type="password" id="password" name="password" placeholder="密码">
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="inputPassword">重复输入密码</label>
+          <div class="controls">
+            <input type="password" id="password2" placeholder="重复输入密码">
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="valdates">验证码</label>
+          <div class="controls">
+            <input type="text" id="valdates" name="valdates" style=" width:50px;">
+            <img id="validateCode" src="/Administrator/Img.ashx" onClick="this.src=this.src+'?1'"  alt="验证码"  /> <a onClick="validateCode.src=validateCode.src+'?1'" title="看不清我要换一张">看不清？</a> </div>
+        </div>
+        <div class="control-group">
+          <div class="controls">
+            <label class="checkbox">
+              <input type="checkbox">
+              同意网站协议 </label>
+            <button type="button" class="btn" id="reg_bt">注册</button>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+  </div>
+</form>
+</body>
+</html>

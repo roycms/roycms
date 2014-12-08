@@ -1,0 +1,183 @@
+G:\ROYcms!NT\trunk\ROYcms.Web\ROYcms.UI.Admin\obj\Debug\ResolveAssemblyReference.cache
+G:\ROYcms!NT\trunk\ROYcms.Web\ROYcms.UI.Admin\bin\ROYcms.UI.Admin.dll
+G:\ROYcms!NT\trunk\ROYcms.Web\ROYcms.UI.Admin\bin\ROYcms.UI.Admin.pdb
+G:\ROYcms!NT\trunk\ROYcms.Web\ROYcms.UI.Admin\bin\ROYcms.Common.dll
+G:\ROYcms!NT\trunk\ROYcms.Web\ROYcms.UI.Admin\bin\ROYcms.Controls.dll
+G:\ROYcms!NT\trunk\ROYcms.Web\ROYcms.UI.Admin\bin\ROYcms.Rewriter.dll
+G:\ROYcms!NT\trunk\ROYcms.Web\ROYcms.UI.Admin\bin\ROYcms.Sys.Bll.dll
+G:\ROYcms!NT\trunk\ROYcms.Web\ROYcms.UI.Admin\bin\ROYcms.Sys.Model.dll
+G:\ROYcms!NT\trunk\ROYcms.Web\ROYcms.UI.Admin\bin\ROYcms.Templet.dll
+G:\ROYcms!NT\trunk\ROYcms.Web\ROYcms.UI.Admin\bin\ROYcms.Sys.Dal.dll
+G:\ROYcms!NT\trunk\ROYcms.Web\ROYcms.UI.Admin\bin\ICSharpCode.SharpZipLib.dll
+G:\ROYcms!NT\trunk\ROYcms.Web\ROYcms.UI.Admin\bin\ROYcms.Sys.Dal.pdb
+G:\ROYcms!NT\trunk\ROYcms.Web\ROYcms.UI.Admin\bin\ROYcms.Common.pdb
+G:\ROYcms!NT\trunk\ROYcms.Web\ROYcms.UI.Admin\bin\ROYcms.Rewriter.pdb
+G:\ROYcms!NT\trunk\ROYcms.Web\ROYcms.UI.Admin\bin\ROYcms.Sys.Bll.pdb
+G:\ROYcms!NT\trunk\ROYcms.Web\ROYcms.UI.Admin\bin\ROYcms.Controls.pdb
+G:\ROYcms!NT\trunk\ROYcms.Web\ROYcms.UI.Admin\bin\ROYcms.Templet.pdb
+G:\ROYcms!NT\trunk\ROYcms.Web\ROYcms.UI.Admin\bin\ROYcms.Sys.Model.pdb
+G:\ROYcms!NT\trunk\ROYcms.Web\ROYcms.UI.Admin\obj\Debug\ROYcms.UI.Admin.dll
+G:\ROYcms!NT\trunk\ROYcms.Web\ROYcms.UI.Admin\obj\Debug\ROYcms.UI.Admin.pdb
+G:\ROYcms!NT\trunk\ROYcms.Web\ROYcms.UI.Admin\bin\ROYcms.UI.Admin.XML
+G:\ROYcms!NT\trunk\ROYcms.Web\ROYcms.UI.Admin\bin\ROYcms.DB.xml
+G:\ROYcms!NT\ROYcms.Web\ROYcms.UI.Admin\bin\ROYcms.UI.Admin.dll
+G:\ROYcms!NT\ROYcms.Web\ROYcms.UI.Admin\bin\ROYcms.UI.Admin.pdb
+G:\ROYcms!NT\ROYcms.Web\ROYcms.UI.Admin\bin\ROYcms.BasePage.dll
+G:\ROYcms!NT\ROYcms.Web\ROYcms.UI.Admin\bin\ROYcms.Common.dll
+G:\ROYcms!NT\ROYcms.Web\ROYcms.UI.Admin\bin\ROYcms.Controls.dll
+G:\ROYcms!NT\ROYcms.Web\ROYcms.UI.Admin\bin\ROYcms.Rewriter.dll
+G:\ROYcms!NT\ROYcms.Web\ROYcms.UI.Admin\bin\ROYcms.Sys.Bll.dll
+G:\ROYcms!NT\ROYcms.Web\ROYcms.UI.Admin\bin\ROYcms.Sys.Model.dll
+G:\ROYcms!NT\ROYcms.Web\ROYcms.UI.Admin\bin\ROYcms.Templet.dll
+G:\ROYcms!NT\ROYcms.Web\ROYcms.UI.Admin\bin\ROYcms.Sys.Dal.dll
+G:\ROYcms!NT\ROYcms.Web\ROYcms.UI.Admin\bin\ICSharpCode.SharpZipLib.dll
+G:\ROYcms!NT\ROYcms.Web\ROYcms.UI.Admin\bin\ROYcms.Sys.Dal.pdb
+G:\ROYcms!NT\ROYcms.Web\ROYcms.UI.Admin\bin\ROYcms.Common.pdb
+G:\ROYcms!NT\ROYcms.Web\ROYcms.UI.Admin\bin\ROYcms.Rewriter.pdb
+G:\ROYcms!NT\ROYcms.Web\ROYcms.UI.Admin\bin\ROYcms.Sys.Bll.pdb
+G:\ROYcms!NT\ROYcms.Web\ROYcms.UI.Admin\bin\ROYcms.Controls.pdb
+G:\ROYcms!NT\ROYcms.Web\ROYcms.UI.Admin\bin\ROYcms.BasePage.pdb
+G:\ROYcms!NT\ROYcms.Web\ROYcms.UI.Admin\bin\ROYcms.Templet.pdb
+G:\ROYcms!NT\ROYcms.Web\ROYcms.UI.Admin\bin\ROYcms.Sys.Model.pdb
+G:\ROYcms!NT\ROYcms.Web\ROYcms.UI.Admin\obj\Debug\ResolveAssemblyReference.cache
+G:\ROYcms!NT\ROYcms.Web\ROYcms.UI.Admin\obj\Debug\ROYcms.UI.Admin.dll
+G:\ROYcms!NT\ROYcms.Web\ROYcms.UI.Admin\obj\Debug\ROYcms.UI.Admin.pdb
+G:\ROYcms!NT\ROYcms.Web\ROYcms.UI.Admin\bin\ROYcms.UI.Admin.XML
+G:\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.UI.Admin.dll
+G:\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.UI.Admin.pdb
+G:\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.BasePage.dll
+G:\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.Common.dll
+G:\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.Config.dll
+G:\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.Controls.dll
+G:\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.Sys.dll
+G:\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.Templet.dll
+G:\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.URLRewriter.dll
+G:\ROYcms!NT\ROYcms.UI.Admin\bin\ICSharpCode.SharpZipLib.dll
+G:\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.BasePage.pdb
+G:\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.Common.pdb
+G:\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.Config.pdb
+G:\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.Controls.pdb
+G:\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.Sys.pdb
+G:\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.Templet.pdb
+G:\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.URLRewriter.pdb
+G:\ROYcms!NT\ROYcms.UI.Admin\obj\Debug\ResolveAssemblyReference.cache
+G:\ROYcms!NT\ROYcms.UI.Admin\obj\Debug\ROYcms.UI.Admin.dll
+G:\ROYcms!NT\ROYcms.UI.Admin\obj\Debug\ROYcms.UI.Admin.pdb
+G:\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.UI.Admin.XML
+G:\ROYcms!NT\ROYcms.UI.Admin\bin\MySql.Data.dll
+G:\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.DB.pdb
+G:\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.DB.xml
+D:\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.UI.Admin.XML
+D:\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.UI.Admin.dll
+D:\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.UI.Admin.pdb
+D:\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.BasePage.dll
+D:\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.Common.dll
+D:\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.Config.dll
+D:\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.Controls.dll
+D:\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.Sys.dll
+D:\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.Templet.dll
+D:\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.URLRewriter.dll
+D:\ROYcms!NT\ROYcms.UI.Admin\bin\ICSharpCode.SharpZipLib.dll
+D:\ROYcms!NT\ROYcms.UI.Admin\bin\MySql.Data.dll
+D:\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.BasePage.pdb
+D:\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.Common.pdb
+D:\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.Config.pdb
+D:\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.Controls.pdb
+D:\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.Sys.pdb
+D:\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.Templet.pdb
+D:\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.URLRewriter.pdb
+D:\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.DB.pdb
+D:\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.DB.xml
+D:\ROYcms!NT\ROYcms.UI.Admin\obj\Debug\ResolveAssemblyReference.cache
+D:\ROYcms!NT\ROYcms.UI.Admin\obj\Debug\ROYcms.UI.Admin.dll
+D:\ROYcms!NT\ROYcms.UI.Admin\obj\Debug\ROYcms.UI.Admin.pdb
+D:\工作目录\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.UI.Admin.XML
+D:\工作目录\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.UI.Admin.dll
+D:\工作目录\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.UI.Admin.pdb
+D:\工作目录\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.BasePage.dll
+D:\工作目录\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.Common.dll
+D:\工作目录\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.Config.dll
+D:\工作目录\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.Controls.dll
+D:\工作目录\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.Sys.dll
+D:\工作目录\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.Templet.dll
+D:\工作目录\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.URLRewriter.dll
+D:\工作目录\ROYcms!NT\ROYcms.UI.Admin\bin\ICSharpCode.SharpZipLib.dll
+D:\工作目录\ROYcms!NT\ROYcms.UI.Admin\bin\MySql.Data.dll
+D:\工作目录\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.BasePage.pdb
+D:\工作目录\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.Common.pdb
+D:\工作目录\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.Config.pdb
+D:\工作目录\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.Controls.pdb
+D:\工作目录\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.Sys.pdb
+D:\工作目录\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.Templet.pdb
+D:\工作目录\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.URLRewriter.pdb
+D:\工作目录\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.DB.pdb
+D:\工作目录\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.DB.xml
+D:\工作目录\ROYcms!NT\ROYcms.UI.Admin\obj\Debug\ResolveAssemblyReference.cache
+D:\工作目录\ROYcms!NT\ROYcms.UI.Admin\obj\Debug\ROYcms.UI.Admin.dll
+D:\工作目录\ROYcms!NT\ROYcms.UI.Admin\obj\Debug\ROYcms.UI.Admin.pdb
+D:\工作目录\ROYcms!NT - 2012\ROYcms.UI.Admin\bin\ROYcms.UI.Admin.XML
+D:\工作目录\ROYcms!NT - 2012\ROYcms.UI.Admin\bin\ROYcms.UI.Admin.dll
+D:\工作目录\ROYcms!NT - 2012\ROYcms.UI.Admin\bin\ROYcms.UI.Admin.pdb
+D:\工作目录\ROYcms!NT - 2012\ROYcms.UI.Admin\bin\ROYcms.BasePage.dll
+D:\工作目录\ROYcms!NT - 2012\ROYcms.UI.Admin\bin\ROYcms.Common.dll
+D:\工作目录\ROYcms!NT - 2012\ROYcms.UI.Admin\bin\ROYcms.Config.dll
+D:\工作目录\ROYcms!NT - 2012\ROYcms.UI.Admin\bin\ROYcms.Controls.dll
+D:\工作目录\ROYcms!NT - 2012\ROYcms.UI.Admin\bin\ROYcms.Sys.dll
+D:\工作目录\ROYcms!NT - 2012\ROYcms.UI.Admin\bin\ROYcms.Templet.dll
+D:\工作目录\ROYcms!NT - 2012\ROYcms.UI.Admin\bin\ROYcms.URLRewriter.dll
+D:\工作目录\ROYcms!NT - 2012\ROYcms.UI.Admin\bin\ICSharpCode.SharpZipLib.dll
+D:\工作目录\ROYcms!NT - 2012\ROYcms.UI.Admin\bin\MySql.Data.dll
+D:\工作目录\ROYcms!NT - 2012\ROYcms.UI.Admin\bin\ROYcms.BasePage.pdb
+D:\工作目录\ROYcms!NT - 2012\ROYcms.UI.Admin\bin\ROYcms.Common.pdb
+D:\工作目录\ROYcms!NT - 2012\ROYcms.UI.Admin\bin\ROYcms.Config.pdb
+D:\工作目录\ROYcms!NT - 2012\ROYcms.UI.Admin\bin\ROYcms.Controls.pdb
+D:\工作目录\ROYcms!NT - 2012\ROYcms.UI.Admin\bin\ROYcms.Sys.pdb
+D:\工作目录\ROYcms!NT - 2012\ROYcms.UI.Admin\bin\ROYcms.Templet.pdb
+D:\工作目录\ROYcms!NT - 2012\ROYcms.UI.Admin\bin\ROYcms.URLRewriter.pdb
+D:\工作目录\ROYcms!NT - 2012\ROYcms.UI.Admin\bin\ROYcms.DB.pdb
+D:\工作目录\ROYcms!NT - 2012\ROYcms.UI.Admin\bin\ROYcms.DB.xml
+D:\工作目录\ROYcms!NT - 2012\ROYcms.UI.Admin\obj\Debug\ROYcms.UI.Admin.csprojResolveAssemblyReference.cache
+D:\工作目录\ROYcms!NT - 2012\ROYcms.UI.Admin\obj\Debug\ROYcms.UI.Admin.dll
+D:\工作目录\ROYcms!NT - 2012\ROYcms.UI.Admin\obj\Debug\ROYcms.UI.Admin.pdb
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\ROYcms.UI.Admin\obj\Debug\ROYcms.UI.Admin.csprojResolveAssemblyReference.cache
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\ROYcms.UI.Admin\bin\ROYcms.UI.Admin.XML
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\ROYcms.UI.Admin\bin\ROYcms.UI.Admin.dll
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\ROYcms.UI.Admin\bin\ROYcms.UI.Admin.pdb
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\ROYcms.UI.Admin\bin\ROYcms.BasePage.dll
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\ROYcms.UI.Admin\bin\ROYcms.Common.dll
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\ROYcms.UI.Admin\bin\ROYcms.Config.dll
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\ROYcms.UI.Admin\bin\ROYcms.Controls.dll
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\ROYcms.UI.Admin\bin\ROYcms.Sys.dll
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\ROYcms.UI.Admin\bin\ROYcms.Templet.dll
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\ROYcms.UI.Admin\bin\ROYcms.URLRewriter.dll
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\ROYcms.UI.Admin\bin\ICSharpCode.SharpZipLib.dll
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\ROYcms.UI.Admin\bin\ROYcms.BasePage.pdb
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\ROYcms.UI.Admin\bin\ROYcms.Common.pdb
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\ROYcms.UI.Admin\bin\ROYcms.Config.pdb
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\ROYcms.UI.Admin\bin\ROYcms.Controls.pdb
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\ROYcms.UI.Admin\bin\ROYcms.Sys.pdb
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\ROYcms.UI.Admin\bin\ROYcms.Templet.pdb
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\ROYcms.UI.Admin\bin\ROYcms.URLRewriter.pdb
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\ROYcms.UI.Admin\obj\Debug\ROYcms.UI.Admin.dll
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\ROYcms.UI.Admin\obj\Debug\ROYcms.UI.Admin.pdb
+C:\roy.code\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.UI.Admin.XML
+C:\roy.code\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.UI.Admin.dll
+C:\roy.code\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.UI.Admin.pdb
+C:\roy.code\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.BasePage.dll
+C:\roy.code\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.Common.dll
+C:\roy.code\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.Config.dll
+C:\roy.code\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.Controls.dll
+C:\roy.code\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.Sys.dll
+C:\roy.code\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.Templet.dll
+C:\roy.code\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.URLRewriter.dll
+C:\roy.code\ROYcms!NT\ROYcms.UI.Admin\bin\ICSharpCode.SharpZipLib.dll
+C:\roy.code\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.BasePage.pdb
+C:\roy.code\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.Common.pdb
+C:\roy.code\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.Config.pdb
+C:\roy.code\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.Controls.pdb
+C:\roy.code\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.Sys.pdb
+C:\roy.code\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.Templet.pdb
+C:\roy.code\ROYcms!NT\ROYcms.UI.Admin\bin\ROYcms.URLRewriter.pdb
+C:\roy.code\ROYcms!NT\ROYcms.UI.Admin\obj\Debug\ROYcms.UI.Admin.csprojResolveAssemblyReference.cache
+C:\roy.code\ROYcms!NT\ROYcms.UI.Admin\obj\Debug\ROYcms.UI.Admin.dll
+C:\roy.code\ROYcms!NT\ROYcms.UI.Admin\obj\Debug\ROYcms.UI.Admin.pdb

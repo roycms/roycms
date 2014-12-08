@@ -1,0 +1,535 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{282F607A-8FA9-49CA-A32E-94ED4C114E8C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ROYcms.Blog.Web</RootNamespace>
+    <AssemblyName>ROYcms.Blog.Web</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ROYcms.Blog, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ROYcms.Blog\bin\Debug\ROYcms.Blog.dll</HintPath>
+    </Reference>
+    <Reference Include="ROYcms.Config, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ROYcms\ROYcms.Config\bin\Debug\ROYcms.Config.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Blog\Admin\Administrator.aspx.cs">
+      <DependentUpon>Administrator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Blog\Admin\Administrator.aspx.designer.cs">
+      <DependentUpon>Administrator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Blog\Admin\Config.aspx.cs">
+      <DependentUpon>Config.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Blog\Admin\Config.aspx.designer.cs">
+      <DependentUpon>Config.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Blog\Admin\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Blog\Admin\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Blog\Admin\Top.ascx.cs">
+      <DependentUpon>Top.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Blog\Admin\Top.ascx.designer.cs">
+      <DependentUpon>Top.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Blog\Blog.aspx.cs">
+      <DependentUpon>Blog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Blog\Blog.aspx.designer.cs">
+      <DependentUpon>Blog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Blog\Control\BlogList.ascx.cs">
+      <DependentUpon>BlogList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Blog\Control\BlogList.ascx.designer.cs">
+      <DependentUpon>BlogList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Blog\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Blog\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Blog\End.ascx.cs">
+      <DependentUpon>End.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Blog\End.ascx.designer.cs">
+      <DependentUpon>End.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Blog\Post.aspx.cs">
+      <DependentUpon>Post.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Blog\Post.aspx.designer.cs">
+      <DependentUpon>Post.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Blog\UI\default\__Css.ascx.cs">
+      <DependentUpon>__Css.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Blog\UI\default\__Css.ascx.designer.cs">
+      <DependentUpon>__Css.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Blog\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Blog\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Blog\Rss.aspx.cs">
+      <DependentUpon>Rss.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Blog\Rss.aspx.designer.cs">
+      <DependentUpon>Rss.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Blog\UI\default\Blog.aspx.cs">
+      <DependentUpon>Blog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Blog\UI\default\Blog.aspx.designer.cs">
+      <DependentUpon>Blog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Blog\Admin\EditPost.aspx.cs">
+      <DependentUpon>EditPost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Blog\Admin\EditPost.aspx.designer.cs">
+      <DependentUpon>EditPost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Blog\UI\default\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Blog\UI\default\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Blog\UI\default\__calendar.ascx.cs">
+      <DependentUpon>__calendar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Blog\UI\default\__calendar.ascx.designer.cs">
+      <DependentUpon>__calendar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Blog\UI\default\__comment.ascx.cs">
+      <DependentUpon>__comment.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Blog\UI\default\__comment.ascx.designer.cs">
+      <DependentUpon>__comment.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Blog\UI\default\__flash.ascx.cs">
+      <DependentUpon>__flash.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Blog\UI\default\__flash.ascx.designer.cs">
+      <DependentUpon>__flash.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Blog\UI\default\__footer.ascx.cs">
+      <DependentUpon>__footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Blog\UI\default\__footer.ascx.designer.cs">
+      <DependentUpon>__footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Blog\UI\default\__header.ascx.cs">
+      <DependentUpon>__header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Blog\UI\default\__header.ascx.designer.cs">
+      <DependentUpon>__header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Blog\UI\default\__pagelink.ascx.cs">
+      <DependentUpon>__pagelink.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Blog\UI\default\__pagelink.ascx.designer.cs">
+      <DependentUpon>__pagelink.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Blog\UI\default\__search.ascx.cs">
+      <DependentUpon>__search.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Blog\UI\default\__search.ascx.designer.cs">
+      <DependentUpon>__search.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Blog\UI\default\__Tag.ascx.cs">
+      <DependentUpon>__Tag.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Blog\UI\default\__Tag.ascx.designer.cs">
+      <DependentUpon>__Tag.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Blog\UI\default\__Ucenter.ascx.cs">
+      <DependentUpon>__Ucenter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Blog\UI\default\__Ucenter.ascx.designer.cs">
+      <DependentUpon>__Ucenter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Blog\UI\default\__PostComment.ascx.cs">
+      <DependentUpon>__PostComment.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Blog\UI\default\__PostComment.ascx.designer.cs">
+      <DependentUpon>__PostComment.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Blog\UI\default\__CommentList.ascx.cs">
+      <DependentUpon>__CommentList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Blog\UI\default\__CommentList.ascx.designer.cs">
+      <DependentUpon>__CommentList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Blog\UI\default\__Related.ascx.cs">
+      <DependentUpon>__Related.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Blog\UI\default\__Related.ascx.designer.cs">
+      <DependentUpon>__Related.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="BlogPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="App_Blog\UI\default\__Top.ascx.cs">
+      <DependentUpon>__Top.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Blog\UI\default\__Top.ascx.designer.cs">
+      <DependentUpon>__Top.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BlogConfig.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="administrator\webui\facebox\b.png" />
+    <Content Include="administrator\webui\facebox\bl.png" />
+    <Content Include="administrator\webui\facebox\br.png" />
+    <Content Include="administrator\webui\facebox\closelabel.gif" />
+    <Content Include="administrator\webui\facebox\facebox.css" />
+    <Content Include="administrator\webui\facebox\facebox.js" />
+    <Content Include="administrator\webui\facebox\loading.gif" />
+    <Content Include="administrator\webui\facebox\README.txt" />
+    <Content Include="administrator\webui\facebox\tl.png" />
+    <Content Include="administrator\webui\facebox\tr.png" />
+    <Content Include="administrator\webui\jQuery1.1.2\interface.js" />
+    <Content Include="administrator\webui\jQuery1.1.2\jquery.js" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\docs\CHANGE.txt" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\docs\LICENCE.txt" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\docs\README.txt" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\docs\THANKS.txt" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\examples\demo-01.html" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\examples\demo-02.html" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\examples\demo-03.html" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\examples\demo-04.html" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\examples\demo-05.html" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\examples\demo-06.html" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\examples\demo-07.html" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\examples\demo-08.html" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\examples\demo-09.html" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\examples\demo-10.html" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\examples\demo-11.html" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\examples\demo-12.html" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\examples\demo-13.html" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\examples\demo-14.html" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\examples\demo-15.html" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\examples\demo-16.html" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\examples\demo-17.html" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\examples\demo-18.html" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\examples\index.css" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\examples\index.html" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\kindeditor.js" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\plugins\about.html" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\plugins\emoticons\etc_01.gif" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\plugins\emoticons\etc_02.gif" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\plugins\emoticons\etc_03.gif" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\plugins\emoticons\etc_04.gif" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\plugins\emoticons\etc_05.gif" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\plugins\emoticons\etc_06.gif" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\plugins\emoticons\etc_07.gif" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\plugins\emoticons\etc_08.gif" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\plugins\emoticons\etc_09.gif" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\plugins\emoticons\etc_10.gif" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\plugins\emoticons\etc_11.gif" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\plugins\emoticons\etc_12.gif" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\plugins\emoticons\etc_13.gif" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\plugins\emoticons\etc_14.gif" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\plugins\emoticons\etc_15.gif" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\plugins\emoticons\etc_16.gif" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\plugins\emoticons\etc_17.gif" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\plugins\emoticons\etc_18.gif" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\plugins\emoticons\etc_19.gif" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\plugins\emoticons\etc_20.gif" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\plugins\emoticons\etc_21.gif" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\plugins\emoticons\etc_22.gif" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\plugins\emoticons\etc_23.gif" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\plugins\emoticons\etc_24.gif" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\plugins\emoticons\etc_25.gif" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\plugins\emoticons\etc_26.gif" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\plugins\emoticons\etc_27.gif" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\plugins\emoticons\etc_28.gif" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\plugins\emoticons\etc_29.gif" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\plugins\emoticons\etc_30.gif" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\plugins\emoticons\etc_31.gif" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\plugins\emoticons\etc_32.gif" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\plugins\emoticons\etc_33.gif" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\plugins\emoticons\etc_34.gif" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\plugins\emoticons\etc_35.gif" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\plugins\emoticons\etc_36.gif" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\plugins\flash.html" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\plugins\image.html" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\plugins\link.html" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\plugins\media.html" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\plugins\plainpaste.html" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\plugins\remote_image.html" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\plugins\wordpaste.html" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\skins\default.css" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\skins\default.gif" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\skins\div.gif" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\skins\dl.gif" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\skins\editor.css" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\skins\ol.gif" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\skins\p.gif" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\skins\tinymce.css" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\skins\tinymce.gif" />
+    <Content Include="administrator\webui\kindeditor-3.2.1\skins\ul.gif" />
+    <Content Include="administrator\webui\SpryAssets\SpryTabbedPanels.css" />
+    <Content Include="administrator\webui\SpryAssets\SpryTabbedPanels.js" />
+    <Content Include="administrator\webui\SpryAssets\SpryValidationConfirm.css" />
+    <Content Include="administrator\webui\SpryAssets\SpryValidationConfirm.js" />
+    <Content Include="administrator\webui\SpryAssets\SpryValidationPassword.css" />
+    <Content Include="administrator\webui\SpryAssets\SpryValidationPassword.js" />
+    <Content Include="administrator\webui\SpryAssets\SpryValidationRadio.css" />
+    <Content Include="administrator\webui\SpryAssets\SpryValidationRadio.js" />
+    <Content Include="administrator\webui\SpryAssets\SpryValidationSelect.css" />
+    <Content Include="administrator\webui\SpryAssets\SpryValidationSelect.js" />
+    <Content Include="administrator\webui\SpryAssets\SpryValidationTextarea.css" />
+    <Content Include="administrator\webui\SpryAssets\SpryValidationTextarea.js" />
+    <Content Include="administrator\webui\SpryAssets\SpryValidationTextField.css" />
+    <Content Include="administrator\webui\SpryAssets\SpryValidationTextField.js" />
+    <Content Include="App_Blog\Admin\Admin.css" />
+    <Content Include="App_Blog\Admin\Administrator.aspx" />
+    <Content Include="App_Blog\Admin\Config.aspx" />
+    <Content Include="App_Blog\Admin\Footer.ascx" />
+    <Content Include="App_Blog\Admin\Top.ascx" />
+    <Content Include="App_Blog\basic.css" />
+    <Content Include="App_Blog\Blog.aspx" />
+    <Content Include="App_Blog\Control\BlogList.ascx" />
+    <Content Include="App_Blog\Default.aspx" />
+    <Content Include="App_Blog\End.ascx" />
+    <Content Include="App_Blog\images\01.jpg" />
+    <Content Include="App_Blog\images\02.jpg" />
+    <Content Include="App_Blog\images\03.jpg" />
+    <Content Include="App_Blog\images\04.jpg" />
+    <Content Include="App_Blog\images\space_11.jpg" />
+    <Content Include="App_Blog\images\space_zenglijuan.jpg" />
+    <Content Include="App_Blog\logo.gif" />
+    <Content Include="App_Blog\Post.aspx" />
+    <Content Include="App_Blog\UI\baidu\Blog.aspx" />
+    <Content Include="App_Blog\UI\baidu\index.aspx" />
+    <Content Include="App_Blog\UI\baidu\__calendar.ascx" />
+    <Content Include="App_Blog\UI\baidu\__comment.ascx" />
+    <Content Include="App_Blog\UI\baidu\__CommentList.ascx" />
+    <Content Include="App_Blog\UI\baidu\__Css.ascx" />
+    <Content Include="App_Blog\UI\baidu\__flash.ascx" />
+    <Content Include="App_Blog\UI\baidu\__footer.ascx" />
+    <Content Include="App_Blog\UI\baidu\__header.ascx" />
+    <Content Include="App_Blog\UI\baidu\__pagelink.ascx" />
+    <Content Include="App_Blog\UI\baidu\__PostComment.ascx" />
+    <Content Include="App_Blog\UI\baidu\__Related.ascx" />
+    <Content Include="App_Blog\UI\baidu\__search.ascx" />
+    <Content Include="App_Blog\UI\baidu\__Tag.ascx" />
+    <Content Include="App_Blog\UI\baidu\__Top.ascx" />
+    <Content Include="App_Blog\UI\baidu\__Ucenter.ascx" />
+    <Content Include="App_Blog\UI\baidu_Css\csss.css" />
+    <Content Include="App_Blog\UI\baidu_Css\csss\1c33d162a11ef3dfe6113a7a.gif" />
+    <Content Include="App_Blog\UI\baidu_Css\csss\3f70840a76754c3cb0351dc5.gif" />
+    <Content Include="App_Blog\UI\baidu_Css\csss\414e1c1e26d3adfa1ad57600.gif" />
+    <Content Include="App_Blog\UI\baidu_Css\csss\4a335a0f4de4be2a6059f3f9.gif" />
+    <Content Include="App_Blog\UI\baidu_Css\csss\506f690961ed93cf3ac76346.gif" />
+    <Content Include="App_Blog\UI\baidu_Css\csss\53de9a51ce920c2642a75b1e.gif" />
+    <Content Include="App_Blog\UI\baidu_Css\csss\5cd546a7759e3897d04358c5.jpg" />
+    <Content Include="App_Blog\UI\baidu_Css\csss\8285a83d900798c99e3d6200.gif" />
+    <Content Include="App_Blog\UI\baidu_Css\csss\82a9c8bfb376fe0918d81f88.jpg" />
+    <Content Include="App_Blog\UI\baidu_Css\csss\86938135c0f6f11391ef397a.gif" />
+    <Content Include="App_Blog\UI\baidu_Css\csss\b6060bb3cd0541a5d9335a1e.gif" />
+    <Content Include="App_Blog\UI\baidu_Css\csss\d6c4e1ddc13a86ed77c6387a.gif" />
+    <Content Include="App_Blog\UI\baidu_Css\csss\dot.gif" />
+    <Content Include="App_Blog\UI\baidu_Css\csss\dotv.gif" />
+    <Content Include="App_Blog\UI\baidu_Css\huise.css" />
+    <Content Include="App_Blog\UI\baidu_Css\huise\0408d2163135d05021a4e942.jpg" />
+    <Content Include="App_Blog\UI\baidu_Css\huise\0e6a38010e1ff11c1c958342.jpg" />
+    <Content Include="App_Blog\UI\baidu_Css\huise\403f2735f7ffed94d1a2d37a.jpeg" />
+    <Content Include="App_Blog\UI\baidu_Css\huise\4420c62c5dc836f68b139942.jpg" />
+    <Content Include="App_Blog\UI\baidu_Css\huise\67f32ba12407ed9146106441.jpg" />
+    <Content Include="App_Blog\UI\baidu_Css\huise\92e5ce135dee7b02dc54014b.jpeg" />
+    <Content Include="App_Blog\UI\baidu_Css\huise\a441168383cc739c6d81193c.jpeg" />
+    <Content Include="App_Blog\UI\baidu_Css\huise\da8ef88a45509733c9fc7a65.jpeg" />
+    <Content Include="App_Blog\UI\baidu_Css\huise\ebaae8d86a077a0d10df9b17.jpeg" />
+    <Content Include="App_Blog\UI\baidu_Css\huise\fafbff065982956103088142.jpg" />
+    <Content Include="App_Blog\UI\baidu_Css\huise\fe4b6325364d84204d088d17.jpeg" />
+    <Content Include="App_Blog\UI\baidu_Css\mods.css" />
+    <Content Include="App_Blog\UI\baidu_Css\news_red.css" />
+    <Content Include="App_Blog\UI\baidu_Css\news_red\1763d4c645b045329c163d72.jpeg" />
+    <Content Include="App_Blog\UI\baidu_Css\news_red\3497125175ddd931377abe1f.jpeg" />
+    <Content Include="App_Blog\UI\baidu_Css\news_red\3eb439509557594b84352428.jpeg" />
+    <Content Include="App_Blog\UI\baidu_Css\news_red\52b51400e43765aee850cd1f.jpeg" />
+    <Content Include="App_Blog\UI\baidu_Css\news_red\5ac03d0afbc75d17b1351def.jpg" />
+    <Content Include="App_Blog\UI\baidu_Css\news_red\afb4bd3081022cb0a9018eb9.jpeg" />
+    <Content Include="App_Blog\UI\baidu_Css\news_red\b476208ba50127fafd1f10b1.jpeg" />
+    <Content Include="App_Blog\UI\baidu_Css\news_red\e2b4aed77de7c8f4a044df1f.jpeg" />
+    <Content Include="App_Blog\UI\baidu_Css\red.css" />
+    <Content Include="App_Blog\UI\baidu_Css\small.css" />
+    <Content Include="App_Blog\UI\baidu_Css\small\09.gif" />
+    <Content Include="App_Blog\UI\baidu_Css\small\c09.gif" />
+    <Content Include="App_Blog\UI\baidu_Css\small\f4.gif" />
+    <Content Include="App_Blog\UI\baidu_Css\small\fe.gif" />
+    <Content Include="App_Blog\UI\baidu_Css\space.css" />
+    <Content Include="App_Blog\UI\default\__Css.ascx" />
+    <Content Include="App_Blog\Inc.ascx" />
+    <Content Include="App_Blog\index.aspx" />
+    <Content Include="App_Blog\Rss.aspx" />
+    <Content Include="App_Blog\UI\default\Blog.aspx" />
+    <Content Include="App_Blog\Admin\EditPost.aspx" />
+    <Content Include="App_Blog\UI\default\index.aspx" />
+    <Content Include="App_Blog\UI\default\__calendar.ascx" />
+    <Content Include="App_Blog\UI\default\__comment.ascx" />
+    <Content Include="App_Blog\UI\default\__flash.ascx" />
+    <Content Include="App_Blog\UI\default\__footer.ascx" />
+    <Content Include="App_Blog\UI\default\__header.ascx" />
+    <Content Include="App_Blog\UI\default\__pagelink.ascx" />
+    <Content Include="App_Blog\UI\default\__search.ascx" />
+    <Content Include="App_Blog\UI\default\__Tag.ascx" />
+    <Content Include="App_Blog\UI\default\__Ucenter.ascx" />
+    <Content Include="App_Blog\UI\default\__PostComment.ascx" />
+    <Content Include="App_Blog\UI\default\__CommentList.ascx" />
+    <Content Include="App_Blog\UI\default\__Related.ascx" />
+    <Content Include="bin\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="bin\MySql.Data.dll" />
+    <Content Include="bin\ROYcms.BasePage.dll" />
+    <Content Include="bin\ROYcms.BasePage.pdb" />
+    <Content Include="bin\ROYcms.Blog.dll" />
+    <Content Include="bin\ROYcms.Blog.pdb" />
+    <Content Include="bin\ROYcms.Common.dll" />
+    <Content Include="bin\ROYcms.Common.pdb" />
+    <Content Include="bin\ROYcms.Config.dll" />
+    <Content Include="bin\ROYcms.Config.pdb" />
+    <Content Include="bin\ROYcms.DB.dll" />
+    <Content Include="bin\ROYcms.DB.pdb" />
+    <Content Include="bin\ROYcms.DB.xml" />
+    <Content Include="bin\ROYcms.SSO.dll" />
+    <Content Include="bin\ROYcms.SSO.pdb" />
+    <Content Include="bin\ROYcms.Sys.Bll.dll" />
+    <Content Include="bin\ROYcms.Sys.Bll.pdb" />
+    <Content Include="bin\ROYcms.Sys.Dal.dll" />
+    <Content Include="bin\ROYcms.Sys.Dal.pdb" />
+    <Content Include="bin\ROYcms.Sys.Model.dll" />
+    <Content Include="bin\ROYcms.Sys.Model.pdb" />
+    <Content Include="bin\ROYcms.Templet.dll" />
+    <Content Include="bin\ROYcms.Templet.pdb" />
+    <Content Include="bin\UrlRewritingNet.UrlRewriter.dll" />
+    <Content Include="README.txt" />
+    <Content Include="Rewrite.config" />
+    <Content Include="App_Blog\UI\default\__Top.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="administrator\webui\kindeditor-3.2.1\php\demo.php" />
+    <None Include="administrator\webui\kindeditor-3.2.1\php\upload.php" />
+    <None Include="App_Blog\images\Thumbs.db" />
+    <None Include="App_Blog\UI\baidu_Css\csss\Thumbs.db" />
+    <None Include="App_Blog\UI\baidu_Css\small\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\ROYcms\ROYcms.BasePage\ROYcms.BasePage.csproj">
+      <Project>{5F049957-6596-4B89-BB4F-CB72AB5C3F08}</Project>
+      <Name>ROYcms.BasePage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\ROYcms\ROYcms.Common\ROYcms.Common.csproj">
+      <Project>{810E13CD-EF35-4A2F-A5BD-8604D27588B1}</Project>
+      <Name>ROYcms.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="administrator\webui\kindeditor-3.2.1\attached\" />
+    <Folder Include="App_Data\Blog\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1125</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

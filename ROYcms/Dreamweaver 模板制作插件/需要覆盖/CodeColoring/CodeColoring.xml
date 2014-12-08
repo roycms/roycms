@@ -1,0 +1,2401 @@
+﻿<codeColoring>
+	<scheme name="文本" id="Text" doctypes="Text" priority="1">
+		<ignoreTags>Yes</ignoreTags>
+		<defaultText name="文本" id="CodeColor_TextText" />
+		<sampleText doctypes="Text">
+<![CDATA[Default file syntax highlighting.
+The quick brown fox
+jumped over the lazy dog.
+]]>
+		</sampleText>
+	</scheme>
+	<scheme name="HTML" id="HTML" doctypes="ASP.NET_VB,ASP.NET_CSharp,ASP-JS,ASP-VB,ColdFusion,CFC,HTML,JSP,PHP_MySQL,LibraryItem,WML,XSLT" priority="50">
+		<ignoreCase>Yes</ignoreCase>
+		<ignoreTags>No</ignoreTags>
+		<defaultText name="文本" id="CodeColor_HTMLText" />
+		<defaultTag name="其他标签" id="CodeColor_HTMLTag" />
+		<defaultAttribute />
+		<commentStart name="注释" id="CodeColor_HTMLComment"><![CDATA[<!--]]></commentStart>
+		<commentEnd><![CDATA[-->]]></commentEnd>
+		<commentStart><![CDATA[<%--]]></commentStart>
+		<commentEnd><![CDATA[--%>]]></commentEnd>
+		<stringStart name="属性值" id="CodeColor_HTMLString"><![CDATA["]]></stringStart>
+		<stringEnd><![CDATA["]]></stringEnd>
+		<stringStart><![CDATA[']]></stringStart>
+		<stringEnd><![CDATA[']]></stringEnd>
+		<numbers name="数字" id="CodeColor_HTMLNumber" />
+		<entity name="特殊字符" id="CodeColor_HTMLEntity" />
+		<cssSelector id="CodeColor_CSSSelector" />
+		<cssProperty id="CodeColor_CSSProperty" />
+		<cssValue id="CodeColor_CSSValue" />
+		<sampleText doctypes="HTML,LibraryItem">
+<![CDATA[<style> headline {font-size: 24pt;} </style>
+<!-- Comment -->
+<td><p><a href="link">Plain Text&nbsp;</a>
+<img src="image" width=15>
+<script>
+<!--
+     function testMe() {
+          var i = abs(-134) + "test";
+          // Open a new window
+          window.open("http://www.allaire.com");
+     }
+// -->
+</script>
+<form action="page.cgi">
+<input type="submit" value="Press Me">
+</form>
+Text]]>
+		</sampleText>
+		<sampleText doctypes="ColdFusion">
+<![CDATA[<!--- Sample ColdFusion text --->
+<cfscript>
+  Region1_NumRows = Recordset1.RecordCount + 1;
+  Recordset1_NumRows = Recordset1_NumRows + Region1_NumRows;
+</cfscript>
+<html>
+<body bgcolor="#FFFFFF">
+&nbsp;
+<cfoutput> 
+  <table width="75%" border="1">
+    <tr> 
+      <td>#Recordset1.Item#</td>
+      <td>#Recordset1.Description#</td>
+    </tr>
+  </table>
+</cfoutput> 
+<p><a href="index.htm"><cfoutput>#Recordset1.Description#</cfoutput></a></p>
+</body>
+</html>
+]]>
+		</sampleText>
+		<sampleText doctypes="CFC">
+<![CDATA[<!--- Sample CFC text --->
+<cfcomponent>
+  <cffunction name="myFunction" access="public" returntype="string">
+    <cfargument name="myArgument" type="string" required="true">
+    <cfset myResult="foo">
+    <cfreturn myResult>
+  </cffunction>
+</cfcomponent>
+]]>
+		</sampleText>
+		<sampleText doctypes="JSP">
+<![CDATA[<%@ page language="java" import="java.sql.*"%>
+<%@ include file="Connections/MyConnection.jsp" %>
+<jsp:useBean class="macromedia.MyBean" id="myBean" scope="session" />
+<%
+  Driver myDriver = (Driver)Class.forName(driver).newInstance();
+  Connection myConnection = DriverManager.getConnection(connectString, userName, password);
+  Statement myStatement = myConnection.createStatement();
+  ResultSet myResultSet = myStatement.executeQuery("SELECT * FROM ACC.USERS");
+%>
+<html>
+<body>
+  <table>
+    <% while (myResultSet.next()) { %>
+    <tr> 
+      <td><%= myResultSet.getString("EXT_NUM") %></td>
+      <td><%= myResultSet.getString("NAME") %></td>
+    </tr>
+    <% } %>
+  </table>
+</body>
+</html>
+<%
+  myResultSet.close();
+  myConnection.close();
+%>
+]]>
+		</sampleText>
+		<sampleText doctypes="PHP_MySQL">
+<![CDATA[<?php 
+mysql_connect ($host, $user, $password);
+$result = mysql_db_query ("database","select * from table");
+while ($row = mysql_fetch_assoc ($result))
+{
+  echo $row["user_id"];
+  echo $row["fullname"];
+}
+mysql_free_result ($result);
+?>
+]]>
+		</sampleText>
+		<sampleText doctypes="WML">
+<![CDATA[<!-- Comment -->
+<wml>
+<card id="foo">Plain Text&nbsp;
+</card><%asp%>
+</wml>
+]]>
+		</sampleText>
+		<sampleText doctypes="ASP.NET_VB">
+<![CDATA[<%@ Import Namespace="System.Data" %>
+<%@ Import Namespace="System.Data.SqlClient" %>
+<script language="vb" runat="server">
+  Sub Page_Load(sender As Object, e As EventArgs) 
+    ' Create local connection
+    Dim myConnection As SqlConnection 
+    Dim myCommand As SqlDataAdapter
+    DIm myCount As Integer
+    myConnection = New SqlConnection("server=localhost;uid=sa;" & _
+                                     "pwd=;database=pubs")
+    myCommand = New SqlDataAdapter("SELECT * FROM Titles", _
+                                   myConnection)
+    myCount = 1
+    Dim ds As Dataset = new DataSet()
+    myCommand.Fill(ds)
+    MyDataList.DataSource = ds
+    MyDataList.DataBind()
+  End Sub
+</script>
+<html>
+<body>
+<ASP:Repeater id="MyDataList" runat="server">
+  <Table width="100%" style="font: 8pt verdana">
+    <HeaderTemplate>
+      <tr style="background-color:DFA894">
+        <th>Title</th>
+        <th>Publisher ID</th>
+        <th>Price</th>
+      </tr>
+    </HeaderTemplate>
+    <ItemTemplate>
+      <tr style="background-color:FFECD8">
+        <td><%# DataBinder.Eval(Container.DataItem, "title") %></td>
+        <td><%# DataBinder.Eval(Container.DataItem, "pub_id") %></td>
+        <td><%# DataBinder.Eval(Container.DataItem, "price", "{0:c}") %></td>
+      </tr>
+    </ItemTemplate>
+  </table>
+</ASP:Repeater>
+</body>
+</html>
+]]>
+		</sampleText>
+		<sampleText doctypes="ASP.NET_CSharp">
+<![CDATA[<%@ Page Language="CS" %>
+<%@ Import Namespace="System.Data" %>
+<html>
+<script runat="server">
+  string SortExpression;
+  ICollection CreateDataSource() 
+  {
+    DataTable dt = new DataTable();
+    DataRow dr;
+    Random Rand_Num = new Random();
+    dt.Columns.Add(new DataColumn("StringValue", typeof(string)));
+    dt.Columns.Add(new DataColumn("CurrencyValue", typeof(double)));
+    for (int i = 0; i < 15; i++) 
+    {
+      dr = dt.NewRow();
+      dr[0] = "Item " + i.ToString();
+      dr[1] = 1.23 * Rand_Num.Next(1, 15);
+      dt.Rows.Add(dr);
+    }
+    DataView dv = new DataView(dt);
+    dv.Sort=SortExpression;
+    return dv;
+  }
+</script>
+<body>
+  <form runat=server>
+    <h3><font face="Verdana">DataGrid Sorting Example</font></h3>
+    <asp:DataGrid id="ItemsGrid" runat="server"
+                  BorderColor="black"
+                  HeaderStyle-BackColor="#00aaaa"
+                  AutoGenerateColumns="true"/>
+  </form>
+</body>
+</html>
+]]>
+		</sampleText>
+		<sampleText doctypes="ASP-VB">
+<![CDATA[<%@LANGUAGE="VBSCRIPT"%>
+<!--#include file="includedfile.asp" -->
+<%
+  dim count
+  set rsAuthors = Server.CreateObject("ADODB.Recordset")
+  rsAuthors.ActiveConnection = MM_smokeTest_STRING
+  rsAuthors.Source = "SELECT * FROM dbo.authors"
+  rsAuthors.CursorType = 0
+  rsAuthors.Open()
+%>
+<html>
+<body bgcolor="#FFFFFF">
+<%
+  'Iterate through the Recordset
+  while not rsAuthors.EOF %>
+   <p>Division Name:
+   <%=UCase(rsAuthors("Name").Value & vbCrLf)%></p>
+<%
+  count = count + 1
+  rsAuthors.MoveNext
+  Wend
+%>
+</body>
+</html>
+<% rs.Close %>
+]]>
+		</sampleText>
+		<sampleText doctypes="ASP-JS">
+<![CDATA[<%@LANGUAGE="JAVASCRIPT"%>
+<!--#include file="includedfile.asp" -->
+<%
+  var count;
+  var rsAuthors = Server.CreateObject("ADODB.Recordset");
+  rsAuthors.ActiveConnection = MM_smokeTest_STRING;
+  rsAuthors.Source = "SELECT * FROM dbo.authors";
+  rsAuthors.CursorType = 0;
+  rsAuthors.Open();
+%>
+<html>
+<body bgcolor="#FFFFFF">
+<%
+  // Iterate through the Recordset
+  while (!rsAuthors.EOF())
+  { %>
+    <p>Division Name:
+    <%=rsAuthors("Name").Value()%></p>
+<%
+  count++;
+  rsAuthors.MoveNext();
+  } // while
+%>
+</body>
+</html>
+<% rs.Close(); %>
+]]>
+		</sampleText>
+	</scheme>
+	<scheme name="JavaScript" id="JavaScript" doctypes="JavaScript" priority="50">
+		<ignoreCase>No</ignoreCase>
+		<ignoreTags>Yes</ignoreTags>
+		<defaultText name="默认文本" id="CodeColor_JavaScriptDefaultText" />
+		<blockStart doctypes="ASP-JS,ASP-VB,ASP.NET_CSharp,ASP.NET_VB,ColdFusion,CFC,HTML,JSP,LibraryItem,PHP_MySQL,XSLT" scheme="outerTag"><![CDATA[<script>]]></blockStart>
+		<blockEnd><![CDATA[</script>]]></blockEnd>
+		<blockStart doctypes="ASP-JS,ASP-VB,ASP.NET_CSharp,ASP.NET_VB,ColdFusion,CFC,HTML,JSP,LibraryItem,PHP_MySQL,XSLT" scheme="outerTag"><![CDATA[<script\s+\*>]]></blockStart>
+		<blockEnd><![CDATA[</script>]]></blockEnd>
+		<commentStart name="注释" id="CodeColor_JavascriptComment"><![CDATA[/*]]></commentStart>
+		<commentEnd><![CDATA[*/]]></commentEnd>
+		<endOfLineComment><![CDATA[//]]></endOfLineComment>
+		<endOfLineComment><![CDATA[<!--]]></endOfLineComment>
+		<endOfLineComment><![CDATA[-->]]></endOfLineComment>
+		<stringStart name="字符串" id="CodeColor_JavascriptString"><![CDATA["]]></stringStart>
+		<stringEnd><![CDATA["]]></stringEnd>
+		<stringStart><![CDATA[']]></stringStart>
+		<stringEnd><![CDATA[']]></stringEnd>
+		<stringEsc><![CDATA[\]]></stringEsc>
+		<brackets name="括号" id="CodeColor_JavascriptBracket"><![CDATA[{[()]}]]></brackets>
+		<operators name="运算符" id="CodeColor_JavascriptOperator"><![CDATA[+-*/%<>!?:=&|^]]></operators>
+		<numbers name="数字" id="CodeColor_JavascriptNumber" />
+		<regexp name="RegExp" id="CodeColor_JavascriptRegexp" delimiter="/" escape="\\">
+			<searchPattern><![CDATA[(\s*/\e*\\/]]></searchPattern>
+			<searchPattern><![CDATA[=\s*/\e*\\/]]></searchPattern>
+		</regexp>
+		<idChar1>_$abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</idChar1>
+		<idCharRest name="标识符" id="CodeColor_JavascriptIdentifier">_$abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789</idCharRest>
+		<functionKeyword name="函数关键字" id="CodeColor_JavascriptFunction">function</functionKeyword>
+		<keywords name="保留关键字" id="CodeColor_JavascriptReserved">
+			<keyword>break</keyword>
+			<keyword>case</keyword>
+			<keyword>catch</keyword>
+			<keyword>continue</keyword>
+			<keyword>default</keyword>
+			<keyword>delete</keyword>
+			<keyword>do</keyword>
+			<keyword>else</keyword>
+			<keyword>export</keyword>
+			<keyword>false</keyword>
+			<keyword>finally</keyword>
+			<keyword>for</keyword>
+			<keyword>if</keyword>
+			<keyword>import</keyword>
+			<keyword>in</keyword>
+			<keyword>item</keyword>
+			<keyword>new</keyword>
+			<keyword>null</keyword>
+			<keyword>return</keyword>
+			<keyword>switch</keyword>
+			<keyword>this</keyword>
+			<keyword>throw</keyword>
+			<keyword>true</keyword>
+			<keyword>try</keyword>
+			<keyword>var</keyword>
+			<keyword>void</keyword>
+			<keyword>while</keyword>
+			<keyword>with</keyword>
+		</keywords>
+		<keywords name="本机关键字" id="CodeColor_JavascriptNative">
+			<keyword>abs</keyword>
+			<keyword>acos</keyword>
+			<keyword>Array</keyword>
+			<keyword>asin</keyword>
+			<keyword>atan</keyword>
+			<keyword>atan2</keyword>
+			<keyword>Boolean</keyword>
+			<keyword>ceil</keyword>
+			<keyword>charAt</keyword>
+			<keyword>charCodeAt</keyword>
+			<keyword>concat</keyword>
+			<keyword>cos</keyword>
+			<keyword>Date</keyword>
+			<keyword>decodeURI</keyword>
+			<keyword>decodeURIComponent</keyword>
+			<keyword>encodeURI</keyword>
+			<keyword>encodeURIComponent</keyword>
+			<keyword>escape</keyword>
+			<keyword>eval</keyword>
+			<keyword>exp</keyword>
+			<keyword>floor</keyword>
+			<keyword>fromCharCode</keyword>
+			<keyword>Function</keyword>
+			<keyword>getDate</keyword>
+			<keyword>getDay</keyword>
+			<keyword>getFullYear</keyword>
+			<keyword>getHours</keyword>
+			<keyword>getMilliseconds</keyword>
+			<keyword>getMinutes</keyword>
+			<keyword>getMonth</keyword>
+			<keyword>getSeconds</keyword>
+			<keyword>getSelection</keyword>
+			<keyword>getTime</keyword>
+			<keyword>getTimezoneOffset</keyword>
+			<keyword>getUTCDate</keyword>
+			<keyword>getUTCDay</keyword>
+			<keyword>getUTCFullYear</keyword>
+			<keyword>getUTCHours</keyword>			
+			<keyword>getUTCMilliseconds</keyword>      
+			<keyword>getUTCMinutes</keyword>
+			<keyword>getUTCMonth</keyword>
+			<keyword>getUTCSeconds</keyword>      
+			<keyword>getYear</keyword>
+			<keyword>Image</keyword>
+			<keyword>indexOf</keyword>
+			<keyword>isNaN</keyword>
+			<keyword>join</keyword>
+			<keyword>lastIndexOf</keyword>
+			<keyword>log</keyword>
+			<keyword>match</keyword>
+			<keyword>Math</keyword>
+			<keyword>max</keyword>
+			<keyword>min</keyword>
+			<keyword>Number</keyword>
+			<keyword>Object</keyword>
+			<keyword>parse</keyword>
+			<keyword>parseFloat</keyword>
+			<keyword>parseInt</keyword>
+			<keyword>pop</keyword>
+			<keyword>pow</keyword>
+			<keyword>preference</keyword>
+			<keyword>print</keyword>
+			<keyword>push</keyword>
+			<keyword>random</keyword>
+			<keyword>RegExp</keyword>
+			<keyword>replace</keyword>
+			<keyword>reset</keyword>
+			<keyword>resizeBy</keyword>
+			<keyword>resizeTo</keyword>
+			<keyword>reverse</keyword>
+			<keyword>round</keyword>
+			<keyword>search</keyword>
+			<keyword>select</keyword>
+			<keyword>setDate</keyword>
+			<keyword>setFullYear</keyword>
+			<keyword>setHours</keyword>
+			<keyword>setMilliseconds</keyword>
+			<keyword>setInterval</keyword>
+			<keyword>setMinutes</keyword>
+			<keyword>setMonth</keyword>
+			<keyword>setSeconds</keyword>
+			<keyword>setTime</keyword>
+			<keyword>setTimeout</keyword>
+			<keyword>setUTCDate</keyword>
+			<keyword>setUTCFullYear</keyword>
+			<keyword>setUTCHours</keyword>
+			<keyword>setUTCMilliseconds</keyword>
+			<keyword>setUTCMinutes</keyword>
+			<keyword>setUTCMonth</keyword>
+			<keyword>setUTCSeconds</keyword>
+			<keyword>setYear</keyword>
+			<keyword>shift</keyword>
+			<keyword>sin</keyword>
+			<keyword>slice</keyword>
+			<keyword>sort</keyword>
+			<keyword>splice</keyword>
+			<keyword>split</keyword>
+			<keyword>sqrt</keyword>
+			<keyword>String</keyword>
+			<keyword>substr</keyword>
+			<keyword>substring</keyword>
+			<keyword>tan</keyword>
+			<keyword>toGMTString</keyword>
+			<keyword>toLocaleString</keyword>
+			<keyword>toLowerCase</keyword>
+			<keyword>toSource</keyword>
+			<keyword>toString</keyword>
+			<keyword>toUpperCase</keyword>
+			<keyword>toUTCString</keyword>
+			<keyword>typeof</keyword>
+			<keyword>unescape</keyword>
+			<keyword>unshift</keyword>
+			<keyword>unwatch</keyword>
+			<keyword>UTC</keyword>
+			<keyword>valueOf</keyword>
+			<keyword>watch</keyword>
+			<keyword>write</keyword>
+			<keyword>writeln</keyword>
+		</keywords>
+		<keywords id="CodeColor_JavascriptNumber">
+			<keyword>Infinity</keyword>
+			<keyword>Nan</keyword>
+		</keywords>
+		<keywords name="客户端关键字" id="CodeColor_JavascriptClient">
+			<keyword>alert</keyword>
+			<keyword>all</keyword>
+			<keyword>anchor</keyword>
+			<keyword>back</keyword>
+			<keyword>big</keyword>
+			<keyword>blink</keyword>
+			<keyword>blur</keyword>
+			<keyword>body</keyword>
+			<keyword>bold</keyword>
+			<keyword>byteToString</keyword>
+			<keyword>captureEvents</keyword>
+			<keyword>clearInterval</keyword>
+			<keyword>clearTimeout</keyword>
+			<keyword>click</keyword>
+			<keyword>close</keyword>
+			<keyword>confirm</keyword>
+			<keyword>disableExternalCapture</keyword>
+			<keyword>document</keyword>
+			<keyword>enableExternalCapture</keyword>
+			<keyword>event</keyword>
+			<keyword>find</keyword>
+			<keyword>fixed</keyword>
+			<keyword>focus</keyword>
+			<keyword>fontcolor</keyword>
+			<keyword>fontsize</keyword>
+			<keyword>forward</keyword>
+			<keyword>getOptionValueCount</keyword>
+			<keyword>getOptionValue</keyword>
+			<keyword>go</keyword>
+			<keyword>handleEvent</keyword>
+			<keyword>home</keyword>
+			<keyword>italics</keyword>
+			<keyword>javaEnabled</keyword>
+			<keyword>link</keyword>
+			<keyword>load</keyword>
+			<keyword>log</keyword>
+			<keyword>mimeTypes</keyword>
+			<keyword>moveAbove</keyword>
+			<keyword>moveBelow</keyword>
+			<keyword>moveBy</keyword>
+			<keyword>moveTo</keyword>
+			<keyword>moveToAbsolute</keyword>
+			<keyword>navigator</keyword>
+			<keyword>open</keyword>
+			<keyword>options</keyword>
+			<keyword>plugins</keyword>
+			<keyword>prompt</keyword>
+			<keyword>refresh</keyword>
+			<keyword>releaseEvents</keyword>
+			<keyword>reload</keyword>
+			<keyword>routeEvent</keyword>
+			<keyword>screen</keyword>
+			<keyword>scroll</keyword>
+			<keyword>scrollBy</keyword>
+			<keyword>scrollTo</keyword>
+			<keyword>small</keyword>
+			<keyword>stop</keyword>
+			<keyword>strike</keyword>
+			<keyword>sub</keyword>
+			<keyword>submit</keyword>
+			<keyword>sup</keyword>
+			<keyword>taintEnabled</keyword>
+			<keyword>unit</keyword>
+			<keyword>window</keyword>
+		</keywords>
+		<classkeywords name="Spry Keywords" id="CodeColor_JavascriptSpryKeywords">
+			<classkeyword>Spry.Data.Region.debug</classkeyword>
+		</classkeywords>
+		<classlibrary name="Spry Classes" id="CodeColor_JavascriptSpryClasses">
+			<class>Spry.Data.XMLDataSet</class>
+			<class>Spry.Widget.Accordion</class>
+      <class>Spry.Widget.CollapsiblePanel</class>
+      <class>Spry.Widget.MenuBar</class>
+      <class>Spry.Widget.PopUpMenu</class>
+      <class>Spry.Widget.TabbedPanels</class>
+      <class>Spry.Widget.ValidationTextField</class>
+			<class>Spry.Widget.ValidationSelect</class>
+			<class>Spry.Widget.ValidationCheckbox</class>
+			<class>Spry.Widget.ValidationTextarea</class>
+			<class>Spry.Effect.Highlight</class>
+			<class>Spry.Data.Region.debug</class>
+		</classlibrary>
+		<sampleText><![CDATA[/* JavaScript */
+function displayWords(arrayWords) {
+  for (i=0; i < arrayWords.length; i++) {
+    // inline comment
+    alert("Word " + i + " is " + arrayWords[i]);
+  }
+}
+var tokens = new Array("Hello", "world");
+displayWords(tokens);
+]]></sampleText>
+	</scheme>
+	<scheme name="CSS" id="CSS" doctypes="CSS" priority="50">
+		<ignoreCase>Yes</ignoreCase>
+		<ignoreTags>Yes</ignoreTags>
+		<blockStart doctypes="ASP-JS,ASP-VB,ASP.NET_CSharp,ASP.NET_VB,ColdFusion,CFC,HTML,JSP,LibraryItem,PHP_MySQL,XSLT" scheme="outerTag"><![CDATA[<style>]]></blockStart>
+		<blockEnd><![CDATA[</style>]]></blockEnd>
+		<blockStart doctypes="ASP-JS,ASP-VB,ASP.NET_CSharp,ASP.NET_VB,ColdFusion,CFC,HTML,JSP,LibraryItem,PHP_MySQL,XSLT" scheme="outerTag"><![CDATA[<style\s+\*>]]></blockStart>
+		<blockEnd><![CDATA[</style>]]></blockEnd>
+		<commentStart name="注释" id="CodeColor_CSSComment"><![CDATA[/*]]></commentStart>
+		<commentEnd><![CDATA[*/]]></commentEnd>
+		<endOfLineComment><![CDATA[<!--]]></endOfLineComment>
+		<endOfLineComment><![CDATA[-->]]></endOfLineComment>
+		<endOfLineComment><![CDATA[<xsl:comment>]]></endOfLineComment>
+		<endOfLineComment><![CDATA[</xsl:comment\s*>]]></endOfLineComment>
+		<stringStart name="字符串" id="CodeColor_CSSString"><![CDATA["]]></stringStart>
+		<stringEnd><![CDATA["]]></stringEnd>
+		<stringStart><![CDATA[']]></stringStart>
+		<stringEnd><![CDATA[']]></stringEnd>
+		<stringEsc><![CDATA[\]]></stringEsc>
+		<cssSelector name="选择器" id="CodeColor_CSSSelector" />
+		<cssProperty name="属性" id="CodeColor_CSSProperty" />
+		<cssValue name="值" id="CodeColor_CSSValue" />
+		<cssImport name="@import" id="CodeColor_CSSImport" />
+		<cssMedia name="@media" id="CodeColor_CSSMedia" />
+		<keywords name="Important" id="CodeColor_CssKeywordImportant">
+			<keyword>!important</keyword>
+		</keywords>
+		<sampleText doctypes="CSS"><![CDATA[/* Comment */
+@import url("main.css");
+h2, .head2 {
+  font-family : 'Sans-Serif';
+  font-weight : bold;
+  color : #336699 !important;
+}
+@media screen, print {
+  pre { margin: 0px 10px 10px }
+  h1 { font-size: 14px; padding-top: 10px }
+}
+]]></sampleText>
+	</scheme>
+	<scheme name="库" id="Library" priority="5">
+		<ignoreCase>Yes</ignoreCase>
+		<ignoreTags>Yes</ignoreTags>
+		<defaultText name="默认文本" id="CodeColor_LibraryDefaultText" />
+		<blockStart doctypes="ASP-JS,ASP-VB,ASP.NET_CSharp,ASP.NET_VB,ColdFusion,CFC,HTML,JSP,LibraryItem,PHP_MySQL" scheme="innerText"><![CDATA[<!--\s*#BeginLibraryItem]]></blockStart>
+		<blockEnd><![CDATA[<!--\s*#EndLibraryItem\s*-->]]></blockEnd>
+		<defaultText name="项目" id="CodeColor_LibraryText" />
+	</scheme>
+	<scheme name="日期" id="Date" priority="50">
+		<ignoreCase>Yes</ignoreCase>
+		<ignoreTags>Yes</ignoreTags>
+		<defaultText name="默认文本" id="CodeColor_DateDefaultText" />
+		<blockStart doctypes="ASP-JS,ASP-VB,ASP.NET_CSharp,ASP.NET_VB,ColdFusion,CFC,HTML,JSP,LibraryItem,PHP_MySQL" scheme="innerText"><![CDATA[<!--\s*#BeginDate]]></blockStart>
+		<blockEnd><![CDATA[<!--\s*#EndDate\s*-->]]></blockEnd>
+		<defaultText name="对象" id="CodeColor_DateText" />
+	</scheme>
+	<scheme name="模板注释" id="Template_Comment" priority="50">
+		<ignoreCase>Yes</ignoreCase>
+		<ignoreTags>Yes</ignoreTags>
+		<blockStart doctypes="DWTemplate" scheme="innerText"><![CDATA[<!--\s*#BeginEditable]]></blockStart>
+		<blockEnd><![CDATA[-->]]></blockEnd>
+		<blockStart doctypes="DWTemplate" scheme="innerText"><![CDATA[<!--\s*#EndEditable]]></blockStart>
+		<blockEnd><![CDATA[-->]]></blockEnd>
+		<blockStart doctypes="DWTemplate" scheme="innerText"><![CDATA[<!--\s*#Template]]></blockStart>
+		<blockEnd><![CDATA[-->]]></blockEnd>
+		
+		<blockStart doctypes="DWTemplate" scheme="innerText"><![CDATA[<!--\s*TemplateBeginEditable]]></blockStart>
+		<blockEnd><![CDATA[-->]]></blockEnd>
+		<blockStart doctypes="DWTemplate" scheme="innerText"><![CDATA[<!--\s*TemplateEndEditable]]></blockStart>
+		<blockEnd><![CDATA[-->]]></blockEnd>
+		<blockStart doctypes="DWTemplate" scheme="innerText"><![CDATA[<!--\s*TemplateParam]]></blockStart>
+		<blockEnd><![CDATA[-->]]></blockEnd>
+		<blockStart doctypes="DWTemplate" scheme="innerText"><![CDATA[<!--\s*TemplateBeginRepeat]]></blockStart>
+		<blockEnd><![CDATA[-->]]></blockEnd>
+		<blockStart doctypes="DWTemplate" scheme="innerText"><![CDATA[<!--\s*TemplateEndRepeat]]></blockStart>
+		<blockEnd><![CDATA[-->]]></blockEnd>
+		<blockStart doctypes="DWTemplate" scheme="innerText"><![CDATA[<!--\s*TemplateBeginPassthroughRepeat]]></blockStart>
+		<blockEnd><![CDATA[-->]]></blockEnd>
+		<blockStart doctypes="DWTemplate" scheme="innerText"><![CDATA[<!--\s*TemplateEndPassthroughRepeat]]></blockStart>
+		<blockEnd><![CDATA[-->]]></blockEnd>
+		<blockStart doctypes="DWTemplate" scheme="innerText"><![CDATA[<!--\s*TemplateBeginIf]]></blockStart>
+		<blockEnd><![CDATA[-->]]></blockEnd>
+		<blockStart doctypes="DWTemplate" scheme="innerText"><![CDATA[<!--\s*TemplateEndIf]]></blockStart>
+		<blockEnd><![CDATA[-->]]></blockEnd>
+		<blockStart doctypes="DWTemplate" scheme="innerText"><![CDATA[<!--\s*TemplateBeginPassthroughIf]]></blockStart>
+		<blockEnd><![CDATA[-->]]></blockEnd>
+		<blockStart doctypes="DWTemplate" scheme="innerText"><![CDATA[<!--\s*TemplateEndPassthroughIf]]></blockStart>
+		<blockEnd><![CDATA[-->]]></blockEnd>
+		<blockStart doctypes="DWTemplate" scheme="innerText"><![CDATA[<!--\s*TemplateBeginMultipleIf]]></blockStart>
+		<blockEnd><![CDATA[-->]]></blockEnd>
+		<blockStart doctypes="DWTemplate" scheme="innerText"><![CDATA[<!--\s*TemplateEndMultipleIf]]></blockStart>
+		<blockEnd><![CDATA[-->]]></blockEnd>
+		<blockStart doctypes="DWTemplate" scheme="innerText"><![CDATA[<!--\s*TemplateBeginPassthroughMultipleIf]]></blockStart>
+		<blockEnd><![CDATA[-->]]></blockEnd>
+		<blockStart doctypes="DWTemplate" scheme="innerText"><![CDATA[<!--\s*TemplateEndPassthroughMultipleIf]]></blockStart>
+		<blockEnd><![CDATA[-->]]></blockEnd>
+		<blockStart doctypes="DWTemplate" scheme="innerText"><![CDATA[<!--\s*TemplateBeginIfClause]]></blockStart>
+		<blockEnd><![CDATA[-->]]></blockEnd>
+		<blockStart doctypes="DWTemplate" scheme="innerText"><![CDATA[<!--\s*TemplateEndIfClause]]></blockStart>
+		<blockEnd><![CDATA[-->]]></blockEnd>
+		<blockStart doctypes="DWTemplate" scheme="innerText"><![CDATA[<!--\s*TemplateBeginPassthroughIfClause]]></blockStart>
+		<blockEnd><![CDATA[-->]]></blockEnd>
+		<blockStart doctypes="DWTemplate" scheme="innerText"><![CDATA[<!--\s*TemplateEndPassthroughIfClause]]></blockStart>
+		<blockEnd><![CDATA[-->]]></blockEnd>
+		<blockStart doctypes="DWTemplate" scheme="innerText"><![CDATA[<!--\s*TemplateExpr]]></blockStart>
+		<blockEnd><![CDATA[-->]]></blockEnd>
+		<blockStart doctypes="DWTemplate" scheme="innerText"><![CDATA[<!--\s*TemplatePassthroughExpr]]></blockStart>
+		<blockEnd><![CDATA[-->]]></blockEnd>
+		<blockStart doctypes="DWTemplate" scheme="innerText"><![CDATA[<!--\s*TemplateInfo]]></blockStart>
+		<blockEnd><![CDATA[-->]]></blockEnd>
+		
+		<defaultText name=" " id="CodeColor_TemplateCommentText" />
+		<stringStart name="属性值" id="CodeColor_TemplateCommentAttr"><![CDATA["]]></stringStart>
+		<stringEnd><![CDATA["]]></stringEnd>
+	</scheme>
+	<scheme name="模板" id="Template" priority="5">
+		<ignoreCase>Yes</ignoreCase>
+		<ignoreTags>Yes</ignoreTags>
+		<defaultAttribute />
+		<ignoreMMTParams>No</ignoreMMTParams>
+		<isLocked>Yes</isLocked>
+		<blockStart doctypes="DWTemplateInstance" scheme="innerText"><![CDATA[<!--\s*#BeginTemplate]]></blockStart>
+		<blockEnd><![CDATA[<!--\s*#BeginEditable\s*"\*"\s*-->]]></blockEnd>
+		<blockStart doctypes="DWTemplateInstance" scheme="innerText"><![CDATA[<!--\s*#EndEditable]]></blockStart>
+		<blockEnd><![CDATA[<!--\s*#BeginEditable\s*"\*"\s*-->]]></blockEnd>
+		<blockStart doctypes="DWTemplateInstance" scheme="innerText"><![CDATA[<!--\s*#EndEditable]]></blockStart>
+		<blockEnd><![CDATA[<!--\s*#EndTemplate\s*-->]]></blockEnd>
+		<blockStart doctypes="DWTemplate,DWTemplateInstance" scheme="innerText"><![CDATA[<MMTInstance:FileInstance]]></blockStart>
+		<blockEnd><![CDATA[<MMTInstance:Editable\s+name="\*">]]></blockEnd>
+		<blockStart doctypes="DWTemplate,DWTemplateInstance" scheme="innerText"><![CDATA[</MMTInstance:Editable>]]></blockStart>
+		<blockEnd><![CDATA[<MMTInstance:Editable\s+name='\*'>]]></blockEnd>
+		<blockStart doctypes="DWTemplate,DWTemplateInstance" scheme="innerText"><![CDATA[</MMTInstance:Editable>]]></blockStart>
+		<blockEnd><![CDATA[</MMTInstance:FileInstance>]]></blockEnd>
+		<blockStart doctypes="DWTemplate,DWTemplateInstance" scheme="innerText"><![CDATA[<!--\s*#InstanceBegin]]></blockStart>
+		<blockEnd><![CDATA[<!--\s*#InstanceBeginEditable\s*name="\*"\s*-->]]></blockEnd>
+		<blockStart doctypes="DWTemplate,DWTemplateInstance" scheme="innerText"><![CDATA[<!--\s*#InstanceEndEditable]]></blockStart>
+		<blockEnd><![CDATA[<!--\s*#InstanceBeginEditable\s*name="\*"\s*-->]]></blockEnd>
+		<blockStart doctypes="DWTemplate,DWTemplateInstance" scheme="innerText"><![CDATA[<!--\s*#InstanceEndEditable]]></blockStart>
+		<blockEnd><![CDATA[<!--\s*#InstanceEnd\s*-->]]></blockEnd>
+		<blockStart doctypes="DWTemplate,DWTemplateInstance" scheme="innerText"><![CDATA[<!--\s*InstanceBegin]]></blockStart>
+		<blockEnd><![CDATA[<!--\s*InstanceBeginEditable\s*name="\*"\s*-->]]></blockEnd>
+		<blockStart doctypes="DWTemplate,DWTemplateInstance" scheme="innerText"><![CDATA[<!--\s*InstanceEndEditable]]></blockStart>
+		<blockEnd><![CDATA[<!--\s*InstanceBeginEditable\s*name="\*"\s*-->]]></blockEnd>
+		<blockStart doctypes="DWTemplate,DWTemplateInstance" scheme="innerText"><![CDATA[<!--\s*InstanceEndEditable]]></blockStart>
+		<blockEnd><![CDATA[<!--\s*InstanceEnd\s*-->]]></blockEnd>
+		<defaultText name="锁定区域" id="CodeColor_TemplateText" />
+	</scheme>
+	<scheme name="ColdFusion 注释" id="CFML_Comment" priority="10">
+		<ignoreCase>Yes</ignoreCase>
+		<ignoreTags>Yes</ignoreTags>
+		<defaultText name="默认文本" id="CodeColor_CfmlCommentDefaultText" />
+		<blockStart doctypes="ColdFusion,CFC" scheme="innerText" canNest="Yes"><![CDATA[<!---]]></blockStart>
+		<blockEnd><![CDATA[--->]]></blockEnd>
+		<defaultText name=" " id="CodeColor_CFCommentText" />
+	</scheme>
+	<scheme name="ColdFusion 脚本" id="CFScript" priority="20">
+		<ignoreCase>Yes</ignoreCase>
+		<ignoreTags>Yes</ignoreTags>
+		<defaultText name="默认文本" id="CodeColor_CfmlScriptDefaultText" />
+		<blockStart doctypes="ColdFusion,CFC" scheme="outerTag"><![CDATA[<cfscript>]]></blockStart>
+		<blockEnd><![CDATA[</cfscript>]]></blockEnd>
+		<blockStart doctypes="ColdFusion,CFC" scheme="nameTagScript"><![CDATA[<cfset\n]]></blockStart>
+		<blockEnd><![CDATA[>]]></blockEnd>
+		<blockStart doctypes="ColdFusion,CFC" scheme="nameTagScript"><![CDATA[<cfset\s]]></blockStart>
+		<blockEnd><![CDATA[>]]></blockEnd>
+		<blockStart doctypes="ColdFusion,CFC" scheme="nameTagScript"><![CDATA[<cfif\n]]></blockStart>
+		<blockEnd><![CDATA[>]]></blockEnd>
+		<blockStart doctypes="ColdFusion,CFC" scheme="nameTagScript"><![CDATA[<cfif\s]]></blockStart>
+		<blockEnd><![CDATA[>]]></blockEnd>
+		<blockStart doctypes="ColdFusion,CFC" scheme="nameTagScript"><![CDATA[</cfif]]></blockStart>
+		<blockEnd><![CDATA[>]]></blockEnd>
+		<blockStart doctypes="ColdFusion,CFC" scheme="nameTagScript"><![CDATA[<cfelseif]]></blockStart>
+		<blockEnd><![CDATA[>]]></blockEnd>
+		<blockStart doctypes="ColdFusion,CFC" scheme="nameTagScript"><![CDATA[<cfelse]]></blockStart>
+		<blockEnd><![CDATA[>]]></blockEnd>
+		<defaultAttribute />
+		<commentStart name="注释" id="CodeColor_CFScriptComment"><![CDATA[/*]]></commentStart>
+		<commentEnd><![CDATA[*/]]></commentEnd>
+		<endOfLineComment><![CDATA[//]]></endOfLineComment>
+		<stringStart name="字符串" id="CodeColor_CFScriptString"><![CDATA["]]></stringStart>
+		<stringEnd><![CDATA["]]></stringEnd>
+		<stringStart name="字符串" id="CodeColor_CFScriptString"><![CDATA[']]></stringStart>
+		<stringEnd><![CDATA[']]></stringEnd>
+		<brackets name="括号" id="CodeColor_CFScriptBracket"><![CDATA[{([#])}]]></brackets>
+		<operators name="运算符" id="CodeColor_CFScriptOperator"><![CDATA[=+-^*/\&]]></operators>
+		<numbers name="数字" id="CodeColor_CFScriptNumber" />
+		<idChar1>abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</idChar1>
+		<idCharRest name="标识符" id="CodeColor_CFScriptIdentifier">_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789</idCharRest>
+		<functionKeyword name="函数关键字" id="CodeColor_CFScriptFunction">function</functionKeyword>
+		<keywords name="保留" id="CodeColor_CFScriptReserved">
+			<keyword>AND</keyword>
+			<keyword>break</keyword>
+			<keyword>case</keyword>
+			<keyword>CONTAIN</keyword>
+			<keyword>CONTAINS</keyword>
+			<keyword>continue</keyword>
+			<keyword>default</keyword>
+			<keyword>do</keyword>
+			<keyword>DOES</keyword>
+			<keyword>else</keyword>
+			<keyword>EQ</keyword>
+			<keyword>EQUAL</keyword>
+			<keyword>EQUALTO</keyword>
+			<keyword>EQV</keyword>
+			<keyword>false</keyword>
+			<keyword>for</keyword>
+			<keyword>GE</keyword>
+			<keyword>GREATER</keyword>
+			<keyword>GT</keyword>
+			<keyword>GTE</keyword>
+			<keyword>if</keyword>
+			<keyword>IMP</keyword>
+			<keyword>in</keyword>
+			<keyword>IS</keyword>
+			<keyword>LE</keyword>
+			<keyword>LESS</keyword>
+			<keyword>LT</keyword>
+			<keyword>LTE</keyword>
+			<keyword>MOD</keyword>
+			<keyword>NEQ</keyword>
+			<keyword>NOT</keyword>
+			<keyword>OR</keyword>
+			<keyword>return</keyword>
+			<keyword>switch</keyword>
+			<keyword>THAN</keyword>
+			<keyword>TO</keyword>
+			<keyword>true</keyword>
+			<keyword>var</keyword>
+			<keyword>while</keyword>
+			<keyword>XOR</keyword>
+		</keywords>
+		<keywords name="函数" id="CodeColor_CFScriptNative">
+			<keyword>Abs</keyword>
+			<keyword>ACos</keyword>
+			<keyword>AddSOAPRequestHeader</keyword>
+			<keyword>AddSOAPResponseHeader</keyword>
+			<keyword>ArrayAppend</keyword>
+			<keyword>ArrayAvg</keyword>
+			<keyword>ArrayClear</keyword>
+			<keyword>ArrayDeleteAt</keyword>
+			<keyword>ArrayInsertAt</keyword>
+			<keyword>ArrayIsEmpty</keyword>
+			<keyword>ArrayLen</keyword>
+			<keyword>ArrayMax</keyword>
+			<keyword>ArrayMin</keyword>
+			<keyword>ArrayNew</keyword>
+			<keyword>ArrayPrepend</keyword>
+			<keyword>ArrayResize</keyword>
+			<keyword>ArraySet</keyword>
+			<keyword>ArraySort</keyword>
+			<keyword>ArraySum</keyword>
+			<keyword>ArraySwap</keyword>
+			<keyword>ArrayToList</keyword>
+			<keyword>Asc</keyword>
+			<keyword>ASin</keyword>
+			<keyword>Atn</keyword>
+			<keyword>AuthenticatedContext</keyword>
+			<keyword>AuthenticatedUser</keyword>
+			<keyword>BinaryDecode</keyword>
+			<keyword>BinaryEncode</keyword>
+			<keyword>BitAnd</keyword>
+			<keyword>BitMaskClear</keyword>
+			<keyword>BitMaskRead</keyword>
+			<keyword>BitMaskSet</keyword>
+			<keyword>BitNot</keyword>
+			<keyword>BitOr</keyword>
+			<keyword>BitSHLN</keyword>
+			<keyword>BitSHRN</keyword>
+			<keyword>BitXor</keyword>
+			<keyword>Ceiling</keyword>
+			<keyword>CharsetDecode</keyword>
+			<keyword>CharsetEncode</keyword>
+			<keyword>Chr</keyword>
+			<keyword>CJustify</keyword>
+			<keyword>Compare</keyword>
+			<keyword>CompareNoCase</keyword>
+			<keyword>Cos</keyword>
+			<keyword>CreateDate</keyword>
+			<keyword>CreateDateTime</keyword>
+			<keyword>CreateObject</keyword>
+			<keyword>CreateODBCDate</keyword>
+			<keyword>CreateODBCDateTime</keyword>
+			<keyword>CreateODBCTime</keyword>
+			<keyword>CreateTime</keyword>
+			<keyword>CreateTimeSpan</keyword>
+			<keyword>CreateUUID</keyword>
+			<keyword>DateAdd</keyword>
+			<keyword>DateCompare</keyword>
+			<keyword>DateConvert</keyword>
+			<keyword>DateDiff</keyword>
+			<keyword>DateFormat</keyword>
+			<keyword>DatePart</keyword>
+			<keyword>Day</keyword>
+			<keyword>DayOfWeek</keyword>
+			<keyword>DayOfWeekAsString</keyword>
+			<keyword>DayOfYear</keyword>
+			<keyword>DaysInMonth</keyword>
+			<keyword>DaysInYear</keyword>
+			<keyword>DE</keyword>
+			<keyword>DecimalFormat</keyword>
+			<keyword>DecrementValue</keyword>
+			<keyword>Decrypt</keyword>
+			<keyword>DecryptBinary</keyword>
+			<keyword>DeleteClientVariable</keyword>
+			<keyword>DirectoryExists</keyword>
+			<keyword>DollarFormat</keyword>
+			<keyword>Duplicate</keyword>
+			<keyword>Encrypt</keyword>
+			<keyword>EncryptBinary</keyword>
+			<keyword>Evaluate</keyword>
+			<keyword>Exp</keyword>
+			<keyword>ExpandPath</keyword>
+			<keyword>FileExists</keyword>
+			<keyword>Find</keyword>
+			<keyword>FindNoCase</keyword>
+			<keyword>FindOneOf</keyword>
+			<keyword>FirstDayOfMonth</keyword>
+			<keyword>Fix</keyword>
+			<keyword>FormatBaseN</keyword>
+			<keyword>GenerateSecretKey</keyword>
+			<keyword>GetAuthUser</keyword>
+			<keyword>GetBaseTagData</keyword>
+			<keyword>GetBaseTagList</keyword>
+			<keyword>GetBaseTemplatePath</keyword>
+			<keyword>GetClientVariablesList</keyword>
+			<keyword>GetContextRoot</keyword>
+			<keyword>GetCurrentTemplatePath</keyword>
+			<keyword>GetDirectoryFromPath</keyword>
+			<keyword>GetEncoding</keyword>			
+			<keyword>GetException</keyword>
+			<keyword>GetFileFromPath</keyword>
+			<keyword>GetFunctionList</keyword>
+			<keyword>GetGatewayHelper</keyword>
+			<keyword>GetHttpTimeString</keyword>
+			<keyword>GetHttpRequestData</keyword>
+			<keyword>GetK2ServerDocCount</keyword>
+			<keyword>GetK2ServerDocCountLimit</keyword>
+			<keyword>GetLocale</keyword>
+			<keyword>GetLocaleDisplayName</keyword>
+			<keyword>GetLocalHostIP</keyword>
+			<keyword>GetMetaData</keyword>
+			<keyword>GetMetricData</keyword>
+			<keyword>GetPageContext</keyword>
+			<keyword>GetProfileSections</keyword>
+			<keyword>GetProfileString</keyword>
+			<keyword>GetSOAPRequest</keyword>
+			<keyword>GetSOAPRequestHeader</keyword>
+			<keyword>GetSOAPResponse</keyword>
+			<keyword>GetSOAPResponseHeader</keyword>
+			<keyword>GetTempDirectory</keyword>
+			<keyword>GetTempFile</keyword>
+			<keyword>GetTemplatePath</keyword>
+			<keyword>GetTickCount</keyword>
+			<keyword>GetTimeZoneInfo</keyword>
+			<keyword>GetToken</keyword>
+			<keyword>Hash</keyword>
+			<keyword>Hour</keyword>
+			<keyword>HTMLCodeFormat</keyword>
+			<keyword>HTMLEditFormat</keyword>
+			<keyword>IIf</keyword>
+			<keyword>IncrementValue</keyword>
+			<keyword>InputBaseN</keyword>
+			<keyword>Insert</keyword>
+			<keyword>Int</keyword>
+			<keyword>IsArray</keyword>
+			<keyword>IsBoolean</keyword>
+			<keyword>IsBinary</keyword>
+			<keyword>IsCustomFunction</keyword>
+			<keyword>IsDate</keyword>
+			<keyword>IsDebugMode</keyword>
+			<keyword>IsDefined</keyword>
+			<keyword>IsK2ServerABroker</keyword>
+			<keyword>IsK2ServerDocCountExceeded</keyword>
+			<keyword>IsK2ServerOnline</keyword>
+			<keyword>IsLeapYear</keyword>
+			<keyword>IsLocalHost</keyword>
+			<keyword>IsNumeric</keyword>
+			<keyword>IsNumericDate</keyword>
+			<keyword>IsObject</keyword>
+			<keyword>IsProtected</keyword>
+			<keyword>IsQuery</keyword>
+			<keyword>IsSimpleValue</keyword>
+			<keyword>IsSOAPRequest</keyword>
+			<keyword>IsStruct</keyword>
+			<keyword>IsUserInRole</keyword>
+			<keyword>IsValid</keyword>
+			<keyword>IsWDDX</keyword>
+			<keyword>IsXML</keyword>
+			<keyword>IsXMLAttribute</keyword>
+			<keyword>IsXMLDoc</keyword>
+			<keyword>IsXMLElem</keyword>
+			<keyword>IsXMLNode</keyword>
+			<keyword>IsXMLRoot</keyword>
+			<keyword>JavaCast</keyword>
+			<keyword>JSStringFormat</keyword>
+			<keyword>LCase</keyword>
+			<keyword>Left</keyword>
+			<keyword>Len</keyword>
+			<keyword>ListAppend</keyword>
+			<keyword>ListChangeDelims</keyword>
+			<keyword>ListContains</keyword>
+			<keyword>ListContainsNoCase</keyword>
+			<keyword>ListDeleteAt</keyword>
+			<keyword>ListFind</keyword>
+			<keyword>ListFindNoCase</keyword>
+			<keyword>ListFirst</keyword>
+			<keyword>ListGetAt</keyword>
+			<keyword>ListInsertAt</keyword>
+			<keyword>ListLast</keyword>
+			<keyword>ListLen</keyword>
+			<keyword>ListPrepend</keyword>
+			<keyword>ListQualify</keyword>
+			<keyword>ListRest</keyword>
+			<keyword>ListSetAt</keyword>
+			<keyword>ListSort</keyword>
+			<keyword>ListToArray</keyword>
+			<keyword>ListValueCount</keyword>
+			<keyword>ListValueCountNoCase</keyword>
+			<keyword>LJustify</keyword>
+			<keyword>Log</keyword>
+			<keyword>Log10</keyword>
+			<keyword>LSCurrencyFormat</keyword>
+			<keyword>LSDateFormat</keyword>
+			<keyword>LSEuroCurrencyFormat</keyword>
+			<keyword>LSIsCurrency</keyword>
+			<keyword>LSIsDate</keyword>
+			<keyword>LSIsNumeric</keyword>
+			<keyword>LSNumberFormat</keyword>
+			<keyword>LSParseCurrency</keyword>
+			<keyword>LSParseDateTime</keyword>
+			<keyword>LSParseEuroCurrency</keyword>
+			<keyword>LSParseNumber</keyword>
+			<keyword>LSTimeFormat</keyword>
+			<keyword>LTrim</keyword>
+			<keyword>Max</keyword>
+			<keyword>Mid</keyword>
+			<keyword>Min</keyword>
+			<keyword>Minute</keyword>
+			<keyword>Month</keyword>
+			<keyword>MonthAsString</keyword>
+			<keyword>Now</keyword>
+			<keyword>NumberFormat</keyword>
+			<keyword>ParagraphFormat</keyword>
+			<keyword>ParameterExists</keyword>
+			<keyword>ParseDateTime</keyword>
+			<keyword>Pi</keyword>
+			<keyword>PreserveSingleQuotes</keyword>
+			<keyword>Quarter</keyword>
+			<keyword>QueryAddColumn</keyword>
+			<keyword>QueryAddRow</keyword>
+			<keyword>QueryNew</keyword>
+			<keyword>QuerySetCell</keyword>
+			<keyword>QuotedValueList</keyword>
+			<keyword>Rand</keyword>
+			<keyword>Randomize</keyword>
+			<keyword>RandRange</keyword>
+			<keyword>REFind</keyword>
+			<keyword>REFindNoCase</keyword>
+			<keyword>ReleaseCOMObject</keyword>
+			<keyword>RemoveChars</keyword>
+			<keyword>RepeatString</keyword>
+			<keyword>Replace</keyword>
+			<keyword>ReplaceList</keyword>
+			<keyword>ReplaceNoCase</keyword>
+			<keyword>REReplace</keyword>
+			<keyword>REReplaceNoCase</keyword>
+			<keyword>Reverse</keyword>
+			<keyword>Right</keyword>
+			<keyword>RJustify</keyword>
+			<keyword>Round</keyword>
+			<keyword>RTrim</keyword>
+			<keyword>Second</keyword>
+			<keyword>SendGatewayMessage</keyword>
+			<keyword>SetEncoding</keyword>
+			<keyword>SetLocale</keyword>
+			<keyword>SetProfileString</keyword>
+			<keyword>SetVariable</keyword>
+			<keyword>Sgn</keyword>
+			<keyword>Sin</keyword>
+			<keyword>SpanExcluding</keyword>
+			<keyword>SpanIncluding</keyword>
+			<keyword>Sqr</keyword>
+			<keyword>StripCR</keyword>
+			<keyword>StructAppend</keyword>
+			<keyword>StructClear</keyword>
+			<keyword>StructCopy</keyword>
+			<keyword>StructCount</keyword>
+			<keyword>StructDelete</keyword>
+			<keyword>StructFind</keyword>
+			<keyword>StructFindKey</keyword>
+			<keyword>StructFindValue</keyword>
+			<keyword>StructGet</keyword>
+			<keyword>StructInsert</keyword>
+			<keyword>StructIsEmpty</keyword>
+			<keyword>StructKeyArray</keyword>
+			<keyword>StructKeyExists</keyword>
+			<keyword>StructKeyList</keyword>
+			<keyword>StructNew</keyword>
+			<keyword>StructSort</keyword>
+			<keyword>StructUpdate</keyword>
+			<keyword>Tan</keyword>
+			<keyword>TimeFormat</keyword>
+			<keyword>ToBase64</keyword>
+			<keyword>ToBinary</keyword>
+			<keyword>ToScript</keyword>
+			<keyword>ToString</keyword>
+			<keyword>Trim</keyword>
+			<keyword>UCase</keyword>
+			<keyword>URLDecode</keyword>
+			<keyword>URLEncodedFormat</keyword>
+			<keyword>URLSessionFormat</keyword>
+			<keyword>Val</keyword>
+			<keyword>ValueList</keyword>
+			<keyword>Week</keyword>
+			<keyword>Wrap</keyword>
+			<keyword>WriteOutput</keyword>
+			<keyword>XMLChildPos</keyword>
+			<keyword>XMLElemNew</keyword>
+			<keyword>XMLFormat</keyword>
+			<keyword>XMLGetNodeType</keyword>
+			<keyword>XMLNew</keyword>
+			<keyword>XMLParse</keyword>
+			<keyword>XMLSearch</keyword>
+			<keyword>XMLTransform</keyword>
+			<keyword>XMLValidate</keyword>
+			<keyword>Year</keyword>
+			<keyword>YesNoFormat</keyword>
+		</keywords>
+	</scheme>
+	<scheme id="NestedTags" priority="20">
+		<!-- This scheme does not show up in preferences list, it is used to specify tags that can be nested inside other tags -->
+		<ignoreCase>Yes</ignoreCase>
+		<ignoreTags>No</ignoreTags>
+		<blockStart doctypes="ColdFusion,CFC" scheme="nameTag"><![CDATA[<cfoutput]]></blockStart>
+		<blockEnd><![CDATA[>]]></blockEnd>
+		<blockStart doctypes="ColdFusion,CFC" scheme="nameTag"><![CDATA[<cfoutput\n]]></blockStart>
+		<blockEnd><![CDATA[>]]></blockEnd>
+		<blockStart doctypes="ColdFusion,CFC" scheme="nameTag"><![CDATA[<cfoutput\s]]></blockStart>
+		<blockEnd><![CDATA[>]]></blockEnd>
+		<blockStart doctypes="ColdFusion,CFC" scheme="nameTag"><![CDATA[</cfoutput]]></blockStart>
+		<blockEnd><![CDATA[>]]></blockEnd>
+		<defaultAttribute />
+		<stringStart name="属性值" id="CodeColor_HTMLString"><![CDATA["]]></stringStart>
+		<stringEnd><![CDATA["]]></stringEnd>
+		<stringStart><![CDATA[']]></stringStart>
+		<stringEnd><![CDATA[']]></stringEnd>
+		<numbers name="数字" id="CodeColor_HTMLNumber" />
+	</scheme>
+	<scheme name="Java" id="Java" doctypes="Java" priority="20">
+		<ignoreCase>No</ignoreCase>
+		<ignoreTags>Yes</ignoreTags>
+		<defaultText name="默认文本" id="CodeColor_JavaDefaultText" />
+		<blockStart name="块分隔符" id="CodeColor_JavaBlock" doctypes="JSP" scheme="customText"><![CDATA[<%]]></blockStart>
+		<blockEnd><![CDATA[%>]]></blockEnd>
+		<commentStart name="注释" id="CodeColor_JavaComment"><![CDATA[/*]]></commentStart>
+		<commentEnd><![CDATA[*/]]></commentEnd>
+		<endOfLineComment><![CDATA[//]]></endOfLineComment>
+		<stringStart name="字符串" id="CodeColor_JavaString"><![CDATA["]]></stringStart>
+		<stringEnd><![CDATA["]]></stringEnd>
+		<stringEsc><![CDATA[\]]></stringEsc>
+		<charStart><![CDATA[']]></charStart>
+		<charEnd><![CDATA[']]></charEnd>
+		<charEsc><![CDATA[\]]></charEsc>
+		<brackets name="括号" id="CodeColor_JavaBracket"><![CDATA[{[()]}]]></brackets>
+		<operators name="运算符" id="CodeColor_JavaOperator"><![CDATA[+-*/%<>!?:=&|^~]]></operators>
+		<numbers name="数字" id="CodeColor_JavaNumber" />
+		<idChar1>_$abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</idChar1>
+		<idCharRest name="标识符" id="CodeColor_JavaIdentifier">_$abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789</idCharRest>
+		<functionKeyword name="函数关键字" id="CodeColor_JavaFunction">function</functionKeyword>
+		<keywords name="保留关键字" id="CodeColor_JavaReserved">
+			<keyword>abstract</keyword>
+			<keyword>boolean</keyword>
+			<keyword>break</keyword>
+			<keyword>byte</keyword>
+			<keyword>case</keyword>
+			<keyword>catch</keyword>
+			<keyword>char</keyword>
+			<keyword>class</keyword>
+			<keyword>continue</keyword>
+			<keyword>default</keyword>
+			<keyword>delegate</keyword>
+			<keyword>do</keyword>
+			<keyword>double</keyword>
+			<keyword>else</keyword>
+			<keyword>extends</keyword>
+			<keyword>false</keyword>
+			<keyword>final</keyword>
+			<keyword>finally</keyword>
+			<keyword>float</keyword>
+			<keyword>for</keyword>
+			<keyword>if</keyword>
+			<keyword>implements</keyword>
+			<keyword>import</keyword>
+			<keyword>instanceof</keyword>
+			<keyword>int</keyword>
+			<keyword>interface</keyword>
+			<keyword>long</keyword>
+			<keyword>native</keyword>
+			<keyword>new</keyword>
+			<keyword>null</keyword>
+			<keyword>package</keyword>
+			<keyword>private</keyword>
+			<keyword>protected</keyword>
+			<keyword>public</keyword>
+			<keyword>return</keyword>
+			<keyword>short</keyword>
+			<keyword>static</keyword>
+			<keyword>strictfp</keyword>
+			<keyword>super</keyword>
+			<keyword>switch</keyword>
+			<keyword>synchronized</keyword>
+			<keyword>this</keyword>
+			<keyword>throw</keyword>
+			<keyword>throws</keyword>
+			<keyword>transient</keyword>
+			<keyword>true</keyword>
+			<keyword>try</keyword>
+			<keyword>void</keyword>
+			<keyword>volatile</keyword>
+			<keyword>while</keyword>
+		</keywords>
+		<keywords name="JSP 关键字" id="CodeColor_JavaJSP">
+			<keyword>archive</keyword>
+			<keyword>attribute</keyword>
+			<keyword>bean</keyword>
+			<keyword>beanName</keyword>
+			<keyword>charecterSet</keyword>
+			<keyword>fallback</keyword>
+			<keyword>flush</keyword>
+			<keyword>forward</keyword>
+			<keyword>getProperty</keyword>
+			<keyword>jreversion</keyword>
+			<keyword>params</keyword>
+			<keyword>plugin</keyword>
+			<keyword>prefix</keyword>
+			<keyword>property</keyword>
+			<keyword>scope</keyword>
+			<keyword>setProperty</keyword>
+			<keyword>useBean</keyword>
+		</keywords>
+		<keywords name="隐式关键字" id="CodeColor_JavaImplicit">
+			<keyword>application</keyword>
+			<keyword>config</keyword>
+			<keyword>exception</keyword>
+			<keyword>out</keyword>
+			<keyword>page</keyword>
+			<keyword>pageContext</keyword>
+			<keyword>request</keyword>
+			<keyword>response</keyword>
+			<keyword>session</keyword>
+		</keywords>
+		<keywords name="其他关键字" id="CodeColor_JavaOther">
+			<keyword>Class</keyword>
+			<keyword>Connection</keyword>
+			<keyword>Driver</keyword>
+			<keyword>DriverManager</keyword>
+			<keyword>executeQuery</keyword>
+			<keyword>forName</keyword>
+			<keyword>getConnection</keyword>
+			<keyword>next</keyword>
+			<keyword>PreparedStatement</keyword>
+			<keyword>ResultSet</keyword>
+			<keyword>setQueryTimeout</keyword>
+			<keyword>String</keyword>
+		</keywords>
+		<sampleText doctypes="Java"><![CDATA[import java.io.*;
+public class MyBean implements Serializable {
+    // Inline comment
+    private static final char SOME_CONSTANT = 'A';
+    private String userName;
+    /**
+     * JavaDoc comment
+     * @author Jane Doe
+     */
+    public void setUserName(String userName) {
+        while (true) {
+            if (7.0 != -11) {
+                System.out.println("Hello, world!");
+            }
+        }
+        this.userName = userName;
+    }
+    public String getUserName() {
+        return userName;
+    }
+}]]></sampleText>
+	</scheme>
+	<scheme name="JSP 页指令" id="JSP_Page_Directive" priority="20">
+		<ignoreCase>Yes</ignoreCase>
+		<ignoreTags>Yes</ignoreTags>
+		<defaultText name="默认文本" id="CodeColor_JspPageDirDefaultText" />
+		<blockStart name="块分隔符" id="CodeColor_JSPPageBlock" doctypes="JSP" scheme="customText"><![CDATA[<%@\s*page]]></blockStart>
+		<blockEnd><![CDATA[%>]]></blockEnd>
+		<stringStart name="值" id="CodeColor_JSPPageString"><![CDATA["]]></stringStart>
+		<stringEnd><![CDATA["]]></stringEnd>
+		<stringStart><![CDATA[']]></stringStart>
+		<stringEnd><![CDATA[']]></stringEnd>
+		<operators name="运算符" id="CodeColor_JSPPageOperator"><![CDATA[=]]></operators>
+		<keywords name="属性" id="CodeColor_JSPPageAttributes">
+			<keyword>autoFlush</keyword>
+			<keyword>buffer</keyword>
+			<keyword>contentType</keyword>
+			<keyword>errorPage</keyword>
+			<keyword>extends</keyword>
+			<keyword>import</keyword>
+			<keyword>info</keyword>
+			<keyword>isErrorPage</keyword>
+			<keyword>isThreadSafe</keyword>
+			<keyword>language</keyword>
+			<keyword>pageEncoding</keyword>
+			<keyword>session</keyword>
+		</keywords>
+	</scheme>
+	<scheme name="JSP Taglib 指令" id="JSP_Taglib_Directive" priority="20">
+		<ignoreCase>Yes</ignoreCase>
+		<ignoreTags>Yes</ignoreTags>
+		<defaultText name="默认文本" id="CodeColor_JspTagLibDirDefaultText" />
+		<blockStart name="块分隔符" id="CodeColor_JSPTaglibBlock" doctypes="JSP" scheme="customText"><![CDATA[<%@\s*taglib]]></blockStart>
+		<blockEnd><![CDATA[%>]]></blockEnd>
+		<stringStart name="值" id="CodeColor_JSPTaglibString"><![CDATA["]]></stringStart>
+		<stringEnd><![CDATA["]]></stringEnd>
+		<stringStart><![CDATA[']]></stringStart>
+		<stringEnd><![CDATA[']]></stringEnd>
+		<operators name="运算符" id="CodeColor_JSPTaglibOperator"><![CDATA[=]]></operators>
+		<keywords name="属性" id="CodeColor_JSPTaglibAttributes">
+			<keyword>tagPrefix</keyword>
+			<keyword>uri</keyword>
+		</keywords>
+	</scheme>
+	<scheme name="JSP Include 指令" id="JSP_Include_Directive" priority="20">
+		<ignoreCase>Yes</ignoreCase>
+		<ignoreTags>Yes</ignoreTags>
+		<defaultText name="默认文本" id="CodeColor_JspIncludeDirDefaultText" />
+		<blockStart name="块分隔符" id="CodeColor_JSPIncludeBlock" doctypes="JSP" scheme="customText"><![CDATA[<%@\s*include]]></blockStart>
+		<blockEnd><![CDATA[%>]]></blockEnd>
+		<stringStart name="值" id="CodeColor_JSPIncludeString"><![CDATA["]]></stringStart>
+		<stringEnd><![CDATA["]]></stringEnd>
+		<stringStart><![CDATA[']]></stringStart>
+		<stringEnd><![CDATA[']]></stringEnd>
+		<operators name="运算符" id="CodeColor_JSPIncludeOperator"><![CDATA[=]]></operators>
+		<keywords name="属性" id="CodeColor_JSPIncludeAttributes">
+			<keyword>file</keyword>
+		</keywords>
+	</scheme>
+	<scheme name="XML" id="XML" doctypes="XML,EDML" priority="50">
+		<ignoreCase>No</ignoreCase>
+		<ignoreTags>No</ignoreTags>
+		<defaultText name="文本" id="CodeColor_XMLText" />
+		<defaultTag name="标签" id="CodeColor_XMLTag" />
+		<defaultAttribute />
+		<commentStart name="注释" id="CodeColor_XMLComment"><![CDATA[<!--]]></commentStart>
+		<commentEnd><![CDATA[-->]]></commentEnd>
+		<stringStart name="属性值" id="CodeColor_XMLString"><![CDATA["]]></stringStart>
+		<stringEnd><![CDATA["]]></stringEnd>
+		<numbers name="数字" id="CodeColor_XMLNumber" />
+		<sampleText doctypes="XML"><![CDATA[<scheme name="XML" doctypes="XML" priority="50">
+  <ignoreCase>Yes</ignoreCase>
+  <defaultText name="文本" />
+  <defaultAttribute name="Attribute" />
+</scheme>
+]]></sampleText>
+		<sampleText doctypes="EDML">
+<![CDATA[<TAG name="A" BIND="HREF" ENDTAG="yes">
+  <!-- Version 2.05 2000-02-22 -->
+  <TAGFORMAT NLBEFORETAG="0" NLBEFORECONTENTS="0" NLAFTERCONTENTS="0" NLAFTERTAG="0"/>
+    <TAGDIALOG FILE="a.htm" />
+</TAG>
+]]>
+		</sampleText>
+	</scheme>
+	<scheme name="ASP Include" id="ASP_Include" priority="10">
+		<ignoreCase>Yes</ignoreCase>
+		<ignoreTags>Yes</ignoreTags>
+		<defaultText name="默认文本" id="CodeColor_AspIncludeDirDefaultText" />
+		<blockStart doctypes="ASP-JS,ASP-VB,ASP.NET_CSharp,ASP.NET_VB,HTML" scheme="innerText"><![CDATA[<!--\s*#include]]></blockStart>
+		<blockEnd><![CDATA[-->]]></blockEnd>
+		<stringStart name="属性值" id="CodeColor_ASPIncludeString"><![CDATA["]]></stringStart>
+		<stringEnd><![CDATA["]]></stringEnd>
+		<keywords name="属性" id="CodeColor_ASPIncludeAttributes">
+			<keyword>file</keyword>
+			<keyword>virtual</keyword>
+		</keywords>
+	</scheme>
+	<scheme name="ASP 指令" id="ASP_Directives" priority="20">
+		<ignoreCase>Yes</ignoreCase>
+		<ignoreTags>Yes</ignoreTags>
+		<defaultText name="默认文本" id="CodeColor_AspDirDefaultText" />
+		<blockStart name="块分隔符" id="CodeColor_ASPDirBlock" doctypes="ASP-JS,ASP-VB,ASP.NET_CSharp,ASP.NET_VB" scheme="customText"><![CDATA[<%@]]></blockStart>
+		<blockEnd><![CDATA[%>]]></blockEnd>
+		<stringStart name="值" id="CodeColor_ASPDirString"><![CDATA["]]></stringStart>
+		<stringEnd><![CDATA["]]></stringEnd>
+		<stringStart><![CDATA[']]></stringStart>
+		<stringEnd><![CDATA[']]></stringEnd>
+		<operators name="运算符" id="CodeColor_ASPDirOperator"><![CDATA[=]]></operators>
+		<keywords name="标签" id="CodeColor_ASPDirTagKeywords">
+			<keyword>CodePage</keyword>
+			<keyword>EnableSessionState</keyword>
+			<keyword>Language</keyword>
+			<keyword>LCID</keyword>
+			<keyword>Transaction</keyword>
+		</keywords>
+	</scheme>
+	<scheme name="动作脚本" id="ActionScript" doctypes="Actionscript" priority="50">
+		<ignoreCase>No</ignoreCase>
+		<ignoreTags>Yes</ignoreTags>
+		<defaultText name="默认文本" id="CodeColor_ActionScriptDefaultText" />
+		<commentStart name="注释" id="CodeColor_ActionscriptComment"><![CDATA[/*]]></commentStart>
+		<commentEnd><![CDATA[*/]]></commentEnd>
+		<endOfLineComment>//</endOfLineComment>
+		<stringStart name="字符串" id="CodeColor_ActionscriptString"><![CDATA["]]></stringStart>
+		<stringEnd><![CDATA["]]></stringEnd>
+		<stringStart><![CDATA[']]></stringStart>
+		<stringEnd><![CDATA[']]></stringEnd>
+		<stringEsc><![CDATA[\]]></stringEsc>
+		<brackets name="括号" id="CodeColor_ActionscriptBracket"><![CDATA[{[()]}]]></brackets>
+		<operators name="运算符" id="CodeColor_ActionscriptOperator"><![CDATA[+-*/%<>!?:=&|^]]></operators>
+		<numbers name="数字" id="CodeColor_ActionscriptNumber" />
+		<idChar1>_$abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</idChar1>
+		<idCharRest name="标识符" id="CodeColor_ActionscriptIdentifier">_$abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789</idCharRest>
+		<functionKeyword name="函数关键字" id="CodeColor_ActionscriptFunction">function</functionKeyword>
+		<keywords name="保留关键字" id="CodeColor_ActionscriptReserved">
+			<keyword>class</keyword>
+			<keyword>interface</keyword>
+			<keyword>extends</keyword>
+			<keyword>implements</keyword>
+			<keyword>public</keyword>
+			<keyword>private</keyword>
+			<keyword>static</keyword>
+			<keyword>get</keyword>
+			<keyword>set</keyword>
+			<keyword>add</keyword>
+			<keyword>and</keyword>
+			<keyword>break</keyword>
+			<keyword>case</keyword>
+			<keyword>continue</keyword>
+			<keyword>default</keyword>
+			<keyword>delete</keyword>
+			<keyword>do</keyword>
+			<keyword>else</keyword>
+			<keyword>eq</keyword>
+			<keyword>false</keyword>
+			<keyword>for</keyword>
+			<keyword>ge</keyword>
+			<keyword>gt</keyword>
+			<keyword>if</keyword>
+			<keyword>in</keyword>
+			<keyword>instanceof</keyword>
+			<keyword>le</keyword>
+			<keyword>lt</keyword>
+			<keyword>ne</keyword>
+			<keyword>new</keyword>
+			<keyword>not</keyword>
+			<keyword>on</keyword>
+			<keyword>onClipEvent</keyword>
+			<keyword>or</keyword>
+			<keyword>return</keyword>
+			<keyword>switch</keyword>
+			<keyword>true</keyword>
+			<keyword>typeof</keyword>
+			<keyword>var</keyword>
+			<keyword>void</keyword>
+			<keyword>while</keyword>
+			<keyword>with</keyword>
+			<keyword>#endinitclip</keyword>
+			<keyword>#include</keyword>
+			<keyword>#initclip</keyword>
+		</keywords>
+		<keywords name="属性" id="CodeColor_ActionscriptProperty">
+			<keyword>_alpha</keyword>
+			<keyword>_currentframe</keyword>
+			<keyword>_droptarget</keyword>
+			<keyword>_focusrect</keyword>
+			<keyword>_framesloaded</keyword>
+			<keyword>_height</keyword>
+			<keyword>_highquality</keyword>
+			<keyword>_name</keyword>
+			<keyword>_quality</keyword>
+			<keyword>_rotation</keyword>
+			<keyword>_soundbuftime</keyword>
+			<keyword>_target</keyword>
+			<keyword>_totalframes</keyword>
+			<keyword>_url</keyword>
+			<keyword>_visible</keyword>
+			<keyword>_width</keyword>
+			<keyword>_x</keyword>
+			<keyword>_xmouse</keyword>
+			<keyword>_xscale</keyword>
+			<keyword>_y</keyword>
+			<keyword>_ymouse</keyword>
+			<keyword>_yscale</keyword>
+		</keywords>
+		<keywords name="本机" id="CodeColor_ActionscriptNative">
+			<keyword>_root</keyword>
+			<keyword>_parent</keyword>
+			<keyword>MovieClip</keyword>
+			<keyword>.appendChild</keyword>
+			<keyword>.attachMovie</keyword>
+			<keyword>.attachSound</keyword>
+			<keyword>.loadSound</keyword>
+			<keyword>.attributes</keyword>
+			<keyword>arguments</keyword>
+			<keyword>.caller</keyword>
+			<keyword>.callee</keyword>
+			<keyword>.charAt</keyword>
+			<keyword>.charCodeAt</keyword>
+			<keyword>.childNodes</keyword>
+			<keyword>.clear</keyword>
+			<keyword>.cloneNode</keyword>
+			<keyword>.close</keyword>
+			<keyword>.concat</keyword>
+			<keyword>.connect</keyword>
+			<keyword>.createElement</keyword>
+			<keyword>.createTextNode</keyword>
+			<keyword>.docTypeDecl</keyword>
+			<keyword>.status</keyword>
+			<keyword>.duplicateMovieClip</keyword>
+			<keyword>.firstChild</keyword>
+			<keyword>.getBounds</keyword>
+			<keyword>.getBytesLoaded</keyword>
+			<keyword>.getBytesTotal</keyword>
+			<keyword>.getDate</keyword>
+			<keyword>.getDay</keyword>
+			<keyword>.getDepth</keyword>
+			<keyword>.getFullYear</keyword>
+			<keyword>.getHours</keyword>
+			<keyword>.getMilliseconds</keyword>
+			<keyword>.getMinutes</keyword>
+			<keyword>.getMonth</keyword>
+			<keyword>.getPan</keyword>
+			<keyword>.getRGB</keyword>
+			<keyword>.getSeconds</keyword>
+			<keyword>.getTime</keyword>
+			<keyword>.getTimezoneOffset</keyword>
+			<keyword>.getTransform</keyword>
+			<keyword>.getURL</keyword>
+			<keyword>.getUTCDate</keyword>
+			<keyword>.getUTCDay</keyword>
+			<keyword>.getUTCFullYear</keyword>
+			<keyword>.getUTCHours</keyword>
+			<keyword>.getUTCMilliseconds</keyword>
+			<keyword>.getUTCMinutes</keyword>
+			<keyword>.getUTCMonth</keyword>
+			<keyword>.getUTCSeconds</keyword>
+			<keyword>.getVolume</keyword>
+			<keyword>.getYear</keyword>
+			<keyword>.globalToLocal</keyword>
+			<keyword>.gotoAndPlay</keyword>
+			<keyword>.gotoAndStop</keyword>
+			<keyword>.hasChildNodes</keyword>
+			<keyword>.hitTest</keyword>
+			<keyword>.indexOf</keyword>
+			<keyword>.insertBefore</keyword>
+			<keyword>.join</keyword>
+			<keyword>.lastChild</keyword>
+			<keyword>.lastIndexOf</keyword>
+			<keyword>.length</keyword>
+			<keyword>.load</keyword>
+			<keyword>.loadMovie</keyword>
+			<keyword>.loadVariables</keyword>
+			<keyword>.loaded</keyword>
+			<keyword>.localToGlobal</keyword>
+			<keyword>.maxscroll</keyword>
+			<keyword>.nextFrame</keyword>
+			<keyword>.nextSibling</keyword>
+			<keyword>.nodeName</keyword>
+			<keyword>.nodeType</keyword>
+			<keyword>.nodeValue</keyword>
+			<keyword>.onClose</keyword>
+			<keyword>.onConnect</keyword>
+			<keyword>.onLoad</keyword>
+			<keyword>.onXML</keyword>
+			<keyword>.parentNode</keyword>
+			<keyword>.parseXML</keyword>
+			<keyword>.play</keyword>
+			<keyword>.pop</keyword>
+			<keyword>.prevFrame</keyword>
+			<keyword>.previousSibling</keyword>
+			<keyword>.push</keyword>
+			<keyword>.removeMovieClip</keyword>
+			<keyword>.removeNode</keyword>
+			<keyword>.reverse</keyword>
+			<keyword>.scroll</keyword>
+			<keyword>.send</keyword>
+			<keyword>.sendAndLoad</keyword>
+			<keyword>.setDate</keyword>
+			<keyword>.setFullYear</keyword>
+			<keyword>.setHours</keyword>
+			<keyword>.setMilliseconds</keyword>
+			<keyword>.setMinutes</keyword>
+			<keyword>.setMonth</keyword>
+			<keyword>.setPan</keyword>
+			<keyword>.setRGB</keyword>
+			<keyword>.setSeconds</keyword>
+			<keyword>.setTime</keyword>
+			<keyword>.setTransform</keyword>
+			<keyword>.setUTCDate</keyword>
+			<keyword>.setUTCFullYear</keyword>
+			<keyword>.setUTCHours</keyword>
+			<keyword>.setUTCMilliseconds</keyword>
+			<keyword>.setUTCMinutes</keyword>
+			<keyword>.setUTCMonth</keyword>
+			<keyword>.setUTCSeconds</keyword>
+			<keyword>.setVolume</keyword>
+			<keyword>.setYear</keyword>
+			<keyword>.shift</keyword>
+			<keyword>.slice</keyword>
+			<keyword>.sort</keyword>
+			<keyword>.sortOn</keyword>
+			<keyword>.splice</keyword>
+			<keyword>.split</keyword>
+			<keyword>.start</keyword>
+			<keyword>.startDrag</keyword>
+			<keyword>.stop</keyword>
+			<keyword>.stopDrag</keyword>
+			<keyword>.substr</keyword>
+			<keyword>.substring</keyword>
+			<keyword>.swapDepths</keyword>
+			<keyword>.toLowerCase</keyword>
+			<keyword>.toString</keyword>
+			<keyword>.prototype</keyword>
+			<keyword>.__proto__</keyword>
+			<keyword>.toUpperCase</keyword>
+			<keyword>.unloadMovie</keyword>
+			<keyword>.unshift</keyword>
+			<keyword>.valueOf</keyword>
+			<keyword>.xmlDecl</keyword>
+			<keyword>Array</keyword>
+			<keyword>Boolean</keyword>
+			<keyword>Color</keyword>
+			<keyword>Date</keyword>
+			<keyword>.UTC</keyword>
+			<keyword>Key</keyword>
+			<keyword>.ALT</keyword>
+			<keyword>.BACKSPACE</keyword>
+			<keyword>.CAPSLOCK</keyword>
+			<keyword>.CONTROL</keyword>
+			<keyword>.DELETEKEY</keyword>
+			<keyword>.DOWN</keyword>
+			<keyword>.END</keyword>
+			<keyword>.ENTER</keyword>
+			<keyword>.ESCAPE</keyword>
+			<keyword>.HOME</keyword>
+			<keyword>.INSERT</keyword>
+			<keyword>.LEFT</keyword>
+			<keyword>.PGDN</keyword>
+			<keyword>.PGUP</keyword>
+			<keyword>.RIGHT</keyword>
+			<keyword>.SHIFT</keyword>
+			<keyword>.SPACE</keyword>
+			<keyword>.TAB</keyword>
+			<keyword>.UP</keyword>
+			<keyword>.getAscii</keyword>
+			<keyword>.getCode</keyword>
+			<keyword>.isDown</keyword>
+			<keyword>.isToggled</keyword>
+			<keyword>Math</keyword>
+			<keyword>.E</keyword>
+			<keyword>.LN10</keyword>
+			<keyword>.LN2</keyword>
+			<keyword>.LOG10E</keyword>
+			<keyword>.LOG2E</keyword>
+			<keyword>.PI</keyword>
+			<keyword>.SQRT1_2</keyword>
+			<keyword>.SQRT2</keyword>
+			<keyword>.abs</keyword>
+			<keyword>.acos</keyword>
+			<keyword>.asin</keyword>
+			<keyword>.atan</keyword>
+			<keyword>.atan2</keyword>
+			<keyword>.ceil</keyword>
+			<keyword>.cos</keyword>
+			<keyword>.exp</keyword>
+			<keyword>.floor</keyword>
+			<keyword>.log</keyword>
+			<keyword>.max</keyword>
+			<keyword>.min</keyword>
+			<keyword>.pow</keyword>
+			<keyword>.random</keyword>
+			<keyword>.round</keyword>
+			<keyword>.sin</keyword>
+			<keyword>.sqrt</keyword>
+			<keyword>.tan</keyword>
+			<keyword>Mouse</keyword>
+			<keyword>.hide</keyword>
+			<keyword>.show</keyword>
+			<keyword>Number</keyword>
+			<keyword>.MAX_VALUE</keyword>
+			<keyword>.MIN_VALUE</keyword>
+			<keyword>.NEGATIVE_INFINITY</keyword>
+			<keyword>.NaN</keyword>
+			<keyword>.POSITIVE_INFINITY</keyword>
+			<keyword>Object</keyword>
+			<keyword>Selection</keyword>
+			<keyword>.getBeginIndex</keyword>
+			<keyword>.getCaretIndex</keyword>
+			<keyword>.getEndIndex</keyword>
+			<keyword>.getFocus</keyword>
+			<keyword>.setFocus</keyword>
+			<keyword>.setSelection</keyword>
+			<keyword>Sound</keyword>
+			<keyword>String</keyword>
+			<keyword>.fromCharCode</keyword>
+			<keyword>XML</keyword>
+			<keyword>XMLSocket</keyword>
+			<keyword>attachMovie</keyword>
+			<keyword>call</keyword>
+			<keyword>chr</keyword>
+			<keyword>duplicateMovieClip</keyword>
+			<keyword>escape</keyword>
+			<keyword>eval</keyword>
+			<keyword>false</keyword>
+			<keyword>fscommand</keyword>
+			<keyword>getBounds</keyword>
+			<keyword>getBytesLoaded</keyword>
+			<keyword>getBytesTotal</keyword>
+			<keyword>getDepth</keyword>
+			<keyword>getProperty</keyword>
+			<keyword>getTimer</keyword>
+			<keyword>getURL</keyword>
+			<keyword>getVersion</keyword>
+			<keyword>globalToLocal</keyword>
+			<keyword>gotoAndPlay</keyword>
+			<keyword>gotoAndStop</keyword>
+			<keyword>hitTest</keyword>
+			<keyword>ifFrameLoaded</keyword>
+			<keyword>int</keyword>
+			<keyword>isFinite</keyword>
+			<keyword>isNaN</keyword>
+			<keyword>keyPress</keyword>
+			<keyword>length</keyword>
+			<keyword>loadMovie</keyword>
+			<keyword>loadMovieNum</keyword>
+			<keyword>loadVariables</keyword>
+			<keyword>loadVariablesNum</keyword>
+			<keyword>localToGlobal</keyword>
+			<keyword>mbchr</keyword>
+			<keyword>mblength</keyword>
+			<keyword>mbord</keyword>
+			<keyword>mbsubstring</keyword>
+			<keyword>newline</keyword>
+			<keyword>nextFrame</keyword>
+			<keyword>nextScene</keyword>
+			<keyword>null</keyword>
+			<keyword>ord</keyword>
+			<keyword>parseFloat</keyword>
+			<keyword>parseInt</keyword>
+			<keyword>play</keyword>
+			<keyword>prevFrame</keyword>
+			<keyword>prevScene</keyword>
+			<keyword>print</keyword>
+			<keyword>printAsBitmap</keyword>
+			<keyword>printNum</keyword>
+			<keyword>printAsBitmapNum</keyword>
+			<keyword>random</keyword>
+			<keyword>removeMovieClip</keyword>
+			<keyword>set</keyword>
+			<keyword>setProperty</keyword>
+			<keyword>startDrag</keyword>
+			<keyword>stop</keyword>
+			<keyword>stopAllSounds</keyword>
+			<keyword>stopDrag</keyword>
+			<keyword>substring</keyword>
+			<keyword>targetPath</keyword>
+			<keyword>tellTarget</keyword>
+			<keyword>this</keyword>
+			<keyword>toggleHighQuality</keyword>
+			<keyword>trace</keyword>
+			<keyword>true</keyword>
+			<keyword>undefined</keyword>
+			<keyword>unescape</keyword>
+			<keyword>unloadMovie</keyword>
+			<keyword>unloadMovieNum</keyword>
+			<keyword>updateAfterEvent</keyword>
+			<keyword>press</keyword>
+			<keyword>release</keyword>
+			<keyword>releaseOutside</keyword>
+			<keyword>rollOver</keyword>
+			<keyword>rollOut</keyword>
+			<keyword>dragOver</keyword>
+			<keyword>dragOut</keyword>
+			<keyword>load</keyword>
+			<keyword>enterFrame</keyword>
+			<keyword>unload</keyword>
+			<keyword>mouseMove</keyword>
+			<keyword>mouseDown</keyword>
+			<keyword>mouseUp</keyword>
+			<keyword>keyDown</keyword>
+			<keyword>keyUp</keyword>
+			<keyword>data</keyword>
+			<keyword>setInterval</keyword>
+			<keyword>clearInterval</keyword>
+			<keyword>.addProperty</keyword>
+			<keyword>.registerClass</keyword>
+			<keyword>.enabled</keyword>
+			<keyword>.useHandCursor</keyword>
+			<keyword>.unwatch</keyword>
+			<keyword>.watch</keyword>
+			<keyword>Button</keyword>
+			<keyword>TextField</keyword>
+			<keyword>Function</keyword>
+			<keyword>.apply</keyword>
+			<keyword>.call</keyword>
+			<keyword>_global</keyword>
+			<keyword>super</keyword>
+			<keyword>LoadVars</keyword>
+			<keyword>TextFormat</keyword>
+			<keyword>.autoSize</keyword>
+			<keyword>.removeTextField</keyword>
+			<keyword>.restrict</keyword>
+			<keyword>.createTextField</keyword>
+			<keyword>.html</keyword>
+			<keyword>.variable</keyword>
+			<keyword>.hscroll</keyword>
+			<keyword>.maxhscroll</keyword>
+			<keyword>.border</keyword>
+			<keyword>.background</keyword>
+			<keyword>.wordWrap</keyword>
+			<keyword>.password</keyword>
+			<keyword>.maxChars</keyword>
+			<keyword>.multiline</keyword>
+			<keyword>.textWidth</keyword>
+			<keyword>.textHeight</keyword>
+			<keyword>.selectable</keyword>
+			<keyword>.htmlText</keyword>
+			<keyword>.bottomScroll</keyword>
+			<keyword>.text</keyword>
+			<keyword>.embedFonts</keyword>
+			<keyword>.borderColor</keyword>
+			<keyword>.backgroundColor</keyword>
+			<keyword>.textColor</keyword>
+			<keyword>.font</keyword>
+			<keyword>.size</keyword>
+			<keyword>.color</keyword>
+			<keyword>.url</keyword>
+			<keyword>.target</keyword>
+			<keyword>.bullet</keyword>
+			<keyword>.tabStops</keyword>
+			<keyword>.bold</keyword>
+			<keyword>.italic</keyword>
+			<keyword>.underline</keyword>
+			<keyword>.align</keyword>
+			<keyword>.leftMargin</keyword>
+			<keyword>.rightMargin</keyword>
+			<keyword>.indent</keyword>
+			<keyword>.leading</keyword>
+			<keyword>.replaceSel</keyword>
+			<keyword>.getTextFormat</keyword>
+			<keyword>.setTextFormat</keyword>
+			<keyword>.getNewTextFormat</keyword>
+			<keyword>.setNewTextFormat</keyword>
+			<keyword>.getTextExtent</keyword>
+			<keyword>.getFontList</keyword>
+			<keyword>.addListener</keyword>
+			<keyword>.removeListener</keyword>
+			<keyword>.focusEnabled</keyword>
+			<keyword>.onPress</keyword>
+			<keyword>.onRelease</keyword>
+			<keyword>.onReleaseOutside</keyword>
+			<keyword>.onRollOver</keyword>
+			<keyword>.onRollOut</keyword>
+			<keyword>.onDragOver</keyword>
+			<keyword>.onDragOut</keyword>
+			<keyword>.onLoad</keyword>
+			<keyword>.onUnload</keyword>
+			<keyword>.onMouseDown</keyword>
+			<keyword>.onMouseMove</keyword>
+			<keyword>.onMouseUp</keyword>
+			<keyword>.onKeyDown</keyword>
+			<keyword>.onKeyUp</keyword>
+			<keyword>.onData</keyword>
+			<keyword>.onChanged</keyword>
+			<keyword>.tabIndex</keyword>
+			<keyword>.tabEnabled</keyword>
+			<keyword>.tabChildren</keyword>
+			<keyword>.hitArea</keyword>
+			<keyword>.onSetFocus</keyword>
+			<keyword>.onKillFocus</keyword>
+			<keyword>.setMask</keyword>
+			<keyword>Accessibility</keyword>
+			<keyword>.isActive</keyword>
+			<keyword>.createEmptyMovieClip</keyword>
+			<keyword>.beginFill</keyword>
+			<keyword>.beginGradientFill</keyword>
+			<keyword>.moveTo</keyword>
+			<keyword>.lineTo</keyword>
+			<keyword>.curveTo</keyword>
+			<keyword>.lineStyle</keyword>
+			<keyword>.endFill</keyword>
+			<keyword>.clear</keyword>
+			<keyword>CustomActions</keyword>
+			<keyword>.get</keyword>
+			<keyword>.install</keyword>
+			<keyword>.list</keyword>
+			<keyword>.uninstall</keyword>
+			<keyword>Stage</keyword>
+			<keyword>.showMenu</keyword>
+			<keyword>.scaleMode</keyword>
+			<keyword>.align</keyword>
+			<keyword>.width</keyword>
+			<keyword>.height</keyword>
+			<keyword>.onResize</keyword>
+			<keyword>System</keyword>
+			<keyword>.capabilities</keyword>
+			<keyword>.clear</keyword>
+			<keyword>.contentType</keyword>
+			<keyword>.createEmptyMovieClip</keyword>
+			<keyword>.curveTo</keyword>
+			<keyword>.height</keyword>
+			<keyword>.ignoreWhite</keyword>
+			<keyword>.lineTo</keyword>
+			<keyword>.moveTo</keyword>
+			<keyword>.onEnterFrame</keyword>
+			<keyword>.onScroller</keyword>
+			<keyword>.trackAsMenu</keyword>
+			<keyword>.type</keyword>
+			<keyword>.width</keyword>
+			<keyword>.duration</keyword>
+			<keyword>.position</keyword>
+			<keyword>.onSoundComplete</keyword>
+			<keyword>.hasAudio</keyword>
+			<keyword>.hasMP3</keyword>
+			<keyword>.hasAudioEncoder</keyword>
+			<keyword>.hasVideoEncoder</keyword>
+			<keyword>.screenResolutionX</keyword>
+			<keyword>.screenResolutionY</keyword>
+			<keyword>.screenDPI</keyword>
+			<keyword>.screenColor</keyword>
+			<keyword>.pixelAspectRatio</keyword>
+			<keyword>.hasAccessibility</keyword>
+			<keyword>FCheckBox</keyword>
+			<keyword>.getValue</keyword>
+			<keyword>.setValue</keyword>
+			<keyword>.getEnabled</keyword>
+			<keyword>.setEnabled</keyword>
+			<keyword>.setLabel</keyword>
+			<keyword>.getLabel</keyword>
+			<keyword>.setChangeHandler</keyword>
+			<keyword>.setSize</keyword>
+			<keyword>.setLabelPlacement</keyword>
+			<keyword>FPushButton</keyword>
+			<keyword>.setClickHandler</keyword>
+			<keyword>FRadioButton</keyword>
+			<keyword>.setValue</keyword>
+			<keyword>.getValue</keyword>
+			<keyword>.getGroupName</keyword>
+			<keyword>.setGroupName</keyword>
+			<keyword>.setData</keyword>
+			<keyword>.getData</keyword>
+			<keyword>FListBox</keyword>
+			<keyword>.addItem</keyword>
+			<keyword>.addItemAt</keyword>
+			<keyword>.removeItemAt</keyword>
+			<keyword>.removeAll</keyword>
+			<keyword>.getLength</keyword>
+			<keyword>.getSelectedIndex</keyword>
+			<keyword>.getSelectedIndices</keyword>
+			<keyword>.getSelectedItem</keyword>
+			<keyword>.getSelectedItems</keyword>
+			<keyword>.getItemAt</keyword>
+			<keyword>.getScrollPosition</keyword>
+			<keyword>.getSelectMultiple</keyword>
+			<keyword>.getRowCount</keyword>
+			<keyword>.replaceItemAt</keyword>
+			<keyword>.setSelectedIndex</keyword>
+			<keyword>.setSelectedIndices</keyword>
+			<keyword>.setScrollPosition</keyword>
+			<keyword>.setRowCount</keyword>
+			<keyword>.setWidth</keyword>
+			<keyword>.setSelectMultiple</keyword>
+			<keyword>.setAutoHideScrollBar</keyword>
+			<keyword>.setDataProvider</keyword>
+			<keyword>.setItemSymbol</keyword>
+			<keyword>FScrollBar</keyword>
+			<keyword>.setScrollProperties</keyword>
+			<keyword>.setSmallScroll</keyword>
+			<keyword>.setLargeScroll</keyword>
+			<keyword>.setHorizontal</keyword>
+			<keyword>.setScrollTarget</keyword>
+			<keyword>FComboBox</keyword>
+			<keyword>.setEditable</keyword>
+			<keyword>FScrollPane</keyword>
+			<keyword>.getScrollContent</keyword>
+			<keyword>.setScrollContent</keyword>
+			<keyword>.setScrollContent</keyword>
+			<keyword>.setScrollContent</keyword>
+			<keyword>.setHScroll</keyword>
+			<keyword>.setVScroll</keyword>
+			<keyword>.setScrollPosition</keyword>
+			<keyword>.loadScrollContent</keyword>
+			<keyword>.refreshPane</keyword>
+			<keyword>.getPaneHeight</keyword>
+			<keyword>.getPaneWidth</keyword>
+			<keyword>.sortItemsBy</keyword>
+			<keyword>FStyleFormat</keyword>
+			<keyword>.addListener</keyword>
+			<keyword>.applyChanges</keyword>
+			<keyword>.removeListener</keyword>
+			<keyword>arrow</keyword>
+			<keyword>textUnderline</keyword>
+			<keyword>textSize</keyword>
+			<keyword>textSelected</keyword>
+			<keyword>textRightMargin</keyword>
+			<keyword>textLeftMargin</keyword>
+			<keyword>textItalic</keyword>
+			<keyword>textIndent</keyword>
+			<keyword>textFont</keyword>
+			<keyword>textDisabled</keyword>
+			<keyword>textColor</keyword>
+			<keyword>textBold</keyword>
+			<keyword>textAlign</keyword>
+			<keyword>shadow</keyword>
+			<keyword>selectionUnfocused</keyword>
+			<keyword>selectionDisabled</keyword>
+			<keyword>selection</keyword>
+			<keyword>scrollTrack</keyword>
+			<keyword>radioDot</keyword>
+			<keyword>highlight3D</keyword>
+			<keyword>highlight</keyword>
+			<keyword>embedFonts</keyword>
+			<keyword>focusRectInner</keyword>
+			<keyword>focusRectOuter</keyword>
+			<keyword>foregroundDisabled</keyword>
+			<keyword>face</keyword>
+			<keyword>darkshadow</keyword>
+			<keyword>check</keyword>
+			<keyword>backgroundDisabled</keyword>
+			<keyword>background</keyword>
+			<keyword>arrow</keyword>
+			<keyword>.registerSkinElement</keyword>
+			<keyword>.setStyleProperty</keyword>
+			<keyword>.getState</keyword>
+			<keyword>.setState</keyword>
+			<keyword>.setDragContent</keyword>
+			<keyword>globalStyleFormat</keyword>
+		</keywords>
+		<keywords name="远程处理" id="CodeColor_ActionscriptRemoting">
+			<keyword>NetServices</keyword>
+			<keyword>.createGatewayConnection</keyword>
+			<keyword>.setdefaultGatewayURL</keyword>
+			<keyword>NetConnection</keyword>
+			<keyword>.addHeader</keyword>
+			<keyword>.call</keyword>
+			<keyword>.close</keyword>
+			<keyword>.connect</keyword>
+			<keyword>.getDebugConfig</keyword>
+			<keyword>.getDebugID</keyword>
+			<keyword>.setCredentials</keyword>
+			<keyword>.setDebugID</keyword>
+			<keyword>.trace</keyword>
+			<keyword>RecordSet</keyword>
+			<keyword>.getColumnNames</keyword>
+			<keyword>.addView</keyword>
+			<keyword>.getLength</keyword>
+			<keyword>.getItemAt</keyword>
+			<keyword>.getItemID</keyword>
+			<keyword>.addItemAt</keyword>
+			<keyword>.addItem</keyword>
+			<keyword>.replaceItemAt</keyword>
+			<keyword>.setField</keyword>
+			<keyword>.removeItemAt</keyword>
+			<keyword>.removeAll</keyword>
+			<keyword>.sortItemsBy</keyword>
+			<keyword>.isLocal</keyword>
+			<keyword>.isFullyPopulated</keyword>
+			<keyword>.getNumberAvailable</keyword>
+			<keyword>.setDeliveryMode</keyword>
+			<keyword>.filter</keyword>
+			<keyword>.sort</keyword>
+			<keyword>NetDebug</keyword>
+			<keyword>NetDebugConfig</keyword>
+			<keyword>.getDebug</keyword>
+			<keyword>.setDebug</keyword>
+			<keyword>DataGlue</keyword>
+			<keyword>.bindFormatStrings</keyword>
+			<keyword>.bindFormatFunction</keyword>
+		</keywords>
+		<sampleText doctypes="Actionscript"><![CDATA[/* ActionScript */
+function displayWords(arrayWords) {
+  for (i=0; i < arrayWords.length(); i++) {
+    // inline comment
+    trace("Word " + i + " is " + arrayWords[i]);
+  }
+}
+var tokens = new Array("Hello", "world");
+displayWords(tokens);
+]]></sampleText>
+	</scheme>
+	<scheme name="ActionScript 注释" id="ASComm" doctypes="ASComm" priority="50">
+		<ignoreCase>No</ignoreCase>
+		<ignoreTags>Yes</ignoreTags>
+		<defaultText name="默认文本" id="CodeColor_ActionScriptCommDefaultText" />
+		<commentStart name="注释" id="CodeColor_ASCommComment"><![CDATA[/*]]></commentStart>
+		<commentEnd><![CDATA[*/]]></commentEnd>
+		<endOfLineComment>//</endOfLineComment>
+		<stringStart name="字符串" id="CodeColor_ASCommString"><![CDATA["]]></stringStart>
+		<stringEnd><![CDATA["]]></stringEnd>
+		<stringStart><![CDATA[']]></stringStart>
+		<stringEnd><![CDATA[']]></stringEnd>
+		<stringEsc><![CDATA[\]]></stringEsc>
+		<brackets name="括号" id="CodeColor_ASCommBracket"><![CDATA[{[()]}]]></brackets>
+		<operators name="运算符" id="CodeColor_ASCommOperator"><![CDATA[+-*/%<>!?:=&|^]]></operators>
+		<numbers name="数字" id="CodeColor_ASCommNumber" />
+		<idChar1>_$abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</idChar1>
+		<idCharRest name="标识符" id="CodeColor_ASCommIdentifier">_$abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789</idCharRest>
+		<functionKeyword name="函数关键字" id="CodeColor_ASCommFunction">function</functionKeyword>
+		<keywords name="保留关键字" id="CodeColor_ASCommReserved">
+			<keyword>add</keyword>
+			<keyword>and</keyword>
+			<keyword>break</keyword>
+			<keyword>case</keyword>
+			<keyword>continue</keyword>
+			<keyword>default</keyword>
+			<keyword>delete</keyword>
+			<keyword>do</keyword>
+			<keyword>else</keyword>
+			<keyword>eq</keyword>
+			<keyword>false</keyword>
+			<keyword>for</keyword>
+			<keyword>ge</keyword>
+			<keyword>gt</keyword>
+			<keyword>if</keyword>
+			<keyword>in</keyword>
+			<keyword>instanceof</keyword>
+			<keyword>le</keyword>
+			<keyword>lt</keyword>
+			<keyword>ne</keyword>
+			<keyword>new</keyword>
+			<keyword>not</keyword>
+			<keyword>on</keyword>
+			<keyword>onClipEvent</keyword>
+			<keyword>or</keyword>
+			<keyword>return</keyword>
+			<keyword>switch</keyword>
+			<keyword>true</keyword>
+			<keyword>typeof</keyword>
+			<keyword>var</keyword>
+			<keyword>void</keyword>
+			<keyword>while</keyword>
+			<keyword>with</keyword>
+		</keywords>
+		<keywords name="本机" id="CodeColor_ASCommNative">
+			<keyword>application</keyword>
+			<keyword>.clients</keyword>
+			<keyword>.name</keyword>
+			<keyword>.onAppStart</keyword>
+			<keyword>.onAppStop</keyword>
+			<keyword>.onConnect</keyword>
+			<keyword>.onDisconnect</keyword>
+			<keyword>.onStatus</keyword>
+			<keyword>.server</keyword>
+			<keyword>.client</keyword>
+			<keyword>Client</keyword>
+			<keyword>.acceptConnection</keyword>
+			<keyword>.clearSharedObjects</keyword>
+			<keyword>.clearStreams</keyword>
+			<keyword>.disconnect</keyword>
+			<keyword>.registerClass</keyword>
+			<keyword>.registerProxy</keyword>
+			<keyword>.rejectConnection</keyword>
+			<keyword>.agent</keyword>
+			<keyword>.ip</keyword>
+			<keyword>.readAccess</keyword>
+			<keyword>.referrer</keyword>
+			<keyword>.unRegisterProxy</keyword>
+			<keyword>.writeAccess</keyword>
+			<keyword>._commandName</keyword>
+			<keyword>.__resolve</keyword>
+			<keyword>Stream</keyword>
+			<keyword>.call</keyword>
+			<keyword>.getBandwidthLimit</keyword>
+			<keyword>.setBandwidthLimit</keyword>
+			<keyword>.bufferTime</keyword>
+			<keyword>.get</keyword>
+			<keyword>.length</keyword>
+			<keyword>.onStatus</keyword>
+			<keyword>.clear</keyword>
+			<keyword>.play</keyword>
+			<keyword>.record</keyword>
+			<keyword>.send</keyword>
+			<keyword>.setBufferTime</keyword>
+			<keyword>SharedObject</keyword>
+			<keyword>.version</keyword>
+			<keyword>.resyncDepth</keyword>
+			<keyword>.onSync</keyword>
+			<keyword>.close</keyword>
+			<keyword>.getProperty</keyword>
+			<keyword>.getPropertyNames</keyword>
+			<keyword>.lock</keyword>
+			<keyword>.unlock</keyword>
+			<keyword>.flush</keyword>
+			<keyword>.purge</keyword>
+			<keyword>.send</keyword>
+			<keyword>.setProperty</keyword>
+			<keyword>.size</keyword>
+			<keyword>NetConnection</keyword>
+			<keyword>.isConnected</keyword>
+			<keyword>.uri</keyword>
+			<keyword>.__resolve</keyword>
+			<keyword>.addHeader</keyword>
+			<keyword>.call</keyword>
+			<keyword>.connect</keyword>
+		</keywords>
+		<keywords id="CodeColor_ASCommNumber">
+			<keyword>Infinity</keyword>
+			<keyword>Nan</keyword>
+		</keywords>
+		<sampleText doctypes="ASComm"><![CDATA[/* ActionScript Communications sample */
+function displayWords(arrayWords) {
+  for (i=0; i < arrayWords.length; i++) {
+    // inline comment
+    trace("Word " + i + " is " + arrayWords[i]);
+  }
+}
+var tokens = new Array("Hello", "world");
+displayWords(tokens);
+]]></sampleText>
+	</scheme>
+	<scheme name="ActionScript 远程" id="ASRemote" doctypes="ASRemote" priority="50">
+		<ignoreCase>No</ignoreCase>
+		<ignoreTags>Yes</ignoreTags>
+		<defaultText name="默认文本" id="CodeColor_ActionScriptRemoteDefaultText" />
+		<commentStart name="注释" id="CodeColor_ASRemoteComment"><![CDATA[/*]]></commentStart>
+		<commentEnd><![CDATA[*/]]></commentEnd>
+		<endOfLineComment>//</endOfLineComment>
+		<stringStart name="字符串" id="CodeColor_ASRemoteString"><![CDATA["]]></stringStart>
+		<stringEnd><![CDATA["]]></stringEnd>
+		<stringStart><![CDATA[']]></stringStart>
+		<stringEnd><![CDATA[']]></stringEnd>
+		<stringEsc><![CDATA[\]]></stringEsc>
+		<brackets name="括号" id="CodeColor_ASRemoteBracket"><![CDATA[{[()]}]]></brackets>
+		<operators name="运算符" id="CodeColor_ASRemoteOperator"><![CDATA[+-*/%<>!?:=&|^]]></operators>
+		<numbers name="数字" id="CodeColor_ASRemoteNumber" />
+		<idChar1>_$abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</idChar1>
+		<idCharRest name="标识符" id="CodeColor_ASRemoteIdentifier">_$abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789</idCharRest>
+		<functionKeyword name="函数关键字" id="CodeColor_ASRemoteFunction">function</functionKeyword>
+		<keywords name="保留关键字" id="CodeColor_ASRemoteReserved">
+			<keyword>add</keyword>
+			<keyword>and</keyword>
+			<keyword>break</keyword>
+			<keyword>case</keyword>
+			<keyword>continue</keyword>
+			<keyword>default</keyword>
+			<keyword>delete</keyword>
+			<keyword>do</keyword>
+			<keyword>else</keyword>
+			<keyword>eq</keyword>
+			<keyword>false</keyword>
+			<keyword>for</keyword>
+			<keyword>ge</keyword>
+			<keyword>gt</keyword>
+			<keyword>if</keyword>
+			<keyword>in</keyword>
+			<keyword>instanceof</keyword>
+			<keyword>le</keyword>
+			<keyword>lt</keyword>
+			<keyword>ne</keyword>
+			<keyword>new</keyword>
+			<keyword>not</keyword>
+			<keyword>on</keyword>
+			<keyword>onClipEvent</keyword>
+			<keyword>or</keyword>
+			<keyword>return</keyword>
+			<keyword>switch</keyword>
+			<keyword>true</keyword>
+			<keyword>typeof</keyword>
+			<keyword>var</keyword>
+			<keyword>void</keyword>
+			<keyword>while</keyword>
+			<keyword>with</keyword>
+		</keywords>
+		<keywords id="CodeColor_ASRemoteNumber">
+			<keyword>Infinity</keyword>
+			<keyword>Nan</keyword>
+		</keywords>
+		<keywords name="本机" id="CodeColor_ASRemoteNative">
+			<keyword>CF</keyword>
+			<keyword>.query</keyword>
+			<keyword>.http</keyword>
+			<keyword>application</keyword>
+			<keyword>.getAttribute</keyword>
+			<keyword>.getAttributeNames</keyword>
+			<keyword>.getContext</keyword>
+			<keyword>.getInitParameter</keyword>
+			<keyword>.getInitParameterNames</keyword>
+			<keyword>.getMajorVersion</keyword>
+			<keyword>.getMimeType</keyword>
+			<keyword>.getMinorVersion</keyword>
+			<keyword>.getNamedDispatcher</keyword>
+			<keyword>.getRealPath</keyword>
+			<keyword>.getRequestDispatcher</keyword>
+			<keyword>.getResource</keyword>
+			<keyword>.getResourceAsStream</keyword>
+			<keyword>.getServerInfo</keyword>
+			<keyword>.log</keyword>
+			<keyword>.removeAttribute</keyword>
+			<keyword>.setAttribute</keyword>
+			<keyword>config</keyword>
+			<keyword>.getInitParameter</keyword>
+			<keyword>.getInitParameterNames</keyword>
+			<keyword>.getServletContext</keyword>
+			<keyword>.getServletName</keyword>
+			<keyword>out</keyword>
+			<keyword>.clear</keyword>
+			<keyword>.clearBuffer</keyword>
+			<keyword>.close</keyword>
+			<keyword>.equals</keyword>
+			<keyword>.flush</keyword>
+			<keyword>.getBufferSize</keyword>
+			<keyword>.getClass</keyword>
+			<keyword>.getRemaining</keyword>
+			<keyword>.hashCode</keyword>
+			<keyword>.isAutoFlush</keyword>
+			<keyword>.newLine</keyword>
+			<keyword>.notify</keyword>
+			<keyword>.notifyAll</keyword>
+			<keyword>.print</keyword>
+			<keyword>.println</keyword>
+			<keyword>.toString</keyword>
+			<keyword>.wait</keyword>
+			<keyword>.write</keyword>
+			<keyword>pageContext</keyword>
+			<keyword>.equals</keyword>
+			<keyword>.findAttribute</keyword>
+			<keyword>.forward</keyword>
+			<keyword>.getAttribute</keyword>
+			<keyword>.getAttributeNamesInScope</keyword>
+			<keyword>.getAttributesScope</keyword>
+			<keyword>.getClass</keyword>
+			<keyword>.getException</keyword>
+			<keyword>.getOut</keyword>
+			<keyword>.getPage</keyword>
+			<keyword>.getRequest</keyword>
+			<keyword>.getResponse</keyword>
+			<keyword>.getServletConfig</keyword>
+			<keyword>.getServletContext</keyword>
+			<keyword>.getSession</keyword>
+			<keyword>.handlePageException</keyword>
+			<keyword>.hashCode</keyword>
+			<keyword>.include</keyword>
+			<keyword>.initialize</keyword>
+			<keyword>.notify</keyword>
+			<keyword>.notifyAll</keyword>
+			<keyword>.popBody</keyword>
+			<keyword>.pushBody</keyword>
+			<keyword>.release</keyword>
+			<keyword>.removeAttribute</keyword>
+			<keyword>.setAttribute</keyword>
+			<keyword>.toString</keyword>
+			<keyword>.wait</keyword>
+			<keyword>request</keyword>
+			<keyword>.getAttribute</keyword>
+			<keyword>.getAttributeNames</keyword>
+			<keyword>.getAuthType</keyword>
+			<keyword>.getCharacterEncoding</keyword>
+			<keyword>.getContentLength</keyword>
+			<keyword>.getContentType</keyword>
+			<keyword>.getContextPath</keyword>
+			<keyword>.getCookies</keyword>
+			<keyword>.getDateHeader</keyword>
+			<keyword>.getHeader</keyword>
+			<keyword>.getHeaderNames</keyword>
+			<keyword>.getHeaders</keyword>
+			<keyword>.getInputStream</keyword>
+			<keyword>.getIntHeader</keyword>
+			<keyword>.getLocale</keyword>
+			<keyword>.getLocales</keyword>
+			<keyword>.getMethod</keyword>
+			<keyword>.getParameter</keyword>
+			<keyword>.getParameterNames</keyword>
+			<keyword>.getParameterValues</keyword>
+			<keyword>.getPathInfo</keyword>
+			<keyword>.getPathTranslated</keyword>
+			<keyword>.getProtocol</keyword>
+			<keyword>.getQueryString</keyword>
+			<keyword>.getReader</keyword>
+			<keyword>.getRealPath</keyword>
+			<keyword>.getRemoteAddr</keyword>
+			<keyword>.getRemoteHost</keyword>
+			<keyword>.getRemoteUser</keyword>
+			<keyword>.getRequestDispatcher</keyword>
+			<keyword>.getRequestedSessionId</keyword>
+			<keyword>.getRequestURI</keyword>
+			<keyword>.getScheme</keyword>
+			<keyword>.getServerName</keyword>
+			<keyword>.getServerPort</keyword>
+			<keyword>.getServletPath</keyword>
+			<keyword>.getSession</keyword>
+			<keyword>.getUserPrincipal</keyword>
+			<keyword>.isRequestedSessionIdFromCookie</keyword>
+			<keyword>.isRequestedSessionIdFromURL</keyword>
+			<keyword>.isRequestedSessionIdValid</keyword>
+			<keyword>.isSecure</keyword>
+			<keyword>.isUserInRole</keyword>
+			<keyword>.removeAttribute</keyword>
+			<keyword>.setAttribute</keyword>
+			<keyword>response</keyword>
+			<keyword>.addCookie</keyword>
+			<keyword>.addDateHeader</keyword>
+			<keyword>.addHeader</keyword>
+			<keyword>.addIntHeader</keyword>
+			<keyword>.containsHeader</keyword>
+			<keyword>.encodeRedirectURL</keyword>
+			<keyword>.encodeURL</keyword>
+			<keyword>.flushBuffer</keyword>
+			<keyword>.getBufferSize</keyword>
+			<keyword>.getCharacterEncoding</keyword>
+			<keyword>.getLocale</keyword>
+			<keyword>.getOutputStream</keyword>
+			<keyword>.getWriter</keyword>
+			<keyword>.isCommitted</keyword>
+			<keyword>.reset</keyword>
+			<keyword>.sendError</keyword>
+			<keyword>.sendRedirect</keyword>
+			<keyword>.setBufferSize</keyword>
+			<keyword>.setContentLength</keyword>
+			<keyword>.setContentType</keyword>
+			<keyword>.setDateHeader</keyword>
+			<keyword>.setHeader</keyword>
+			<keyword>.setIntHeader</keyword>
+			<keyword>.setLocale</keyword>
+			<keyword>.setStatus</keyword>
+			<keyword>session</keyword>
+			<keyword>.getAttribute</keyword>
+			<keyword>.getAttributeNames</keyword>
+			<keyword>.getCreationTime</keyword>
+			<keyword>.getId</keyword>
+			<keyword>.getLastAccessedTime</keyword>
+			<keyword>.getMaxInactiveInterval</keyword>
+			<keyword>.invalidate</keyword>
+			<keyword>.isNew</keyword>
+			<keyword>.removeAttribute</keyword>
+			<keyword>.setAttribute</keyword>
+			<keyword>.setMaxInactiveInterval</keyword>
+		</keywords>
+		<sampleText doctypes="ASRemote"><![CDATA[/* ActionScript Remote sample */
+function displayWords(arrayWords) {
+  for (i=0; i < arrayWords.length; i++) {
+    // inline comment
+    trace("Word " + i + " is " + arrayWords[i]);
+  }
+}
+var tokens = new Array("Hello", "world");
+displayWords(tokens);
+]]></sampleText>
+	</scheme>
+	<tagGroup name="HTML Anchor 标签" id="CodeColor_HTMLAnchor" taglibrary="DWTagLibrary_html" tags="a" />
+	<tagGroup name="HTML Form 标签" id="CodeColor_HTMLForm" taglibrary="DWTagLibrary_html" tags="select,form,input,option,textarea" />
+	<tagGroup name="HTML Image 标签" id="CodeColor_HTMLImage" taglibrary="DWTagLibrary_html" tags="img" />
+	<tagGroup name="HTML Object 标签" id="CodeColor_HTMLObject" taglibrary="DWTagLibrary_html" tags="object" />
+	<tagGroup name="HTML Script 标签" id="CodeColor_HTMLScript" taglibrary="DWTagLibrary_html" tags="script,server" />
+	<tagGroup name="HTML Style 标签" id="CodeColor_HTMLStyle" taglibrary="DWTagLibrary_html" tags="style" />
+	<tagGroup name="HTML Table 标签" id="CodeColor_HTMLTable" taglibrary="DWTagLibrary_html" tags="table,tbody,td,tfoot,th,thead,tr,vspec,colw,hspec" />
+	<tagGroup name="ColdFusion Script 标签" id="CodeColor_CFScriptTag" taglibrary="DWTagLibrary_cfml" tags="cfscript" />
+	
+	<tagGroup name="ROYcms CMS 元素" id="CodeColor_CMSElement" taglibrary="DWTagLibrary_CMS" tags="CMS:WebField,ClassRepeater,WebConfigField,WebPageRepeater,WebRepeater,XmlField,ClassField" />
+</codeColoring>

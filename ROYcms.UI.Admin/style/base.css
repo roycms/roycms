@@ -1,0 +1,157 @@
+@charset "gb2312";
+/* CSS Document */
+/* 样式版权
+ * Last Modify: 2013-03-05 by 沈丙余（15901273870）
+ * 全局公用样式   */
+
+/* 标签重定义，开始
+-------------------------------------------------------------------------------------- */
+html,body,
+div,p,hr,pre,
+h1,h2,h3,h4,h5,h6,
+form,fieldset,label,
+ul,ol,dl,li,dt,dd,table,tr,td,th,tfoot,tbody,thead {
+	margin:0;
+	padding:0;
+	outline:none;
+	list-style:none;
+	
+}
+ 
+body{ font-family:Arial, tahoma; font-size:12px;color:#333;overflow-x:hidden;background:#f3f3f3;}
+li{list-style-type:none;}
+.blanks{ width:100%; height:5px; overflow:hidden;}
+a { color:#0f218b; text-decoration:none; outline:none; blr:expression(this.onFocus=this.blur()); /* 去除虚线框 */}
+a:hover { color:#f03; text-decoration:underline;}
+
+fieldset,img { border:0;}
+em { font-style:normal;}
+hr { height:0; clear:both;}
+.none { display:none;}
+
+.w1000{ width:1000px; height:auto; overflow:hidden; margin:0px auto;}
+.top5{ margin-top:5px;}
+.top10{ margin-top:10px;}
+
+.hg1{ width:100%; height:1px; overflow:hidden; clear:both;}
+.hg2{ width:100%; height:2px; overflow:hidden; clear:both;}
+.hg3{ width:100%; height:3px; overflow:hidden; clear:both;}
+.hg4{ width:100%; height:4px; overflow:hidden; clear:both;}
+.hg5{ width:100%; height:5px; overflow:hidden; clear:both;}
+.hg6{ width:100%; height:6px; overflow:hidden; clear:both;}
+.hg7{ width:100%; height:7px; overflow:hidden; clear:both;}
+.hg8{ width:100%; height:8px; overflow:hidden; clear:both;}
+.hg9{ width:100%; height:9px; overflow:hidden; clear:both;}
+.hg10{ width:100%; height:10px; overflow:hidden; clear:both;}
+
+.top15{ height:15px; overflow:hidden; clear:both; width:100%;}
+.top25{ height:25px; overflow:hidden; clear:both; width:100%;}
+.clear { clear:both;}
+.oh{ overflow:hidden;} 
+.clearfix:after { content:"."; display:block; height:0; clear:both; visibility:hidden;}
+* html .clearfix             { zoom: 1; } /* IE6 */ 
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */ 
+.submits{ width:73px; height:21px; background:url(../images/orderd.jpg) no-repeat; border:none; cursor:pointer;}
+q:before,q:after { content:'';}
+.cleft{ float:left; clear:left;}
+.cright{ float:right; clear:right;}
+.auto{ margin-left:auto; margin-right:auto;}
+.yahei{ font-family:"微软雅黑"; padding-left:5px;}
+.fwm{ font-weight:600;}
+.fw1{ font-weight:normal;}
+.noline{ border-bottom:none;}
+.left10{ float:left; margin-left:10px;}
+
+.w370{ width:368px; height:auto; min-height:200px; overflow:hidden; background:#fff; border:1px solid #ddd; border-top:2px solid #b2db11;}
+
+.w3701{ width:370px; height:auto; min-height:200px; overflow:hidden;}
+.w240{ width:238px; height:auto; min-height:200px; overflow:hidden; background:#fff; border:1px solid #ddd; border-top:2px solid #b2db11;}
+.w300{width:298px; height:auto; min-height:200px; background:#fff; border:1px solid #ddd; border-top:2px solid #b2db11;}
+
+.line1{ border-bottom:1px solid #e5e5e5; width:96%; height:1px; overflow:hidden; margin:5px auto;}
+/* 标签重定义，结束 */
+
+/* 主容器定义，前缀c_，开始
+-------------------------------------------------------------------------------------- */
+.main, .layout{ margin:0 auto; padding:0; width:1000px; clear:both;}
+
+.s1{ width:95%; margin:0px auto; clear: both; height: auto; overflow:hidden;}
+.s1 li{font-size:14px; height:24px; line-height:24px; _height:22px; _line-height:22px;overflow:hidden; padding-left:0.8em; background:url(../images/Icon_5.gif) no-repeat left center;}
+.s1 li a{text-overflow:ellipsis; overflow:hidden; white-space:nowrap; display:block;}
+
+.s2{ width:94%; margin:0px auto; clear: both; height: auto;overflow:hidden;}
+.s2 li{font-size:12px; line-height:25px; height:25px; overflow:hidden; padding-left:0.8em; background:url(../images/Icon_5.gif) no-repeat left center;}
+.s2 li a{text-overflow:ellipsis; overflow:hidden; white-space:nowrap; display:block; color:#333;}
+.s2 li a:hover{ color:#F00;}
+/* 针对IE6兼容调试   */
+.s2 li a{ _width:100%;}
+
+.s2-1{ width:94%; margin:0px auto; clear: both; height: auto;overflow:hidden;}
+.s2-1 li{font-size:12px; line-height:21px; height:21px; overflow:hidden; padding-left:0.8em; background:url(../images/Icon_5.gif) no-repeat left center;}
+.s2-1 li a{text-overflow:ellipsis; overflow:hidden; white-space:nowrap; display:block; color:#333;}
+.s2-1 li a:hover{ color:#F00;}
+/* 针对IE6兼容调试   */
+.s2-1 li a{ _width:100%;}
+
+.s4{ width:95%; margin:0px auto; clear: both; height: auto;overflow:hidden;}
+.s4 li{font-size:14px; line-height:24px; height:24px; _height:25px; _line-height:25px; overflow:hidden; padding-left:0.8em; background:url(../images/Icon_5.gif) no-repeat left center; border-bottom:1px dotted #ddd;}
+.s4 li span{ float:right;}
+.s4 li span a{ font-size:12px;}
+.s4 li.noline{ border-bottom:none; background:none;}
+
+.s5{ width:94%; margin:0px auto; clear: both; height: auto;overflow:hidden;}
+.s5 li{font-size:14px; line-height:24px; height:24px;  overflow:hidden; padding-left:0.8em; background:url(../images/Icon_5.gif) no-repeat left center;}
+.s5 li a{text-overflow:ellipsis; overflow:hidden; white-space:nowrap;}
+.s5 li span{ float:right; color:#666; font-size:12px;}
+.s5 li h4{ font-size:16px; font-weight:normal; }
+.s5 li h4 a{font-family:"微软雅黑";}
+/* 针对IE6兼容调试   */
+.s5 li a{ _width:100%;}
+
+.s6{ width:94%; margin:0px auto; clear: both; height: auto;overflow:hidden;}
+.s6 li{font-size:12px; line-height:24px; height:24px; overflow:hidden; padding-left:0.8em; background:url(../images/Icon_5.gif) no-repeat left center;}
+.s6 li a{text-overflow:ellipsis; overflow:hidden; white-space:nowrap; display:block; color:#333;}
+.s6 li a:hover{ color:#F00;}
+/* 针对IE6兼容调试   */
+.s6 li a{ _width:100%;}
+
+.s7{ width:360px; margin:0px auto; border-bottom:1px dotted #ddd; padding-bottom:13px;overflow:hidden;}
+.s7 li{ width:120px; float:left; height:180px; overflow: hidden; text-align:center;}
+
+.s8{ width:96%; margin:0px auto; clear: both; height: auto;overflow:hidden;}
+.s8 li{font-size:14px; line-height:24px; height:24px; overflow:hidden; padding-left:0.8em; background:url(../images/Icon_5.gif) no-repeat left center;}
+.s8 li a{text-overflow:ellipsis; overflow:hidden; white-space:nowrap; display:block;}
+/* 针对IE6兼容调试   */
+.s8 li a{ _width:100%;}
+
+.s9{ width:460px; margin:0px auto; clear: both; height: auto;overflow:hidden;}
+.s9 li{font-size:14px; line-height:24px; height:24px; _height:22px; _line-height:22px; overflow:hidden; padding-left:10px; width:220px; float:left; background:url(../images/Icon_5.gif) no-repeat left center;}
+.s9 li a{text-overflow:ellipsis; overflow:hidden; white-space:nowrap; display:block;}
+/* 针对IE6兼容调试   */
+.s9 li a{ _width:100%;}
+
+.s10{ width:280px; margin:5px auto;}
+.s10 li{ width:100%; min-height:30px; line-height:30px; clear:both; }
+
+.s11{ width:92%; margin:0px auto; clear: both; height: auto;overflow:hidden;}
+.s11 li{font-size:12px; line-height:24px; height:24px;  overflow:hidden; padding-left:0.8em; background:url(../images/Icon_5.gif) no-repeat left center;}
+.s11 li a{text-overflow:ellipsis; overflow:hidden; white-space:nowrap;}
+.s11 li span{ float:right; color:#666; font-size:12px;}
+/* 针对IE6兼容调试   */
+.s11 li a{ _width:100%;}
+
+.s12{ width:95%; margin:0px auto; clear: both; height: auto; overflow:hidden;}
+.s12 li{font-size:12px; height:24px; line-height:24px; overflow:hidden; padding-left:0.8em; background:url(../images/Icon_5.gif) no-repeat left center;}
+.s12 li a{text-overflow:ellipsis; overflow:hidden; white-space:nowrap; display:block; color:#333;}
+.s12 li a:hover{ color:#F00;}
+/* 针对IE6兼容调试   */
+.s12 li a{ _width:100%;}
+
+
+
+
+
+
+
+
+

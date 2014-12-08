@@ -1,0 +1,29 @@
+@charset "utf-8";
+/*ROYcms_Search
+updatetime:2009.12.14
+editor:Jackying
+QQ: 270863798
+E-mail: admin@anan360.cn
+Website: http://www.roycms.cn    http://www.web1.net.cn	http://www.anan360.cn*/
+/*===========================版权所有==============================================*/
+
+/*全局样式*/
+@import url(Basic.css);/*初始化样式*/
+@import url(themes.css);/*主题样式*/
+body,td,th{font-family:Arial;font-size: 13px; line-height:20px;color:#000;}
+body{margin:0 5px; background-color:#fff;}
+
+
+#KJ_SearchList{ min-width:960px;margin-bottom:20px;}
+
+#StatusBar{/*状态栏*/ padding:0 10px; margin-bottom:12px;background-color:#E5ECF9;float:none; clear:both;}
+#SearchXg{ padding-left:10px; width:106px; font-size:12px; margin-right:10px; float:left;}
+#SearchListContent{margin-right:242px; margin-left:130px; border-left:solid 1px #E5ECF9; padding-left:20px;}
+	dl.SearchList{ width:500px;}
+	dl.SearchList dt{ font-size:16px;}
+	dl.SearchList dd{ margin-bottom:20px;}
+	.keyword{/*关键字*/color:#DD0000;}
+	.website{/*网址*/color:#3C8B1D;}
+	.datetime{/*日期*/color:#666;}
+	.kuaizhao a{/*快照*/ color:#666;}
+#SearchJJ{float:right; width:209px; padding-left:10px; border-left:solid 1px #E5ECF9;}

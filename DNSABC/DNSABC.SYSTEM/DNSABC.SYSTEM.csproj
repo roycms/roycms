@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E6B92CA7-6A1F-4572-9142-B27E4E2200EF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DNSABC.SYSTEM</RootNamespace>
+    <AssemblyName>DNSABC.SYSTEM</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Nonshipping>true</Nonshipping>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\DNSABC_Cdn.cs" />
+    <Compile Include="BLL\DNSABC_Dns.cs" />
+    <Compile Include="BLL\DNSABC_Invoice.cs" />
+    <Compile Include="BLL\DNSABC_Log.cs" />
+    <Compile Include="BLL\DNSABC_Messages.cs" />
+    <Compile Include="BLL\DNSABC_MessagesResult.cs" />
+    <Compile Include="BLL\DNSABC_Order.cs" />
+    <Compile Include="BLL\DNSABC_Payment.cs" />
+    <Compile Include="BLL\DNSABC_ProductInfo.cs" />
+    <Compile Include="BLL\DNSABC_ProductModelCdn.cs" />
+    <Compile Include="BLL\DNSABC_ProductModelDns.cs" />
+    <Compile Include="BLL\DNSABC_ProductPrice.cs" />
+    <Compile Include="BLL\DNSABC_Transaction.cs" />
+    <Compile Include="BLL\DNSABC_UserApi.cs" />
+    <Compile Include="BLL\DNSABC_UserGrade.cs" />
+    <Compile Include="BLL\DNSABC_UserInfo.cs" />
+    <Compile Include="BLL\DNSABC_UserPerson.cs" />
+    <Compile Include="BLL\View_user.cs" />
+    <Compile Include="DALFactory\DataAccess.cs" />
+    <Compile Include="IDAL\IDNSABC_Cdn.cs" />
+    <Compile Include="IDAL\IDNSABC_Dns.cs" />
+    <Compile Include="IDAL\IDNSABC_Invoice.cs" />
+    <Compile Include="IDAL\IDNSABC_Log.cs" />
+    <Compile Include="IDAL\IDNSABC_Messages.cs" />
+    <Compile Include="IDAL\IDNSABC_MessagesResult.cs" />
+    <Compile Include="IDAL\IDNSABC_Order.cs" />
+    <Compile Include="IDAL\IDNSABC_Payment.cs" />
+    <Compile Include="IDAL\IDNSABC_ProductInfo.cs" />
+    <Compile Include="IDAL\IDNSABC_ProductModelCdn.cs" />
+    <Compile Include="IDAL\IDNSABC_ProductModelDns.cs" />
+    <Compile Include="IDAL\IDNSABC_ProductPrice.cs" />
+    <Compile Include="IDAL\IDNSABC_Transaction.cs" />
+    <Compile Include="IDAL\IDNSABC_UserApi.cs" />
+    <Compile Include="IDAL\IDNSABC_UserGrade.cs" />
+    <Compile Include="IDAL\IDNSABC_UserInfo.cs" />
+    <Compile Include="IDAL\IDNSABC_UserPerson.cs" />
+    <Compile Include="IDAL\IROYcms_user.cs" />
+    <Compile Include="IDAL\IView_user.cs" />
+    <Compile Include="Model\DNSABC_Cdn.cs" />
+    <Compile Include="Model\DNSABC_Dns.cs" />
+    <Compile Include="Model\DNSABC_Invoice.cs" />
+    <Compile Include="Model\DNSABC_Log.cs" />
+    <Compile Include="Model\DNSABC_Messages.cs" />
+    <Compile Include="Model\DNSABC_MessagesResult.cs" />
+    <Compile Include="Model\DNSABC_Order.cs" />
+    <Compile Include="Model\DNSABC_Payment.cs" />
+    <Compile Include="Model\DNSABC_ProductInfo.cs" />
+    <Compile Include="Model\DNSABC_ProductModelCdn.cs" />
+    <Compile Include="Model\DNSABC_ProductModelDns.cs" />
+    <Compile Include="Model\DNSABC_ProductPrice.cs" />
+    <Compile Include="Model\DNSABC_Transaction.cs" />
+    <Compile Include="Model\DNSABC_UserApi.cs" />
+    <Compile Include="Model\DNSABC_UserGrade.cs" />
+    <Compile Include="Model\DNSABC_UserInfo.cs" />
+    <Compile Include="Model\DNSABC_UserPerson.cs" />
+    <Compile Include="Model\ROYcms_user.cs" />
+    <Compile Include="Model\View_user.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ROYcms.Common\ROYcms.Common.csproj">
+      <Project>{810e13cd-ef35-4a2f-a5bd-8604d27588b1}</Project>
+      <Name>ROYcms.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ROYcms.DB\ROYcms.DB.csproj">
+      <Project>{c7f4084e-d834-43e4-af78-15b7c76d1dd8}</Project>
+      <Name>ROYcms.DB</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

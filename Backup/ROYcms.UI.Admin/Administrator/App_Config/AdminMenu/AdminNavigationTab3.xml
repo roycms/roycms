@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='Navigation.xsl'?>
+<Root>
+  <type ID="system" path="" logo="/administrator/images/nv9.png" name="会员选项/Users" description="会员选项" Visible="true">
+    <title url="/administrator/ucenter/User.aspx " description="会员管理" Visible="true">站点注册会员管理</title>
+  </type>
+  <type ID="system" path="" logo="/administrator/images/nv9.png" name="工作组选项/Groups" description="工作组选项" Visible="true">
+    <title url="/administrator/ucenter/group_admin.aspx " description="工作组管理" Visible="true"> 会员工作组管理</title>
+  </type>
+  <type ID="system" path="" logo="/administrator/images/nv9.png" name="工作流选项/Work" description="工作流选项" Visible="true">
+    <title url="/administrator/ucenter/Workflow_Admin.aspx " description="会员工作流管理" Visible="true">会员工作流管理</title>
+  </type>
+  
+</Root>

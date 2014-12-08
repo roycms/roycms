@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" EnableViewStateMac="false" CodeBehind="AJAXUserInfo.aspx.cs" Inherits="ROYcms.UI.Admin.UCenter.AJAXUserInfo" %>

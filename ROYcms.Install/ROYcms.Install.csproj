@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CE35913F-4457-4D1D-8CF7-3427F6D8A354}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ROYcms.Install</RootNamespace>
+    <AssemblyName>ROYcms.Install</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ROYcms.Common, Version=2.3.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Install\images\styles.css" />
+    <Content Include="Install\images\error.gif" />
+    <Content Include="Install\images\logo.jpg" />
+    <Content Include="Install\images\ok.gif" />
+    <Content Include="Install\images\succeed.jpg" />
+    <Content Include="Install\images\wait0.gif" />
+    <Content Include="Install\step2.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Install\Downloading.aspx.cs">
+      <DependentUpon>Downloading.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Install\Downloading.aspx.designer.cs">
+      <DependentUpon>Downloading.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Install\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Install\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Install\step1.aspx.cs">
+      <DependentUpon>step1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Install\step1.aspx.designer.cs">
+      <DependentUpon>step1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Install\Succeed.aspx.cs">
+      <DependentUpon>Succeed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Install\Succeed.aspx.designer.cs">
+      <DependentUpon>Succeed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Install\step2.aspx.cs">
+      <DependentUpon>step2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Install\step2.aspx.designer.cs">
+      <DependentUpon>step2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\FredCK.FCKeditorV2.dll" />
+    <Content Include="bin\FredCK.FCKeditorV2.pdb" />
+    <Content Include="bin\Interop.SQLDMO.dll" />
+    <Content Include="bin\Microsoft.SqlServer.BatchParser.dll" />
+    <Content Include="bin\ROYcms.BasePage.dll" />
+    <Content Include="bin\ROYcms.BasePage.pdb" />
+    <Content Include="bin\ROYcms.Common.dll" />
+    <Content Include="bin\ROYcms.Config.dll" />
+    <Content Include="bin\ROYcms.Config.pdb" />
+    <Content Include="bin\ROYcms.Controls.dll" />
+    <Content Include="bin\ROYcms.Controls.pdb" />
+    <Content Include="bin\ROYcms.DB.dll" />
+    <Content Include="bin\ROYcms.DB.pdb" />
+    <Content Include="bin\ROYcms.DB.XML" />
+    <Content Include="bin\ROYcms.Install.dll" />
+    <Content Include="bin\ROYcms.Install.pdb" />
+    <Content Include="bin\ROYcms.Rewriter.dll" />
+    <Content Include="bin\ROYcms.Rewriter.pdb" />
+    <Content Include="bin\ROYcms.SSO.dll" />
+    <Content Include="bin\ROYcms.SSO.pdb" />
+    <Content Include="bin\ROYcms.Sys.Bll.dll" />
+    <Content Include="bin\ROYcms.Sys.Bll.pdb" />
+    <Content Include="bin\ROYcms.Sys.Dal.dll" />
+    <Content Include="bin\ROYcms.Sys.Dal.pdb" />
+    <Content Include="bin\ROYcms.Sys.Model.dll" />
+    <Content Include="bin\ROYcms.Sys.Model.pdb" />
+    <Content Include="bin\ROYcms.Templet.dll" />
+    <Content Include="bin\ROYcms.Templet.pdb" />
+    <Content Include="bin\ROYcms.UI.Admin.dll" />
+    <Content Include="bin\ROYcms.UI.Admin.pdb" />
+    <Content Include="bin\ROYcms.UI.dll" />
+    <Content Include="bin\ROYcms.UI.pdb" />
+    <Content Include="bin\System.Data.SQLite.dll" />
+    <Content Include="bin\UrlRewritingNet.UrlRewriter.dll" />
+    <Content Include="Install\Downloading.aspx" />
+    <Content Include="Install\index.aspx" />
+    <Content Include="Install\SqlScripts\Update.xml" />
+    <Content Include="Install\step1.aspx" />
+    <Content Include="Install\Succeed.aspx" />
+    <Content Include="Install\SqlScripts\_ROYcms.xml" />
+    <Content Include="Install\SqlScripts\ROYcms.xml" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1725</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+</Project>

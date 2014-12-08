@@ -1,0 +1,509 @@
+<?xml version="1.0" ?> 
+<!DOCTYPE insertbarset SYSTEM "-//Macromedia//DWExtension insertbar 5.0" > 
+<insertbar xmlns:MMString="http://www.macromedia.com/schemes/data/string/">
+	<category folder="ROYcms" id="DW_Insertbar_ROYcms" name="ROYcms!NT 模版">
+		<menubutton NAME="栏目" id="ROYcms_ChannelMenu" image="ROYcms.png\folder_brick.png">
+			<button NAME="栏目列表" file="ROYcms\channel\channels.htm" id="ROYcms_Channels" image="ROYcms.png\application_view_list.png" />
+			<button NAME="栏目值" file="ROYcms\channel\channel.htm" id="ROYcms_Channel" image="ROYcms.png\asterisk_orange.png" />
+		</menubutton>
+		<menubutton NAME="内容列表" id="ROYcms_ContentMenu" image="ROYcms.png\application_view_icons.png">
+			<button NAME="列表内容" file="ROYcms\content\contents.htm" id="ROYcms_Contents" image="ROYcms.png\application_view_list.png" />
+			<button NAME="翻页内容列表" file="ROYcms\content\pageContents.htm" id="ROYcms_PageContents" image="ROYcms.png\application_view_tile.png" />
+			<button NAME="内容值" file="ROYcms\content\content.htm" id="ROYcms_Content" image="ROYcms.png\asterisk_orange.png" />
+		</menubutton>
+		<menubutton NAME="详细页面" id="ROYcms_WebF" image="ROYcms.png\layers.png">
+		    <button NAME="内容详细页面值" file="ROYcms\WebField\WebField.htm" id="ROYcms_WebField" image="ROYcms.png\layers.png" />
+		</menubutton>
+                <button NAME="智能表单字段" file="ROYcms\XmlField\XmlField.htm" id="ROYcms_XmlField" image="ROYcms.png\brick_go.png" />
+		<button NAME="全局配置值" file="ROYcms\WebConfig\WebConfig.htm" id="ROYcms_WebConfig" image="ROYcms.png\brick_go.png" />
+		<separator />
+		<button NAME="BBS" file="ROYcms\BBS\DZBBS.htm" id="ROYcms_BBS" image="ROYcms.png\brick_go.png" />
+		<separator />
+		<menubutton NAME="评论" id="ROYcms_CommentMenu" image="ROYcms.png\keyboard_add.png">
+			<button NAME="添加评论表单" file="ROYcms\comment\commentInput.htm" id="ROYcms_CommentInput" image="ROYcms.png\award_star_gold_3.png" />
+			<separator />
+			<button NAME="评论列表" file="ROYcms\comment\comments.htm" id="ROYcms_Comments" image="ROYcms.png\award_star_silver_1.png" />
+		</menubutton>
+		
+		<separator />
+		<button NAME="开源网站" command='dw.browseDocument("http://www.roycms.cn")' id="ROYcms" image="ROYcms.png\rainbow.png" />
+		<button NAME="帮助文档" command='dw.browseDocument("http://help.roycms.cn")' id="ROYcms_Help" image="ROYcms.png\report_picture.png" />
+	</category>
+
+
+
+
+
+
+
+	<category MMString:name="insertbar/category/common" folder="Common" id="DW_Insertbar_Common">
+		<button MMString:name="insertbar/hyperlink" file="Common\Hyperlink.htm" id="DW_Hyperlink" image="Common\Hyperlink.png" />
+		<button MMString:name="insertbar/email" file="Common\E-Mail Link.htm" id="DW_Email" image="Common\E-Mail Link.png" />
+		<button MMString:name="insertbar/anchor" file="Common\Anchor.htm" id="DW_Anchor" image="Common\Anchor.png" />
+		<separator />
+		<button MMString:name="insertbar/table" enabled="!_VIEW_LAYOUT" file="Common\Table.htm" id="DW_Table" image="Common\Table.png" />
+		<button MMString:name="insertbar/div" enabled="!_VIEW_LAYOUT" file="Layout\Div.htm" id="DW_CommonDiv" image="Layout\Div.png" />
+		<menubutton MMString:name="insertbar/images" id="DW_Images" image="Common\Image.png">
+			<button MMString:name="insertbar/image" file="Common\Image.htm" id="DW_Image" image="Common\Image.png" />
+			<button MMString:name="insertbar/imagePlaceholder" file="Common\Image Placeholder.htm" id="DW_ImagePlaceholder" image="Common\Image Placeholder.png" />
+			<button MMString:name="insertbar/rollover" file="Common\Rollover.htm" id="DW_Rollover" image="Common\Rollover.png" />
+			<button MMString:name="insertbar/fireworksHTML" file="Common\Fireworks HTML.htm" id="DW_FWhtml" image="Common\Fireworks HTML.png" />
+			<button MMString:name="insertbar/navigationBar" file="Common\Navigation Bar.htm" id="DW_NavBar" image="Common\Navigation Bar.png" />
+			<separator />
+			<button MMString:name="insertbar/rectHotspot" file="Common\RectHotspot.htm" id="DW_Hotspot_Rect" image="Common\RectHotspot.png" />
+			<button MMString:name="insertbar/ovalHotspot" file="Common\OvalHotspot.htm" id="DW_Hotspot_Oval" image="Common\OvalHotspot.png" />
+			<button MMString:name="insertbar/polyHotspot" file="Common\PolyHotspot.htm" id="DW_Hotspot_Poly" image="Common\PolyHotspot.png" />
+		</menubutton>
+		<menubutton MMString:name="insertbar/media" folder="Media" id="DW_Media" image="Common\Media.png">
+			<button MMString:name="insertbar/flash" file="Media\Flash.htm" id="DW_Media_Flash" image="Media\Flash.gif" />
+			<separator />
+			<button MMString:name="insertbar/flashButton" file="Media\Flash Button.htm" id="DW_Media_FlashButton" image="Media\Flash Button.png" />
+			<button MMString:name="insertbar/flashText" file="Media\Flash Text.htm" id="DW_Media_FlashText" image="Media\Flash Text.png" />
+			<button MMString:name="insertbar/flashPaper" file="Media\Flash Paper.htm" id="DW_Media_FlashPaper" image="Media\Flash Paper.gif" />
+			<button MMString:name="insertbar/flashVideo" enabled="!_FILE_TEMPLATE" file="Media\FlashVideo.htm" id="DW_Media_FlashVideo" image="Media\Flash Video.png" />"
+			<separator />
+			<button MMString:name="insertbar/shockwave" file="Media\Shockwave.htm" id="DW_Media_Shockwave" image="Media\Shockwave.png" />
+			<separator />
+			<button MMString:name="insertbar/applet" file="Media\Applet.htm" id="DW_Media_Applet" image="Media\Applet.png" />
+			<button MMString:name="insertbar/appletParam" codeOnly="TRUE" id="DW_Media_Param" image="Media\Param.png" tag="param" />
+			<button MMString:name="insertbar/activeX" file="Media\ActiveX.htm" id="DW_Media_ActiveX" image="Media\ActiveX.png" />
+			<separator />
+			<button MMString:name="insertbar/plugin" file="Media\Plugin.htm" id="DW_Media_Plugin" image="Media\Plugin.png" />
+		</menubutton>
+		<button MMString:name="insertbar/date" file="Common\Date.htm" id="DW_Date" image="Common\Date.png" />
+		<button MMString:name="insertbar/ssi" file="Script\SSI.htm" id="DW_SSI" image="Script\SSI.png" />
+		<button MMString:name="insertbar/comment" file="Text\Comment.htm" id="DW_Text_Comment" image="Text\Comment.png" />
+    <menubutton MMString:name="insertbar/head" folder="Head" id="DW_Insertbar_Head" image="Head\Meta.gif">
+      <button MMString:name="insertbar/headMeta" file="Head\Meta.htm" id="DW_Head_Meta" image="Head\Meta.gif" />
+      <button MMString:name="insertbar/headKeywords" file="Head\Keywords.htm" id="DW_Head_Keywords" image="Head\Keywords.gif" />
+      <button MMString:name="insertbar/headDescription" file="Head\Description.htm" id="DW_Head_Description" image="Head\Description.gif" />
+      <button MMString:name="insertbar/headRefresh" file="Head\Refresh.htm" id="DW_Head_Refresh" image="Head\Refresh.gif" />
+      <button MMString:name="insertbar/headBase" file="Head\Base.htm" id="DW_Head_Base" image="Head\Base.gif" />
+      <button MMString:name="insertbar/headLink" file="Head\Link.htm" id="DW_Head_Link" image="Head\Link.gif" />
+    </menubutton>
+    <menubutton MMString:name="insertbar/script" folder="Script" id="DW_Insertbar_Script" image="Script\Script.gif">
+      <button MMString:name="insertbar/script" file="Script\Script.htm" id="DW_Script_Script" image="Script\Script.gif" />
+      <button MMString:name="insertbar/noscript" codeOnly="TRUE" id="DW_Script_Noscript" image="Script\Noscript.gif" tag="noscript" />
+    </menubutton>
+    <separator />
+		<menubutton MMString:name="insertbar/templates" folder="Templates" id="DW_Templates" image="Templates\MakeTemplate.png">
+			<button MMString:name="insertbar/makeTemplate" canDrag="false" file="Templates\MakeTemplate.htm" id="DW_MakeTemplate" image="Templates\MakeTemplate.png" />
+			<button MMString:name="insertbar/makeNestedTemplate" canDrag="false" file="Templates\MakeNestedTemplate.htm" id="DW_MakeNestedTemplate" image="Templates\MakeNestedTemplate.png" />
+			<separator />
+			<button MMString:name="insertbar/editableRegion" file="Templates\Editable.htm" id="DW_EditableRegion" image="Templates\Editable.png" />
+			<button MMString:name="insertbar/optionalRegion" file="Templates\Optional.htm" id="DW_OptionalRegion" image="Templates\Optional.png" />
+			<button MMString:name="insertbar/repeatingRegion" file="Templates\Repeating.htm" id="DW_RepeatingRegion" image="Templates\Repeating.png" />
+			<separator />
+			<button MMString:name="insertbar/optionalRegionWithEdit" file="Templates\OptionalWithEdit.htm" id="DW_OptionalRegionWithEdit" image="Templates\OptionalWithEdit.png" />
+			<button MMString:name="insertbar/repeatingTable" file="Templates\RepeatingTable.htm" id="DW_RepeatingTable" image="Templates\RepeatingTable.png" />
+		</menubutton>
+		<button MMString:name="insertbar/tagChooser" codeOnly="TRUE" command="dw.showTagChooser()" id="DW_TagChooser" image="Common\Tag Chooser.png" />
+	</category>
+	<category MMString:name="insertbar/category/layout" folder="Layout" id="DW_Insertbar_Layout">
+    <radiobutton MMString:label="insertbar/viewmode/label/standard" MMString:name="insertbar/viewmode/standard" checked="!_VIEW_LAYOUT,!_VIEW_EXPANDED_TABLES" command="dw.getDocumentDOM().setStandardMode()" enabled="_VIEW_DESIGN" id="DW_StandardView" />
+    <radiobutton MMString:label="insertbar/viewmode/label/expandedTables" MMString:name="insertbar/viewmode/expandedTables" checked="_VIEW_EXPANDED_TABLES" command="dw.getDocumentDOM().setExpandedTablesMode(true)" enabled="_VIEW_DESIGN" id="DW_ExpandedTablesView" />
+    <!-- <radiobutton MMString:label="insertbar/viewmode/label/layout" MMString:name="insertbar/viewmode/layout" checked="_VIEW_LAYOUT" command="dw.getDocumentDOM().setShowLayoutView(true)" enabled="_VIEW_DESIGN" id="DW_LayoutView" /> -->
+    <button MMString:name="insertbar/div" enabled="!_VIEW_LAYOUT" file="Layout\Div.htm" id="DW_Div" image="Layout\Div.png" />
+    <button MMString:name="insertbar/layer" enabled="!_VIEW_LAYOUT, _VIEW_DESIGN" file="Layout\Layer.htm" id="DW_Layer" image="Layout\Layer.png" />
+    <separator />
+    <button MMString:name="spry/widgets/menubar/title" file="SPRY\SpryMenuBar.htm" id="DW_SPRY_MenuBar" image="Spry\SpryMenuBar.png"  showif="!_FILE_LIBRARY_ITEM, !_SERVERMODEL_XSLT"/>
+    <button MMString:name="spry/widgets/tabbedpanels/title" id="DW_SPRY_TabbedPanels"	image="Spry\SpryTabbedPanels.png"  file="SPRY\SpryTabbedPanels.htm"   showif="!_FILE_LIBRARY_ITEM, !_SERVERMODEL_XSLT" />
+    <button MMString:name="spry/widgets/accordion/title" file="SPRY\SpryAccordion.htm" id="DW_SPRY_Accordion" image="Spry\SpryAccordion.png"  showif="!_FILE_LIBRARY_ITEM, !_SERVERMODEL_XSLT"/>
+    <button MMString:name="spry/widgets/collapsiblepanel/title" id="DW_SPRY_CollapsiblePanel"	image="Spry\SpryCollapsiblePanel.png"  file="SPRY\SpryCollapsiblePanel.htm"   showif="!_FILE_LIBRARY_ITEM, !_SERVERMODEL_XSLT" />
+    <separator showif="!_FILE_LIBRARY_ITEM, !_SERVERMODEL_XSLT"/>
+    <button MMString:name="insertbar/table" enabled="!_VIEW_LAYOUT" file="Common\Table.htm" id="DW_Layout_Table" image="Common\Table.png" />
+    <button MMString:name="insertbar/insertTableRowAbove" canDrag="false" command="dw.getDocumentDOM().insertTableRows(1, true)" enabled="_TABLE_CAN_INSERT_ROW" id="DW_Table_InsertRowAbove" image="Layout\InsertRowAbove.gif" />
+		<button MMString:name="insertbar/insertTableRowBelow" canDrag="false" command="dw.getDocumentDOM().insertTableRows(1, false)" enabled="_TABLE_CAN_INSERT_ROW" id="DW_Table_InsertRowBelow" image="Layout\InsertRowBelow.gif" />
+		<button MMString:name="insertbar/insertTableColLeft" canDrag="false" command="dw.getDocumentDOM().insertTableColumns(1, true)" enabled="_TABLE_CAN_INSERT_COLUMN" id="DW_Table_InsertColLeft" image="Layout\InsertColLeft.gif" />
+		<button MMString:name="insertbar/insertTableColRight" canDrag="false" command="dw.getDocumentDOM().insertTableColumns(1, false)" enabled="_TABLE_CAN_INSERT_COLUMN" id="DW_Table_InsertColRight" image="Layout\InsertColRight.gif" />
+    <button MMString:name="insertbar/iframe" codeOnly="TRUE" file="Frames\Iframe.htm" id="DW_Frames_Iframe" image="Frames\Iframe.png" />
+    <menubutton MMString:name="insertbar/frames" folder="Frames" id="DW_Insertbar_Frames" image="Frames\LeftNestedTop.png" showif="!_FILE_TEMPLATE">
+			<button MMString:name="insertbar/left" file="Frames\Left.htm" id="DW_Frames_Left" image="Frames\Left.png" />
+			<button MMString:name="insertbar/right" file="Frames\Right.htm" id="DW_Frames_Right" image="Frames\Right.png" />
+			<button MMString:name="insertbar/top" file="Frames\Top.htm" id="DW_Frames_Top" image="Frames\Top.png" />
+			<button MMString:name="insertbar/bottom" file="Frames\Bottom.htm" id="DW_Frames_Bottom" image="Frames\Bottom.png" />
+			<button MMString:name="insertbar/bottomNestedLeft" file="Frames\BottomNestedLeft.htm" id="DW_Frames_BottomNestedLeft" image="Frames\BottomNestedLeft.png" />
+			<button MMString:name="insertbar/bottomNestedRight" file="Frames\BottomNestedRight.htm" id="DW_Frames_BottomNestedRight" image="Frames\BottomNestedRight.png" />
+			<button MMString:name="insertbar/leftNestedBottom" file="Frames\LeftNestedBottom.htm" id="DW_Frames_LeftNestedBottom" image="Frames\LeftNestedBottom.png" />
+			<button MMString:name="insertbar/rightNestedBottom" file="Frames\RightNestedBottom.htm" id="DW_Frames_RightNestedBottom" image="Frames\RightNestedBottom.png" />
+			<button MMString:name="insertbar/topandBottom" file="Frames\TopandBottom.htm" id="DW_Frames_TopandBottom" image="Frames\TopandBottom.png" />
+			<button MMString:name="insertbar/leftNestedTop" file="Frames\LeftNestedTop.htm" id="DW_Frames_LeftNestedTop" image="Frames\LeftNestedTop.png" />
+			<button MMString:name="insertbar/rightNestedTop" file="Frames\RightNestedTop.htm" id="DW_Frames_RightNestedTop" image="Frames\RightNestedTop.png" />
+			<button MMString:name="insertbar/topNestedLeft" file="Frames\TopNestedLeft.htm" id="DW_Frames_TopNestedLeft" image="Frames\TopNestedLeft.png" />
+			<button MMString:name="insertbar/topNestedRight" file="Frames\TopNestedRight.htm" id="DW_Frames_TopNestedRight" image="Frames\TopNestedRight.png" />
+		</menubutton>
+    <separator />
+    <!-- Layout Mode tools are obsolete, but leave them hidden so menu items still work -->
+    <button MMString:name="insertbar/layoutTable" enabled="_VIEW_LAYOUT,_VIEW_DESIGN" file="Layout\Layout Table.htm" id="DW_LayoutTable" image="Layout\Layout Table.png" />
+    <button MMString:name="insertbar/layoutCell" enabled="_VIEW_LAYOUT,_VIEW_DESIGN" file="Layout\Layout Cell.htm" id="DW_LayoutCell" image="Layout\Layout Cell.png" />
+  </category>
+  <category MMString:name="insertbar/category/forms" folder="Forms" id="DW_Insertbar_Forms">
+    <button MMString:name="insertbar/formsForm" file="Forms\Form.htm" id="DW_Forms_Form" image="Forms\Form.png" tag="form" />
+    <separator />
+    <button MMString:name="insertbar/formsTextfield" file="Forms\Text Field.htm" id="DW_Forms_TextField" image="Forms\Text Field.png" tag="input type=&quot;text&quot;" />
+    <button MMString:name="insertbar/formsHidden" file="Forms\Hidden Field.htm" id="DW_Forms_Hidden" image="Forms\Hidden Field.png" tag="input type=&quot;hidden&quot;" />
+    <button MMString:name="insertbar/formsTextarea" file="Forms\Textarea.htm" id="DW_Forms_TextareaTag" image="Forms\Textarea.png" tag="textarea" />
+    <separator />
+    <button MMString:name="insertbar/formsCheckbox" file="Forms\Checkbox.htm" id="DW_Forms_Checkbox" image="Forms\Checkbox.png" tag="input type=&quot;checkbox&quot;" />
+    <button MMString:name="insertbar/formsRadio" file="Forms\Radio.htm" id="DW_Forms_Radio" image="Forms\Radio.png" tag="input type=&quot;radio&quot;" />
+    <button MMString:name="insertbar/formsRadioGroup" file="Forms\Radio Group.htm" id="DW_Forms_RadioGroup" image="Forms\Radio Group.png" />
+    <separator />
+    <button MMString:name="insertbar/formsListMenu" file="Forms\List Menu.htm" id="DW_Forms_ListMenu" image="Forms\List Menu.png" tag="select" />
+    <button MMString:name="insertbar/formsJumpMenu" file="Forms\Jump Menu.htm" id="DW_Forms_JumpMenu" image="Forms\Jump Menu.png" />
+    <separator />
+    <button MMString:name="insertbar/formsImageField" file="Forms\Image Field.htm" id="DW_Forms_ImageField" image="Forms\Image Field.png" tag="input type=&quot;image&quot;" />
+    <button MMString:name="insertbar/formsFileField" file="Forms\File Field.htm" id="DW_Forms_FileField" image="Forms\File Field.png" tag="input type=&quot;file&quot;" />
+    <button MMString:name="insertbar/formsButton" file="Forms\Button.htm" id="DW_Forms_Button" image="Forms\Button.png" tag="input type=&quot;button&quot;" />
+    <separator />
+    <button MMString:name="insertbar/formsLabel" codeOnly="TRUE" file="Forms\Label.htm" id="DW_Forms_Label" image="Forms\Label.png" />
+    <button MMString:name="insertbar/formsFieldset" file="Forms\Fieldset.htm" id="DW_Forms_Fieldset" image="Forms\Fieldset.png" />
+    <separator />
+    <button MMString:name="spry/widgets/ValidationTextField/title" file="SPRY/SpryValidationTextField.htm" id="DW_SPRY_ValidationTextField" image="Spry/SpryValidationTextField.png"  showif="!_FILE_LIBRARY_ITEM, !_SERVERMODEL_XSLT"/>
+    <button MMString:name="spry/widgets/ValidationTextarea/title" file="SPRY/SpryValidationTextarea.htm" id="DW_SPRY_ValidationTextarea" image="Spry/SpryValidationTextarea.png"  showif="!_FILE_LIBRARY_ITEM, !_SERVERMODEL_XSLT"/>
+    <button MMString:name="spry/widgets/ValidationCheckbox/title" file="SPRY/SpryValidationCheckbox.htm" id="DW_SPRY_ValidationCheckbox" image="Spry/SpryValidationCheckbox.png"  showif="!_FILE_LIBRARY_ITEM, !_SERVERMODEL_XSLT"/>
+    <button MMString:name="spry/widgets/ValidationSelect/title" file="SPRY/SpryValidationSelect.htm" id="DW_SPRY_ValidationSelect" image="Spry/SpryValidationSelect.png"  showif="!_FILE_LIBRARY_ITEM, !_SERVERMODEL_XSLT"/>
+  </category>
+	<category MMString:name="insertbar/category/cfmlbasic" folder="CFML Basic" id="DW_Insertbar_CFMLBasic" showif="_SERVERMODEL_CFML">
+		<button MMString:name="insertbar/server/serverVariables" codeOnly="TRUE" file="Server\ServerVariables.htm" id="DW_CFML_ServerVariables" image="Server\ServerVariables.gif" />
+		<button codeOnly="TRUE" id="DW_CFML_CFQuery" image="CFML Basic\Cfquery.gif" name="cfquery" tag="cfquery" />
+		<button codeOnly="TRUE" id="DW_CFML_CFOutput" image="CFML Basic\Cfoutput.gif" name="cfoutput" tag="cfoutput" />
+		<button codeOnly="TRUE" id="DW_CFML_CFInsert" image="CFML Basic\Cfinsert.gif" name="cfinsert" tag="cfinsert" />
+		<button codeOnly="TRUE" id="DW_CFML_CFUpdate" image="CFML Basic\Cfupdate.gif" name="cfupdate" tag="cfupdate" />
+		<separator />
+		<button codeOnly="TRUE" id="DW_CFML_CFInclude" image="CFML Basic\Cfinclude.gif" name="cfinclude" tag="cfinclude" />
+		<button codeOnly="TRUE" id="DW_CFML_CFLocation" image="CFML Basic\Cflocation.gif" name="cflocation" tag="cflocation" />
+		<separator />
+		<button codeOnly="TRUE" file="CFML Basic\Cfset.htm" id="DW_CFML_Cfset" image="CFML Basic\Cfset.gif" name="cfset" />
+		<button codeOnly="TRUE" id="DW_CFML_CFParam" image="CFML Basic\Cfparam.gif" name="cfparam" tag="cfparam" />
+		<button MMString:name="insertbar/cfml/cfcomment" codeOnly="TRUE" file="CFML Basic\Cfcomment.htm" id="DW_CFML_Cfcomment" image="CFML Basic\Cfcomment.gif" />
+		<button MMString:name="insertbar/cfml/poundSign" codeOnly="TRUE" file="CFML Basic\PoundSign.htm" id="DW_CFML_PoundSign" image="CFML Basic\PoundSign.gif" />
+		<button codeOnly="TRUE" id="DW_CFML_CFscript" image="CFML Basic\Cfscript.gif" name="cfscript" tag="cfscript" />
+		<separator />
+		<menubutton MMString:name="insertbar/cfml/flow" folder="CFML Flow" id="DW_Insertbar_CFMLFlow" image="CFML Flow\Cfloop.gif">
+			<button codeOnly="TRUE" id="DW_CFML_CFTry" image="CFML Flow\Cftry.gif" name="cftry" tag="cftry" />
+			<button codeOnly="TRUE" id="DW_CFML_CFCatch" image="CFML Flow\Cfcatch.gif" name="cfcatch" tag="cfcatch" />
+			<button codeOnly="TRUE" id="DW_CFML_CFThrow" image="CFML Flow\Cfthrow.gif" name="cfthrow" tag="cfthrow" />
+			<separator />
+			<button codeOnly="TRUE" id="DW_CFML_CFLock" image="CFML Flow\Cflock.gif" name="cflock" tag="cflock" />
+			<separator />
+			<button codeOnly="TRUE" id="DW_CFML_CFSwitch" image="CFML Flow\Cfswitch.gif" name="cfswitch" tag="cfswitch" />
+			<button codeOnly="TRUE" id="DW_CFML_CFCase" image="CFML Flow\Cfcase.gif" name="cfcase" tag="cfcase" />
+			<button MMString:name="insertbar/cfml/cfdefaultcase" codeOnly="TRUE" file="CFML Flow\Cfdefaultcase.htm" id="DW_CFML_Cfdefaultcase" image="CFML Flow\Cfdefaultcase.gif" />
+			<separator />
+			<button MMString:name="insertbar/cfml/cfif" codeOnly="TRUE" file="CFML Flow\Cfif.htm" id="DW_CFML_Cfif" image="CFML Flow\Cfif.gif" />
+			<button MMString:name="insertbar/cfml/cfelse" codeOnly="TRUE" file="CFML Flow\Cfelse.htm" id="DW_CFML_Cfelse" image="CFML Flow\Cfelse.gif" />
+			<button MMString:name="insertbar/cfml/cfelseif" codeOnly="TRUE" file="CFML Flow\Cfelseif.htm" id="DW_CFML_Cfelseif" image="CFML Flow\Cfelseif.gif" />
+			<separator />
+			<button codeOnly="TRUE" id="DW_CFML_CFLoop" image="CFML Flow\Cfloop.gif" name="cfloop" tag="cfloop" />
+			<button codeOnly="TRUE" id="DW_CFML_CFBreak" image="CFML Flow\Cfbreak.gif" name="cfbreak" tag="cfbreak" />
+		</menubutton>
+		<button MMString:name="insertbar/cfml/reportbuilder" codeonly="FALSE" id="CF_reportbuilder" image="CFML Advanced\CFReportBuilder_button.png" tag="cfreport" />
+		<menubutton MMString:name="insertbar/cfml/advanced" folder="CFML Advanced" id="DW_Insertbar_CFMLAdvanced" image="CFML Advanced\Cfcookie.gif">
+			<button codeOnly="TRUE" id="DW_CFML_Cfcookie" image="CFML Advanced\Cfcookie.gif" name="cfcookie" tag="cfcookie" />
+			<button codeOnly="TRUE" id="DW_CFML_CfContent" image="CFML Advanced\Cfcontent.gif" name="cfcontent" tag="cfcontent" />
+			<button codeOnly="TRUE" id="DW_CFML_CfHeader" image="CFML Advanced\Cfheader.gif" name="cfheader" tag="cfheader" />
+			<button MMString:name="insertbar/cfml/encoding" file="CFML Advanced\CFPageEncoding.htm" id="DW_CFML_PageEncoding" image="CFML Advanced\CFPageEncoding.gif" />
+			<separator />
+			<button codeOnly="TRUE" id="DW_CFML_CFApplication" image="CFML Advanced\Cfapplication.gif" name="cfapplication" tag="cfapplication" />
+			<button codeOnly="TRUE" id="DW_CFML_CFError" image="CFML Advanced\Cferror.gif" name="cferror" tag="cferror" />
+			<separator />
+			<button codeOnly="TRUE" id="DW_CFML_CFDirectory" image="CFML Advanced\Cfdirectory.gif" name="cfdirectory" tag="cfdirectory" />
+			<button codeOnly="TRUE" id="DW_CFML_CFFile" image="CFML Advanced\Cffile.gif" name="cffile" tag="cffile" />
+			<separator />
+			<button codeOnly="TRUE" id="DW_CFML_CFMail" image="CFML Advanced\Cfmail.gif" name="cfmail" tag="cfmail" />
+			<button codeOnly="TRUE" id="DW_CFML_CFPop" image="CFML Advanced\Cfpop.gif" name="cfpop" tag="cfpop" />
+			<button codeOnly="TRUE" id="DW_CFML_CFHtpp" image="CFML Advanced\Cfhttp.gif" name="cfhttp" tag="cfhttp" />
+			<button codeOnly="TRUE" id="DW_CFML_CFHttpParam" image="CFML Advanced\Cfhttpparam.gif" name="cfhttpparam" tag="cfhttpparam" />
+			<button codeOnly="TRUE" id="DW_CFML_CFDlap" image="CFML Advanced\Cfldap.gif" name="cfldap" tag="cfldap" />
+			<button codeOnly="TRUE" id="DW_CFML_CFFtp" image="CFML Advanced\Cfftp.gif" name="cfftp" tag="cfftp" />
+			<separator />
+			<button codeOnly="TRUE" id="DW_CFML_CFSearch" image="CFML Advanced\Cfsearch.gif" name="cfsearch" tag="cfsearch" />
+			<button codeOnly="TRUE" id="DW_CFML_CFIndex" image="CFML Advanced\Cfindex.gif" name="cfindex" tag="cfindex" />
+			<separator />
+			<button codeOnly="TRUE" id="DW_CFML_CFImport" image="CFML Advanced\Cfimport.gif" name="cfimport" tag="cfimport" />
+			<button codeOnly="TRUE" id="DW_CFML_CFModule" image="CFML Advanced\Cfmodule.gif" name="cfmodule" tag="cfmodule" />
+			<button codeOnly="TRUE" id="DW_CFML_CFObject" image="CFML Advanced\Cfobject.gif" name="cfobject" tag="cfobject" />
+			<separator />
+			<button codeOnly="TRUE" id="DW_CFML_CFChart" image="CFML Advanced\Cfchart.gif" name="cfchart" tag="cfchart" />
+			<button MMString:name="insertbar/moreTags" codeOnly="TRUE" command="dw.showTagChooser()" id="DW_TagChooser" image="Common\Tag Chooser.png" />
+		</menubutton>
+	</category>
+	<category MMString:name="insertbar/category/cfform" folder="CFForm" id="DW_Insertbar_CFForm" showIf="_SERVERMODEL_CFML">
+		<button file="CFForm\CFForm.htm" id="DW_CFForm_CFForm" image="Forms\Form.png" tag="cfform" />
+		<separator />
+		<button file="CFForm\CFInput_TextField.htm" id="DW_CFForm_CFInput_TextField" image="Forms\Text Field.png" tag="cfinput type=&quot;text&quot;" />
+		<button file="CFForm\CFHiddenField.htm" id="DW_CFForm_CFHidden" image="Forms\Hidden Field.png" tag="cfinput type=&quot;hidden&quot;" />
+		<button file="CFForm\CFTextarea.htm" id="DW_CFForm_CFTextareaTag" image="Forms\Textarea.png" tag="cftextarea" />
+		<separator />
+		<button file="CFForm\CFCheckbox.htm" id="DW_CFForm_CFCheckbox" image="Forms\Checkbox.png" tag="cfinput type=&quot;checkbox&quot;" />
+		<button file="CFForm\CFRadio.htm" id="DW_CFForm_CFRadio" image="Forms\Radio Group.png" tag="cfinput type=&quot;radio&quot;" />
+		<separator />
+		<button file="CFForm\CFSelect.htm" id="DW_CFForm_CFSelect" image="Forms\List Menu.png" tag="cfselect" />
+		<separator />
+		<button file="CFForm\CFImageField.htm" id="DW_CFForm_CFImageField" image="Forms\Image Field.png" tag="cfinput type=&quot;image&quot;" />
+		<button file="CFForm\CFFileField.htm" id="DW_CFForm_CFFileField" image="Forms\File Field.png" tag="cfinput type=&quot;file&quot;" />
+		<button file="CFForm\CFButton.htm" id="DW_CFForm_CFButton" image="Forms\Button.png" tag="cfinput type=&quot;button&quot;" />
+	</category>
+	<category MMString:name="insertbar/category/asp" folder="ASP" id="DW_Insertbar_ASP" showif="_SERVERMODEL_ASP">
+		<button MMString:name="insertbar/server/serverVariables" codeOnly="TRUE" file="Server\ServerVariables.htm" id="DW_ASP_ServerVariables" image="Server\ServerVariables.gif" />
+		<button MMString:name="insertbar/asp/aspinclude" codeOnly="TRUE" file="ASP\ASPInclude.htm" id="DW_ASP_Include" image="ASP\ASPInclude.gif" />
+		<separator />
+		<button MMString:name="insertbar/asp/asptag" codeOnly="TRUE" file="ASP\ASPTag.htm" id="DW_ASP_CodeBlock" image="ASP\ASPTag.gif" />
+		<button MMString:name="insertbar/asp/aspoutput" codeOnly="TRUE" file="ASP\ASPOutput.htm" id="DW_ASP_Output" image="ASP\ASPOutput.gif" />
+		<separator />
+		<button MMString:name="insertbar/asp/aspif" codeOnly="TRUE" file="ASP\ASPIf.htm" id="DW_ASP_If" image="ASP\ASPIf.gif" />
+		<button MMString:name="insertbar/asp/aspelse" codeOnly="TRUE" file="ASP\ASPElse.htm" id="DW_ASP_Else" image="ASP\ASPElse.gif" />
+		<button MMString:name="insertbar/asp/aspelseif" codeOnly="TRUE" file="ASP\ASPElseIf.htm" id="DW_ASP_ASPElseIf" image="ASP\ASPElseIf.gif" />
+		<button MMString:name="insertbar/asp/aspend" codeOnly="TRUE" file="ASP\ASPEnd.htm" id="DW_ASP_End" image="ASP\ASPEnd.gif" />
+		<separator />
+		<button MMString:name="insertbar/asp/aspResponseWrite" codeOnly="TRUE" file="ASP\ASPResponseWrite.htm" id="DW_ASP_ResponseWrite" image="ASP\ASPResponseWrite.gif" />
+		<button MMString:name="insertbar/asp/aspTrimFormEl" codeOnly="TRUE" file="ASP\ASPTrimFormEl.htm" id="DW_ASP_TrimFormEl" image="ASP.NET\TrimFormEl.gif" />
+		<button MMString:name="insertbar/asp/aspTrimQueryStr" codeOnly="TRUE" file="ASP\ASPTrimQueryStrEl.htm" id="DW_ASP_TrimQueryStr" image="ASP.NET\TrimQueryStr.gif" />
+		<button MMString:name="insertbar/asp/aspServerCreateObj" codeOnly="TRUE" file="ASP\ASPServerCreateObj.htm" id="DW_ASP_ServerCreateObj" image="ASP\ASPServerCreateObj.gif" />
+	</category>
+	<category MMString:name="insertbar/category/aspnet" folder="ASP.NET" id="DW_Insertbar_ASPNET" showif="_SERVERMODEL_ASPNET">
+		<button MMString:name="insertbar/aspnet/registerCustomTag" codeOnly="TRUE" file="ASP.NET\RegisterCustomTag.htm" id="DW_ASPNET_RegisterCustomTag" image="ASP.NET\RegisterCustomTag.gif" />
+		<button MMString:name="insertbar/aspnet/importNamespace" codeOnly="TRUE" file="ASP.NET\ImportNamespace.htm" id="DW_ASPNET_ImportNamespace" image="ASP.NET\ImportNamespace.gif" />
+		<separator />
+		<button MMString:name="insertbar/aspnet/trimFormEl" codeOnly="TRUE" file="ASP.NET\TrimFormEl.htm" id="DW_ASPNET_TrimFormEl" image="ASP.NET\TrimFormEl.gif" />
+		<button MMString:name="insertbar/aspnet/trimQueryStr" codeOnly="TRUE" file="ASP.NET\TrimQueryStr.htm" id="DW_ASPNET_TrimQueryStr" image="ASP.NET\TrimQueryStr.gif" />
+		<button MMString:name="insertbar/aspnet/runatServer" codeOnly="TRUE" file="ASP.NET\RunatServer.htm" id="DW_ASPNET_RunatServer" image="ASP.NET\RunatServer.gif" />
+		<button MMString:name="insertbar/aspnet/boundData" codeOnly="TRUE" file="ASP.NET\BoundData.htm" id="DW_ASPNET_BoundData" image="ASP.NET\BoundData.gif" />
+		<button MMString:name="insertbar/aspnet/pageLoad" codeOnly="TRUE" file="ASP.NET\Page_Load.htm" id="DW_ASPNET_PageLoad" image="ASP.NET\Page_Load.gif" />
+		<separator />
+		<button enabled="" file="ASP.NET\asp.net_button.htm" id="DW_ASPNET_ASPButton" image="ASP.NET/button.gif" name="asp:Button" showIf="" tag="asp:Button" />
+		<button enabled="" file="ASP.NET\asp.net_checkbox.htm" id="DW_ASPNET_ASPCheckbox" image="ASP.NET/checkbox.gif" name="asp:CheckBox" showIf="" tag="asp:CheckBox" />
+		<button enabled="" file="ASP.NET\asp.net_checkboxlist.htm" id="DW_ASPNET_ASPCheckboxlist" image="ASP.NET/checkboxList.gif" name="asp:CheckBoxList" showIf="" tag="asp:CheckBoxList" />
+		<button enabled="" file="ASP.NET\asp.net_dropdownlist.htm" id="DW_ASPNET_ASPDropdownlist" image="ASP.NET/dropDownList.gif" name="asp:DropDownList" showIf="" tag="asp:DropDownList" />
+		<button enabled="" file="ASP.NET\asp.net_imagebutton.htm" id="DW_ASPNET_ASPImagebutton" image="ASP.NET/ImageASP.gif" name="asp:ImageButton" showIf="" tag="asp:ImageButton" />
+		<button enabled="" file="ASP.NET\asp.net_label.htm" id="DW_ASPNET_ASPLabel" image="ASP.NET/label.gif" name="asp:Label" showIf="" tag="asp:Label" />
+		<button enabled="" file="ASP.NET\asp.net_listbox.htm" id="DW_ASPNET_ASPListbox" image="ASP.NET/listBox.gif" name="asp:ListBox" showIf="" tag="asp:ListBox" />
+		<button enabled="" file="ASP.NET\asp.net_radiobutton.htm" id="DW_ASPNET_ASPRadiobutton" image="ASP.NET/radioButton.gif" name="asp:RadioButton" showIf="" tag="asp:RadioButton" />
+		<button enabled="" file="ASP.NET\asp.net_radiobuttonlist.htm" id="DW_ASPNET_ASPRadiobuttonlist" image="ASP.NET/radioButtonList.gif" name="asp:RadioButtonList" showIf="" tag="asp:RadioButtonList" />
+		<button enabled="" file="ASP.NET\asp.net_textbox.htm" id="DW_ASPNET_ASPTextbox" image="ASP.NET/textBox.gif" name="asp:TextBox" showIf="" tag="asp:TextBox" />
+		<button MMString:name="insertbar/moreTags" codeOnly="TRUE" command="dw.showTagChooser()" id="DW_TagChooser" image="Common\Tag Chooser.png" />
+	</category>
+	<category MMString:name="insertbar/category/jsp" folder="JSP" id="DW_Insertbar_JSP" showif="_SERVERMODEL_JSP">
+		<button MMString:name="insertbar/pageDirective" codeOnly="TRUE" id="DW_JSP_Page" image="JSP\JSPPage.gif" tag="%@ page %" />
+		<button MMString:name="insertbar/includeDirective" codeOnly="TRUE" id="DW_JSP_AtInclude" image="JSP\JSPAtInclude.gif" tag="%@ include %" />
+		<button MMString:name="insertbar/taglibDirective" codeOnly="TRUE" id="DW_JSP_Taglib" image="JSP\JSPTaglib.gif" tag="%@ taglib %" />
+		<button MMString:name="insertbar/jsp/encoding" file="JSP\JSPPageEncoding.htm" id="DW_JSP_PageEncoding" image="JSP\JSPPageEncoding.gif" />
+		<separator />
+		<button MMString:name="insertbar/jsp/declaration" codeOnly="TRUE" file="JSP\JSPDeclaration.htm" id="DW_JSP_Declaration" image="JSP\JSPDeclaration.gif" />
+		<button MMString:name="insertbar/jsp/scriplet" codeOnly="TRUE" file="JSP\JSPScriptlet.htm" id="DW_JSP_Scriptlet" image="JSP\JSPScriptlet.gif" />
+		<button MMString:name="insertbar/jsp/expression" codeOnly="TRUE" file="JSP\JSPExpression.htm" id="DW_JSP_Expression" image="JSP\JSPExpression.gif" />
+		<separator />
+		<button MMString:name="insertbar/jsp/useBean" codeOnly="TRUE" id="DW_JSP_UseBean" image="JSP\JSPUseBean.gif" tag="jsp:useBean/" />
+		<button MMString:name="insertbar/jsp/setProp" codeOnly="TRUE" id="DW_JSP_SetProperty" image="JSP\JSPSetProperty.gif" tag="jsp:setProperty/" />
+		<button MMString:name="insertbar/jsp/getProp" codeOnly="TRUE" id="DW_JSP_GetProperty" image="JSP\JSPGetProperty.gif" tag="jsp:getProperty /" />
+		<button MMString:name="insertbar/jsp/include" codeOnly="TRUE" id="DW_JSP_JSPInclude" image="JSP\JSPInclude.gif" tag="jsp:include /" />
+		<button MMString:name="insertbar/jsp/forward" codeOnly="TRUE" id="DW_JSP_Forward" image="JSP\JSPForward.gif" tag="jsp:forward /" />
+		<button MMString:name="insertbar/jsp/params" codeOnly="TRUE" file="JSP\JSPParams.htm" id="DW_JSP_Params" image="JSP\JSPParams.gif" />
+		<button MMString:name="insertbar/jsp/param" codeOnly="TRUE" id="DW_JSP_Param" image="JSP\JSPParam.gif" tag="jsp:param /" />
+		<button MMString:name="insertbar/jsp/plugin" codeOnly="TRUE" id="DW_JSP_Plugin" image="JSP\JSPPlugin.gif" tag="jsp:plugin /" />
+		<separator />
+		<button MMString:name="insertbar/jsp/comment" codeOnly="TRUE" file="JSP\JSPComment.htm" id="DW_JSP_Comment" image="JSP\JSPComment.gif" />
+		<button MMString:name="insertbar/moreTags" codeOnly="TRUE" command="dw.showTagChooser()" id="DW_TagChooser" image="Common\Tag Chooser.png" />
+	</category>
+	<category MMString:name="insertbar/category/php" folder="PHP" id="DW_Insertbar_PHP" showif="_SERVERMODEL_PHP">
+		<button MMString:name="insertbar/php/formVars" codeOnly="TRUE" file="PHP\PHPFormVars.htm" id="DW_PHP_FormVars" image="PHP\PHPFormVars.gif" />
+		<button MMString:name="insertbar/php/getVars" codeOnly="TRUE" file="PHP\PHPGetVars.htm" id="DW_PHP_GetVars" image="PHP\PHPGetVars.gif" />
+		<button MMString:name="insertbar/php/sessionVars" codeOnly="TRUE" file="PHP\PHPSessionVars.htm" id="DW_PHP_SessionVars" image="PHP\PHPSessionVars.gif" />
+		<button MMString:name="insertbar/php/cookieVars" codeOnly="TRUE" file="PHP\PHPCookieVars.htm" id="DW_PHP_CookieVars" image="PHP\PHPCookieVars.gif" />
+		<separator />
+		<button MMString:name="insertbar/php/include" codeOnly="TRUE" file="PHP\PHPInclude.htm" id="DW_PHP_Include" image="PHP\PHPInclude.gif" />
+		<button MMString:name="insertbar/php/require" codeOnly="TRUE" file="PHP\PHPRequire.htm" id="DW_PHP_Require" image="PHP\PHPRequire.gif" />
+		<button MMString:name="insertbar/php/encoding" file="PHP\PHPPageEncoding.htm" id="DW_PHP_PageEncoding" image="PHP\PHPPageEncoding.gif" />
+		<separator />
+		<button MMString:name="insertbar/php/tag" codeOnly="TRUE" file="PHP\PHPTag.htm" id="DW_PHP_CodeBlock" image="PHP\PHPTag.gif" />
+		<button MMString:name="insertbar/php/output" codeOnly="TRUE" file="PHP\PHPOutput.htm" id="DW_PHP_Output" image="PHP\PHPOutput.gif" />
+		<button MMString:name="insertbar/php/comment" codeOnly="TRUE" file="PHP\PHPComment.htm" id="DW_PHP_Comment" image="PHP\PHPComment.gif" />
+		<separator />
+		<button MMString:name="insertbar/php/if" codeOnly="TRUE" file="PHP\PHPIf.htm" id="DW_PHP_If" image="PHP\PHPIf.gif" />
+		<button MMString:name="insertbar/php/else" codeOnly="TRUE" file="PHP\PHPElse.htm" id="DW_PHP_Else" image="PHP\PHPElse.gif" />
+	</category>
+	<category MMString:name="insertbar/category/xslt" folder="XSLT" id="DW_Insertbar_XSLT" showif="_SERVERMODEL_XSLT">
+		<button MMString:name="insertbar/xslt/dynamicText" file="XSLT\XSLT_ValueOf.htm" id="DW_XSLT_DynamicText" image="XSLT\XSL_ValueOf.png" />
+		<button MMString:name="insertbar/xslt/repeatRegion" file="XSLT\XSLT_ForEach.htm" id="DW_XSLT_ForEach" image="XSLT\XSL_ForEach.png" />
+		<button MMString:name="insertbar/xslt/conditionalRegion" file="XSLT\XSLT_If.htm" id="DW_XSLT_IF" image="XSLT\XSL_If.png" />
+		<button MMString:name="insertbar/xslt/multipleConditonalRegion" file="XSLT\XSLT_MultipleCond.htm" id="DW_XSLT_MULTIPLE" image="XSLT\XSL_MultipleCond.png" />
+		<button MMString:name="insertbar/xslt/comment" file="XSLT\XSLT_Comment.htm" id="DW_XSLT_Comment" image="XSLT\XSL_Comment.png" />
+	</category>
+  <category MMString:name="insertbar/category/application" folder="Server" id="DW_Insertbar_Server" showif="!_SERVERMODEL_XSLT">
+    <button MMString:name="insertbar/tabularData" file="Layout\Tabular Data.htm" id="DW_TabularData" image="Layout\Tabular Data.png" />
+    <separator />
+    <button MMString:name="insertbar/spry/spryXMLDataSet" file="SPRY\SpryXMLDataSet.htm" id="DW_SPRY_XMLDataSet" image="Spry\SpryXMLDataSet.png"  showif="!_FILE_LIBRARY_ITEM, !_SERVERMODEL_XSLT"/>
+    <button MMString:name="insertbar/spry/spryRegion" file="SPRY\SpryRegion.htm" id="DW_SPRY_Region" image="Spry\SpryRegion.png"  showif="!_FILE_LIBRARY_ITEM, !_SERVERMODEL_XSLT"/>
+    <button MMString:name="insertbar/spry/spryRepeat" file="SPRY\SpryRepeat.htm" id="DW_SPRY_Repeat" image="Spry\SpryRepeat.png"  showif="!_FILE_LIBRARY_ITEM, !_SERVERMODEL_XSLT"/>
+    <button MMString:name="insertbar/spry/spryRepeatList" file="SPRY\SpryRepeatList.htm" id="DW_SPRY_Repeat_List" image="Spry\SpryRepeatList.png"  showif="!_FILE_LIBRARY_ITEM, !_SERVERMODEL_XSLT"/>
+    <button MMString:name="insertbar/spry/spryDataTable" file="SPRY\SpryDataTable.htm" id="DW_SPRY_Data_Table" image="Spry\SpryDataTable.png"  showif="!_FILE_LIBRARY_ITEM, !_SERVERMODEL_XSLT"/>
+    <separator  showif="!_FILE_LIBRARY_ITEM, !_SERVERMODEL_XSLT"/>
+    <button MMString:name="insertbar/server/recordset" enabled="!_SERVERBUSY" file="Server\Recordset.htm" id="DW_Server_Recordset" image="Server\Recordset.gif" showif="!_SERVERMODEL_ASPNET" />
+		<button MMString:name="insertbar/server/dataset" enabled="!_SERVERBUSY" file="Server\DataSet.htm" id="DW_Server_DataSet" image="Server\Recordset.gif" showif="_SERVERMODEL_ASPNET" />
+		<button MMString:name="insertbar/server/storedProc" enabled="!_SERVERBUSY" file="Server\StoredProc.htm" id="DW_Server_StoredProc" image="Server\StoredProc.gif" showif="!_SERVERMODEL_PHP,!_SERVERMODEL_JSP,!_SERVERMODEL_ASP" />
+		<button MMString:name="insertbar/server/command" enabled="!_SERVERBUSY" file="Server\Command.htm" id="DW_Server_Command" image="Server\StoredProc.gif" showif="_SERVERMODEL_ASP" />
+		<button MMString:name="insertbar/server/callable" enabled="!_SERVERBUSY" file="Server\Callable.htm" id="DW_Server_Callable" image="Server\StoredProc.gif" showif="_SERVERMODEL_JSP" />
+		<button MMString:name="insertbar/server/prepared" enabled="!_SERVERBUSY" file="Server\Prepared.htm" id="DW_Server_Prepared" image="Server\Prepared.gif" showif="_SERVERMODEL_JSP" />
+		<button MMString:name="insertbar/server/javabean" enabled="!_SERVERBUSY" file="Server\JavaBean.htm" id="DW_Server_JavaBean" image="Server\JavaBean.gif" showif="_SERVERMODEL_JSP" />
+		<button MMString:name="insertbar/server/javabeanIndexed" enabled="!_SERVERBUSY" file="Server\JavaBeanIndexed.htm" id="DW_Server_JavaBeanIndexed" image="Server\JavaBeanIndexed.gif" showif="_SERVERMODEL_JSP" />
+		<separator />
+		<menubutton MMString:name="insertbar/server/dynamicData" id="DW_Server_DynamicData" image="Server\DynamicData.gif">
+      <button MMString:name="insertbar/aspnet/datagrid" enabled="!_SERVERBUSY" file="ASP.NET\DataGrid.htm" id="DW_ASPNET_DataGrid" image="Server\DynamicTable.gif" showif="_SERVERMODEL_ASPNET" />
+			<button MMString:name="insertbar/aspnet/datalist" enabled="!_SERVERBUSY" file="ASP.NET\DataList.htm" id="DW_ASPNET_DataList" image="ASP.NET\DataList.gif" showif="_SERVERMODEL_ASPNET" />
+			<button MMString:name="insertbar/server/dynamicTable" enabled="!_SERVERBUSY" file="Server\DynamicTable.htm" id="DW_Server_DynamicTable" image="Server\DynamicTable.gif" showif="!_SERVERMODEL_ASPNET,!_SERVERMODEL_CFML_UD4" />
+			<button MMString:name="insertbar/server/dynamicText" enabled="!_SERVERBUSY" file="Server\DynamicText.htm" id="DW_Server_DynamicText" image="Server\DynamicText.gif" />
+			<separator showif="!_SERVERMODEL_ASPNET" />
+			<button MMString:name="insertbar/server/dynamicTextField" enabled="!_SERVERBUSY" file="Server\DynamicTextField.htm" id="DW_Server_DynamicTextField" image="Server\DynamicTextField.gif" showif="!_SERVERMODEL_ASPNET" />
+			<button MMString:name="insertbar/server/dynamicCheckbox" enabled="!_SERVERBUSY" file="Server\DynamicCheckbox.htm" id="DW_Server_DynamicCheckbox" image="Server\DynamicCheckbox.gif" showif="!_SERVERMODEL_ASPNET" />
+			<button MMString:name="insertbar/server/dynamicRadio" enabled="!_SERVERBUSY" file="Server\DynamicRadio.htm" id="DW_Server_DynamicRadio" image="Server\DynamicRadio.gif" showif="!_SERVERMODEL_ASPNET" />
+			<button MMString:name="insertbar/server/dynamicSelect" enabled="!_SERVERBUSY" file="Server\DynamicSelect.htm" id="DW_Server_DynamicSelect" image="Server\DynamicSelect.gif" showif="!_SERVERMODEL_ASPNET" />
+		</menubutton>
+		<separator />
+		<button MMString:name="insertbar/server/repeatedRegion" enabled="!_SERVERBUSY" file="Server\RepeatedRegion.htm" id="DW_Server_RepeatedRegion" />
+		<menubutton MMString:name="insertbar/server/showRegion" id="DW_Server_ShowRegion" image="Server\ShowIfNotEmpty.gif">
+			<button MMString:name="insertbar/server/showIfEmpty" enabled="!_SERVERBUSY" file="Server\ShowIfEmpty.htm" id="DW_Server_ShowIf_Empty" image="Server\ShowIfEmpty.gif" />
+			<button MMString:name="insertbar/server/showIfNotEmpty" enabled="!_SERVERBUSY" file="Server\ShowIfNotEmpty.htm" id="DW_Server_ShowIf_NotEmpty" image="Server\ShowIfNotEmpty.gif" />
+			<separator />
+			<button MMString:name="insertbar/server/showIfFirstPage" enabled="!_SERVERBUSY" file="Server\ShowIfFirstPage.htm" id="DW_Server_ShowIf_FirstPage" image="Server\ShowIfFirstPage.gif" />
+			<button MMString:name="insertbar/server/showIfNotFirstPage" enabled="!_SERVERBUSY" file="Server\ShowIfNotFirstPage.htm" id="DW_Server_ShowIf_NotFirstPage" image="Server\ShowIfNotFirstPage.gif" />
+			<separator />
+			<button MMString:name="insertbar/server/showIfLastPage" enabled="!_SERVERBUSY" file="Server\ShowIfLastPage.htm" id="DW_Server_ShowIf_LastPage" image="Server\ShowIfLastPage.gif" />
+			<button MMString:name="insertbar/server/showIfNotLastPage" enabled="!_SERVERBUSY" file="Server\ShowIfNotLastPage.htm" id="DW_Server_ShowIf_NotLastPage" image="Server\ShowIfNotLastPage.gif" />
+		</menubutton>
+		<separator />
+		<menubutton MMString:name="insertbar/server/paging" id="DW_Server_RecordsetPaging" image="Server\RecordsetNavigation.gif">
+			<button MMString:name="insertbar/server/recordsetNavigation" enabled="!_SERVERBUSY" file="Server\RecordsetNavigation.htm" id="DW_Server_RecordsetNavigation" image="Server\RecordsetNavigation.gif" showif="!_SERVERMODEL_ASPNET" />
+			<button MMString:name="insertbar/server/datasetNavigation" enabled="!_SERVERBUSY" file="Server\DataSetNavigation.htm" id="DW_Server_DatasetNavigation" image="Server\RecordsetNavigation.gif" showif="_SERVERMODEL_ASPNET" />
+			<separator />
+			<button MMString:name="insertbar/server/moveToFirstPage" enabled="!_SERVERBUSY" file="Server\MoveToFirstPage.htm" id="DW_Server_MoveTo_First_Page" image="Server\MoveToFirst.gif" showif="!_SERVERMODEL_ASP,!_SERVERMODEL_JSP,!_SERVERMODEL_CFML_UD4" />
+			<button MMString:name="insertbar/server/moveToPreviousPage" enabled="!_SERVERBUSY" file="Server\MoveToPrevPage.htm" id="DW_Server_MoveTo_Previous_Page" image="Server\MoveToPrev.gif" showif="!_SERVERMODEL_ASP,!_SERVERMODEL_JSP,!_SERVERMODEL_CFML_UD4" />
+			<button MMString:name="insertbar/server/moveToNextPage" enabled="!_SERVERBUSY" file="Server\MoveToNextPage.htm" id="DW_Server_MoveTo_Next_Page" image="Server\MoveToNext.gif" showif="!_SERVERMODEL_ASP,!_SERVERMODEL_JSP,!_SERVERMODEL_CFML_UD4" />
+			<button MMString:name="insertbar/server/moveToLastPage" enabled="!_SERVERBUSY" file="Server\MoveToLastPage.htm" id="DW_Server_MoveTo_Last_Page" image="Server\MoveToLast.gif" showif="!_SERVERMODEL_ASP,!_SERVERMODEL_JSP,!_SERVERMODEL_CFML_UD4" />
+			<button MMString:name="insertbar/server/moveToFirstRec" enabled="!_SERVERBUSY" file="Server\MoveToFirstRecord.htm" id="DW_Server_MoveTo_First_Rec" image="Server\MoveToFirstRec.gif" showif="!_SERVERMODEL_ASPNET,!_SERVERMODEL_CFML_MX,!_SERVERMODEL_PHP" />
+			<button MMString:name="insertbar/server/moveToPreviousRec" enabled="!_SERVERBUSY" file="Server\MoveToPrevRecord.htm" id="DW_Server_MoveTo_Previous_Rec" image="Server\MoveToPrevRec.gif" showif="!_SERVERMODEL_ASPNET,!_SERVERMODEL_CFML_MX,!_SERVERMODEL_PHP" />
+			<button MMString:name="insertbar/server/moveToNextRec" enabled="!_SERVERBUSY" file="Server\MoveToNextRecord.htm" id="DW_Server_MoveTo_Next_Rec" image="Server\MoveToNextRec.gif" showif="!_SERVERMODEL_ASPNET,!_SERVERMODEL_CFML_MX,!_SERVERMODEL_PHP" />
+			<button MMString:name="insertbar/server/moveToLastRec" enabled="!_SERVERBUSY" file="Server\MoveToLastRecord.htm" id="DW_Server_MoveTo_Last_Rec" image="Server\MoveToLastRec.gif" showif="!_SERVERMODEL_ASPNET,!_SERVERMODEL_CFML_MX,!_SERVERMODEL_PHP" />
+			<button MMString:name="insertbar/server/moveToSpecificRec" enabled="!_SERVERBUSY" file="Server\MoveToSpecific.htm" id="DW_Server_MoveTo_Specific_Rec" image="Server\MoveToSpecificRec.gif" showif="!_SERVERMODEL_ASPNET,!_SERVERMODEL_CFML_MX,!_SERVERMODEL_PHP" />
+		</menubutton>
+		<menubutton MMString:name="insertbar/server/goToDetail" id="DW_Server_GoTo" image="Server\GoToDetail.gif" showif="!_SERVERMODEL_CFML_MX,!_SERVERMODEL_ASPNET,!_SERVERMODEL_PHP">
+			<button MMString:name="insertbar/server/goToDetail" enabled="!_SERVERBUSY" file="Server\GoToDetail.htm" id="DW_Server_GoTo_Detail" image="Server\GoToDetail.gif" />
+			<button MMString:name="insertbar/server/goToRelated" enabled="!_SERVERBUSY" file="Server\GoToRelated.htm" id="DW_Server_GoTo_Related" image="Server\GoToRelated.gif" />
+		</menubutton>
+		<button MMString:name="insertbar/server/recordsetStatistics" enabled="!_SERVERBUSY" file="Server\RecordsetStatistics.htm" id="DW_Server_RecordsetStats" image="Server\RecordsetStatistics.gif" showif="_SERVERMODEL_ALL,!_SERVERMODEL_ASPNET,!_SERVERMODEL_CFML_MX,!_SERVERMODEL_PHP" />
+		<menubutton MMString:name="insertbar/server/recordCount" id="DW_Server_DisplayRecordCount" image="Server\RecordsetStatistics.gif" showif="!_SERVERMODEL_ASP,!_SERVERMODEL_JSP,!_SERVERMODEL_CFML_UD4">
+			<button MMString:name="insertbar/server/recordsetStatistics" enabled="!_SERVERBUSY" file="Server\RecordsetStatistics.htm" id="DW_Server_RecordsetStatistics" image="Server\RecordsetStatistics.gif" showif="!_SERVERMODEL_ASPNET" />
+			<button MMString:name="insertbar/server/datasetStatistics" enabled="!_SERVERBUSY" file="Server\DataSetStatistics.htm" id="DW_Server_DataSetsStatistics" image="Server\RecordsetStatistics.gif" showif="_SERVERMODEL_ASPNET" />
+			<separator />
+			<button MMString:name="insertbar/server/startingRecord" enabled="!_SERVERBUSY" file="Server\StartingRecord.htm" id="DW_Server_StartingRecord" image="Server\StartingRecord.gif" />
+			<button MMString:name="insertbar/server/endingRecord" enabled="!_SERVERBUSY" file="Server\EndingRecord.htm" id="DW_Server_EndingRecord" image="Server\EndingRecord.gif" />
+			<button MMString:name="insertbar/server/totalRecords" enabled="!_SERVERBUSY" file="Server\TotalRecords.htm" id="DW_Server_TotalRecords" image="Server\TotalRecords.gif" />
+			<button MMString:name="insertbar/server/currentPage" enabled="!_SERVERBUSY" file="Server\CurrentPage.htm" id="DW_Server_CurrentPage" image="Server\CurrentPage.gif" showif="_SERVERMODEL_ASPNET" />
+		</menubutton>
+		<separator />
+		<button MMString:name="insertbar/server/masterDetail" enabled="!_SERVERBUSY" file="Server\MasterDetail.htm" id="DW_Server_MasterDetail" image="Server\MasterDetail.gif" showif="!_SERVERMODEL_ASPNET" />
+		<menubutton MMString:name="insertbar/server/insert" id="DW_Server_InsertRecord" image="Server\Insert Record.gif">
+			<button MMString:name="insertbar/server/insertRecordWiz" enabled="!_SERVERBUSY" file="Server\Insert Record.htm" id="DW_Server_InsertRecordWiz" image="Server\Insert Record Wiz.gif" />
+			<button MMString:name="insertbar/server/insertRecordSB" enabled="!_SERVERBUSY" file="Server\InsertRecordSB.htm" id="DW_Server_InsertRecordSB" image="Server\Insert Record.gif" />
+		</menubutton>
+		<menubutton MMString:name="insertbar/server/updateRecord" id="DW_Server_UpdateRecord" image="Server\Update Record.gif">
+			<button MMString:name="insertbar/server/updateRecordWiz" enabled="!_SERVERBUSY" file="Server\Update Record.htm" id="DW_Server_UpdateRecordWiz" image="Server\Update Record Wiz.gif" />
+			<button MMString:name="insertbar/server/updateRecord" enabled="!_SERVERBUSY" file="Server\UpdateRecordSB.htm" id="DW_Server_UpdateRecordSB" image="Server\Update Record.gif" />
+		</menubutton>
+		<button MMString:name="insertbar/server/deleteRecord" enabled="!_SERVERBUSY" file="Server\DeleteRecordSB.htm" id="DW_Server_DeleteRecordSB" image="Server\Delete Record.gif" />
+		<separator showif="!_SERVERMODEL_ASPNET" />
+		<menubutton MMString:name="insertbar/server/security" id="DW_Server_UserAuthentication" image="Server\UserAuthentication.gif" showif="!_SERVERMODEL_ASPNET">
+			<button MMString:name="insertbar/server/loginUser" enabled="!_SERVERBUSY" file="Server\LoginUser.htm" id="DW_Server_LoginUser" image="Server\LoginUser.gif" />
+			<button MMString:name="insertbar/server/logoutUser" enabled="!_SERVERBUSY" file="Server\LogoutUser.htm" id="DW_Server_LogoutUser" image="Server\LogoutUser.gif" />
+			<button MMString:name="insertbar/server/restrictAccess" enabled="!_SERVERBUSY" file="Server\RestrictAccess.htm" id="DW_Server_RestrictAccess" image="Server\RestrictAccess.gif" />
+			<button MMString:name="insertbar/server/checkUser" enabled="!_SERVERBUSY" file="Server\CheckUser.htm" id="DW_Server_CheckUser" image="Server\CheckUser.gif" />
+		</menubutton>
+		<separator showif="!_SERVERMODEL_JSP" />
+		<button file="MM_XMLXSL\XMLXSL.htm" id="XSL_transform" image="MM_XMLXSL\T_xslt_transform_Lg_N.png" showif="!_SERVERMODEL_JSP" />
+	</category>
+  <category MMString:name="insertbar/category/spry" folder="SPRY" id="DW_Insertbar_SPRY" showif="!_FILE_LIBRARY_ITEM, !_SERVERMODEL_XSLT">
+    <button MMString:name="insertbar/spry/spryXMLDataSet" file="SPRY\SpryXMLDataSet.htm" id="DW_SPRY_XMLDataSet" image="Spry\SpryXMLDataSet.png" />
+    <button MMString:name="insertbar/spry/spryRegion" file="SPRY\SpryRegion.htm" id="DW_SPRY_Region" image="Spry\SpryRegion.png" />
+    <button MMString:name="insertbar/spry/spryRepeat" file="SPRY\SpryRepeat.htm" id="DW_SPRY_Repeat" image="Spry\SpryRepeat.png" />
+    <button MMString:name="insertbar/spry/spryRepeatList" file="SPRY\SpryRepeatList.htm" id="DW_SPRY_Repeat_List" image="Spry\SpryRepeatList.png" />
+    <button MMString:name="insertbar/spry/spryDataTable" file="SPRY\SpryDataTable.htm" id="DW_SPRY_Data_Table" image="Spry\SpryDataTable.png" />
+    <separator />
+    <button MMString:name="spry/widgets/ValidationTextField/title" file="SPRY/SpryValidationTextField.htm" id="DW_SPRY_ValidationTextField" image="Spry/SpryValidationTextField.png" />
+    <button MMString:name="spry/widgets/ValidationSelect/title" file="SPRY/SpryValidationSelect.htm" id="DW_SPRY_ValidationSelect" image="Spry/SpryValidationSelect.png" />
+    <button MMString:name="spry/widgets/ValidationCheckbox/title" file="SPRY/SpryValidationCheckbox.htm" id="DW_SPRY_ValidationCheckbox" image="Spry/SpryValidationCheckbox.png" />
+    <button MMString:name="spry/widgets/ValidationTextarea/title" file="SPRY/SpryValidationTextarea.htm" id="DW_SPRY_ValidationTextarea" image="Spry/SpryValidationTextarea.png" />
+    <separator />
+    <button MMString:name="spry/widgets/menubar/title" file="SPRY\SpryMenuBar.htm" id="DW_SPRY_MenuBar" image="Spry\SpryMenuBar.png" />
+    <button id="DW_SPRY_TabbedPanels"	image="Spry\SpryTabbedPanels.png"  MMString:name="spry/widgets/tabbedpanels/title" file="SPRY\SpryTabbedPanels.htm"   />
+    <button MMString:name="spry/widgets/accordion/title" file="SPRY\SpryAccordion.htm" id="DW_SPRY_Accordion" image="Spry\SpryAccordion.png" />
+    <button id="DW_SPRY_CollapsiblePanel"	image="Spry\SpryCollapsiblePanel.png"  MMString:name="spry/widgets/collapsiblepanel/title" file="SPRY\SpryCollapsiblePanel.htm"   />
+  </category>
+  <category MMString:name="insertbar/category/text" folder="Text" id="DW_Insertbar_Text" >
+    "
+    <button MMString:name="insertbar/textBold" file="Text\Bold.htm" id="DW_Text_Bold" image="Text\Bold.gif" />
+    <button MMString:name="insertbar/textItalic" file="Text\Italic.htm" id="DW_Text_Italic" image="Text\Italic.gif" />
+    <separator />
+    <button MMString:name="insertbar/textStrong" file="Text\Strong.htm" id="DW_Text_Strong" image="Text\Strong.gif" />
+    <button MMString:name="insertbar/textEm" file="Text\Em.htm" id="DW_Text_Em" image="Text\Em.gif" />
+    <separator />
+    <button MMString:name="insertbar/textP" file="Text\P.htm" id="DW_Text_P" image="Text\P.gif" />
+    <button MMString:name="insertbar/textBlockquote" file="Text\Blockquote.htm" id="DW_Text_Blockquote" image="Text\Blockquote.gif" />
+    <button MMString:name="insertbar/textPre" file="Text\Pre.htm" id="DW_Text_Pre" image="Text\Pre.gif" />
+    <separator />
+    <button MMString:name="insertbar/textH1" file="Text\H1.htm" id="DW_Text_H1" image="Text\H1.gif" />
+    <button MMString:name="insertbar/textH2" file="Text\H2.htm" id="DW_Text_H2" image="Text\H2.gif" />
+    <button MMString:name="insertbar/textH3" file="Text\H3.htm" id="DW_Text_H3" image="Text\H3.gif" />
+    <separator />
+    <button MMString:name="insertbar/textUL" file="Text\UL.htm" id="DW_Text_UL" image="Text\UL.gif" />
+    <button MMString:name="insertbar/textOL" file="Text\OL.htm" id="DW_Text_OL" image="Text\OL.gif" />
+    <button MMString:name="insertbar/textLI" codeOnly="TRUE" file="Text\LI.htm" id="DW_Text_LI" image="Text\LI.gif" />
+    <separator />
+    <button MMString:name="insertbar/textDL" file="Text\DL.htm" id="DW_Text_DL" image="Text\DL.gif" />
+    <button MMString:name="insertbar/textDT" codeOnly="TRUE" file="Text\DT.htm" id="DW_Text_DT" image="Text\DT.gif" />
+    <button MMString:name="insertbar/textDD" codeOnly="TRUE" file="Text\DD.htm" id="DW_Text_DD" image="Text\DD.gif" />
+    <separator />
+    <button MMString:name="insertbar/textAbbr" codeOnly="TRUE" file="Text\Abbr.htm" id="DW_Text_Abbr" image="Text\Abbr.gif" />
+    <button MMString:name="insertbar/textAcronym" codeOnly="TRUE" file="Text\Acronym.htm" id="DW_Text_Acronym" image="Text\Acronym.gif" />
+    <separator />
+    <menubutton MMString:name="insertbar/characters" folder="Characters" id="DW_Insertbar_Characters" image="Characters\Line Break.gif">
+      <button MMString:name="insertbar/linebreak" file="Characters\Line Break.htm" id="DW_Chars_BR" image="Characters\Line Break.gif" />
+      <button MMString:name="insertbar/nbsp" file="Characters\NBSP.htm" id="DW_Chars_NBSP" image="Characters\NBSP.gif" />
+      <button MMString:name="insertbar/leftQuote" file="Characters\Left Quote.htm" id="DW_Chars_LeftQuote" image="Characters\Left Quote.gif" />
+      <button MMString:name="insertbar/rightQuote" file="Characters\Right Quote.htm" id="DW_Chars_RightQuote" image="Characters\Right Quote.gif" />
+      <button MMString:name="insertbar/emDash" file="Characters\Em-Dash.htm" id="DW_Chars_EmDash" image="Characters\Em-Dash.gif" />
+      <separator />
+      <button MMString:name="insertbar/pound" file="Characters\Pound.htm" id="DW_Chars_Pound" image="Characters\Pound.gif" />
+      <button MMString:name="insertbar/euro" file="Characters\Euro.htm" id="DW_Chars_Euro" image="Characters\Euro.gif" />
+      <button MMString:name="insertbar/yen" file="Characters\Yen.htm" id="DW_Chars_Yen" image="Characters\Yen.gif" />
+      <separator />
+      <button MMString:name="insertbar/copyright" file="Characters\Copyright.htm" id="DW_Chars_Copyright" image="Characters\Copyright.gif" />
+      <button MMString:name="insertbar/registered" file="Characters\Registered.htm" id="DW_Chars_Registered" image="Characters\Registered.gif" />
+      <button MMString:name="insertbar/trademark" file="Characters\Trademark.htm" id="DW_Chars_Trademark" image="Characters\Trademark.gif" />
+      <separator />
+      <button MMString:name="insertbar/other" file="Characters\Other.htm" id="DW_Chars_Other" image="Characters\Other.gif" />
+    </menubutton>
+  </category>
+  <!-- Those are hidden, but needed to load objects for the menu items and Favorite -->
+  <category MMString:name="insertbar/category/html" folder="HTML" showif="0" id="DW_Insertbar_HTML">
+    <button MMString:name="insertbar/hr" file="Common\HR.htm" id="DW_HR" image="Common\HR.gif" />
+    <menubutton MMString:name="insertbar/tabletags" folder="Tables" id="DW_Insertbar_TableTags" image="Tables/TableTag.gif">
+      <button MMString:name="insertbar/tableTag" codeOnly="TRUE" enabled="_VIEW_CODE" file="Tables\TableTag.htm" id="DW_Tables_TableTag" image="Tables\TableTag.gif" />
+      <button MMString:name="insertbar/tableTR" codeOnly="TRUE" enabled="_VIEW_CODE" file="Tables\Tr.htm" id="DW_Tables_Tr" image="Tables\Tr.gif" />
+      <button MMString:name="insertbar/tableTH" codeOnly="TRUE" enabled="_VIEW_CODE" file="Tables\Th.htm" id="DW_Tables_Th" image="Tables\Th.gif" />
+      <button MMString:name="insertbar/tableTD" codeOnly="TRUE" enabled="_VIEW_CODE" file="Tables\Td.htm" id="DW_Tables_Td" image="Tables\Td.gif" />
+      <button MMString:name="insertbar/caption" codeOnly="TRUE" enabled="_VIEW_CODE" file="Tables\Caption.htm" id="DW_Tables_Caption" image="Tables\Caption.gif" />
+    </menubutton>
+    <menubutton MMString:name="insertbar/frames" folder="Frames" id="DW_Insertbar_FramesTags" image="Frames\Frame.gif" showif="!_FILE_TEMPLATE">
+      <button MMString:name="insertbar/frameset" enabled="_VIEW_CODE" file="Frames\Frameset.htm" id="DW_Frames_Frameset" image="Frames\Frameset.gif" />
+      <button MMString:name="insertbar/frame" enabled="_VIEW_CODE" file="Frames\Frame.htm" id="DW_Frames_Frame" image="Frames\Frame.gif" />
+      <button MMString:name="insertbar/iframe" codeOnly="TRUE" file="Frames\Iframe.htm" id="DW_Frames_Iframe" image="Frames\Iframe.gif" />
+      <button MMString:name="insertbar/noframes" enabled="_VIEW_CODE" file="Frames\Noframes.htm" id="DW_Frames_Noframes" image="Frames\Noframes.gif" />
+    </menubutton>
+    <button MMString:name="insertbar/fontTagEditor" id="DW_Text_FontTagEditor" image="Text\FontTagDlg.gif" tag="font" />
+  </category>
+  <!-- Those are hidden, but needed to load objects for the menu items and Favorite -->
+  <category MMString:name="insertbar/category/flashEls" folder="FlashElements" showif="0" id="DW_Insertbar_FlashElements">
+		<button MMString:name="insertbar/flashEls/ImageViewer" codeOnly="FALSE" command="dw.getDocumentDOM().insertFlashElement('ImageViewer.swc')" file="FlashElements\ImageViewer.swc" id="FLT_imageViewer" image="FlashElements\Image Viewer.png" />
+	</category>
+	<category MMString:name="insertbar/category/favorites" folder="Favorites" id="DW_Insertbar_Favorites">
+	</category>
+</insertbar>

@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{810E13CD-EF35-4A2F-A5BD-8604D27588B1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ROYcms.Common</RootNamespace>
+    <AssemblyName>ROYcms.Common</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.81.0.1407, Culture=neutral, PublicKeyToken=1b03e6acf1164f73">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ROYcms.UI.Admin\bin\_bin\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alipay\AlipayConfig.cs" />
+    <Compile Include="Alipay\AlipayCore.cs" />
+    <Compile Include="Alipay\AlipayNotify.cs" />
+    <Compile Include="Alipay\AlipaySubmit.cs" />
+    <Compile Include="Alipay\MD5.cs" />
+    <Compile Include="CacheHelper.cs" />
+    <Compile Include="DataSetToExcel.cs" />
+    <Compile Include="ShopCooksCar.cs" />
+    <Compile Include="DESEncrypt.cs" />
+    <Compile Include="Request.cs" />
+    <Compile Include="DZBBS.cs" />
+    <Compile Include="ChineseHelper.cs" />
+    <Compile Include="EncodingType.cs" />
+    <Compile Include="FileManager.cs" />
+    <Compile Include="FileSystemItem.cs" />
+    <Compile Include="FileSystemManager.cs" />
+    <Compile Include="FTP.cs" />
+    <Compile Include="GetUrlText.cs" />
+    <Compile Include="GetWebImage.cs" />
+    <Compile Include="IIS.cs" />
+    <Compile Include="ImageThumbnail.cs" />
+    <Compile Include="NewFrom.cs" />
+    <Compile Include="PagingHelper.cs" />
+    <Compile Include="Rss.cs" />
+    <Compile Include="StringExtensions.cs" />
+    <Compile Include="Thumbnail.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReadWriteConfig.cs" />
+    <Compile Include="ConfigHelper.cs" />
+    <Compile Include="cooks.cs" />
+    <Compile Include="DataCache.cs" />
+    <Compile Include="INIFile.cs" />
+    <Compile Include="input.cs" />
+    <Compile Include="MessageBox.cs" />
+    <Compile Include="PageValidate.cs" />
+    <Compile Include="RMB.cs" />
+    <Compile Include="ClientDeal.cs">
+      <Generator>js加载工具</Generator>
+      <CustomToolNamespace>js加载工具</CustomToolNamespace>
+    </Compile>
+    <Compile Include="Session.cs" />
+    <Compile Include="staticFunction.cs" />
+    <Compile Include="SystemCms.cs" />
+    <Compile Include="Utils.cs" />
+    <Compile Include="WaterMark.cs" />
+    <Compile Include="XmlControl.cs" />
+    <Compile Include="StringPlus.cs" />
+    <Compile Include="TimeParser.cs" />
+    <Compile Include="UP_img.cs">
+    </Compile>
+    <Compile Include="validateCode.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="XmlHelper.cs" />
+    <Compile Include="ZIP.cs" />
+    <Compile Include="DownloadFile.cs" />
+    <Compile Include="Bat.cs" />
+    <Compile Include="Zn_En.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,197 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8773347A-AE50-4545-85D4-221602450E5C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ROYcms.Tools.Ads</RootNamespace>
+    <AssemblyName>ROYcms.Tools.Ads</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_ads\Default.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="_ads\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_ads\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="APP_code\CreatJs.cs" />
+    <Compile Include="APP_code\Dal\AdMsg.cs" />
+    <Compile Include="APP_code\Dal\AdSort.cs" />
+    <Compile Include="APP_code\Model\AdMsgInfo.cs" />
+    <Compile Include="APP_code\Model\AdSortInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="_ads\ROYcms_AD.aspx.cs">
+      <DependentUpon>ROYcms_AD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_ads\ROYcms_AD.aspx.designer.cs">
+      <DependentUpon>ROYcms_AD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_ads\WebAdControl.ascx.cs">
+      <DependentUpon>WebAdControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_ads\WebAdControl.ascx.designer.cs">
+      <DependentUpon>WebAdControl.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_ads\images\add.png" />
+    <Content Include="_ads\images\admin-foot1.gif" />
+    <Content Include="_ads\images\admin-foot2.gif" />
+    <Content Include="_ads\images\admin-foot3.gif" />
+    <Content Include="_ads\images\admin-foot4.gif" />
+    <Content Include="_ads\images\admin-ico.gif" />
+    <Content Include="_ads\images\admin-leftbg.gif" />
+    <Content Include="_ads\images\admin-right1.gif" />
+    <Content Include="_ads\images\admin-right2.gif" />
+    <Content Include="_ads\images\admin-top1.gif" />
+    <Content Include="_ads\images\admin-top2.gif" />
+    <Content Include="_ads\images\admin-top3.gif" />
+    <Content Include="_ads\images\bt_bg.gif" />
+    <Content Include="_ads\images\bullet_wrench.png" />
+    <Content Include="_ads\images\Clear Green Button.png" />
+    <Content Include="_ads\images\cms-ding.gif" />
+    <Content Include="_ads\images\cms-gif.gif" />
+    <Content Include="_ads\images\cms-ico1.gif" />
+    <Content Include="_ads\images\cms-ico10.gif" />
+    <Content Include="_ads\images\cms-ico12.gif" />
+    <Content Include="_ads\images\cms-ico2.gif" />
+    <Content Include="_ads\images\cms-ico3.gif" />
+    <Content Include="_ads\images\cms-ico6.gif" />
+    <Content Include="_ads\images\cms-ico7.gif" />
+    <Content Include="_ads\images\cms-K.gif" />
+    <Content Include="_ads\images\compress.png" />
+    <Content Include="_ads\images\database_save.png" />
+    <Content Include="_ads\images\Desktop.png" />
+    <Content Include="_ads\images\drive_user.png" />
+    <Content Include="_ads\images\edit-bt.gif" />
+    <Content Include="_ads\images\file.gif" />
+    <Content Include="_ads\images\gc.gif" />
+    <Content Include="_ads\images\help-bt.gif" />
+    <Content Include="_ads\images\help.png" />
+    <Content Include="_ads\images\in1.gif" />
+    <Content Include="_ads\images\in2.gif" />
+    <Content Include="_ads\images\in3.gif" />
+    <Content Include="_ads\images\link-bt.gif" />
+    <Content Include="_ads\images\login-1.gif" />
+    <Content Include="_ads\images\login-2.gif" />
+    <Content Include="_ads\images\login-3.gif" />
+    <Content Include="_ads\images\login-4.gif" />
+    <Content Include="_ads\images\login-5.gif" />
+    <Content Include="_ads\images\login-6.gif" />
+    <Content Include="_ads\images\login-bt.gif" />
+    <Content Include="_ads\images\login-g.gif" />
+    <Content Include="_ads\images\login-left_r1.gif" />
+    <Content Include="_ads\images\login-left_r2.gif" />
+    <Content Include="_ads\images\login-left_r3.gif" />
+    <Content Include="_ads\images\login-quit.gif" />
+    <Content Include="_ads\images\logo.png" />
+    <Content Include="_ads\images\maintenance_32x32.gif" />
+    <Content Include="_ads\images\Minus Red Button.png" />
+    <Content Include="_ads\images\money_yen.png" />
+    <Content Include="_ads\images\no.png" />
+    <Content Include="_ads\images\openfolder.gif" />
+    <Content Include="_ads\images\page_white_go.png" />
+    <Content Include="_ads\images\page_white_swoosh.png" />
+    <Content Include="_ads\images\pencil_add.png" />
+    <Content Include="_ads\images\plugin.png" />
+    <Content Include="_ads\images\plus-.gif" />
+    <Content Include="_ads\images\qu-bt.gif" />
+    <Content Include="_ads\images\quit-bt.gif" />
+    <Content Include="_ads\images\server_connect.png" />
+    <Content Include="_ads\images\shape_rotate_clockwise.png" />
+    <Content Include="_ads\images\style.css" />
+    <Content Include="_ads\images\submit-bt.gif" />
+    <Content Include="_ads\images\t.gif" />
+    <Content Include="_ads\images\tick.png" />
+    <Content Include="_ads\images\Transfer.png" />
+    <Content Include="_ads\images\tree.gif" />
+    <Content Include="_ads\images\up.png" />
+    <Content Include="_ads\images\Users.png" />
+    <Content Include="_ads\images\vblog_card_icon.gif" />
+    <Content Include="_ads\images\what.png" />
+    <Content Include="_ads\images\yes.png" />
+    <Content Include="_ads\images\zhuce.gif" />
+    <Content Include="_ads\ROYcms_AD.aspx" />
+    <Content Include="_ads\WebAdControl.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>6487</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

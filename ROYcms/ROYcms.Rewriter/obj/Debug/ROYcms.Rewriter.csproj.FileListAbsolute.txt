@@ -1,0 +1,92 @@
+E:\ROYcms V2.0\ROYcms.Rewriter\obj\Debug\ResolveAssemblyReference.cache
+E:\ROYcms V2.0\ROYcms.Rewriter\bin\Debug\ROYcms.Rewriter.dll
+E:\ROYcms V2.0\ROYcms.Rewriter\bin\Debug\ROYcms.Rewriter.pdb
+E:\ROYcms V2.0\ROYcms.Rewriter\obj\Debug\ROYcms.Rewriter.dll
+E:\ROYcms V2.0\ROYcms.Rewriter\obj\Debug\ROYcms.Rewriter.pdb
+E:\ROYcms V2.0\ROYcms.Rewriter\bin\Debug\ROYcms.DB.dll
+E:\ROYcms V2.0\ROYcms.Rewriter\bin\Debug\ROYcms.Sys.Bll.dll
+E:\ROYcms V2.0\ROYcms.Rewriter\bin\Debug\ROYcms.Common.dll
+E:\ROYcms V2.0\ROYcms.Rewriter\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\ROYcms V2.0\ROYcms.Rewriter\bin\Debug\ROYcms.Sys.Dal.dll
+E:\ROYcms V2.0\ROYcms.Rewriter\bin\Debug\ROYcms.Sys.Model.dll
+E:\ROYcms V2.0\ROYcms.Rewriter\bin\Debug\ROYcms.Common.pdb
+E:\ROYcms V2.0\ROYcms.Rewriter\bin\Debug\ROYcms.DB.pdb
+E:\ROYcms V2.0\ROYcms.Rewriter\bin\Debug\ROYcms.DB.xml
+E:\ROYcms V2.0\ROYcms.Rewriter\bin\Debug\ROYcms.Sys.Bll.pdb
+E:\ROYcms V2.0\ROYcms.Rewriter\bin\Debug\ROYcms.Sys.Dal.pdb
+E:\ROYcms V2.0\ROYcms.Rewriter\bin\Debug\ROYcms.Sys.Model.pdb
+G:\ROYcms!NT V2.0\ROYcms.Rewriter\bin\Debug\ROYcms.Rewriter.dll
+G:\ROYcms!NT V2.0\ROYcms.Rewriter\bin\Debug\ROYcms.Rewriter.pdb
+G:\ROYcms!NT V2.0\ROYcms.Rewriter\bin\Debug\ROYcms.Config.dll
+G:\ROYcms!NT V2.0\ROYcms.Rewriter\bin\Debug\ROYcms.DB.dll
+G:\ROYcms!NT V2.0\ROYcms.Rewriter\bin\Debug\ROYcms.Sys.Bll.dll
+G:\ROYcms!NT V2.0\ROYcms.Rewriter\bin\Debug\ROYcms.Common.dll
+G:\ROYcms!NT V2.0\ROYcms.Rewriter\bin\Debug\ICSharpCode.SharpZipLib.dll
+G:\ROYcms!NT V2.0\ROYcms.Rewriter\bin\Debug\ROYcms.Sys.Dal.dll
+G:\ROYcms!NT V2.0\ROYcms.Rewriter\bin\Debug\ROYcms.Sys.Model.dll
+G:\ROYcms!NT V2.0\ROYcms.Rewriter\bin\Debug\ROYcms.Common.pdb
+G:\ROYcms!NT V2.0\ROYcms.Rewriter\bin\Debug\ROYcms.DB.pdb
+G:\ROYcms!NT V2.0\ROYcms.Rewriter\bin\Debug\ROYcms.DB.xml
+G:\ROYcms!NT V2.0\ROYcms.Rewriter\bin\Debug\ROYcms.Sys.Bll.pdb
+G:\ROYcms!NT V2.0\ROYcms.Rewriter\bin\Debug\ROYcms.Config.pdb
+G:\ROYcms!NT V2.0\ROYcms.Rewriter\bin\Debug\ROYcms.Sys.Dal.pdb
+G:\ROYcms!NT V2.0\ROYcms.Rewriter\bin\Debug\ROYcms.Sys.Model.pdb
+G:\ROYcms!NT V2.0\ROYcms.Rewriter\obj\Debug\ResolveAssemblyReference.cache
+G:\ROYcms!NT V2.0\ROYcms.Rewriter\obj\Debug\ROYcms.Rewriter.dll
+G:\ROYcms!NT V2.0\ROYcms.Rewriter\obj\Debug\ROYcms.Rewriter.pdb
+G:\ROYcms!NT\Net.svn\ROYcms!NT\trunk\ROYcms.Rewriter\bin\Debug\ROYcms.Rewriter.dll
+G:\ROYcms!NT\Net.svn\ROYcms!NT\trunk\ROYcms.Rewriter\bin\Debug\ROYcms.Rewriter.pdb
+G:\ROYcms!NT\Net.svn\ROYcms!NT\trunk\ROYcms.Rewriter\bin\Debug\ROYcms.Common.dll
+G:\ROYcms!NT\Net.svn\ROYcms!NT\trunk\ROYcms.Rewriter\bin\Debug\ROYcms.Config.dll
+G:\ROYcms!NT\Net.svn\ROYcms!NT\trunk\ROYcms.Rewriter\bin\Debug\ROYcms.DB.dll
+G:\ROYcms!NT\Net.svn\ROYcms!NT\trunk\ROYcms.Rewriter\bin\Debug\ROYcms.Sys.Bll.dll
+G:\ROYcms!NT\Net.svn\ROYcms!NT\trunk\ROYcms.Rewriter\bin\Debug\ICSharpCode.SharpZipLib.dll
+G:\ROYcms!NT\Net.svn\ROYcms!NT\trunk\ROYcms.Rewriter\bin\Debug\ROYcms.Sys.Dal.dll
+G:\ROYcms!NT\Net.svn\ROYcms!NT\trunk\ROYcms.Rewriter\bin\Debug\ROYcms.Sys.Model.dll
+G:\ROYcms!NT\Net.svn\ROYcms!NT\trunk\ROYcms.Rewriter\bin\Debug\MySql.Data.dll
+G:\ROYcms!NT\Net.svn\ROYcms!NT\trunk\ROYcms.Rewriter\bin\Debug\ROYcms.Common.pdb
+G:\ROYcms!NT\Net.svn\ROYcms!NT\trunk\ROYcms.Rewriter\bin\Debug\ROYcms.DB.pdb
+G:\ROYcms!NT\Net.svn\ROYcms!NT\trunk\ROYcms.Rewriter\bin\Debug\ROYcms.DB.xml
+G:\ROYcms!NT\Net.svn\ROYcms!NT\trunk\ROYcms.Rewriter\bin\Debug\ROYcms.Sys.Bll.pdb
+G:\ROYcms!NT\Net.svn\ROYcms!NT\trunk\ROYcms.Rewriter\bin\Debug\ROYcms.Config.pdb
+G:\ROYcms!NT\Net.svn\ROYcms!NT\trunk\ROYcms.Rewriter\bin\Debug\ROYcms.Sys.Dal.pdb
+G:\ROYcms!NT\Net.svn\ROYcms!NT\trunk\ROYcms.Rewriter\bin\Debug\ROYcms.Sys.Model.pdb
+G:\ROYcms!NT\Net.svn\ROYcms!NT\trunk\ROYcms.Rewriter\obj\Debug\ResolveAssemblyReference.cache
+G:\ROYcms!NT\Net.svn\ROYcms!NT\trunk\ROYcms.Rewriter\obj\Debug\ROYcms.Rewriter.dll
+G:\ROYcms!NT\Net.svn\ROYcms!NT\trunk\ROYcms.Rewriter\obj\Debug\ROYcms.Rewriter.pdb
+G:\ROYcms!NT\trunk\ROYcms.Rewriter\bin\Debug\ROYcms.Rewriter.dll
+G:\ROYcms!NT\trunk\ROYcms.Rewriter\bin\Debug\ROYcms.Rewriter.pdb
+G:\ROYcms!NT\trunk\ROYcms.Rewriter\bin\Debug\ROYcms.Common.dll
+G:\ROYcms!NT\trunk\ROYcms.Rewriter\bin\Debug\ROYcms.Config.dll
+G:\ROYcms!NT\trunk\ROYcms.Rewriter\bin\Debug\ROYcms.DB.dll
+G:\ROYcms!NT\trunk\ROYcms.Rewriter\bin\Debug\ROYcms.Sys.Bll.dll
+G:\ROYcms!NT\trunk\ROYcms.Rewriter\bin\Debug\ICSharpCode.SharpZipLib.dll
+G:\ROYcms!NT\trunk\ROYcms.Rewriter\bin\Debug\ROYcms.Sys.Dal.dll
+G:\ROYcms!NT\trunk\ROYcms.Rewriter\bin\Debug\ROYcms.Sys.Model.dll
+G:\ROYcms!NT\trunk\ROYcms.Rewriter\bin\Debug\MySql.Data.dll
+G:\ROYcms!NT\trunk\ROYcms.Rewriter\bin\Debug\ROYcms.Common.pdb
+G:\ROYcms!NT\trunk\ROYcms.Rewriter\bin\Debug\ROYcms.DB.pdb
+G:\ROYcms!NT\trunk\ROYcms.Rewriter\bin\Debug\ROYcms.DB.xml
+G:\ROYcms!NT\trunk\ROYcms.Rewriter\bin\Debug\ROYcms.Sys.Bll.pdb
+G:\ROYcms!NT\trunk\ROYcms.Rewriter\bin\Debug\ROYcms.Config.pdb
+G:\ROYcms!NT\trunk\ROYcms.Rewriter\bin\Debug\ROYcms.Sys.Dal.pdb
+G:\ROYcms!NT\trunk\ROYcms.Rewriter\bin\Debug\ROYcms.Sys.Model.pdb
+G:\ROYcms!NT\trunk\ROYcms.Rewriter\obj\Debug\ResolveAssemblyReference.cache
+G:\ROYcms!NT\trunk\ROYcms.Rewriter\obj\Debug\ROYcms.Rewriter.dll
+G:\ROYcms!NT\trunk\ROYcms.Rewriter\obj\Debug\ROYcms.Rewriter.pdb
+G:\ROYcms!NT\ROYcms.Rewriter\bin\Debug\ROYcms.Rewriter.dll
+G:\ROYcms!NT\ROYcms.Rewriter\bin\Debug\ROYcms.Rewriter.pdb
+G:\ROYcms!NT\ROYcms.Rewriter\bin\Debug\ROYcms.Config.dll
+G:\ROYcms!NT\ROYcms.Rewriter\bin\Debug\ROYcms.Sys.dll
+G:\ROYcms!NT\ROYcms.Rewriter\bin\Debug\ROYcms.DB.dll
+G:\ROYcms!NT\ROYcms.Rewriter\bin\Debug\ROYcms.Common.dll
+G:\ROYcms!NT\ROYcms.Rewriter\bin\Debug\ICSharpCode.SharpZipLib.dll
+G:\ROYcms!NT\ROYcms.Rewriter\bin\Debug\MySql.Data.dll
+G:\ROYcms!NT\ROYcms.Rewriter\bin\Debug\ROYcms.DB.pdb
+G:\ROYcms!NT\ROYcms.Rewriter\bin\Debug\ROYcms.DB.xml
+G:\ROYcms!NT\ROYcms.Rewriter\bin\Debug\ROYcms.Common.pdb
+G:\ROYcms!NT\ROYcms.Rewriter\bin\Debug\ROYcms.Config.pdb
+G:\ROYcms!NT\ROYcms.Rewriter\bin\Debug\ROYcms.Sys.pdb
+G:\ROYcms!NT\ROYcms.Rewriter\obj\Debug\ResolveAssemblyReference.cache
+G:\ROYcms!NT\ROYcms.Rewriter\obj\Debug\ROYcms.Rewriter.dll
+G:\ROYcms!NT\ROYcms.Rewriter\obj\Debug\ROYcms.Rewriter.pdb

@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Jackying*/
+/*QQ: 270863798*/
+/*E-mail: admin@anan360.cn*/
+/*Website: http://www.anan360.cn    http://www.m-virus.com*/
+/*===========================版权所有==============================================*/
+
+/*全局样式*/
+*{margin:0; padding:0;}
+body,td,th{font-family:Arial;font-size: 13px; line-height:20px;color:#000;}
+body{margin:0 5px; background-color:#fff;}
+h1,h2,h3,h4,h5,h6{font-size:14px; line-height:24px; margin:0; padding:0;}
+ul{list-style-type: none;}
+img{ border-width:0;}
+input{vertical-align:middle;}
+textarea{vertical-align:top;}
+.more{ font-weight:normal;}
+.clean{ float:none; clear:both;}
+.box{height:auto!important;height:100%;overflow:hidden;}
+.bgE5ECF9{background-color:#E5ECF9;}
+#header{
+	height:80px;
+	min-width:650px;
+}
+#logo{ float:left; width:220px;}
+#SearchKuang{ margin-left:220px; font-size:14px; height:28px; line-height:28px;}
+#SearchKuang a{ margin:0 3px;}
+.BDtext{ font-size:14px; line-height:20px; height:20px; width:330px;}
+#sitejg{ padding:0 10px; margin-bottom:12px;}
+#SearchXg{ padding-left:10px; width:106px; font-size:12px; margin-right:10px; float:left;}
+#SearchXg ul li{ overflow:hidden;}
+#SearchListContent{
+	margin-right:342px;
+	margin-left:0px;
+	padding-left:20px;
+	margin-top: 10px;
+	border: 0px solid #E5ECF9;
+	padding-top: 20px;
+}
+dl.SearchList{
+	width:560px;
+	min-width:480px!important;
+}
+dl.SearchList dt{ font-size:16px;}
+dl.SearchList dd{ margin-bottom:20px;}
+.keyword{ color:#DD0000;}
+#SearchJJ{
+	float:right;
+	width:309px;
+	padding-left:10px;
+	margin-top: 10px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: solid;
+	border-top-color: #E5ECF9;
+	border-right-color: #E5ECF9;
+	border-bottom-color: #E5ECF9;
+	border-left-color: #E5ECF9;
+}
+#KJ_SearchList{ min-width:960px;}
+.website{color:#3C8B1D;}
+.datetime{ color:#666;}
+.kuaizhao a{ color:#666;}
+.page{
+	font-size:14px;
+	margin-bottom:15px;
+	margin-top: 20px;
+	background-color: #E5ECF9;
+}
+.page a{ margin:0 2px;}
+
+/*留言板*/
+dl.MessageContent{ min-width:300px;}
+dl.MessageContent dd{ margin-bottom:15px; font-size:14px; line-height:24px; border-bottom:dashed 1px #ccc; padding-bottom:10px;}
+dl.MessageContent dd .datetime{ font-size:12px; color:#999; text-align:right;}
+.Lou{ font-size:12px; color:#333; float:right;}
+ul.MessageBD li{ margin-bottom:5px;}
+.MessageBtn{ padding-left:40px;}
+ul.list_1 li{overflow:hidden;text-overflow:ellipsis;white-space: nowrap;} 
+.inputs {
+	border: 1px solid #0066B3;
+	background-color: #E5ECF9;
+	vertical-align: bottom;
+	color: #666;
+}
+.inputss {
+	margin-bottom: 1px;
+}

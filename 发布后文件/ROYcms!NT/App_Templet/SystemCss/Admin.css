@@ -1,0 +1,213 @@
+
+body {
+	background-color: #FFFFFF;
+	padding: 0px;
+	margin: 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #555555;
+}
+
+p {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #555555;
+	padding: 0px;
+	margin: 0px;
+}
+
+.resulterror, .resulterror * {
+	color: #FF0000;
+}
+
+.resultok, .resultok * {
+	color: #009900;
+}
+
+input, label {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	padding: 2px;
+	margin: 0px;
+}
+
+select {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	margin: 0px;
+}
+
+input.tab {
+	background-color: #DDDDDD;
+	border: solid 3px #DDDDDD;
+	color: #000000;
+	font-size: 11px;
+	width: auto;
+	overflow: visible;
+	padding: 0px;
+}
+
+input.tabselected {
+	background-color: #214C9A;
+	border: solid 3px #214C9A;
+	color: #FFFFFF;
+	font-size: 11px;
+	width: auto;
+	overflow: visible;
+	font-weight: bold;
+	padding: 0px;
+}
+
+#MainDiv {
+	 padding: 10px 20px 10px 20px;
+}
+
+#TabDiv {
+}
+
+/* Contains the date picks in the Edit.aspx page */
+#DatePickDiv {
+	font-size: 11px;
+	border: solid 1px #999999;
+	background-color: #FFFFFF;
+	padding: 2px;
+}
+
+a.datepicklink {
+	display: block;
+}
+
+/* Small text */
+p.small, small {
+	font-size: 11px;
+}
+
+/* Big text */
+p.big, big {
+	font-size: 15px;
+}
+
+/* General purpose links */
+a, a:link, a:active {
+	color: #214C9A;
+	text-decoration: none;
+}
+a:hover {
+	color: #D9671E;
+	text-decoration: underline;
+}
+
+h1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #000000;
+	padding: 0px;
+	margin: 0px;
+	font-weight: normal;
+}
+
+h2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #000000;
+	padding: 0px;
+	margin: 0px;
+	font-weight: normal;
+}
+
+h3 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000000;
+	padding: 0px;
+	margin: 0px;
+	font-weight: normal;
+}
+
+h4 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #000000;
+	padding: 0px;
+	margin: 0px;
+	font-weight: normal;
+	font-style: italic;
+}
+
+h1.admintitle {
+	font-size: 22px;
+	padding-bottom: 2px;
+	margin-bottom: 2px;
+}
+
+h2.sectiontitle {
+	background-color: #214C9A;
+	color: #FFFFFF;
+	padding: 4px;
+	margin-bottom: 10px;
+}
+
+h1.pagetitle {
+	font-size: 22px;
+	border-bottom: solid 1px #888888;
+	padding-bottom: 2px;
+	margin-bottom: 2px;
+}
+
+/* Class for applying a separator under H elements (useful to avoid usage of HR) */
+h1.separator, h2.separator, h3.separator {
+	border-bottom: solid 1px #888888;
+	padding-bottom: 2px;
+	margin-bottom: 2px;
+}
+
+ul, ol {
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 28px;
+	padding-right: 8px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #555555;
+}
+
+li {
+	margin: 0px;
+	padding: 0px;
+}
+
+code, pre {
+	font-family: Courier New, Lucida Console, Monospace;
+	color: #000000;
+	padding: 0px;
+	margin: 0px;
+}
+
+pre {
+	border: dashed 1px #999999;
+	background-color: #FFFFF0;
+	margin: 0px 10px 0px 10px;
+	padding: 8px;
+}
+
+table, div {
+	padding: 0px;
+	margin: 0px;
+}
+
+img {
+	border: none;
+}
+
+div.warning {
+	padding: 6px;
+	background-color: #FEF693;
+	border: solid 1px #FFCF10;
+	display: table-cell;
+}

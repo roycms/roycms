@@ -1,0 +1,27 @@
+@charset "utf-8";
+/*ROYcms_AboutUs
+updatetime:2009.12.14
+editor:Jackying
+QQ: 270863798
+E-mail: admin@anan360.cn
+Website: http://www.roycms.cn    http://www.web1.net.cn	http://www.anan360.cn*/
+/*===========================版权所有==============================================*/
+@import url(Basic.css);/*初始化样式*/
+@import url(font.css);/*字体样式*/
+@import url(themes.css);/*主题样式*/
+@import url(banner.css);/*广告样式*/
+#wrap{width:960px;margin:0 auto;overflow:hidden; height:100%;}
+#KJ_LeftMenu{ width:120px; float:left;}
+#KJ_AboutUs{margin-right:180px; margin-left:130px;}
+#KJ_rightBanner_160{ width:170PX; float:right;}
+
+/*关于我们*/
+.AboutUsTitle{ padding-left:10px; height:30px; line-height:30px; font-size:16px; color:#333; border-bottom:solid 2px #09C; background-color:#f3f3f3}
+.AboutUsTitle .en{ font-size:14px; color:#999;}
+.AboutUsContent{padding:15px;height:auto!important;height:100%;overflow:hidden;font-size:14px; line-height:24px;}
+.AboutUsContent p{text-indent:29px; margin-bottom:8px;}
+
+/*友情链接列表*/
+ul.FriendLink{float:none; clear:both;}
+ul.FriendLink li{ float:left; display:block;width:123px; text-align:center; height:auto;}
+ul.FriendLink li img{ width:110px; height:50px; padding:1px; border:solid 1px #ccc; margin-bottom:10px;}

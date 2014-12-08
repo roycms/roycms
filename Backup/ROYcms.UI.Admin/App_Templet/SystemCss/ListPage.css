@@ -1,0 +1,14 @@
+﻿/*翻页效果*/
+.CMS_pageload2 { color:#014991;margin:0 10px 10px 10px; font-size:14px; font-weight:bold;padding:10px 3px; text-align:center; clear:both; background:#FFFFFF; border:dotted 1px #c5d8e6; border-right:none; border-left:none;}
+.CMS_pageload2 .current {background:#B90601;color:#fff;font-weight:700;margin:1px;padding:2px 5px;}
+.CMS_pageload2 .disabled {color:#ddd;}
+.CMS_pageload2 a {color:#014991;margin:1px;padding:2px 5px;}
+.CMS_pageload2 a:hover,.pageload a:visited {color:#014991;}
+
+.CMS_pageload { margin:10 10px 10px 10px; font-size:14px; padding:10px 3px; text-align:center; clear:both; background:#FFFFFF; border:dotted 1px #c5d8e6; border-right:none; border-left:none; color:#666666}
+.CMS_pageload u { text-decoration:none}
+.CMS_pageload b { font-weight:normal}
+.CMS_pageload u b {background:#B90601;color:#fff;font-weight:700;margin:1px;padding:2px 5px;font-weight:bold;}
+.CMS_pageload a {color:#014991;margin:1px;padding:2px 5px;font-weight:700;}
+.CMS_pageload a:hover,.pageload a:visited {color:#014991;}
+/*翻页效果*/

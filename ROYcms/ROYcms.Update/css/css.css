@@ -1,0 +1,79 @@
+@charset "gb2312";
+/* CSS Document */
+body{font-size: 14px;line-height: 22px;background-color: #FFf;font-family:"Î¢ÈíÑÅºÚ", "Î¢ÈíÑÅºÚ", "Î¢ÈíÑÅºÚ" !important;font-family:"Î¢ÈíÑÅºÚ", "Î¢ÈíÑÅºÚ", "Î¢ÈíÑÅºÚ";color: #000;margin:10px; }
+form,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,em{margin:0;padding:0;}
+ul{list-style-type: none;}
+h1,h2,h3,h4,h5,h6{ font-size:14px;}
+.en{ font-family:Arial, Helvetica, sans-serif;}
+.more{ float:right; font-size:12px; font-weight:normal;}
+a{ color:#00c;}
+a:hover{ color:#C00;text-decoration:underline;}
+
+.code_name{ float:left; width:350px; margin-right:5px;}
+.code_name a{ display:block; padding-left:25px;}
+.code_size{ float:left; width:84px;margin-right:5px;}
+.team_name{ float:left; width:135px;margin-right:5px;}
+.update_time{ float:left; width:162px;margin-right:5px;}
+
+/*ÏîÄ¿Ãû³ÆÇ°ÃæÐ¡Í¼±ê*/
+.style_php a{/*php*/ background:url(../images/ico_php.png) no-repeat 5px center;}
+.style_c2 a{/*C++*/ background:url(../images/ico_c2.png) no-repeat 5px center;}
+.style_c3 a{/*c#*/ background:url(../images/ico_c3.png)  no-repeat 5px center;}
+.style_webpage{/*ÍøÒ³*/background:url(../images/ico_webpage.png)  no-repeat 5px center;}
+.style_txt{/*txt*/background:url(../images/ico_txt.png)  no-repeat 5px center;}
+.style_doc{/*doc*/background:url(../images/ico_doc.png)  no-repeat 5px center;}
+.style_exe{/*exe*/background:url(../images/ico_exe.png)  no-repeat 5px center;}
+.style_pdf{/*pdf*/background:url(../images/ico_pdf.png)  no-repeat 5px center;}
+.style_ppt{/*ppt*/background:url(../images/ico_txt.ppt)  no-repeat 5px center;}
+.style_jsp{/*jsp*/background:url(../images/ico_jsp.ppt)  no-repeat 5px center;}
+
+
+/*ÏîÄ¿ÁÐ±í*/
+.list li{display:block;padding-left:5px; border:solid 1px #fff; color:#444; line-height:28px; height:28px;font-size:13px;}
+.list li:hover{ border:solid 1px #CDEA68; background-color:#F5FAE2;}
+.list li a{ color:#444; text-decoration:none;}
+h1.biaoti{ background-color:#F0F7F9; font-size:12px; height:26px; line-height:26px; border-top:solid 1px #6B90DA;padding-left:6px; color:#333; margin-bottom:14px;}
+h1.title2{ font-size:14px; line-height:28px; border-bottom:solid 1px #ccc;margin-bottom:14px;}
+
+
+#wrap{width:980px;height: 100%;overflow: hidden;}
+#head{overflow:hidden; height:auto; float:none clear:both;margin-bottom:10px;}
+#logo{
+	float:left;
+	height:60px;
+	width:250px;
+	padding-top: 10px;
+	padding-bottom: 3px;
+}
+#search{ float:left; width:380px; margin-top:5px;}
+#search .text{ width:230px; height:20px; background-color:#FFF; border:solid 1px #CCC; font-size:14px; padding-left:3px; color:#333; line-height:20px;}
+#mainnav{ height:28px; line-height:28px; padding-left:10px; padding-right:10px; background-color:#EBEFF9; border:solid 1px #D7DCEA; float:none; clear:both;}
+#mainnav a{ font-weight:700;}
+#mainnav .more a{font-weight:normal;}
+
+.main{height:auto!important; height:100%; overflow:hidden; float:none clear:both; margin-bottom:10px;}
+#wrap .left{ width:758px; float:left;height:auto!important; height:100%; overflow:hidden; margin-right:10px;}
+#wrap .right{ width:200px; float:left; height:auto!important; height:100%; overflow:hidden; padding-left:10px; border-left:dashed 1px #C9D7F1;}
+
+/*ÓÃ»§ÁÐ±í*/
+.user_list li{ display:block; height:78px; color:#666; float:none; clear:both;}
+.user_list .user_headpic{ float:left; height:65px; width:65px;}
+.user_list .user_headpic img{height:55px; width:55px;}
+.user_list .user_ziliao{ float:left;}
+.user_name{ background:url(../images/user.png) no-repeat left center; padding-left:25px;}
+
+/*Ò³½Å°æÈ¨ÐÅÏ¢*/
+#footer{ text-align:center;background-color:#F0F7F9; font-size:12px;color:#666; height:26px; line-height:26px; border-bottom:solid 1px #6B90DA;}
+#copyright{ text-align:center; height:auto; line-height:24px; color:#666;}
+
+#list-selected{
+	height:28px;
+	line-height:28px;
+	padding:0 10px;
+	margin-bottom:10px;
+}
+#list-selected a{ color:#666; display:block; padding-left:20px; float:left; width:60px;text-decoration:none;}
+.btn_list1{ background:url(../images/ico_list1.gif) no-repeat left center;}
+.btn_list2{ background:url(../images/ico_list2.gif) no-repeat left center; color:#000; font-weight:bold;}
+.btn_slt1{ background:url(../images/ico_slt1.gif) no-repeat left center;}
+.btn_slt2{ background:url(../images/ico_slt2.gif) no-repeat left center;color:#000;}

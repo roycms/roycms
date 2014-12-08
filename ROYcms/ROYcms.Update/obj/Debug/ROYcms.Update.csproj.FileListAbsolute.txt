@@ -1,0 +1,10 @@
+G:\ROYcms!NT V2.0\ROYcms.Update\ROYcms.Update\bin\ROYcms.Update.dll
+G:\ROYcms!NT V2.0\ROYcms.Update\ROYcms.Update\bin\ROYcms.Update.pdb
+G:\ROYcms!NT V2.0\ROYcms.Update\ROYcms.Update\bin\ROYcms.Common.dll
+G:\ROYcms!NT V2.0\ROYcms.Update\ROYcms.Update\bin\ROYcms.Sys.Model.dll
+G:\ROYcms!NT V2.0\ROYcms.Update\ROYcms.Update\bin\ICSharpCode.SharpZipLib.dll
+G:\ROYcms!NT V2.0\ROYcms.Update\ROYcms.Update\bin\ROYcms.Common.pdb
+G:\ROYcms!NT V2.0\ROYcms.Update\ROYcms.Update\bin\ROYcms.Sys.Model.pdb
+G:\ROYcms!NT V2.0\ROYcms.Update\ROYcms.Update\obj\Debug\ResolveAssemblyReference.cache
+G:\ROYcms!NT V2.0\ROYcms.Update\ROYcms.Update\obj\Debug\ROYcms.Update.dll
+G:\ROYcms!NT V2.0\ROYcms.Update\ROYcms.Update\obj\Debug\ROYcms.Update.pdb

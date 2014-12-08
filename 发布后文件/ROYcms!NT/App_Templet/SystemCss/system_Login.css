@@ -1,0 +1,190 @@
+﻿.p1 {
+	FONT-SIZE: 14px;
+	LINE-HEIGHT: 24px;
+	FONT-FAMILY: "宋体"
+}
+.f12 {
+	FONT-SIZE: 12px;
+	LINE-HEIGHT: 20px
+}
+form {
+	MARGIN: 0px;
+	PADDING: 0px;
+}
+body {
+	margin:6px 0 4px 0;
+	background-color:#FFFFFF
+}
+form {
+	margin:0
+}
+td {
+	color:#333333
+}
+td, div {
+	font-size:12px;
+	line-height:18px
+}
+a:link {
+	color:#0033CC
+}
+a:visited {
+	color:#800080
+}
+.lg {
+	margin-bottom:20px;
+        height: 51px;
+    }
+#ft {
+	clear:both;
+	line-height:20px;
+	text-align:center
+}
+#ft, #ft * {
+	color:#77C;
+	font-size:12px;
+	font-family:Arial;
+	white-space:nowrap
+}
+#main {
+	width:760px;
+	margin-top: 10px;
+}
+#left {
+	float:left;
+	width:476px;
+}
+#center {
+	float:left;
+	margin:-22px 0 10px 0;
+	width:262px
+}
+#right {
+	float:right;
+	width:22px;
+	height:130px;
+	background-color: #008bce;
+}
+.b1, .b2 {
+	padding:10px;
+	line-height:22px;
+	font-size:14px
+}
+.b1 {
+	color:#333333
+}
+.b2 {
+	margin-bottom:12px;
+	border:1px solid #AAAAAA;
+	background:#F9F9F9
+}
+.hl {
+	clear:both;
+	margin-bottom:10px;
+	color:#666666
+}
+a.tlk {
+	line-height:24px;
+	color:#FFFFFF;
+	font-size:14px;
+	font-weight:bold
+}
+a.tlk:visited {
+	color:#FFFFFF
+}
+.ip {
+	width:120px;
+	height:22px;
+	font-size:14px
+}
+.f12 {
+	font-size:12px
+}
+.f13 {
+	font-size:12px;
+}
+.f14 {
+	font-size:14px
+}
+.f14b {
+	font-size:14px;
+	font-weight:bold
+}
+.mespasstip {
+	color:#7C7C7C
+}
+.gry {
+	color:#666666
+}
+.line {
+	margin-bottom:5px;
+	line-height:1px;
+	border-top:1px solid #CCC
+}
+.ip {
+	width:120px;
+	height:22px;
+	font-size:14px
+}
+.item {
+	color: #FF0000;
+	display:none;
+}
+.tab {
+	margin-top:-13px;
+	margin-bottom:12px;
+}
+.tab ul, .tab li {
+	margin:0;
+	padding:0;
+	list-style:none;
+	overflow:hidden;
+	zoom:1;
+}
+.tab li {
+	float:left;
+	width:106px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	border:1px solid #aaa;
+}
+.tab li.secure {
+	background-image:url(img/passport/lock.gif);
+	background-position:10px center;
+	background-repeat:no-repeat;
+}
+.tab li.on {
+	border-top:1px solid #f9f9f9;
+	background-color:#f9f9f9;
+	margin-top:-1px;
+	height:29px;
+	line-height:29px;
+}
+.tab li.secure a {
+	zoom:1;
+	margin-left:15px;
+}
+.tab li a:link, .tab li a:visited, .tab li a:hover, .tab li a:active {
+	color:#03c;
+}
+.tab li.on a:link, .tab li.on a:visited, .tab li.on a:hover {
+	text-decoration:none;
+	font-weight:700;
+	color:#000;
+}
+.tab li.secure span {
+	color:#b0b0b0;
+	text-decoration:none;
+}
+.tab li.secure span a {
+	margin:0;
+	text-decoration:none;
+}
+a.red:link, .red {
+	color:#f00;
+}
+.logo {	width: 240px;
+	height: 60px;
+	float: left;
+}

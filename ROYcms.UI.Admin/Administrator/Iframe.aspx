@@ -1,0 +1,2 @@
+﻿<%@ Page Language="C#" %>
+<iframe id="Myframe" src='<%= Request["url"]%>&AdminId=<%= Request["AdminId"]%>' width='<%= Request["width"] %>px' height='<%= Request["height"] %>px' frameborder="0" ></iframe>

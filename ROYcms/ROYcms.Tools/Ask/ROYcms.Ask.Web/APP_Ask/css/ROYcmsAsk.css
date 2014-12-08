@@ -1,0 +1,155 @@
+﻿@charset "utf-8";
+/*roycms_ask
+date:2010.01.30
+editor:jackying
+QQ: 270863798
+E-mail: admin@anan360.cn
+Website: http://www.anan360.cn    http://www.roycms.cn*/
+/*======================版权所有===============================*/
+
+@import url(Basic.css);/*初始化样式*/
+@import url(themes.css);/*主题样式*/
+
+#topnav{ font-size:13px; height:30px; line-height:30px;background-color:#2c6ed5; color:#fff; padding:0 10px;}
+#topnav a{ color:#fff; padding:0 5px;}
+#wrap{margin:0 15px; float:none; clear:both;}
+#UCLoginBar{float:right; text-align:left;}
+#Header{height:60px;padding-top:5px; margin-left:15px; margin-right:15px;}
+#logo{float:left; width:220px; height:60px; }
+#SearchKuang{ margin-left:220px; font-size:14px; height:28px; line-height:28px; padding-top:15px;}
+#SearchKuang a{ margin:0 3px;}
+	.SearchBDtext{/*搜索文本框*/ font-size:14px; line-height:26px; height:26px; width:400px; padding:0 3px; color:#666;}
+	.SearchBDBtn{/*搜索按钮*/ height:28px; padding-top:2px; font-size:14px; margin:0 15px;}
+	
+#CurrentLocation{
+	font-size:12px;
+	border-bottom:solid 1px #6CB1F1;
+	margin-bottom:8px;
+	margin-left:15px;
+	margin-right:15px;
+}
+.left_170{float:left; width:170px;}
+.right_225{ float:right; width:225px;}
+.mid_170_225{ margin-left:185px; margin-right:240px;}
+
+#Label_Class{}
+#Label_Class dl{ padding:10px;}
+#Label_Class dl dt{ font-size:14px; font-weight:700;}
+#Label_Class dl dt a{color:#4a6497;}
+#Label_Class dl dd{ color:#276826; font-size:12px;margin-bottom:10px;}
+#Label_Class dl dd a{ color:#276826;padding:0 2px;overflow:hidden;white-space:nowrap;}
+#Label_Class dl dd a:hover{ color:#f60;}
+#Label_Class dl dd.all_tab a{ color:#36c;}
+
+#ucenter_login_bar .neirong{ text-align:center;}
+
+#question_list h2{ background-color:#E5F3FF; height:28px;font-size:12px; font-weight:normal; padding-left:10px; border-bottom:solid 1px #88abcb; position:relative;}
+#question_list h2 .title_box{position:absolute;top:5px;line-height:24px;}
+.paixu{position:absolute;top:5px;line-height:24px; right:15px;}
+#question_list h2 .q_title{ display:inline-block; height:24px; padding:0 12px;}
+#question_list h2 span.hover{ background-color:#FFF; padding:0 11px; border:solid 1px #88abcb; border-bottom:none;font-weight:700;height:22px; line-height:22px; padding-top:1px;}
+#question_list .neirong{ padding:5px 10px;}
+	.question_title2{ height:24px; line-height:24px;}
+	.question_title2 img{ padding-top:3px;}
+	.question_time{ float:right; width:130px;font-size:12px; color:#666;}
+	.tag{ color:#600;font-size:12px;}
+	.huida_num{float:right; width:40px;font-size:12px;}
+	.xuanshang{float:right;width:40px;font-size:12px;}
+	.question_name{ margin-right:215px; }
+	.ip{ color:#666; font-size:12px; }
+	.huida a{ font-size:12px; background-color:#008400; color:#FFF;}
+	.question_name a{text-decoration:none;}
+	.question_name a:hover{ text-decoration:underline;}
+	.question_title2 .question_name{ font-size:12px; color:#666;}
+#question_list .neirong ul li{ display:block; height:20px; line-height:20px; border-bottom:solid 1px #EFEFEF; padding-top:4px; padding-bottom:4px;}
+#question_list .neirong ul li img{vertical-align:middle;}
+/*页脚样式*/
+#UCfooter{text-align:center;line-height:28px;color:#333; font-size:12px; margin-top:20px;}
+
+.content_left {
+	float: left;
+	width: 60px;
+	margin-top: 15px;
+}
+.content_right {
+	float: left;
+	margin-left: 20px;
+	margin-top: 15px;
+}
+.content_right  p{
+	font-size:14px;
+	color:#333;
+	line-height:23px;
+	margin-top:5px;
+}
+.content_box {
+	background-color: #E5F3FF;
+	height: 32px;
+	width: 40px;
+	font-size: 16px;
+	font-weight: 600;
+	color: #3399CC;
+	text-align: center;
+	padding-top: 10px;
+	margin-left: 10px;
+	margin-bottom: 2px;
+}
+.content_title {
+	color: #666;
+	clear: both;
+	font-size: 12px;
+}
+.bt{
+	margin-top:10px;
+}
+.bt a{
+	font-size: 14px;
+	background-color:#008400;
+	color:#FFF;
+	padding:2px;
+	margin-top:10px;
+}
+.huida_list {
+	clear: both;
+	float: none;
+	padding-left: 15px;
+	margin-top: 20px;
+	margin-right: 15px;
+}
+.huida_title{clear: both;
+	
+	font-size: 14px;
+	font-weight: 600;
+	color: #000;
+	padding-left: 5px;
+	background-color: #E5F3FF;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #6CB1F1;
+	border-right-color: #6CB1F1;
+	border-bottom-color: #6CB1F1;
+	border-left-color: #6CB1F1;
+	float: none;}
+.content {
+	clear: both;
+	float: none;
+}
+.line_1 {
+	clear: both;
+	padding-top: 15px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #6CB1F1;
+}
+.shang_xia {
+	width: 40px;
+	margin-left: 10px;
+}
+.shang_xia_a {
+	float: left;
+	width: 18px;
+}
+.shang_xia_b {
+	float: right;
+	width: 18px;
+}

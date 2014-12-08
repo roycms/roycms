@@ -1,0 +1,148 @@
+E:\ROYcms V2.0\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.BasePage.dll
+E:\ROYcms V2.0\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.BasePage.pdb
+E:\ROYcms V2.0\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.Common.dll
+E:\ROYcms V2.0\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.Config.dll
+E:\ROYcms V2.0\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.Sys.Bll.dll
+E:\ROYcms V2.0\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.Sys.Model.dll
+E:\ROYcms V2.0\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.Templet.dll
+E:\ROYcms V2.0\ROYcms\ROYcms.BasePage\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\ROYcms V2.0\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.Sys.Dal.dll
+E:\ROYcms V2.0\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.DB.dll
+E:\ROYcms V2.0\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.Common.pdb
+E:\ROYcms V2.0\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.Sys.Bll.pdb
+E:\ROYcms V2.0\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.Config.pdb
+E:\ROYcms V2.0\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.Sys.Model.pdb
+E:\ROYcms V2.0\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.Sys.Dal.pdb
+E:\ROYcms V2.0\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.Templet.pdb
+E:\ROYcms V2.0\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.DB.pdb
+E:\ROYcms V2.0\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.DB.xml
+E:\ROYcms V2.0\ROYcms\ROYcms.BasePage\obj\Debug\ResolveAssemblyReference.cache
+E:\ROYcms V2.0\ROYcms\ROYcms.BasePage\obj\Debug\ROYcms.BasePage.dll
+E:\ROYcms V2.0\ROYcms\ROYcms.BasePage\obj\Debug\ROYcms.BasePage.pdb
+G:\ROYcms!NT V2.0\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.BasePage.dll
+G:\ROYcms!NT V2.0\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.BasePage.pdb
+G:\ROYcms!NT V2.0\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.Common.dll
+G:\ROYcms!NT V2.0\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.Config.dll
+G:\ROYcms!NT V2.0\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.Sys.Bll.dll
+G:\ROYcms!NT V2.0\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.Sys.Model.dll
+G:\ROYcms!NT V2.0\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.Templet.dll
+G:\ROYcms!NT V2.0\ROYcms\ROYcms.BasePage\bin\Debug\ICSharpCode.SharpZipLib.dll
+G:\ROYcms!NT V2.0\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.Sys.Dal.dll
+G:\ROYcms!NT V2.0\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.DB.dll
+G:\ROYcms!NT V2.0\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.Common.pdb
+G:\ROYcms!NT V2.0\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.Sys.Bll.pdb
+G:\ROYcms!NT V2.0\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.Config.pdb
+G:\ROYcms!NT V2.0\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.Sys.Model.pdb
+G:\ROYcms!NT V2.0\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.Sys.Dal.pdb
+G:\ROYcms!NT V2.0\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.Templet.pdb
+G:\ROYcms!NT V2.0\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.DB.pdb
+G:\ROYcms!NT V2.0\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.DB.xml
+G:\ROYcms!NT V2.0\ROYcms\ROYcms.BasePage\obj\Debug\ResolveAssemblyReference.cache
+G:\ROYcms!NT V2.0\ROYcms\ROYcms.BasePage\obj\Debug\ROYcms.BasePage.dll
+G:\ROYcms!NT V2.0\ROYcms\ROYcms.BasePage\obj\Debug\ROYcms.BasePage.pdb
+G:\ROYcms!NT V2.0\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.SSO.dll
+G:\ROYcms!NT V2.0\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.SSO.pdb
+G:\ROYcms!NT\trunk\ROYcms\ROYcms.BasePage\obj\Debug\ResolveAssemblyReference.cache
+G:\ROYcms!NT\trunk\ROYcms\ROYcms.BasePage\obj\Debug\ROYcms.BasePage.dll
+G:\ROYcms!NT\trunk\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.BasePage.dll
+G:\ROYcms!NT\trunk\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.BasePage.pdb
+G:\ROYcms!NT\trunk\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.Common.dll
+G:\ROYcms!NT\trunk\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.SSO.dll
+G:\ROYcms!NT\trunk\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.Sys.Bll.dll
+G:\ROYcms!NT\trunk\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.Sys.Model.dll
+G:\ROYcms!NT\trunk\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.DB.dll
+G:\ROYcms!NT\trunk\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.Sys.Dal.dll
+G:\ROYcms!NT\trunk\ROYcms\ROYcms.BasePage\bin\Debug\ICSharpCode.SharpZipLib.dll
+G:\ROYcms!NT\trunk\ROYcms\ROYcms.BasePage\bin\Debug\MySql.Data.dll
+G:\ROYcms!NT\trunk\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.SSO.pdb
+G:\ROYcms!NT\trunk\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.DB.pdb
+G:\ROYcms!NT\trunk\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.DB.xml
+G:\ROYcms!NT\trunk\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.Sys.Dal.pdb
+G:\ROYcms!NT\trunk\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.Common.pdb
+G:\ROYcms!NT\trunk\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.Sys.Bll.pdb
+G:\ROYcms!NT\trunk\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.Sys.Model.pdb
+G:\ROYcms!NT\trunk\ROYcms\ROYcms.BasePage\obj\Debug\ROYcms.BasePage.pdb
+G:\ROYcms!NT\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.BasePage.dll
+G:\ROYcms!NT\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.BasePage.pdb
+G:\ROYcms!NT\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.Common.dll
+G:\ROYcms!NT\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.SSO.dll
+G:\ROYcms!NT\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.Sys.Bll.dll
+G:\ROYcms!NT\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.Sys.Model.dll
+G:\ROYcms!NT\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.DB.dll
+G:\ROYcms!NT\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.Sys.Dal.dll
+G:\ROYcms!NT\ROYcms\ROYcms.BasePage\bin\Debug\ICSharpCode.SharpZipLib.dll
+G:\ROYcms!NT\ROYcms\ROYcms.BasePage\bin\Debug\MySql.Data.dll
+G:\ROYcms!NT\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.SSO.pdb
+G:\ROYcms!NT\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.DB.pdb
+G:\ROYcms!NT\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.DB.xml
+G:\ROYcms!NT\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.Sys.Dal.pdb
+G:\ROYcms!NT\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.Common.pdb
+G:\ROYcms!NT\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.Sys.Bll.pdb
+G:\ROYcms!NT\ROYcms\ROYcms.BasePage\bin\Debug\ROYcms.Sys.Model.pdb
+G:\ROYcms!NT\ROYcms\ROYcms.BasePage\obj\Debug\ResolveAssemblyReference.cache
+G:\ROYcms!NT\ROYcms\ROYcms.BasePage\obj\Debug\ROYcms.BasePage.dll
+G:\ROYcms!NT\ROYcms\ROYcms.BasePage\obj\Debug\ROYcms.BasePage.pdb
+G:\ROYcms!NT\ROYcms.BasePage\bin\Debug\ROYcms.BasePage.dll
+G:\ROYcms!NT\ROYcms.BasePage\bin\Debug\ROYcms.BasePage.pdb
+G:\ROYcms!NT\ROYcms.BasePage\bin\Debug\ROYcms.Common.dll
+G:\ROYcms!NT\ROYcms.BasePage\bin\Debug\ROYcms.Config.dll
+G:\ROYcms!NT\ROYcms.BasePage\bin\Debug\ROYcms.Sys.dll
+G:\ROYcms!NT\ROYcms.BasePage\bin\Debug\ICSharpCode.SharpZipLib.dll
+G:\ROYcms!NT\ROYcms.BasePage\bin\Debug\ROYcms.DB.dll
+G:\ROYcms!NT\ROYcms.BasePage\bin\Debug\MySql.Data.dll
+G:\ROYcms!NT\ROYcms.BasePage\bin\Debug\ROYcms.Common.pdb
+G:\ROYcms!NT\ROYcms.BasePage\bin\Debug\ROYcms.Config.pdb
+G:\ROYcms!NT\ROYcms.BasePage\bin\Debug\ROYcms.Sys.pdb
+G:\ROYcms!NT\ROYcms.BasePage\bin\Debug\ROYcms.DB.pdb
+G:\ROYcms!NT\ROYcms.BasePage\bin\Debug\ROYcms.DB.xml
+G:\ROYcms!NT\ROYcms.BasePage\obj\Debug\ResolveAssemblyReference.cache
+G:\ROYcms!NT\ROYcms.BasePage\obj\Debug\ROYcms.BasePage.dll
+G:\ROYcms!NT\ROYcms.BasePage\obj\Debug\ROYcms.BasePage.pdb
+D:\工作目录\ROYcms!NT\ROYcms.BasePage\bin\Debug\ROYcms.BasePage.dll
+D:\工作目录\ROYcms!NT\ROYcms.BasePage\bin\Debug\ROYcms.BasePage.pdb
+D:\工作目录\ROYcms!NT\ROYcms.BasePage\bin\Debug\ROYcms.Common.dll
+D:\工作目录\ROYcms!NT\ROYcms.BasePage\bin\Debug\ROYcms.Config.dll
+D:\工作目录\ROYcms!NT\ROYcms.BasePage\bin\Debug\ROYcms.Sys.dll
+D:\工作目录\ROYcms!NT\ROYcms.BasePage\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\工作目录\ROYcms!NT\ROYcms.BasePage\bin\Debug\ROYcms.DB.dll
+D:\工作目录\ROYcms!NT\ROYcms.BasePage\bin\Debug\MySql.Data.dll
+D:\工作目录\ROYcms!NT\ROYcms.BasePage\bin\Debug\ROYcms.Common.pdb
+D:\工作目录\ROYcms!NT\ROYcms.BasePage\bin\Debug\ROYcms.Config.pdb
+D:\工作目录\ROYcms!NT\ROYcms.BasePage\bin\Debug\ROYcms.Sys.pdb
+D:\工作目录\ROYcms!NT\ROYcms.BasePage\bin\Debug\ROYcms.DB.pdb
+D:\工作目录\ROYcms!NT\ROYcms.BasePage\bin\Debug\ROYcms.DB.xml
+D:\工作目录\ROYcms!NT\ROYcms.BasePage\obj\Debug\ResolveAssemblyReference.cache
+D:\工作目录\ROYcms!NT\ROYcms.BasePage\obj\Debug\ROYcms.BasePage.dll
+D:\工作目录\ROYcms!NT\ROYcms.BasePage\obj\Debug\ROYcms.BasePage.pdb
+D:\工作目录\ROYcms!NT - 2012\ROYcms.BasePage\bin\Debug\ROYcms.BasePage.dll
+D:\工作目录\ROYcms!NT - 2012\ROYcms.BasePage\bin\Debug\ROYcms.BasePage.pdb
+D:\工作目录\ROYcms!NT - 2012\ROYcms.BasePage\bin\Debug\ROYcms.Common.dll
+D:\工作目录\ROYcms!NT - 2012\ROYcms.BasePage\bin\Debug\ROYcms.Config.dll
+D:\工作目录\ROYcms!NT - 2012\ROYcms.BasePage\bin\Debug\ROYcms.Sys.dll
+D:\工作目录\ROYcms!NT - 2012\ROYcms.BasePage\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\工作目录\ROYcms!NT - 2012\ROYcms.BasePage\bin\Debug\ROYcms.DB.dll
+D:\工作目录\ROYcms!NT - 2012\ROYcms.BasePage\bin\Debug\MySql.Data.dll
+D:\工作目录\ROYcms!NT - 2012\ROYcms.BasePage\bin\Debug\ROYcms.Common.pdb
+D:\工作目录\ROYcms!NT - 2012\ROYcms.BasePage\bin\Debug\ROYcms.Config.pdb
+D:\工作目录\ROYcms!NT - 2012\ROYcms.BasePage\bin\Debug\ROYcms.Sys.pdb
+D:\工作目录\ROYcms!NT - 2012\ROYcms.BasePage\bin\Debug\ROYcms.DB.pdb
+D:\工作目录\ROYcms!NT - 2012\ROYcms.BasePage\bin\Debug\ROYcms.DB.xml
+D:\工作目录\ROYcms!NT - 2012\ROYcms.BasePage\obj\Debug\ROYcms.BasePage.csprojResolveAssemblyReference.cache
+D:\工作目录\ROYcms!NT - 2012\ROYcms.BasePage\obj\Debug\ROYcms.BasePage.dll
+D:\工作目录\ROYcms!NT - 2012\ROYcms.BasePage\obj\Debug\ROYcms.BasePage.pdb
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\ROYcms.BasePage\obj\Debug\ROYcms.BasePage.csprojResolveAssemblyReference.cache
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\ROYcms.BasePage\bin\Debug\ROYcms.BasePage.dll
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\ROYcms.BasePage\bin\Debug\ROYcms.BasePage.pdb
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\ROYcms.BasePage\bin\Debug\ROYcms.Common.dll
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\ROYcms.BasePage\bin\Debug\ROYcms.Config.dll
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\ROYcms.BasePage\bin\Debug\ROYcms.Sys.dll
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\ROYcms.BasePage\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\ROYcms.BasePage\bin\Debug\ROYcms.DB.dll
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\ROYcms.BasePage\bin\Debug\MySql.Data.dll
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\ROYcms.BasePage\bin\Debug\ROYcms.Common.pdb
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\ROYcms.BasePage\bin\Debug\ROYcms.Config.pdb
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\ROYcms.BasePage\bin\Debug\ROYcms.Sys.pdb
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\ROYcms.BasePage\bin\Debug\ROYcms.DB.pdb
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\ROYcms.BasePage\bin\Debug\ROYcms.DB.xml
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\ROYcms.BasePage\obj\Debug\ROYcms.BasePage.dll
+E:\微云网盘\ROYcms Date\ROYcms!NT - 2012\ROYcms.BasePage\obj\Debug\ROYcms.BasePage.pdb
